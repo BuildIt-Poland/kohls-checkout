@@ -3,7 +3,7 @@ import React from 'react';
 function Cart() {
   return (
     <section>
-      <h2>Cart component placeholder</h2>
+      <h2>Cart placeholder</h2>
     </section>
   );
 }
