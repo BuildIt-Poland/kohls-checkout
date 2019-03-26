@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENTS - Checkout renders self and correct routes 1`] = `
+<Checkout>
+  <section>
+    <h2>
+      Checkout placeholder
+    </h2>
+    <Route
+      component={[Function]}
+      path="/checkout/delivery"
+    >
+      <CheckoutDelivery
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "canGo": [Function],
+            "createHref": [Function],
+            "entries": Array [
+              Object {
+                "hash": "",
+                "pathname": "/checkout/delivery",
+                "search": "",
+                "state": undefined,
+              },
+            ],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "index": 0,
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/checkout/delivery",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        location={
+          Object {
+            "hash": "",
+            "pathname": "/checkout/delivery",
+            "search": "",
+            "state": undefined,
+          }
+        }
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {},
+            "path": "/checkout/delivery",
+            "url": "/checkout/delivery",
+          }
+        }
+      >
+        <section>
+          <h3>
+            CheckoutDelivery placeholder
+          </h3>
+        </section>
+      </CheckoutDelivery>
+    </Route>
+    <Route
+      component={[Function]}
+      path="/checkout/payment"
+    />
+    <Route
+      component={[Function]}
+      path="/checkout/review"
+    />
+  </section>
+</Checkout>
+`;
+
+exports[`COMPONENTS - Checkout renders self and correct routes 2`] = `
+<Checkout>
+  <section>
+    <h2>
+      Checkout placeholder
+    </h2>
+    <Route
+      component={[Function]}
+      path="/checkout/delivery"
+    />
+    <Route
+      component={[Function]}
+      path="/checkout/payment"
+    >
+      <CheckoutPayment
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "canGo": [Function],
+            "createHref": [Function],
+            "entries": Array [
+              Object {
+                "hash": "",
+                "pathname": "/checkout/payment",
+                "search": "",
+                "state": undefined,
+              },
+            ],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "index": 0,
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/checkout/payment",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        location={
+          Object {
+            "hash": "",
+            "pathname": "/checkout/payment",
+            "search": "",
+            "state": undefined,
+          }
+        }
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {},
+            "path": "/checkout/payment",
+            "url": "/checkout/payment",
+          }
+        }
+      >
+        <section>
+          <h3>
+            CheckoutPayment placeholder
+          </h3>
+        </section>
+      </CheckoutPayment>
+    </Route>
+    <Route
+      component={[Function]}
+      path="/checkout/review"
+    />
+  </section>
+</Checkout>
+`;
+
+exports[`COMPONENTS - Checkout renders self and correct routes 3`] = `
+<Checkout>
+  <section>
+    <h2>
+      Checkout placeholder
+    </h2>
+    <Route
+      component={[Function]}
+      path="/checkout/delivery"
+    />
+    <Route
+      component={[Function]}
+      path="/checkout/payment"
+    />
+    <Route
+      component={[Function]}
+      path="/checkout/review"
+    >
+      <CheckoutReview
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "canGo": [Function],
+            "createHref": [Function],
+            "entries": Array [
+              Object {
+                "hash": "",
+                "pathname": "/checkout/review",
+                "search": "",
+                "state": undefined,
+              },
+            ],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "index": 0,
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/checkout/review",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        location={
+          Object {
+            "hash": "",
+            "pathname": "/checkout/review",
+            "search": "",
+            "state": undefined,
+          }
+        }
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {},
+            "path": "/checkout/review",
+            "url": "/checkout/review",
+          }
+        }
+      >
+        <section>
+          <h3>
+            CheckoutReview placeholder
+          </h3>
+        </section>
+      </CheckoutReview>
+    </Route>
+  </section>
+</Checkout>
+`;
