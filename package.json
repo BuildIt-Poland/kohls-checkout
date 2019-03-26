@@ -16,7 +16,8 @@
     "extends": [
       "react-app",
       "plugin:import/errors",
-      "plugin:import/warnings"
+      "plugin:import/warnings",
+      "plugin:prettier/recommended"
     ],
     "plugins": [
       "import"
@@ -47,7 +48,9 @@
     "styled-components": "4.2.0"
   },
   "devDependencies": {
+    "eslint-config-prettier": "4.1.0",
     "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-prettier": "3.0.1",
     "husky": "1.3.1",
     "lint-staged": "8.1.5",
     "prettier": "1.16.4",
