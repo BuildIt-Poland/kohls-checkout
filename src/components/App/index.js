@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Headline from './Headline';
+
 function App() {
-  return <h1>Hello Khol's</h1>;
+  return <Headline>Hello Khol's</Headline>;
 }
 
 export default App;
