@@ -6,7 +6,7 @@ import Headline from './Headline';
 function App() {
   return (
     <section>
-      <Headline>Hello Khol's</Headline>
+      <Headline>Hello!</Headline>
       <Counter />
     </section>
   );

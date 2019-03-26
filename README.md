@@ -1,4 +1,4 @@
-# Khol's Checkout PoC
+# Store Checkout PoC
 
 ## Project goals
 Build base for **scalable front-end architecture** -- easy to work with for developers and QA, fully transparent for stakeholders. **Automate** as many processes as possible and make their results easily available.
