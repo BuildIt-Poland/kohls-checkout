@@ -10,7 +10,7 @@ import Checkout from '../../Checkout';
 
 const shallowRender = () => shallow(<App />);
 
-describe('COMPONENTS - App', () => {
+describe('COMPONENT - App', () => {
   it('renders self and correct routes', () => {
     const wrapper = shallowRender('/cart');
     const routesMap = getRoutesMap(wrapper);

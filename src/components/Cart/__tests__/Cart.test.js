@@ -5,7 +5,7 @@ import Cart from '../Cart';
 
 const shallowRender = () => shallow(<Cart />);
 
-describe('COMPONENTS - Cart', () => {
+describe('COMPONENT - Cart', () => {
   it('render Cart component', () => {
     const wrapper = shallowRender();
 

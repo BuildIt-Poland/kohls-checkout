@@ -11,7 +11,7 @@ import CheckoutReview from '../../CheckoutReview';
 
 const shallowRender = () => shallow(<Checkout />);
 
-describe('COMPONENTS - Checkout', () => {
+describe('COMPONENT - Checkout', () => {
   it('renders self and correct routes', () => {
     const wrapper = shallowRender();
     const routesMap = getRoutesMap(wrapper);
