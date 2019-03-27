@@ -1,15 +1,3 @@
-import React from 'react';
-
-import Counter from '../Counter';
-import Headline from './Headline';
-
-function App() {
-  return (
-    <section>
-      <Headline>Hello!</Headline>
-      <Counter />
-    </section>
-  );
-}
+import App from './App';
 
 export default App;
