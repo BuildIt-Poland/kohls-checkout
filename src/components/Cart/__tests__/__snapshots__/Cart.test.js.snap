@@ -7,11 +7,3 @@ exports[`COMPONENT - Cart render Cart component 1`] = `
   </h2>
 </section>
 `;
-
-exports[`COMPONENTS - Cart render Cart component 1`] = `
-<section>
-  <h2>
-    Cart placeholder
-  </h2>
-</section>
-`;
