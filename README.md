@@ -45,3 +45,4 @@ Most of listed tools provide good integration with Slack and Jira.
 ### Taking it further
 
 Because of React's component-based architecture it is easy to reuse them, keep **user interface consistent** and reduce overall duplication. In future it will be possible to introduce fully featured **Design System** -- company-wide guideline of how to build digital products ([design system example](https://www.lightningdesignsystem.com/)).
+asda
