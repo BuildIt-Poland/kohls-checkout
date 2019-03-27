@@ -8,7 +8,7 @@ import Checkout from '../Checkout';
 function App() {
   return (
     <section>
-      <Headline>Hello Khol's</Headline>
+      <Headline>Hello world</Headline>
       <Route exact path="/cart" component={Cart} />
       <Route exact path="/checkout/:checkoutStep" component={Checkout} />
     </section>
