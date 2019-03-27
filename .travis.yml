@@ -11,8 +11,8 @@ script:
   - npm run format:check
   - codecov
 deploy:
-  - provider: script
-    script: echo "blablabl"
+  provider: script
+  script: echo "blablabl"
   on:
     branch: master
 notifications:
