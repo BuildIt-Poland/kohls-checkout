@@ -6,6 +6,6 @@ script:
   - npm run test:ci
   - npm run lint
   - npm run format:check
-  - npm run lh -- --pwa=50 --perf=95 --a11y=75 --bp=86 --seo=85 http://d2avoqs20x6i3n.cloudfront.net
+  - npm run lh -- --pwa=45 --perf=90 --a11y=75 --bp=86 --seo=85 http://d2avoqs20x6i3n.cloudfront.net
 notifications:
   slack: wiprodigital:f0IX6BV1OmlTrsGdZHf9fz3a
