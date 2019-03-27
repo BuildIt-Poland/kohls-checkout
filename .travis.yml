@@ -12,7 +12,7 @@ script:
   - codecov
 deploy:
   provider: script
-  script: echo "blablabl"
+  script: ./deploy.sh
   on:
     branch: master
 notifications:
