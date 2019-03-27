@@ -21,7 +21,6 @@ parsers:
       macro: no
 
 comment:
-  off
   layout: "diff"
   behavior: default
   require_changes: no
