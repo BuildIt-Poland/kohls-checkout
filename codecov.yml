@@ -20,4 +20,6 @@ parsers:
       method: no
       macro: no
 
-comment: off
+comment:
+  off
+  branch: disabled
