@@ -1,3 +1,4 @@
+#!/bin/bash
 # Install the AWS CLI so we can publish to S3
 # --upgrade option tells to upgrade any requirements that are already installed. 
 # --user option tells to install the program to a subdirectory of your user directory to avoid modifying 
