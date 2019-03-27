@@ -22,4 +22,6 @@ parsers:
 
 comment:
   off
-  branch: disabled
+  layout: "diff"
+  behavior: default
+  require_changes: no
