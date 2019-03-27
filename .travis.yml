@@ -8,7 +8,7 @@ script:
   - npm run format:check
 deploy:
   - provider: script
-    script: ./deploy.sh
+    script: bash deploy.sh
   on:
     branch: master
 notifications:
