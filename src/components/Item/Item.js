@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+
 import Image from './Image';
 import Price from './Price';
 import ItemTitle from './ItemTitle';
@@ -8,13 +8,7 @@ import ItemQuantity from './ItemQuantity';
 import TotalPrice from './TotalPrice';
 import DiscountPrice from './DiscountPrice';
 import PriceBox from './PriceBox';
-
-const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: 30% auto;
-  align-items: center;
-  margin: 3rem 1.3rem;
-`;
+import Wrapper from './Wrapper';
 
 function Item() {
   return (
@@ -24,9 +18,9 @@ function Item() {
       <ItemAttribute>Size: 42 SHORT</ItemAttribute>
       <ItemAttribute>Color: Charcoal</ItemAttribute>
       <PriceBox>
-        <DiscountPrice price="125" />
-        <Price price="220" />
-        <TotalPrice price="115" />
+        <DiscountPrice>Sale $125.00</DiscountPrice>
+        <Price>Regular $240.00</Price>
+        <TotalPrice>Total $115.00</TotalPrice>
       </PriceBox>
       <ItemQuantity />
     </Wrapper>

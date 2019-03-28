@@ -1,13 +1,3 @@
-import React from 'react';
-
-import Item from '../Item/Item';
-
-function App() {
-  return (
-    <section>
-      <Item />
-    </section>
-  );
-}
+import App from './App';
 
 export default App;
