@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Cart render Cart component 1`] = `
-<section>
-  <h2>
-    Cart placeholder
-  </h2>
-</section>
+<Fragment>
+  <section>
+    <h2>
+      Cart placeholder
+    </h2>
+  </section>
+  <NextStepButton
+    label="Checkout"
+    url="/checkout/delivery"
+  />
+</Fragment>
 `;

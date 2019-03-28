@@ -8,6 +8,7 @@ import Checkout from '../Checkout';
 import CheckoutDelivery from '../../CheckoutDelivery';
 import CheckoutPayment from '../../CheckoutPayment';
 import CheckoutReview from '../../CheckoutReview';
+import { CHECKOUT_DELIVERY, CHECKOUT_PAYMENT, CHECKOUT_REVIEW } from '../../../constants/routes';
 
 const shallowRender = () => shallow(<Checkout />);
 
@@ -17,8 +18,8 @@ describe('COMPONENT - Checkout', () => {
     const routesMap = getRoutesMap(wrapper);
 
     expect(wrapper.find(Route).length).toBe(3);
-    expect(routesMap['/checkout/delivery']).toBe(CheckoutDelivery);
-    expect(routesMap['/checkout/payment']).toBe(CheckoutPayment);
-    expect(routesMap['/checkout/review']).toBe(CheckoutReview);
+    expect(routesMap[CHECKOUT_DELIVERY]).toBe(CheckoutDelivery);
+    expect(routesMap[CHECKOUT_PAYMENT]).toBe(CheckoutPayment);
+    expect(routesMap[CHECKOUT_REVIEW]).toBe(CheckoutReview);
   });
 });

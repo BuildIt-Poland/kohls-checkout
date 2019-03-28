@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom';
 import App from '../App';
 import Cart from '../../Cart';
 import Checkout from '../../Checkout';
+import { CART, CHECKOUT } from '../../../constants/routes';
 
 const shallowRender = () => shallow(<App />);
 
@@ -16,7 +17,7 @@ describe('COMPONENT - App', () => {
     const routesMap = getRoutesMap(wrapper);
 
     expect(wrapper.find(Route).length).toBe(2);
-    expect(routesMap['/cart']).toBe(Cart);
-    expect(routesMap['/checkout/:checkoutStep']).toBe(Checkout);
+    expect(routesMap[CART]).toBe(Cart);
+    expect(routesMap[CHECKOUT]).toBe(Checkout);
   });
 });
