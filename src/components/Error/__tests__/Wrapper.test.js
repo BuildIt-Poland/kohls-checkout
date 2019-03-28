@@ -1,11 +1,12 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
+import 'jest-styled-components';
 
-import Cart from '../Cart';
+import Wrapper from '../Wrapper';
 
-describe('COMPONENT - Cart', () => {
+describe('COMPONENT - Error Wrapper', () => {
   it('render Cart component', () => {
-    const component = create(<Cart />);
+    const component = create(<Wrapper />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

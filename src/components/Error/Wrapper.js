@@ -1,3 +1,5 @@
+// Accesibility research according to https://hiddedevries.nl/en/blog/2017-04-04-how-to-make-inline-error-messages-accessible
+
 import styled from 'styled-components';
 
 import {

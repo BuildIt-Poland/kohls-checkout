@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import Wrapper from './Wrapper';
 
 function Error({ message }) {
-  return <Wrapper>{message}</Wrapper>;
+  return <Wrapper role="alert">{message}</Wrapper>;
 }
 
 Error.defaultProps = {
