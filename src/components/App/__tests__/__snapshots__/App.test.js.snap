@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - App should render correctly cart route 1`] = `
+exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
 .c0 {
   font-size: 2rem;
   font-weight: 700;
@@ -53,7 +53,7 @@ exports[`COMPONENT - App should render correctly cart route 1`] = `
 </section>
 `;
 
-exports[`COMPONENT - App should render correctly checkout route 1`] = `
+exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
 .c0 {
   font-size: 2rem;
   font-weight: 700;
@@ -155,7 +155,7 @@ exports[`COMPONENT - App should render correctly checkout route 1`] = `
 </section>
 `;
 
-exports[`COMPONENT - App should render correctly main route 1`] = `
+exports[`COMPONENT - App renders correctly default route 1`] = `
 .c0 {
   font-size: 2rem;
   font-weight: 700;

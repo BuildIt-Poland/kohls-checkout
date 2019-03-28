@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Cart renders Cart component 1`] = `
+exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
 Array [
   <section>
-    <h2>
-      Cart placeholder
-    </h2>
+    <h3>
+      CheckoutDelivery placeholder
+    </h3>
   </section>,
   .c0 {
   bottom: 0px;
@@ -33,9 +33,9 @@ Array [
   >
     <Link
       className="c1"
-      to="/checkout/delivery"
+      to="/checkout/payment"
     >
-      Checkout
+      Continue to Payment
     </Link>
   </div>,
 ]

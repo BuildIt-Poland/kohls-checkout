@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Checkout should render correctly delivery route 1`] = `
+exports[`COMPONENT - Checkout renders correctly for "/delivery" route 1`] = `
 Array [
   .c1 {
   display: -webkit-box;
@@ -152,7 +152,7 @@ Array [
 ]
 `;
 
-exports[`COMPONENT - Checkout should render correctly payment route 1`] = `
+exports[`COMPONENT - Checkout renders correctly for "/payment" route 1`] = `
 Array [
   .c1 {
   display: -webkit-box;
@@ -304,7 +304,7 @@ Array [
 ]
 `;
 
-exports[`COMPONENT - Checkout should render correctly review route 1`] = `
+exports[`COMPONENT - Checkout renders correctly for "/review" route 1`] = `
 Array [
   .c1 {
   display: -webkit-box;

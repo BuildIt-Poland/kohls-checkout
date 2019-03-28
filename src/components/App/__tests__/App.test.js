@@ -6,7 +6,7 @@ import App from '../App';
 import { CART, CHECKOUT } from '../../../constants/routes';
 
 describe('COMPONENT - App', () => {
-  it('should render correctly main route', () => {
+  it('renders correctly default route', () => {
     const component = renderer.create(
       <MemoryRouter initialEntries={['/']} initialIndex={1}>
         <App />
@@ -16,7 +16,7 @@ describe('COMPONENT - App', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  it('should render correctly cart route', () => {
+  it('renders correctly "/cart" route', () => {
     const component = renderer.create(
       <MemoryRouter initialEntries={[CART]} initialIndex={1}>
         <App />
@@ -26,7 +26,7 @@ describe('COMPONENT - App', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  it('should render correctly checkout route', () => {
+  it('renders correctly "/checkout" route', () => {
     const component = renderer.create(
       <MemoryRouter initialEntries={[CHECKOUT]} initialIndex={1}>
         <App />

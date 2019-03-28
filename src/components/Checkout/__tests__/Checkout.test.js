@@ -1,13 +1,13 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
 
 import Checkout from '../Checkout';
 import { CHECKOUT_REVIEW, CHECKOUT_PAYMENT, CHECKOUT_DELIVERY } from '../../../constants/routes';
 
 describe('COMPONENT - Checkout', () => {
-  it('should render correctly delivery route', () => {
-    const component = renderer.create(
+  it('renders correctly for "/delivery" route', () => {
+    const component = create(
       <MemoryRouter initialEntries={[CHECKOUT_DELIVERY]} initialIndex={1}>
         <Checkout />
       </MemoryRouter>
@@ -16,23 +16,23 @@ describe('COMPONENT - Checkout', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  it('should render correctly payment route', () => {
-    const component = renderer.create(
+  it('renders correctly for "/payment" route', () => {
+    const component = create(
       <MemoryRouter initialEntries={[CHECKOUT_PAYMENT]} initialIndex={1}>
         <Checkout />
       </MemoryRouter>
     );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
-  it('should render correctly review route', () => {
-    const component = renderer.create(
+  it('renders correctly for "/review" route', () => {
+    const component = create(
       <MemoryRouter initialEntries={[CHECKOUT_REVIEW]} initialIndex={1}>
         <Checkout />
       </MemoryRouter>
     );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 });
