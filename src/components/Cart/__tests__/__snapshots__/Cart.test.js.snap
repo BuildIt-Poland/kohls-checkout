@@ -1,15 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Cart render Cart component 1`] = `
-<Fragment>
+Array [
   <section>
     <h2>
       Cart placeholder
     </h2>
-  </section>
-  <NextStepButton
-    label="Checkout"
-    url="/checkout/delivery"
-  />
-</Fragment>
+  </section>,
+  .c0 {
+  bottom: 0px;
+  left: 0px;
+  padding: 1.2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.c1 {
+  background: #469E9E;
+  color: white;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+<div
+    className="c0"
+  >
+    <Link
+      className="c1"
+      to="/checkout/delivery"
+    >
+      Checkout
+    </Link>
+  </div>,
+]
 `;
