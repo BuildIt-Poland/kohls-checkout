@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - App should render correctly cart route 1`] = `
+.c0 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+<section>
+  <h1
+    className="c0"
+  >
+    Hello world
+  </h1>
+  <section>
+    <h2>
+      Cart placeholder
+    </h2>
+  </section>
+</section>
+`;
+
+exports[`COMPONENT - App should render correctly checkout route 1`] = `
+.c0 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+<section>
+  <h1
+    className="c0"
+  >
+    Hello world
+  </h1>
+</section>
+`;
+
+exports[`COMPONENT - App should render correctly main route 1`] = `
+.c0 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+<section>
+  <h1
+    className="c0"
+  >
+    Hello world
+  </h1>
+</section>
+`;
