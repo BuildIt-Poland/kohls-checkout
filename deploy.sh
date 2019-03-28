@@ -9,4 +9,4 @@ pip install awscli --upgrade --user
 # Sync our build folder with our S3 bucket
 # --acl public-read says deploy the files with public read access
 # --delete says to delete files in the bucket that aren't present in the build folder
-aws s3 sync build/ "s3://frontend-kohls" --acl public-read --delete
+aws s3 sync build/ "s3://buildit-store" --acl public-read --delete
