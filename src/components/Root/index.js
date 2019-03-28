@@ -10,13 +10,16 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from '../App';
 import GlobalStyle from '../GlobalStyle';
+import ErrorBoundary from '../ErrorBoundary';
 
 function Root({ store }) {
   return (
     <Provider store={store}>
       <GlobalStyle />
       <Router>
-        <App />
+        <ErrorBoundary>
+          <App />
+        </ErrorBoundary>
       </Router>
     </Provider>
   );
