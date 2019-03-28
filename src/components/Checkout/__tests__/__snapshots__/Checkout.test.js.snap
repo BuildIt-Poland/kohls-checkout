@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Checkout should render correctly delivery route 1`] = `
+<section>
+  <h2>
+    Checkout placeholder
+  </h2>
+  <section>
+    <h3>
+      CheckoutDelivery placeholder
+    </h3>
+  </section>
+</section>
+`;
+
+exports[`COMPONENT - Checkout should render correctly payment route 1`] = `
+<section>
+  <h2>
+    Checkout placeholder
+  </h2>
+  <section>
+    <h3>
+      CheckoutPayment placeholder
+    </h3>
+  </section>
+</section>
+`;
+
+exports[`COMPONENT - Checkout should render correctly review route 1`] = `
+<section>
+  <h2>
+    Checkout placeholder
+  </h2>
+  <section>
+    <h3>
+      CheckoutReview placeholder
+    </h3>
+  </section>
+</section>
+`;
