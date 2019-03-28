@@ -1,5 +1,8 @@
 # Store Checkout PoC
 
+[![Build Status](https://travis-ci.org/BuildIt-Poland/store-checkout.svg?branch=master)](https://travis-ci.org/BuildIt-Poland/store-checkout)
+[![codecov](https://codecov.io/gh/BuildIt-Poland/store-checkout/branch/master/graph/badge.svg)](https://codecov.io/gh/BuildIt-Poland/store-checkout)
+
 ## Project goals
 Build base for **scalable front-end architecture** -- easy to work with for developers and QA, fully transparent for stakeholders. **Automate** as many processes as possible and make their results easily available.
 Make frontend communicate with backend API only by thin layer of services, making it more resilient to inevitable changes.
