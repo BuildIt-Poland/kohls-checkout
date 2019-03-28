@@ -10,15 +10,15 @@ script:
   - npm run lint
   - npm run format:check
   - codecov
+after_script:
+  provider: script
+  script: npm run lh -- --pwa=45 --perf=90 --a11y=75 --bp=86 --seo=85 http://d2avoqs20x6i3n.cloudfront.net
+  on:
+    branch: feature/lighthouse-ci
 deploy:
   provider: script
   script: ./deploy.sh
   on:
     branch: master
-after_deploy:
-  provider: script
-  script: npm run lh -- --pwa=45 --perf=90 --a11y=75 --bp=86 --seo=85 http://d2avoqs20x6i3n.cloudfront.net
-  on:
-    branch: feature/lighthouse-ci
 notifications:
   slack: wiprodigital:f0IX6BV1OmlTrsGdZHf9fz3a
