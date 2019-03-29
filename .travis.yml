@@ -11,7 +11,7 @@ script:
   - npm run format:check
   - codecov
 deploy:
-  - provider:
+  - provider: script
     script: npm run lh
     on:
       branch: feature/lighthouse-ci
