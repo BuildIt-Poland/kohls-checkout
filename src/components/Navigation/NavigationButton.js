@@ -12,7 +12,7 @@ const FlexLink = styled(Link)`
 
 const LinkContent = styled.span`
   background: ${({ isActive }) => (isActive ? colorBlack : colorWhite)};
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid ${colorDarkGrey};
   color: ${({ isActive }) => (isActive ? colorWhite : colorBlack)};
   display: flex;

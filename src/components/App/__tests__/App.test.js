@@ -2,8 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
 
-import App from '../App';
 import { CART, CHECKOUT } from '../../../constants/routes';
+import App from '../App';
 
 describe('COMPONENT - App', () => {
   it('renders correctly default route', () => {

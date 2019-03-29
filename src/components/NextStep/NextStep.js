@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { colorTurquoise, fontMedium } from '../../styles/designTokens';
+import { colorTurquoise, fontMedium, colorWhite } from '../../styles/designTokens';
 import Wrapper from './Wrapper';
 
 const Button = styled(Link)`
   background: ${colorTurquoise};
-  color: white;
+  color: ${colorWhite};
   display: block;
   font-size: ${fontMedium};
   font-weight: 600;

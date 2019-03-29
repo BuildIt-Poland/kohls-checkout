@@ -1,6 +1,7 @@
 import React from 'react';
-import NextStep from '../NextStep';
+
 import { CHECKOUT_DELIVERY } from '../../constants/routes';
+import NextStep from '../NextStep';
 
 function Cart() {
   return (

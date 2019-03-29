@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import NavigationButton from './NavigationButton';
 import { CHECKOUT_DELIVERY, CHECKOUT_PAYMENT, CHECKOUT_REVIEW } from '../../constants/routes';
+import NavigationButton from './NavigationButton';
 
 const Wrapper = styled.nav`
   display: flex;

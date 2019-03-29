@@ -2,11 +2,11 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { CHECKOUT_DELIVERY, CHECKOUT_PAYMENT, CHECKOUT_REVIEW, CHECKOUT } from '../../constants/routes';
 import CheckoutDelivery from '../CheckoutDelivery';
 import CheckoutPayment from '../CheckoutPayment';
 import CheckoutReview from '../CheckoutReview';
 import Navigation from '../Navigation';
-import { CHECKOUT_DELIVERY, CHECKOUT_PAYMENT, CHECKOUT_REVIEW, CHECKOUT } from '../../constants/routes';
 
 const Wrapper = styled.section`
   margin-top: 100px;

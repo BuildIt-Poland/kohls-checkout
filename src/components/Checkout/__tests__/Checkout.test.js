@@ -2,8 +2,8 @@ import React from 'react';
 import { create } from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
 
-import Checkout from '../Checkout';
 import { CHECKOUT_REVIEW, CHECKOUT_PAYMENT, CHECKOUT_DELIVERY } from '../../../constants/routes';
+import Checkout from '../Checkout';
 
 describe('COMPONENT - Checkout', () => {
   it('renders correctly for "/delivery" route', () => {

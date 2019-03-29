@@ -17,7 +17,7 @@ Array [
 
 .c1 {
   background: #469E9E;
-  color: white;
+  color: #ffffff;
   display: block;
   font-size: 1.8rem;
   font-weight: 600;

@@ -17,7 +17,7 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
 
 .c2 {
   background: #469E9E;
-  color: white;
+  color: #ffffff;
   display: block;
   font-size: 1.8rem;
   font-weight: 600;

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import Headline from './Headline';
+import { CHECKOUT, CART } from '../../constants/routes';
 import Cart from '../Cart';
 import Checkout from '../Checkout';
-import { CHECKOUT, CART } from '../../constants/routes';
+import Headline from './Headline';
 
 function App() {
   return (

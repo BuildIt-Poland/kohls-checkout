@@ -1,6 +1,7 @@
 import React from 'react';
-import NextStep from '../NextStep';
+
 import { CHECKOUT_PAYMENT } from '../../constants/routes';
+import NextStep from '../NextStep';
 
 function CheckoutDelivery() {
   return (
