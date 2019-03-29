@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 import NextStep from '../NextStep';
 
@@ -9,7 +9,7 @@ jest.mock('react-router-dom', () => ({
 
 describe('COMPONENT - NextStep', () => {
   it('render NextStep component', () => {
-    const component = renderer.create(<NextStep />);
+    const component = create(<NextStep to="/" />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
