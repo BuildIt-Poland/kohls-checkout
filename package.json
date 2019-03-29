@@ -13,7 +13,7 @@
     "format": "prettier --write \"src/**/*.js\"",
     "format:check": "prettier --list-different \"src/**/*.js\"",
     "precommit": "lint-staged",
-    "lh": "lighthousebot --pwa=40 --perf=90 --a11y=75 --bp=86 --seo=85 https://store.buildit.digital",
+    "lh": "lighthousebot --pwa=50 --perf=95 --a11y=95 --bp=95 --seo=85 https://store.buildit.digital",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
