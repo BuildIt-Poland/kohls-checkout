@@ -13,16 +13,12 @@ script:
   - npm run lint
   - npm run format:check
   - codecov
+  - npm run lh
 deploy:
-  - provider: script
-    script: npm run lh
-    on:
-      branch: feature/lighthouse-ci
-      condition: $TRAVIS_PULL_REQUEST != false
   - provider: script
     script: ./deploy.sh
     skip_cleanup: true
     on:
-      branch: feature/lighthouse-ci
+      branch: master
 notifications:
   slack: wiprodigital:f0IX6BV1OmlTrsGdZHf9fz3a
