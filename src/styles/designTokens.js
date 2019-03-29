@@ -1,6 +1,7 @@
 // Colors
+export const colorBlack = '#000000';
+export const colorDarkGrey = '#454545';
 export const colorWhite = '#ffffff';
-export const colorBlack = '#222222';
 export const colorTurquoise = '#00a09f';
 export const colorRed = '#e0151d';
 export const colorLightRed = '#fadcdd';
