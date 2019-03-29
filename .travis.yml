@@ -11,7 +11,7 @@ script:
   - npm run format:check
   - codecov
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
-  - $TRAVIS_BRANCH == "feature/lighthouse-ci" && npm run lh
+  - '[ "${TRAVIS_BRANCH}" = "feature/lighthouse-ci" ] && npm run lh || echo 'no'
 deploy:
   provider: script
   script: ./deploy.sh
