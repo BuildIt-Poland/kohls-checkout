@@ -5,7 +5,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "start:build": "npm run build && serve -s build",
     "test": "react-scripts test --verbose",
+    "test:update": "npm run test -- updateSnapshot",
     "test:ci": "npm test -- --no-watch --coverage",
     "lint": "eslint \"src/**/*.js\"",
     "format": "prettier --write \"src/**/*.js\"",
@@ -51,6 +53,7 @@
     ]
   },
   "dependencies": {
+    "@sentry/browser": "4.6.5",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-redux": "6.0.1",
@@ -63,12 +66,15 @@
     "eslint-config-prettier": "4.1.0",
     "eslint-plugin-import": "2.16.0",
     "husky": "1.3.1",
+    "jest-dom": "3.1.3",
     "jest-styled-components": "6.3.1",
     "lint-staged": "8.1.5",
     "prettier": "1.16.4",
     "prop-types": "15.7.2",
     "react-test-renderer": "16.8.6",
-    "redux-devtools-extension": "2.13.8"
+    "react-testing-library": "6.0.3",
+    "redux-devtools-extension": "2.13.8",
+    "serve": "10.1.2"
   },
   "browserslist": [
     ">0.2%",

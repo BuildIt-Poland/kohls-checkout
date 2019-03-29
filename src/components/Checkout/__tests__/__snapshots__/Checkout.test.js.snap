@@ -3,7 +3,7 @@
 exports[`COMPONENT - Checkout renders correctly for "/delivery" route 1`] = `
 Array [
   .c2 {
-  background: #000000;
+  background: #222222;
   border-right: 0;
   border: 1px solid #454545;
   color: #ffffff;
@@ -29,7 +29,7 @@ Array [
   background: #ffffff;
   border-right: 0;
   border: 1px solid #454545;
-  color: #000000;
+  color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -105,7 +105,7 @@ Array [
     </a>
   </nav>,
   .c2 {
-  background: #469E9E;
+  background: #00a09f;
   color: #ffffff;
   display: block;
   font-size: 1.8rem;
@@ -156,7 +156,7 @@ Array [
 exports[`COMPONENT - Checkout renders correctly for "/payment" route 1`] = `
 Array [
   .c3 {
-  background: #000000;
+  background: #222222;
   border-right: 0;
   border: 1px solid #454545;
   color: #ffffff;
@@ -182,7 +182,7 @@ Array [
   background: #ffffff;
   border-right: 0;
   border: 1px solid #454545;
-  color: #000000;
+  color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -258,7 +258,7 @@ Array [
     </a>
   </nav>,
   .c2 {
-  background: #469E9E;
+  background: #00a09f;
   color: #ffffff;
   display: block;
   font-size: 1.8rem;
@@ -309,7 +309,7 @@ Array [
 exports[`COMPONENT - Checkout renders correctly for "/review" route 1`] = `
 Array [
   .c3 {
-  background: #000000;
+  background: #222222;
   border-right: 0;
   border: 1px solid #454545;
   color: #ffffff;
@@ -335,7 +335,7 @@ Array [
   background: #ffffff;
   border-right: 0;
   border: 1px solid #454545;
-  color: #000000;
+  color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -411,7 +411,7 @@ Array [
     </a>
   </nav>,
   .c2 {
-  background: #469E9E;
+  background: #00a09f;
   color: #ffffff;
   display: block;
   font-size: 1.8rem;
