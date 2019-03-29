@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/BuildIt-Poland/store-checkout.svg?branch=master)](https://travis-ci.org/BuildIt-Poland/store-checkout)
 [![codecov](https://codecov.io/gh/BuildIt-Poland/store-checkout/branch/master/graph/badge.svg)](https://codecov.io/gh/BuildIt-Poland/store-checkout)
 
+Check the [live version of the app](http://d2c95elbei0a82.cloudfront.net/cart)!
+
 ## Project goals
 Build base for **scalable front-end architecture** -- easy to work with for developers and QA, fully transparent for stakeholders. **Automate** as many processes as possible and make their results easily available.
 Make frontend communicate with backend API only by thin layer of services, making it more resilient to inevitable changes.
@@ -50,6 +52,7 @@ A few easy steps to set up a project:
 
 * Make sure you've got **Node** installed, preferably version above **10**
 * Run `npm install` from project root
+* Copy **.env.local** from *gist* and replace **.env.local.temp** with it
 
 Most useful scripts for development:
 
