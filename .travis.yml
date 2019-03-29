@@ -10,11 +10,15 @@ script:
   - npm run lint
   - npm run format:check
   - codecov
-  - $TRAVIS_BRANCH == "feature/lighthouse-ci" && npm run lh
 deploy:
-  provider: script
-  script: ./deploy.sh
-  on:
-    branch: master
+  - provider:
+    script: npm run lh
+    on:
+      branch: feature/lighthouse-ci
+      condition: "$TRAVIS_PULL_REQUEST" != "false"
+  - provider: script
+    script: ./deploy.sh
+    on:
+      branch: feature/lighthouse-ci
 notifications:
   slack: wiprodigital:f0IX6BV1OmlTrsGdZHf9fz3a
