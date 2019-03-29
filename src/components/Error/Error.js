@@ -5,13 +5,9 @@ import PropTypes from 'prop-types';
 
 import Wrapper from './Wrapper';
 
-function Error({ message }) {
+function Error({ message = 'Oops, something went wrong.' }) {
   return <Wrapper role="alert">{message}</Wrapper>;
 }
-
-Error.defaultProps = {
-  message: 'Oops, something went wrong.'
-};
 
 Error.propTypes = {
   message: PropTypes.string
