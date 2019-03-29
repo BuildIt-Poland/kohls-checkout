@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
 .c2 {
-  background: #469E9E;
+  background: #00a09f;
   color: #ffffff;
   display: block;
   font-size: 1.8rem;
@@ -59,7 +59,7 @@ exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
   background: #ffffff;
   border-right: 0;
   border: 1px solid #454545;
-  color: #000000;
+  color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - NextStep render NextStep component 1`] = `
 .c1 {
-  background: #469E9E;
+  background: #00a09f;
   color: #ffffff;
   display: block;
   font-size: 1.8rem;
