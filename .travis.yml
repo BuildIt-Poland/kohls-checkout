@@ -4,7 +4,10 @@ node_js:
 install:
   - npm ci
   - npm install -g codecov
-cache: npm
+cache:
+  npm: true
+  directories:
+    - ~/.cache
 script:
   - npm run test:ci
   - npm run lint
@@ -12,7 +15,7 @@ script:
   - codecov
 deploy:
   provider: script
-  script: ./deploy.sh
+  script: bash deploy.sh
   on:
     branch: master
 notifications:
