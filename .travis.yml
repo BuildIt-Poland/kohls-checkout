@@ -14,7 +14,7 @@ after_script:
   provider: script
   script: npm run lh -- --pwa=45 --perf=90 --a11y=75 --bp=86 --seo=85 http://d2avoqs20x6i3n.cloudfront.net
   on:
-    branch: feature/lighthouse-ci
+    branch: master
 deploy:
   provider: script
   script: ./deploy.sh
