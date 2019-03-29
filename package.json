@@ -7,6 +7,7 @@
     "build": "react-scripts build",
     "start:build": "npm run build && serve -s build",
     "test": "react-scripts test --verbose",
+    "test:update": "npm run test -- updateSnapshot",
     "test:ci": "npm test -- --no-watch --coverage",
     "lint": "eslint \"src/**/*.js\"",
     "format": "prettier --write \"src/**/*.js\"",

@@ -19,44 +19,6 @@ exports[`COMPONENT - ErrorBoundary renders fallback Error component if there is 
 </p>
 `;
 
-exports[`COMPONENT - ErrorBoundary renders fallback component if there error 1`] = `
-.c0 {
-  width: 100%;
-  border: 2px solid #e0151d;
-  color: #222222;
-  background-color: #fadcdd;
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding: 1rem;
-}
-
-<p
-  className="c0"
-  role="alert"
->
-  Oops, something went wrong.
-</p>
-`;
-
-exports[`COMPONENT - ErrorBoundary renders fallback component if there is error 1`] = `
-.c0 {
-  width: 100%;
-  border: 2px solid #e0151d;
-  color: #222222;
-  background-color: #fadcdd;
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding: 1rem;
-}
-
-<p
-  className="c0"
-  role="alert"
->
-  Oops, something went wrong.
-</p>
-`;
-
 exports[`COMPONENT - ErrorBoundary renders the child component if there is no error 1`] = `
 <p>
   I'm child component!
