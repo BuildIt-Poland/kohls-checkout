@@ -28,6 +28,7 @@ exports[`COMPONENT - NextStep render NextStep component 1`] = `
 >
   <Link
     className="c1"
+    to="/"
   >
     Next step
   </Link>

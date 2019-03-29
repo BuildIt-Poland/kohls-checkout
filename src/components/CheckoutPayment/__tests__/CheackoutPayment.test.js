@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 import CheckoutPayment from '../CheckoutPayment';
 
@@ -9,7 +9,7 @@ jest.mock('react-router-dom', () => ({
 
 describe('COMPONENT - CheckoutPayment', () => {
   it('renders CheckoutPayment component', () => {
-    const component = renderer.create(<CheckoutPayment />);
+    const component = create(<CheckoutPayment />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
