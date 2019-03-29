@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
+.c2 {
+  background: #00a09f;
+  color: #ffffff;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+.c1 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.c0 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+<section>
+  <h1
+    className="c0"
+  >
+    Hello world
+  </h1>
+  <section>
+    <h2>
+      Cart placeholder
+    </h2>
+  </section>
+  <div
+    className="c1"
+  >
+    <a
+      className="c2"
+      href="/checkout/delivery"
+      onClick={[Function]}
+    >
+      Checkout
+    </a>
+  </div>
+</section>
+`;
+
+exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
+.c3 {
+  background: #ffffff;
+  border-right: 0;
+  border: 1px solid #454545;
+  color: #222222;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.c3:last-child {
+  border-right: 1px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+.c4 {
+  margin-top: 100px;
+}
+
+.c0 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+<section>
+  <h1
+    className="c0"
+  >
+    Hello world
+  </h1>
+  <nav
+    className="c1"
+  >
+    <a
+      className="c2"
+      href="/checkout/delivery"
+      onClick={[Function]}
+    >
+      <span
+        className="c3"
+      >
+        Delivery
+      </span>
+    </a>
+    <a
+      className="c2"
+      href="/checkout/payment"
+      onClick={[Function]}
+    >
+      <span
+        className="c3"
+      >
+        Payment
+      </span>
+    </a>
+    <a
+      className="c2"
+      href="/checkout/review"
+      onClick={[Function]}
+    >
+      <span
+        className="c3"
+      >
+        Review
+      </span>
+    </a>
+  </nav>
+  <section
+    className="c4"
+  />
+</section>
+`;
+
+exports[`COMPONENT - App renders correctly default route 1`] = `
+.c0 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+<section>
+  <h1
+    className="c0"
+  >
+    Hello world
+  </h1>
+</section>
+`;
