@@ -1,14 +1,16 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { create } from 'react-test-renderer';
 
 import Cart from '../Cart';
 
-const shallowRender = () => shallow(<Cart />);
+jest.mock('react-router-dom', () => ({
+  Link: 'Link'
+}));
 
 describe('COMPONENT - Cart', () => {
-  it('render Cart component', () => {
-    const wrapper = shallowRender();
+  it('renders Cart component', () => {
+    const component = create(<Cart />);
 
-    expect(wrapper).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

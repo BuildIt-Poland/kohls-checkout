@@ -1,0 +1,460 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Checkout renders correctly for "/delivery" route 1`] = `
+Array [
+  .c2 {
+  background: #222222;
+  border-right: 0;
+  border: 1px solid #454545;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.c2:last-child {
+  border-right: 1px;
+}
+
+.c3 {
+  background: #ffffff;
+  border-right: 0;
+  border: 1px solid #454545;
+  color: #222222;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.c3:last-child {
+  border-right: 1px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+<nav
+    className="c0"
+  >
+    <a
+      className="c1"
+      href="/checkout/delivery"
+      onClick={[Function]}
+    >
+      <span
+        className="c2"
+      >
+        Delivery
+      </span>
+    </a>
+    <a
+      className="c1"
+      href="/checkout/payment"
+      onClick={[Function]}
+    >
+      <span
+        className="c3"
+      >
+        Payment
+      </span>
+    </a>
+    <a
+      className="c1"
+      href="/checkout/review"
+      onClick={[Function]}
+    >
+      <span
+        className="c3"
+      >
+        Review
+      </span>
+    </a>
+  </nav>,
+  .c2 {
+  background: #00a09f;
+  color: #ffffff;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+.c1 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.c0 {
+  margin-top: 100px;
+}
+
+<section
+    className="c0"
+  >
+    <section>
+      <h3>
+        CheckoutDelivery placeholder
+      </h3>
+    </section>
+    <div
+      className="c1"
+    >
+      <a
+        className="c2"
+        href="/checkout/payment"
+        onClick={[Function]}
+      >
+        Continue to Payment
+      </a>
+    </div>
+  </section>,
+]
+`;
+
+exports[`COMPONENT - Checkout renders correctly for "/payment" route 1`] = `
+Array [
+  .c3 {
+  background: #222222;
+  border-right: 0;
+  border: 1px solid #454545;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.c3:last-child {
+  border-right: 1px;
+}
+
+.c2 {
+  background: #ffffff;
+  border-right: 0;
+  border: 1px solid #454545;
+  color: #222222;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.c2:last-child {
+  border-right: 1px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+<nav
+    className="c0"
+  >
+    <a
+      className="c1"
+      href="/checkout/delivery"
+      onClick={[Function]}
+    >
+      <span
+        className="c2"
+      >
+        Delivery
+      </span>
+    </a>
+    <a
+      className="c1"
+      href="/checkout/payment"
+      onClick={[Function]}
+    >
+      <span
+        className="c3"
+      >
+        Payment
+      </span>
+    </a>
+    <a
+      className="c1"
+      href="/checkout/review"
+      onClick={[Function]}
+    >
+      <span
+        className="c2"
+      >
+        Review
+      </span>
+    </a>
+  </nav>,
+  .c2 {
+  background: #00a09f;
+  color: #ffffff;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+.c1 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.c0 {
+  margin-top: 100px;
+}
+
+<section
+    className="c0"
+  >
+    <section>
+      <h3>
+        CheckoutPayment placeholder
+      </h3>
+    </section>
+    <div
+      className="c1"
+    >
+      <a
+        className="c2"
+        href="/checkout/review"
+        onClick={[Function]}
+      >
+        Review Order
+      </a>
+    </div>
+  </section>,
+]
+`;
+
+exports[`COMPONENT - Checkout renders correctly for "/review" route 1`] = `
+Array [
+  .c3 {
+  background: #222222;
+  border-right: 0;
+  border: 1px solid #454545;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.c3:last-child {
+  border-right: 1px;
+}
+
+.c2 {
+  background: #ffffff;
+  border-right: 0;
+  border: 1px solid #454545;
+  color: #222222;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.c2:last-child {
+  border-right: 1px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+<nav
+    className="c0"
+  >
+    <a
+      className="c1"
+      href="/checkout/delivery"
+      onClick={[Function]}
+    >
+      <span
+        className="c2"
+      >
+        Delivery
+      </span>
+    </a>
+    <a
+      className="c1"
+      href="/checkout/payment"
+      onClick={[Function]}
+    >
+      <span
+        className="c2"
+      >
+        Payment
+      </span>
+    </a>
+    <a
+      className="c1"
+      href="/checkout/review"
+      onClick={[Function]}
+    >
+      <span
+        className="c3"
+      >
+        Review
+      </span>
+    </a>
+  </nav>,
+  .c2 {
+  background: #00a09f;
+  color: #ffffff;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+.c1 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.c0 {
+  margin-top: 100px;
+}
+
+<section
+    className="c0"
+  >
+    <section>
+      <h3>
+        CheckoutReview placeholder
+      </h3>
+    </section>
+    <div
+      className="c1"
+    >
+      <a
+        className="c2"
+        href="/cart"
+        onClick={[Function]}
+      >
+        Place Order
+      </a>
+    </div>
+  </section>,
+]
+`;
