@@ -5,6 +5,8 @@ import { MemoryRouter } from 'react-router-dom';
 import { CART_PATH, CHECKOUT_PATH } from '../../../constants/routes';
 import App from '../App';
 
+jest.mock('../../Item', () => 'Item');
+
 describe('COMPONENT - App', () => {
   it('renders correctly default route', () => {
     const component = create(
