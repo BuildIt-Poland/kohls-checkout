@@ -15,7 +15,7 @@ deploy:
     script: npm run lh
     on:
       branch: feature/lighthouse-ci
-      condition: "$TRAVIS_PULL_REQUEST" != "false"
+      condition: $TRAVIS_PULL_REQUEST != false
   - provider: script
     script: ./deploy.sh
     on:
