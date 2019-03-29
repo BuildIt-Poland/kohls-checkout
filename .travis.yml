@@ -4,7 +4,10 @@ node_js:
 install:
   - npm ci
   - npm install -g codecov
-cache: npm
+cache:
+  npm: true
+  directories:
+    - ~/.cache
 script:
   - npm run test:ci
   - npm run lint
@@ -18,6 +21,7 @@ deploy:
       condition: $TRAVIS_PULL_REQUEST != false
   - provider: script
     script: ./deploy.sh
+    skip_cleanup: true
     on:
       branch: feature/lighthouse-ci
 notifications:

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Error Wrapper render Cart component 1`] = `
+.c0 {
+  width: 100%;
+  border: 2px solid #e0151d;
+  color: #222222;
+  background-color: #fadcdd;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+<p
+  className="c0"
+/>
+`;

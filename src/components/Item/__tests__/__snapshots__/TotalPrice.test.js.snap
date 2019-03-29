@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - TotalPrice renders TotalPrice component 1`] = `
+.c0 {
+  font-size: 1.8rem;
+  color: #222222;
+  margin: 0.2rem 0;
+  font-weight: 700;
+}
+
+<p
+  className="c0"
+/>
+`;

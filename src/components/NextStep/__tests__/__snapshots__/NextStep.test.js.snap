@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - NextStep render NextStep component 1`] = `
+.c1 {
+  background: #00a09f;
+  color: #ffffff;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+.c0 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+<div
+  className="c0"
+>
+  <Link
+    className="c1"
+    to="/"
+  >
+    Next step
+  </Link>
+</div>
+`;

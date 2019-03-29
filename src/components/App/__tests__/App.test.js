@@ -1,22 +1,40 @@
-/* global getRoutesMap:readonly */
-
 import React from 'react';
-import { shallow } from 'enzyme';
-import { Route } from 'react-router-dom';
+import { create } from 'react-test-renderer';
+import { MemoryRouter } from 'react-router-dom';
 
+import { CART_PATH, CHECKOUT_PATH } from '../../../constants/routes';
 import App from '../App';
-import Cart from '../../Cart';
-import Checkout from '../../Checkout';
 
-const shallowRender = () => shallow(<App />);
+jest.mock('../../Item', () => 'Item');
 
 describe('COMPONENT - App', () => {
-  it('renders self and correct routes', () => {
-    const wrapper = shallowRender('/cart');
-    const routesMap = getRoutesMap(wrapper);
+  it('renders correctly default route', () => {
+    const component = create(
+      <MemoryRouter initialEntries={['/']} initialIndex={1}>
+        <App />
+      </MemoryRouter>
+    );
 
-    expect(wrapper.find(Route).length).toBe(2);
-    expect(routesMap['/cart']).toBe(Cart);
-    expect(routesMap['/checkout/:checkoutStep']).toBe(Checkout);
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it('renders correctly "/cart" route', () => {
+    const component = create(
+      <MemoryRouter initialEntries={[CART_PATH]} initialIndex={1}>
+        <App />
+      </MemoryRouter>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it('renders correctly "/checkout" route', () => {
+    const component = create(
+      <MemoryRouter initialEntries={[CHECKOUT_PATH]} initialIndex={1}>
+        <App />
+      </MemoryRouter>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });
