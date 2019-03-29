@@ -10,7 +10,8 @@ script:
   - npm run lint
   - npm run format:check
   - codecov
-  - npm run lh -- --pwa=45 --perf=90 --a11y=75 --bp=86 --seo=85 http://d2avoqs20x6i3n.cloudfront.net
+  - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
+  - $[ "TRAVIS_BRANCH" == "feature/lighthouse-ci" ] && npm run lh -- --pwa=45 --perf=90 --a11y=75 --bp=86 --seo=85 http://d2c95elbei0a82.cloudfront.net/
 deploy:
   provider: script
   script: ./deploy.sh
