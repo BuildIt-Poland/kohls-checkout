@@ -15,10 +15,10 @@ script:
   - codecov
   - if [ "$TRAVIS_PULL_REQUEST" != "false" ] && [ "$TRAVIS_BRANCH" == "release" ]; then npm run lh; fi
 deploy:
-  - provider: script
-    script: ./deploy.sh
-    skip_cleanup: true
-    on:
-      branch: master
+  provider: script
+  script: ./deploy.sh
+  skip_cleanup: true
+  on:
+    branch: master
 notifications:
   slack: wiprodigital:f0IX6BV1OmlTrsGdZHf9fz3a
