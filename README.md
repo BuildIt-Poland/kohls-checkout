@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/BuildIt-Poland/store-checkout.svg?branch=master)](https://travis-ci.org/BuildIt-Poland/store-checkout)
 [![codecov](https://codecov.io/gh/BuildIt-Poland/store-checkout/branch/master/graph/badge.svg)](https://codecov.io/gh/BuildIt-Poland/store-checkout)
 
-Check the [live version of the app](http://d2c95elbei0a82.cloudfront.net/cart)!
+Check the [live version of the app](https://store.buildit.digital/)!
 
 ## Project goals
 Build base for **scalable front-end architecture** -- easy to work with for developers and QA, fully transparent for stakeholders. **Automate** as many processes as possible and make their results easily available.
