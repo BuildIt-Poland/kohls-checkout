@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Wrapper render Wrapper component 1`] = `
+.c0 {
+  display: grid;
+  grid-template-columns: 30% auto;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 3rem 1.3rem;
+}
+
+<div
+  className="c0"
+/>
+`;

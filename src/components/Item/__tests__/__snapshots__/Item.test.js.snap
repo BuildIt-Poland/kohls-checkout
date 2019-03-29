@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Cart render Cart component 1`] = `
+exports[`COMPONENT - Item render Item component 1`] = `
 .c1 {
   width: 100%;
   grid-column-start: 1;
@@ -84,69 +84,64 @@ exports[`COMPONENT - Cart render Cart component 1`] = `
   margin: 3rem 1.3rem;
 }
 
-<section>
-  <h2>
-    Cart placeholder
-  </h2>
-  <div
-    className="c0"
+<div
+  className="c0"
+>
+  <img
+    className="c1"
+    src="https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg"
+  />
+  <h3
+    className="c2"
   >
-    <img
-      className="c1"
-      src="https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg"
-    />
-    <h3
-      className="c2"
+    Men's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket
+  </h3>
+  <label
+    className="c3"
+  >
+    Size: 42 SHORT
+  </label>
+  <label
+    className="c3"
+  >
+    Color: Charcoal
+  </label>
+  <div
+    className="c4"
+  >
+    <p
+      className="c5"
     >
-      Men's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket
-    </h3>
-    <label
-      className="c3"
+      Sale $125.00
+    </p>
+    <p
+      className="c6"
     >
-      Size: 42 SHORT
-    </label>
-    <label
-      className="c3"
+      Regular $240.00
+    </p>
+    <p
+      className="c7"
     >
-      Color: Charcoal
-    </label>
-    <div
-      className="c4"
-    >
-      <p
-        className="c5"
-      >
-        Sale $125.00
-      </p>
-      <p
-        className="c6"
-      >
-        Regular $240.00
-      </p>
-      <p
-        className="c7"
-      >
-        Total $115.00
-      </p>
-    </div>
-    <div
-      className="c8"
-    >
-      <button
-        className="c9"
-        disabled={true}
-      >
-        -
-      </button>
-      <input
-        className="c10"
-      />
-      <button
-        className="c9"
-      >
-        +
-      </button>
-    </div>
+      Total $115.00
+    </p>
   </div>
-</section>
+  <div
+    className="c8"
+  >
+    <button
+      className="c9"
+      disabled={true}
+    >
+      -
+    </button>
+    <input
+      className="c10"
+    />
+    <button
+      className="c9"
+    >
+      +
+    </button>
+  </div>
+</div>
 `;
