@@ -123,6 +123,7 @@ Array [
   padding: 1.2rem;
   position: fixed;
   width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .c0 {
@@ -275,6 +276,7 @@ Array [
   padding: 1.2rem;
   position: fixed;
   width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .c0 {
@@ -427,6 +429,7 @@ Array [
   padding: 1.2rem;
   position: fixed;
   width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .c0 {
