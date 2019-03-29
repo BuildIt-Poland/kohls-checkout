@@ -4,7 +4,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
 .c2 {
   background: #222222;
   border-right: 0;
-  border: 1px solid;
+  border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -106,7 +106,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
 .c3 {
   background: #222222;
   border-right: 0;
-  border: 1px solid;
+  border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -208,7 +208,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
 .c3 {
   background: #222222;
   border-right: 0;
-  border: 1px solid;
+  border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;

@@ -39,6 +39,7 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
     <h2>
       Cart placeholder
     </h2>
+    <Item />
   </section>
   <div
     className="c1"
