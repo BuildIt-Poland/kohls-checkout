@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   padding: 1.2rem;
   position: fixed;
   width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 `;
 
 export default Wrapper;
