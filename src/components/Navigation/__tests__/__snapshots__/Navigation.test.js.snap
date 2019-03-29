@@ -13,7 +13,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
 
 .c2 {
   background: #000000;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
@@ -36,7 +36,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
 
 .c3 {
   background: #ffffff;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #000000;
   display: -webkit-box;
@@ -115,7 +115,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
 
 .c3 {
   background: #000000;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
@@ -138,7 +138,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
 
 .c2 {
   background: #ffffff;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #000000;
   display: -webkit-box;
@@ -217,7 +217,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
 
 .c3 {
   background: #000000;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
@@ -240,7 +240,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
 
 .c2 {
   background: #ffffff;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #000000;
   display: -webkit-box;

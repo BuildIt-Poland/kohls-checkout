@@ -14,7 +14,7 @@ Array [
 
 .c2 {
   background: #000000;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
@@ -37,7 +37,7 @@ Array [
 
 .c3 {
   background: #ffffff;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #000000;
   display: -webkit-box;
@@ -105,8 +105,8 @@ Array [
     </a>
   </nav>,
   .c1 {
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   padding: 1.2rem;
   position: fixed;
   width: 100%;
@@ -166,7 +166,7 @@ Array [
 
 .c3 {
   background: #000000;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
@@ -189,7 +189,7 @@ Array [
 
 .c2 {
   background: #ffffff;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #000000;
   display: -webkit-box;
@@ -257,8 +257,8 @@ Array [
     </a>
   </nav>,
   .c1 {
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   padding: 1.2rem;
   position: fixed;
   width: 100%;
@@ -318,7 +318,7 @@ Array [
 
 .c3 {
   background: #000000;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
@@ -341,7 +341,7 @@ Array [
 
 .c2 {
   background: #ffffff;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #000000;
   display: -webkit-box;
@@ -409,8 +409,8 @@ Array [
     </a>
   </nav>,
   .c1 {
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   padding: 1.2rem;
   position: fixed;
   width: 100%;

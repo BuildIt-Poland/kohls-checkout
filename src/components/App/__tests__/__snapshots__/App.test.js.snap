@@ -1,15 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
-.c0 {
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: sans-serif;
-}
-
 .c1 {
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   padding: 1.2rem;
   position: fixed;
   width: 100%;
@@ -26,6 +20,12 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 100%;
+}
+
+.c0 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: sans-serif;
 }
 
 <section>
@@ -54,12 +54,6 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
 `;
 
 exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
-.c0 {
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: sans-serif;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -72,7 +66,7 @@ exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
 
 .c3 {
   background: #ffffff;
-  border-right: 0px;
+  border-right: 0;
   border: 1px solid #454545;
   color: #000000;
   display: -webkit-box;
@@ -104,6 +98,12 @@ exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
 
 .c4 {
   margin-top: 100px;
+}
+
+.c0 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: sans-serif;
 }
 
 <section>
