@@ -10,7 +10,7 @@ script:
   - npm run lint
   - npm run format:check
   - codecov
-  - if [ "$TRAVIS_BRANCH" == "feature/lighthouse-ci" ]; then npm run lh; fi
+  - if [ "$TRAVIS_BRANCH" == "feature/lighthouse-ci" ]; then bash npm run lh; fi
 deploy:
   provider: script
   script: ./deploy.sh
