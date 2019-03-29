@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - ItemAttribute render ItemAttribute component 1`] = `
+exports[`COMPONENT - Attribute renders Attribute component 1`] = `
 .c0 {
   font-size: 1.2rem;
 }

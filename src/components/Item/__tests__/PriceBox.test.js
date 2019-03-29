@@ -1,11 +1,11 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 import PriceBox from '../PriceBox';
 
 describe('COMPONENT - PriceBox', () => {
-  it('render PriceBox component', () => {
-    const component = renderer.create(<PriceBox />);
+  it('renders PriceBox component', () => {
+    const component = create(<PriceBox />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

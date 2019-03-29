@@ -1,11 +1,11 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 import Price from '../Price';
 
 describe('COMPONENT - Price', () => {
-  it('render Price component', () => {
-    const component = renderer.create(<Price />);
+  it('renders Price component', () => {
+    const component = create(<Price />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

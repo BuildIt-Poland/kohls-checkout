@@ -1,11 +1,11 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 import Image from '../Image';
 
 describe('COMPONENT - Image', () => {
-  it('render Image component', () => {
-    const component = renderer.create(<Image />);
+  it('renders Image component', () => {
+    const component = create(<Image />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

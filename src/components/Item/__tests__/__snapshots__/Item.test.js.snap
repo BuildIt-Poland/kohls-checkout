@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Item render Item component 1`] = `
+exports[`COMPONENT - Item renders Item component 1`] = `
 .c1 {
   width: 100%;
   grid-column-start: 1;
@@ -10,15 +10,15 @@ exports[`COMPONENT - Item render Item component 1`] = `
 }
 
 .c6 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #222222;
   margin: 0.2rem 0;
 }
 
 .c2 {
-  font-size: 1.6rem;
-  font-weight: normal;
-  margin: 0.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1rem 0;
 }
 
 .c3 {
@@ -26,8 +26,8 @@ exports[`COMPONENT - Item render Item component 1`] = `
 }
 
 .c9 {
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: 2.4rem;
+  font-weight: 700;
   background: none;
   box-shadow: none;
   border: 0;
@@ -35,8 +35,8 @@ exports[`COMPONENT - Item render Item component 1`] = `
 
 .c10 {
   width: 6rem;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 700;
   text-align: center;
   box-shadow: none;
   border: 0;
@@ -50,28 +50,28 @@ exports[`COMPONENT - Item render Item component 1`] = `
   border-radius: 0.25rem;
   grid-template-columns: 3rem auto 3rem;
   width: 40%;
-  border: 0.2rem solid #b0b0b0;
+  border: 2px solid #b0b0b0;
   height: 4.4rem;
 }
 
 .c7 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #222222;
   margin: 0.2rem 0;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .c5 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #222222;
   margin: 0.2rem 0;
   text-transform: uppercase;
   color: #e0151d;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .c4 {
-  margin: 1.3rem 0;
+  margin: 1rem 0;
 }
 
 .c0 {

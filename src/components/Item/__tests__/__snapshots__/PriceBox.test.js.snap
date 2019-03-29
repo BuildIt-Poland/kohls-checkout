@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - PriceBox render PriceBox component 1`] = `
+exports[`COMPONENT - PriceBox renders PriceBox component 1`] = `
 .c0 {
-  margin: 1.3rem 0;
+  margin: 1rem 0;
 }
 
 <div

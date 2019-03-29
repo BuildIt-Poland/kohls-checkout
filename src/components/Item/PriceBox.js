@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
+import { spacingSmall } from '../../styles/designTokens';
+
 const PriceBox = styled.div`
-  margin: 1.3rem 0;
+  margin: ${spacingSmall} 0;
 `;
 
 export default PriceBox;

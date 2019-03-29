@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
+import { fontWeightBold, fontLarge } from '../../styles/designTokens';
+
 const QuantityButton = styled.button`
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: ${fontLarge};
+  font-weight: ${fontWeightBold};
   background: none;
   box-shadow: none;
   border: 0;

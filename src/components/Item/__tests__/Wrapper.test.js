@@ -1,11 +1,11 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 import Wrapper from '../Wrapper';
 
 describe('COMPONENT - Wrapper', () => {
-  it('render Wrapper component', () => {
-    const component = renderer.create(<Wrapper />);
+  it('renders Wrapper component', () => {
+    const component = create(<Wrapper />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

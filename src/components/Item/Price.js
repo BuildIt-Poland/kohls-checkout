@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import { colorBlack } from '../../styles/designTokens';
+import { colorBlack, fontMedium } from '../../styles/designTokens';
 
 const Price = styled.p`
-  font-size: 1.5rem;
+  font-size: ${fontMedium};
   color: ${colorBlack};
   margin: 0.2rem 0;
 `;

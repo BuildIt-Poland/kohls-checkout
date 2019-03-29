@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - QuantityButton render QuantityButton component 1`] = `
+exports[`COMPONENT - QuantityButton renders QuantityButton component 1`] = `
 .c0 {
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: 2.4rem;
+  font-weight: 700;
   background: none;
   box-shadow: none;
   border: 0;

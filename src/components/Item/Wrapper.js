@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
+import { spacingLarge } from '../../styles/designTokens';
+
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 30% auto;
   align-items: center;
-  margin: 3rem 1.3rem;
+  margin: ${spacingLarge} 1.3rem;
 `;
 
 export default Wrapper;
