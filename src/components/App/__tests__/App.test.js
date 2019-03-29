@@ -2,10 +2,11 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
 
+import { CART_PATH, CHECKOUT_PATH } from '../../../constants/routes';
 import App from '../App';
 
 describe('COMPONENT - App', () => {
-  it('should render correctly main route', () => {
+  it('renders correctly default route', () => {
     const component = renderer.create(
       <MemoryRouter initialEntries={['/']} initialIndex={1}>
         <App />
@@ -15,9 +16,9 @@ describe('COMPONENT - App', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  it('should render correctly cart route', () => {
+  it('renders correctly "/cart" route', () => {
     const component = renderer.create(
-      <MemoryRouter initialEntries={['/cart']} initialIndex={1}>
+      <MemoryRouter initialEntries={[CART_PATH]} initialIndex={1}>
         <App />
       </MemoryRouter>
     );
@@ -25,9 +26,9 @@ describe('COMPONENT - App', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  it('should render correctly checkout route', () => {
+  it('renders correctly "/checkout" route', () => {
     const component = renderer.create(
-      <MemoryRouter initialEntries={['/checkout']} initialIndex={1}>
+      <MemoryRouter initialEntries={[CHECKOUT_PATH]} initialIndex={1}>
         <App />
       </MemoryRouter>
     );
