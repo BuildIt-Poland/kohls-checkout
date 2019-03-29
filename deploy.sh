@@ -4,6 +4,8 @@
 # --upgrade option tells to upgrade any requirements that are already installed. 
 # --user option tells to install the program to a subdirectory of your user directory to avoid modifying 
 # libraries used by your operating system.
+npm install
+npm run build
 ls -d -- */
 pip install awscli --upgrade --user
 
