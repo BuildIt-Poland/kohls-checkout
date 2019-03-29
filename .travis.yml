@@ -18,14 +18,3 @@ deploy:
     branch: master
 notifications:
   slack: wiprodigital:f0IX6BV1OmlTrsGdZHf9fz3a
-
-
-
-  -- feature 1 branch
-  -- feature 2 branch
-
-  -- master
-
-  $PR
-
-  -- release branch
