@@ -17,7 +17,8 @@
     "format": "prettier --write \"src/**/*.js\"",
     "format:check": "prettier --list-different \"src/**/*.js\"",
     "precommit": "lint-staged",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test1": "node e2eConfig.js"
   },
   "eslintConfig": {
     "extends": [
