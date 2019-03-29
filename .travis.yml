@@ -19,6 +19,6 @@ deploy:
   provider: script
   script: ./deploy.sh
   on:
-    branch: master
+    branch: feature-aws-deploy
 notifications:
   slack: wiprodigital:f0IX6BV1OmlTrsGdZHf9fz3a
