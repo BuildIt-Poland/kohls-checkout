@@ -1,14 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 
 import Cart from '../Cart';
 
-const shallowRender = () => shallow(<Cart />);
-
 describe('COMPONENT - Cart', () => {
   it('render Cart component', () => {
-    const wrapper = shallowRender();
+    const component = renderer.create(<Cart />);
 
-    expect(wrapper).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

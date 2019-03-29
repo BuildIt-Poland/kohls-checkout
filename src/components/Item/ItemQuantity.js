@@ -21,7 +21,7 @@ function ItemQuantity() {
   return (
     <Wrapper>
       <QuantityButton disabled>-</QuantityButton>
-      <QuantityInput value="1" />
+      <QuantityInput />
       <QuantityButton>+</QuantityButton>
     </Wrapper>
   );

@@ -1,24 +1,37 @@
-/* global getRoutesMap:readonly */
-
 import React from 'react';
-import { shallow } from 'enzyme';
-import { Route } from 'react-router-dom';
+import renderer from 'react-test-renderer';
+import { MemoryRouter } from 'react-router-dom';
 
 import Checkout from '../Checkout';
-import CheckoutDelivery from '../../CheckoutDelivery';
-import CheckoutPayment from '../../CheckoutPayment';
-import CheckoutReview from '../../CheckoutReview';
-
-const shallowRender = () => shallow(<Checkout />);
 
 describe('COMPONENT - Checkout', () => {
-  it('renders self and correct routes', () => {
-    const wrapper = shallowRender();
-    const routesMap = getRoutesMap(wrapper);
+  it('should render correctly delivery route', () => {
+    const component = renderer.create(
+      <MemoryRouter initialEntries={['/checkout/delivery']} initialIndex={1}>
+        <Checkout />
+      </MemoryRouter>
+    );
 
-    expect(wrapper.find(Route).length).toBe(3);
-    expect(routesMap['/checkout/delivery']).toBe(CheckoutDelivery);
-    expect(routesMap['/checkout/payment']).toBe(CheckoutPayment);
-    expect(routesMap['/checkout/review']).toBe(CheckoutReview);
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render correctly payment route', () => {
+    const component = renderer.create(
+      <MemoryRouter initialEntries={['/checkout/payment']} initialIndex={1}>
+        <Checkout />
+      </MemoryRouter>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render correctly review route', () => {
+    const component = renderer.create(
+      <MemoryRouter initialEntries={['/checkout/review']} initialIndex={1}>
+        <Checkout />
+      </MemoryRouter>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });
