@@ -10,7 +10,7 @@ script:
   - npm run lint
   - npm run format:check
   - codecov
-  - '[[ $TRAVIS_BRANCH == "feature/lighthouse-ci" ]] && npm run lh'
+  - if [ "$TRAVIS_BRANCH" == "feature/lighthouse-ci" ]; then npm run lh; fi
 deploy:
   provider: script
   script: ./deploy.sh
@@ -18,3 +18,14 @@ deploy:
     branch: master
 notifications:
   slack: wiprodigital:f0IX6BV1OmlTrsGdZHf9fz3a
+
+
+
+  -- feature 1 branch
+  -- feature 2 branch
+
+  -- master
+
+  $PR
+
+  -- release branch
