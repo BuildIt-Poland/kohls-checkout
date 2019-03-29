@@ -10,8 +10,7 @@ script:
   - npm run lint
   - npm run format:check
   - codecov
-  - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
-  - '[ "${TRAVIS_BRANCH}" = "feature/lighthouse-ci" ] && npm run lh || echo 'no'
+  - '[[ $TRAVIS_BRANCH == "feature/lighthouse-ci" ]] && npm run lh'
 deploy:
   provider: script
   script: ./deploy.sh
