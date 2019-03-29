@@ -11,7 +11,7 @@ script:
   - npm run format:check
   - codecov
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
-  - [ $TRAVIS_BRANCH == "feature/lighthouse-ci" ] && npm run lh -- --pwa=45 --perf=90 --a11y=75 --bp=86 --seo=85 https://store.buildit.digital
+  - $TRAVIS_BRANCH == "feature/lighthouse-ci" && npm run lh
 deploy:
   provider: script
   script: ./deploy.sh
