@@ -7,42 +7,38 @@ jest.mock('react-router-dom', () => ({
   Link: 'Link'
 }));
 
-const render = props => create(<Navigation {...props} />);
-
 describe('COMPONENT - Navigation', () => {
   it('renders Navigation component with "Delivery" tab set as Active', () => {
-    const component = render({
-      match: {
-        params: {
-          checkoutStep: 'delivery'
-        }
+    const match = {
+      params: {
+        checkoutStep: 'delivery'
       }
-    });
+    };
+
+    const component = create(<Navigation match={match} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('renders Navigation component with "Payment" tab set as Active', () => {
-    const component = render({
-      match: {
-        params: {
-          checkoutStep: 'payment'
-        }
+    const match = {
+      params: {
+        checkoutStep: 'payment'
       }
-    });
+    };
 
+    const component = create(<Navigation match={match} />);
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('renders Navigation component with "Review" tab set as Active', () => {
-    const component = render({
-      match: {
-        params: {
-          checkoutStep: 'review'
-        }
+    const match = {
+      params: {
+        checkoutStep: 'review'
       }
-    });
+    };
 
+    const component = create(<Navigation match={match} />);
     expect(component.toJSON()).toMatchSnapshot();
   });
 });

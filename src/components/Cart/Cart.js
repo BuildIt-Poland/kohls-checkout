@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CHECKOUT_DELIVERY } from '../../constants/routes';
+import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
 import NextStep from '../NextStep';
 
 function Cart() {
@@ -9,7 +9,7 @@ function Cart() {
       <section>
         <h2>Cart placeholder</h2>
       </section>
-      <NextStep label="Checkout" to={CHECKOUT_DELIVERY} />
+      <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />
     </>
   );
 }

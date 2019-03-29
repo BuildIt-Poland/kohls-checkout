@@ -7,15 +7,7 @@ Array [
       CheckoutDelivery placeholder
     </h3>
   </section>,
-  .c0 {
-  bottom: 0;
-  left: 0;
-  padding: 1.2rem;
-  position: fixed;
-  width: 100%;
-}
-
-.c1 {
+  .c1 {
   background: #469E9E;
   color: #ffffff;
   display: block;
@@ -25,6 +17,14 @@ Array [
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  width: 100%;
+}
+
+.c0 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
   width: 100%;
 }
 

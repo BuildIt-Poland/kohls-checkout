@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CHECKOUT_PAYMENT } from '../../constants/routes';
+import { CHECKOUT_PAYMENT_PATH } from '../../constants/routes';
 import NextStep from '../NextStep';
 
 function CheckoutDelivery() {
@@ -9,7 +9,7 @@ function CheckoutDelivery() {
       <section>
         <h3>CheckoutDelivery placeholder</h3>
       </section>
-      <NextStep label="Continue to Payment" to={CHECKOUT_PAYMENT} />
+      <NextStep label="Continue to Payment" to={CHECKOUT_PAYMENT_PATH} />
     </>
   );
 }

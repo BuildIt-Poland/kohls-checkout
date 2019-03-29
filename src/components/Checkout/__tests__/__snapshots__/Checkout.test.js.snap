@@ -2,17 +2,7 @@
 
 exports[`COMPONENT - Checkout renders correctly for "/delivery" route 1`] = `
 Array [
-  .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c2 {
+  .c2 {
   background: #000000;
   border-right: 0;
   border: 1px solid #454545;
@@ -56,6 +46,16 @@ Array [
 
 .c3:last-child {
   border-right: 1px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -104,15 +104,7 @@ Array [
       </span>
     </a>
   </nav>,
-  .c1 {
-  bottom: 0;
-  left: 0;
-  padding: 1.2rem;
-  position: fixed;
-  width: 100%;
-}
-
-.c2 {
+  .c2 {
   background: #469E9E;
   color: #ffffff;
   display: block;
@@ -122,6 +114,14 @@ Array [
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  width: 100%;
+}
+
+.c1 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
   width: 100%;
 }
 
@@ -154,17 +154,7 @@ Array [
 
 exports[`COMPONENT - Checkout renders correctly for "/payment" route 1`] = `
 Array [
-  .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3 {
+  .c3 {
   background: #000000;
   border-right: 0;
   border: 1px solid #454545;
@@ -208,6 +198,16 @@ Array [
 
 .c2:last-child {
   border-right: 1px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -256,15 +256,7 @@ Array [
       </span>
     </a>
   </nav>,
-  .c1 {
-  bottom: 0;
-  left: 0;
-  padding: 1.2rem;
-  position: fixed;
-  width: 100%;
-}
-
-.c2 {
+  .c2 {
   background: #469E9E;
   color: #ffffff;
   display: block;
@@ -274,6 +266,14 @@ Array [
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  width: 100%;
+}
+
+.c1 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
   width: 100%;
 }
 
@@ -306,17 +306,7 @@ Array [
 
 exports[`COMPONENT - Checkout renders correctly for "/review" route 1`] = `
 Array [
-  .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3 {
+  .c3 {
   background: #000000;
   border-right: 0;
   border: 1px solid #454545;
@@ -360,6 +350,16 @@ Array [
 
 .c2:last-child {
   border-right: 1px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -408,15 +408,7 @@ Array [
       </span>
     </a>
   </nav>,
-  .c1 {
-  bottom: 0;
-  left: 0;
-  padding: 1.2rem;
-  position: fixed;
-  width: 100%;
-}
-
-.c2 {
+  .c2 {
   background: #469E9E;
   color: #ffffff;
   display: block;
@@ -426,6 +418,14 @@ Array [
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  width: 100%;
+}
+
+.c1 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
   width: 100%;
 }
 

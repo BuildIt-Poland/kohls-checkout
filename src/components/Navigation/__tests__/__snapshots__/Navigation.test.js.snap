@@ -1,16 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab set as Active 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .c2 {
   background: #000000;
   border-right: 0;
@@ -55,6 +45,16 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
 
 .c3:last-child {
   border-right: 1px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -103,16 +103,6 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
 `;
 
 exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab set as Active 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .c3 {
   background: #000000;
   border-right: 0;
@@ -157,6 +147,16 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
 
 .c2:last-child {
   border-right: 1px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -205,16 +205,6 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
 `;
 
 exports[`COMPONENT - Navigation renders Navigation component with "Review" tab set as Active 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .c3 {
   background: #000000;
   border-right: 0;
@@ -259,6 +249,16 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
 
 .c2:last-child {
   border-right: 1px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {

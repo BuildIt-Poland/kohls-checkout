@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - NextStep render NextStep component 1`] = `
-.c0 {
-  bottom: 0;
-  left: 0;
-  padding: 1.2rem;
-  position: fixed;
-  width: 100%;
-}
-
 .c1 {
   background: #469E9E;
   color: #ffffff;
@@ -19,6 +11,14 @@ exports[`COMPONENT - NextStep render NextStep component 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  width: 100%;
+}
+
+.c0 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
   width: 100%;
 }
 
