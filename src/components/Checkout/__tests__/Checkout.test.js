@@ -1,13 +1,14 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
 
+import { CHECKOUT_REVIEW_PATH, CHECKOUT_PAYMENT_PATH, CHECKOUT_DELIVERY_PATH } from '../../../constants/routes';
 import Checkout from '../Checkout';
 
 describe('COMPONENT - Checkout', () => {
-  it('should render correctly delivery route', () => {
-    const component = renderer.create(
-      <MemoryRouter initialEntries={['/checkout/delivery']} initialIndex={1}>
+  it('renders correctly for "/delivery" route', () => {
+    const component = create(
+      <MemoryRouter initialEntries={[CHECKOUT_DELIVERY_PATH]} initialIndex={1}>
         <Checkout />
       </MemoryRouter>
     );
@@ -15,23 +16,23 @@ describe('COMPONENT - Checkout', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  it('should render correctly payment route', () => {
-    const component = renderer.create(
-      <MemoryRouter initialEntries={['/checkout/payment']} initialIndex={1}>
+  it('renders correctly for "/payment" route', () => {
+    const component = create(
+      <MemoryRouter initialEntries={[CHECKOUT_PAYMENT_PATH]} initialIndex={1}>
         <Checkout />
       </MemoryRouter>
     );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
-  it('should render correctly review route', () => {
-    const component = renderer.create(
-      <MemoryRouter initialEntries={['/checkout/review']} initialIndex={1}>
+  it('renders correctly for "/review" route', () => {
+    const component = create(
+      <MemoryRouter initialEntries={[CHECKOUT_REVIEW_PATH]} initialIndex={1}>
         <Checkout />
       </MemoryRouter>
     );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 });

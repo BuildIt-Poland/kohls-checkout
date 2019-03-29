@@ -3,7 +3,7 @@
 exports[`COMPONENT - Price render Price component 1`] = `
 .c0 {
   font-size: 1.5rem;
-  color: #000000;
+  color: #222222;
   margin: 0.2rem 0;
 }
 

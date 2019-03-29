@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Cart render Cart component 1`] = `
-.c1 {
+exports[`COMPONENT - Cart renders Cart component 1`] = `
+Array [
+  .c1 {
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -11,7 +12,7 @@ exports[`COMPONENT - Cart render Cart component 1`] = `
 
 .c6 {
   font-size: 1.5rem;
-  color: #000000;
+  color: #222222;
   margin: 0.2rem 0;
 }
 
@@ -56,14 +57,14 @@ exports[`COMPONENT - Cart render Cart component 1`] = `
 
 .c7 {
   font-size: 1.5rem;
-  color: #000000;
+  color: #222222;
   margin: 0.2rem 0;
   font-weight: bold;
 }
 
 .c5 {
   font-size: 1.5rem;
-  color: #000000;
+  color: #222222;
   margin: 0.2rem 0;
   text-transform: uppercase;
   color: #e0151d;
@@ -85,68 +86,101 @@ exports[`COMPONENT - Cart render Cart component 1`] = `
 }
 
 <section>
-  <h2>
-    Cart placeholder
-  </h2>
-  <div
+    <h2>
+      Cart placeholder
+    </h2>
+    <div
+      className="c0"
+    >
+      <img
+        className="c1"
+        src="https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg"
+      />
+      <h3
+        className="c2"
+      >
+        Men's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket
+      </h3>
+      <label
+        className="c3"
+      >
+        Size: 42 SHORT
+      </label>
+      <label
+        className="c3"
+      >
+        Color: Charcoal
+      </label>
+      <div
+        className="c4"
+      >
+        <p
+          className="c5"
+        >
+          Sale $125.00
+        </p>
+        <p
+          className="c6"
+        >
+          Regular $240.00
+        </p>
+        <p
+          className="c7"
+        >
+          Total $115.00
+        </p>
+      </div>
+      <div
+        className="c8"
+      >
+        <button
+          className="c9"
+          disabled={true}
+        >
+          -
+        </button>
+        <input
+          className="c10"
+        />
+        <button
+          className="c9"
+        >
+          +
+        </button>
+      </div>
+    </div>
+  </section>,
+  .c1 {
+  background: #00a09f;
+  color: #ffffff;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+.c0 {
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+<div
     className="c0"
   >
-    <img
+    <Link
       className="c1"
-      src="https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg"
-    />
-    <h3
-      className="c2"
+      to="/checkout/delivery"
     >
-      Men's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket
-    </h3>
-    <label
-      className="c3"
-    >
-      Size: 42 SHORT
-    </label>
-    <label
-      className="c3"
-    >
-      Color: Charcoal
-    </label>
-    <div
-      className="c4"
-    >
-      <p
-        className="c5"
-      >
-        Sale $125.00
-      </p>
-      <p
-        className="c6"
-      >
-        Regular $240.00
-      </p>
-      <p
-        className="c7"
-      >
-        Total $115.00
-      </p>
-    </div>
-    <div
-      className="c8"
-    >
-      <button
-        className="c9"
-        disabled={true}
-      >
-        -
-      </button>
-      <input
-        className="c10"
-      />
-      <button
-        className="c9"
-      >
-        +
-      </button>
-    </div>
-  </div>
-</section>
+      Checkout
+    </Link>
+  </div>,
+]
 `;
