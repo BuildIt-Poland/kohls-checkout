@@ -53,7 +53,7 @@ A few easy steps to set up a project:
 
 Most useful scripts for development:
 
-* `npm start` - starts whole project in developement mode
+* `npm start` - starts whole project in development mode
 * `npm test` - fires up Jest test runner
 
 Other scripts which may be helpful:
@@ -70,7 +70,7 @@ Put short summary of your contribution in PR's description field and in case of 
 # Coding style
 Please follow a few simple rules (prettier and linter takes care of the rest):
 * use regular **function()** instead of **arrow functions** at top level (applies for functional components as well)
-* use **arrow funcions** for anonymous functions
+* use **arrow functions** for anonymous functions
 * follow TODO comments with @ symbol and your GitHub handle, for instance: `//TODO Implement something important @myhandle`
 * separate external and internal imports with new line
 * keep your imports order correct -- the higher file is in directory structure, the higher on the list should be:
