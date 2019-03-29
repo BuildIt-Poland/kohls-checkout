@@ -4,6 +4,7 @@
 # --upgrade option tells to upgrade any requirements that are already installed. 
 # --user option tells to install the program to a subdirectory of your user directory to avoid modifying 
 # libraries used by your operating system.
+ls -d -- */
 pip install awscli --upgrade --user
 
 # Sync our build folder with our S3 bucket
