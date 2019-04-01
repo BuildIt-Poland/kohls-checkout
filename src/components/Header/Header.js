@@ -1,5 +1,6 @@
 import React from 'react';
 
+import CartIcon from '../CartIcon';
 import Layout from './Layout';
 import Content from './Content';
 import Logo from './Logo';
@@ -9,6 +10,7 @@ function Header() {
     <Layout>
       <Content>
         <Logo />
+        <CartIcon />
       </Content>
     </Layout>
   );

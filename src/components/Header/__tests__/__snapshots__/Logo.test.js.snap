@@ -9,6 +9,7 @@ exports[`COMPONENT - Header Logo renders correctly 1`] = `
 
 <a
   className="c0"
+  data-testid="logo"
   href="/"
   onClick={[Function]}
 >

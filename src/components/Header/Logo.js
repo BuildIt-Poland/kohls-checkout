@@ -12,7 +12,7 @@ const Link = styled(LinkBase)`
 
 function Logo() {
   return (
-    <Link to="/">
+    <Link data-testid="logo" to="/">
       <LogoIcon />
     </Link>
   );
