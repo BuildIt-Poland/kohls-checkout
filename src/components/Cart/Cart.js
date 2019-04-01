@@ -1,15 +1,14 @@
 import React from 'react';
-import Item from '../Item';
 
 import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
 import NextStep from '../NextStep';
+import ShoppingCart from '../ShoppingCart';
 
 function Cart() {
   return (
     <>
       <section>
-        <h2>Cart placeholder</h2>
-        <Item />
+        <ShoppingCart />
       </section>
       <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />
     </>

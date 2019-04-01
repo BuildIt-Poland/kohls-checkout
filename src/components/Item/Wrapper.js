@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 30% auto 25%;
   align-items: center;
-  margin: ${spacingLarge} 1.3rem;
+  margin: ${spacingLarge} 0;
 `;
 
 export default Wrapper;
