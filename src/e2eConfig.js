@@ -6,7 +6,13 @@ const { open, run } = require('cypress');
 const server = () =>
   createServer((request, response) =>
     handler(request, response, {
-      public: 'build'
+      public: 'build',
+      rewrites: [
+        {
+          source: '**',
+          destination: '/index.html'
+        }
+      ]
     })
   );
 
