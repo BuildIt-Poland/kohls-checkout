@@ -56,27 +56,27 @@ A few easy steps to set up a project:
 
 Most useful scripts for development:
 
-* `npm start` - starts whole project in development mode
+* `npm start` - starts the project in a development mode
 * `npm test` - fires up Jest test runner
 
 Other scripts which may be helpful:
-* `npm run start:build` -  starts production version app locally
+* `npm run start:build` -  starts a production version of app locally
 * `npm run test:update` -  updates all snapshots from scratch
 * `npm run format` - formats whole codebase with prettier
 
 ## Conventions
 
 # Issuing PR
-Please make sure that your **branch** and **PR's title** names are correct. For example: `feature/krc-10-cart-icon-component` -- start with type of PR (*feature/fix/chore*) followed by slash, followed by Jira issue ID and very short description at the end.
-Put short summary of your contribution in PR's description field and in case of *components* attach a screenshot*.
+Please make sure that your **branch** and **PR's title** names are correct. For example: `feature/krc-10-cart-icon-component` -- start with type of PR (*feature/fix/chore*) followed by a slash, followed by Jira issue ID and a very short description at the end.
+Put short summary of your contribution in PR's description field and in case of *components* attach a screenshot.
 
 # Coding style
 Please follow a few simple rules (prettier and linter takes care of the rest):
-* use regular **function()** instead of **arrow functions** at top level (applies for functional components as well)
+* use regular **function()** instead of **arrow functions** at the top level (applies for functional components as well)
 * use **arrow functions** for anonymous functions
 * follow TODO comments with @ symbol and your GitHub handle, for instance: `//TODO Implement something important @myhandle`
 * separate external and internal imports with new line
-* keep your imports order correct -- the higher file is in directory structure, the higher on the list should be:
+* keep your imports order correct -- the higher a file is in directory structure, the higher on the list it should be:
 ```
 import React from 'react';
 import PropTypes from 'prop-types';
