@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - ShoppingCart renders ShoppingCart component 1`] = `
+.c0 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+<div
+  className="c0"
+>
+  <ItemsList>
+    <Item />
+    <Item
+      editableQuantity={true}
+    />
+  </ItemsList>
+</div>
+`;

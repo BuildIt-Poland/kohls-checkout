@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - RemoveButton renders RemoveButton component 1`] = `
+.c0 {
+  border: 0;
+  background: none;
+  color: #222222;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  grid-column-start: 2;
+  text-align: left;
+  padding: 0;
+}
+
+<button
+  className="c0"
+/>
+`;
