@@ -8,6 +8,7 @@ import TextHighlight from '../TextHighlight';
 import PriceBadge from './PriceBadge';
 import PriceRow from './PriceRow';
 import TotalPrice from './TotalPrice';
+import Divider from '../Divider';
 
 const Wrapper = styled.div`
   padding-left: ${spacingMedium};
@@ -25,23 +26,23 @@ function OrderSummary() {
           </Text>
         </PriceRow>
         <PriceRow>
-          <TextHighlight isBold>
+          <TextHighlight bold>
             Kohl's Cash & Discounts<PriceBadge>-$18.75</PriceBadge>
           </TextHighlight>
         </PriceRow>
         <PriceRow>
-          <Text isUnderline>
+          <Text underline>
             Shipping<PriceBadge>Free</PriceBadge>
           </Text>
         </PriceRow>
         <TextHighlight>You have earned free shipping.</TextHighlight>
         <PriceRow>
-          <Text isUnderline>
+          <Text underline>
             Tax<PriceBadge>$6.38</PriceBadge>
           </Text>
         </PriceRow>
-        <hr />
-        <TotalPrice />
+        <Divider />
+        <TotalPrice price={122.7} />
         <PriceRow>
           <Text>
             Your Savings<PriceBadge>$122.70</PriceBadge>

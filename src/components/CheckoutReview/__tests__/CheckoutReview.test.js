@@ -3,6 +3,7 @@ import { create } from 'react-test-renderer';
 
 import CheckoutReview from '../CheckoutReview';
 
+jest.mock('../../OrderSummary', () => 'OrderSummary');
 jest.mock('react-router-dom', () => ({
   Link: 'Link'
 }));

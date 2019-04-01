@@ -3,8 +3,8 @@ import { fontSmall } from '../../styles/designTokens';
 
 const Text = styled.span`
   font-size: ${fontSmall};
-  text-decoration: ${({ isUnderline }) => (isUnderline ? 'underline' : 'none')};
-  font-weight: ${({ isBold }) => (isBold ? 'bold' : 'normal')};
+  text-decoration: ${({ underline }) => (underline ? 'underline' : 'none')};
+  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
 `;
 
 export default Text;

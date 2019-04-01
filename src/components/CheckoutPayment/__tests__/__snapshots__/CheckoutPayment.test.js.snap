@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - CheckoutReview render CheckoutReview component 1`] = `
+exports[`COMPONENT - CheckoutPayment renders CheckoutPayment component 1`] = `
 Array [
   <section>
     <OrderSummary />
@@ -32,9 +32,9 @@ Array [
   >
     <Link
       className="c1"
-      to="/cart"
+      to="/checkout/review"
     >
-      Place Order
+      Review Order
     </Link>
   </div>,
 ]

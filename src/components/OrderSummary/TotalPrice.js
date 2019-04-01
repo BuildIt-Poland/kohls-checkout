@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { fontSmall } from '../../styles/designTokens';
@@ -10,14 +11,18 @@ const PriceSummary = styled.span`
   font-weight: bold;
 `;
 
-function TotalPrice() {
+function TotalPrice({ price }) {
   return (
     <PriceRow>
       <PriceSummary>
-        TOTAL<PriceBadge>$112.63</PriceBadge>
+        TOTAL<PriceBadge>${price}</PriceBadge>
       </PriceSummary>
     </PriceRow>
   );
 }
+
+TotalPrice.propTypes = {
+  price: PropTypes.number.isRequired
+};
 
 export default TotalPrice;
