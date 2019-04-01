@@ -9,13 +9,13 @@ describe('Navigation.test.js', () => {
     cy.visit('/checkout/delivery');
   });
 
-  it('go through all steps by one button', () => {
+  it('goes through all steps by one button', () => {
     getBtnAndClick('.sc-gZMcBi', 'Continue to Payment');
     getBtnAndClick('.sc-gZMcBi', 'Review Order');
     getBtnAndClick('.sc-gZMcBi', 'Place Order');
   });
 
-  it('go through all navigation tabs', () => {
+  it('goes through all navigation tabs', () => {
     getBtnAndClick('.sc-VigVT', 'Delivery');
     getBtnAndClick('.sc-VigVT', 'Payment');
     getBtnAndClick('.sc-VigVT', 'Review');
