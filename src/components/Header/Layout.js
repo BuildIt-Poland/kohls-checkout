@@ -8,6 +8,7 @@ const Layout = styled.header`
   height: 6rem;
   background-color: ${colorWhite};
   border-bottom: ${borderWidthThin} solid ${colorLightGrey};
+  top: 0;
 `;
 
 export default Layout;
