@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - CartIcon Count renders correctly 1`] = `
+.c0 {
+  position: absolute;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-bottom: 0.7rem;
+}
+
+<div
+  className="c0"
+/>
+`;
