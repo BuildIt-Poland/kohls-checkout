@@ -1,3 +1,5 @@
+// Link to the cart with number of items located in header
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link as LinkBase } from 'react-router-dom';
