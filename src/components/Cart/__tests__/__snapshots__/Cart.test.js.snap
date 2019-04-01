@@ -85,10 +85,61 @@ Array [
   margin: 3rem 1.3rem;
 }
 
+.c14 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.c17 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.c11 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 10px;
+}
+
+.c16 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: #9cc472;
+}
+
+.c18 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  color: #9cc472;
+}
+
+.c15 {
+  float: right;
+}
+
+.c13 {
+  margin: 0;
+}
+
+.c19 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.c12 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 <section>
-    <h2>
-      Cart placeholder
-    </h2>
     <div
       className="c0"
     >
@@ -148,6 +199,106 @@ Array [
           +
         </button>
       </div>
+    </div>
+    <hr />
+    <h3
+      className="c11"
+    >
+      Order Summary
+    </h3>
+    <div
+      className="c12"
+    >
+      <p
+        className="c13"
+      >
+        <span
+          className="c14"
+        >
+          Subtotal
+          <span
+            className="c15"
+          >
+            $125.00
+          </span>
+        </span>
+      </p>
+      <p
+        className="c13"
+      >
+        <span
+          className="c16"
+        >
+          Kohl's Cash & Discounts
+          <span
+            className="c15"
+          >
+            -$18.75
+          </span>
+        </span>
+      </p>
+      <p
+        className="c13"
+      >
+        <span
+          className="c17"
+        >
+          Shipping
+          <span
+            className="c15"
+          >
+            Free
+          </span>
+        </span>
+      </p>
+      <span
+        className="c18"
+      >
+        You have earned free shipping.
+      </span>
+      <p
+        className="c13"
+      >
+        <span
+          className="c17"
+        >
+          Tax
+          <span
+            className="c15"
+          >
+            $6.38
+          </span>
+        </span>
+      </p>
+      <hr />
+      <p
+        className="c13"
+      >
+        <span
+          className="c19"
+        >
+          TOTAL
+          <span
+            className="c15"
+          >
+            $112.63
+          </span>
+        </span>
+      </p>
+      <p
+        className="c13"
+      >
+        <span
+          className="c14"
+        >
+          Your Savings
+          <span
+            className="c15"
+          >
+            $122.70
+          </span>
+        </span>
+      </p>
     </div>
   </section>,
   .c1 {

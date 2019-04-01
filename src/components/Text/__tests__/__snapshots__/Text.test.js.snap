@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Text renders Text component 1`] = `
+.c0 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+<span
+  className="c0"
+/>
+`;

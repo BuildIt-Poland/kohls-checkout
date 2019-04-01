@@ -2,10 +2,160 @@
 
 exports[`COMPONENT - CheckoutReview render CheckoutReview component 1`] = `
 Array [
-  <section>
-    <h3>
-      CheckoutReview placeholder
+  .c3 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.c6 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.c0 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 10px;
+}
+
+.c5 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: #9cc472;
+}
+
+.c7 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  color: #9cc472;
+}
+
+.c4 {
+  float: right;
+}
+
+.c2 {
+  margin: 0;
+}
+
+.c8 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.c1 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+<section>
+    <h3
+      className="c0"
+    >
+      Order Summary
     </h3>
+    <div
+      className="c1"
+    >
+      <p
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          Subtotal
+          <span
+            className="c4"
+          >
+            $125.00
+          </span>
+        </span>
+      </p>
+      <p
+        className="c2"
+      >
+        <span
+          className="c5"
+        >
+          Kohl's Cash & Discounts
+          <span
+            className="c4"
+          >
+            -$18.75
+          </span>
+        </span>
+      </p>
+      <p
+        className="c2"
+      >
+        <span
+          className="c6"
+        >
+          Shipping
+          <span
+            className="c4"
+          >
+            Free
+          </span>
+        </span>
+      </p>
+      <span
+        className="c7"
+      >
+        You have earned free shipping.
+      </span>
+      <p
+        className="c2"
+      >
+        <span
+          className="c6"
+        >
+          Tax
+          <span
+            className="c4"
+          >
+            $6.38
+          </span>
+        </span>
+      </p>
+      <hr />
+      <p
+        className="c2"
+      >
+        <span
+          className="c8"
+        >
+          TOTAL
+          <span
+            className="c4"
+          >
+            $112.63
+          </span>
+        </span>
+      </p>
+      <p
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          Your Savings
+          <span
+            className="c4"
+          >
+            $122.70
+          </span>
+        </span>
+      </p>
+    </div>
   </section>,
   .c1 {
   background: #00a09f;

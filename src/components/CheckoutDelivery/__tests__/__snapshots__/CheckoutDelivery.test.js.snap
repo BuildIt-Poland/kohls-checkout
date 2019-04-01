@@ -2,11 +2,7 @@
 
 exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
 Array [
-  <section>
-    <h3>
-      CheckoutDelivery placeholder
-    </h3>
-  </section>,
+  <section />,
   .c1 {
   background: #00a09f;
   color: #ffffff;

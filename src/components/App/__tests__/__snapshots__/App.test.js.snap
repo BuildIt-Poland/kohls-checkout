@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
-.c2 {
+.c11 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -14,13 +14,67 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
   width: 100%;
 }
 
-.c1 {
+.c10 {
   bottom: 0;
   left: 0;
   padding: 1.2rem;
   position: fixed;
   width: 100%;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.c4 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.c7 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.c1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 10px;
+}
+
+.c6 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: #9cc472;
+}
+
+.c8 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  color: #9cc472;
+}
+
+.c5 {
+  float: right;
+}
+
+.c3 {
+  margin: 0;
+}
+
+.c9 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.c2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .c0 {
@@ -36,16 +90,113 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
     Hello world
   </h1>
   <section>
-    <h2>
-      Cart placeholder
-    </h2>
     <Item />
+    <hr />
+    <h3
+      className="c1"
+    >
+      Order Summary
+    </h3>
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+      >
+        <span
+          className="c4"
+        >
+          Subtotal
+          <span
+            className="c5"
+          >
+            $125.00
+          </span>
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span
+          className="c6"
+        >
+          Kohl's Cash & Discounts
+          <span
+            className="c5"
+          >
+            -$18.75
+          </span>
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span
+          className="c7"
+        >
+          Shipping
+          <span
+            className="c5"
+          >
+            Free
+          </span>
+        </span>
+      </p>
+      <span
+        className="c8"
+      >
+        You have earned free shipping.
+      </span>
+      <p
+        className="c3"
+      >
+        <span
+          className="c7"
+        >
+          Tax
+          <span
+            className="c5"
+          >
+            $6.38
+          </span>
+        </span>
+      </p>
+      <hr />
+      <p
+        className="c3"
+      >
+        <span
+          className="c9"
+        >
+          TOTAL
+          <span
+            className="c5"
+          >
+            $112.63
+          </span>
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span
+          className="c4"
+        >
+          Your Savings
+          <span
+            className="c5"
+          >
+            $122.70
+          </span>
+        </span>
+      </p>
+    </div>
   </section>
   <div
-    className="c1"
+    className="c10"
   >
     <a
-      className="c2"
+      className="c11"
       href="/checkout/delivery"
       onClick={[Function]}
     >
