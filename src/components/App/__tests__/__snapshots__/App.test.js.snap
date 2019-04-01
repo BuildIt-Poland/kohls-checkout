@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
-.c2 {
+.c1 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -14,7 +14,7 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
   width: 100%;
 }
 
-.c1 {
+.c0 {
   bottom: 0;
   left: 0;
   padding: 1.2rem;
@@ -23,18 +23,8 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
-.c0 {
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: sans-serif;
-}
-
 <section>
-  <h1
-    className="c0"
-  >
-    Hello world
-  </h1>
+  <Header />
   <section>
     <h2>
       Cart placeholder
@@ -42,10 +32,10 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
     <Item />
   </section>
   <div
-    className="c1"
+    className="c0"
   >
     <a
-      className="c2"
+      className="c1"
       href="/checkout/delivery"
       onClick={[Function]}
     >
@@ -56,7 +46,7 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
 `;
 
 exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
-.c3 {
+.c2 {
   background: #ffffff;
   border-right: 0;
   border: 1px solid #454545;
@@ -75,11 +65,11 @@ exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
   width: 100%;
 }
 
-.c3:last-child {
+.c2:last-child {
   border-right: 1px;
 }
 
-.c2 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -89,7 +79,7 @@ exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
   text-decoration: none;
 }
 
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -98,77 +88,57 @@ exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
   width: 100%;
 }
 
-.c4 {
+.c3 {
   margin-top: 100px;
 }
 
-.c0 {
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: sans-serif;
-}
-
 <section>
-  <h1
+  <Header />
+  <nav
     className="c0"
   >
-    Hello world
-  </h1>
-  <nav
-    className="c1"
-  >
     <a
-      className="c2"
+      className="c1"
       href="/checkout/delivery"
       onClick={[Function]}
     >
       <span
-        className="c3"
+        className="c2"
       >
         Delivery
       </span>
     </a>
     <a
-      className="c2"
+      className="c1"
       href="/checkout/payment"
       onClick={[Function]}
     >
       <span
-        className="c3"
+        className="c2"
       >
         Payment
       </span>
     </a>
     <a
-      className="c2"
+      className="c1"
       href="/checkout/review"
       onClick={[Function]}
     >
       <span
-        className="c3"
+        className="c2"
       >
         Review
       </span>
     </a>
   </nav>
   <section
-    className="c4"
+    className="c3"
   />
 </section>
 `;
 
 exports[`COMPONENT - App renders correctly default route 1`] = `
-.c0 {
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: sans-serif;
-}
-
 <section>
-  <h1
-    className="c0"
-  >
-    Hello world
-  </h1>
+  <Header />
 </section>
 `;
