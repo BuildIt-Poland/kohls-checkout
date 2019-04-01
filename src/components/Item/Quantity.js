@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { borderRadiusMedium, colorLightGrey, spacingLarge, borderWidthThick } from '../../styles/designTokens';
+import { borderRadiusMedium, colorLightGrey, borderWidthThick } from '../../styles/designTokens';
 import QuantityButton from './QuantityButton';
 import QuantityInput from './QuantityInput';
 
@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
   border-radius: ${borderRadiusMedium};
-  width: 20rem;
+  width: 15rem;
   border: ${borderWidthThick} solid ${colorLightGrey};
   height: 4.4rem;
 `;

@@ -17,8 +17,7 @@ function ShoppingCart() {
       <Wrapper>
         <ItemsList>
           <Item />
-          <Item />
-          <Item />
+          <Item editableQuantity />
         </ItemsList>
       </Wrapper>
     </>

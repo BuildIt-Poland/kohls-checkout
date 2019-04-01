@@ -9,6 +9,7 @@ exports[`COMPONENT - Wrapper renders Wrapper component 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin: 3rem 0;
+  grid-column-gap: 1rem;
 }
 
 <div

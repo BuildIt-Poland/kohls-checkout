@@ -12,7 +12,7 @@ import Wrapper from './Wrapper';
 import RemoveButton from '../RemoveButton/RemoveButton';
 import Details from './Details';
 
-function Item() {
+function Item({ editableQuantity = false }) {
   return (
     <Wrapper>
       <Image src="https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg" />
@@ -26,8 +26,8 @@ function Item() {
           <TotalPrice>Total $115.00</TotalPrice>
         </PriceBox>
       </Details>
-      <Quantity />
-      <RemoveButton>Remove</RemoveButton>
+      {editableQuantity ? <Quantity /> : null}
+      <RemoveButton editableQuantity={editableQuantity}>Remove</RemoveButton>
     </Wrapper>
   );
 }

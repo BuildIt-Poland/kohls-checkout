@@ -52,8 +52,9 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
         className="c2"
       >
         <Item />
-        <Item />
-        <Item />
+        <Item
+          editableQuantity={true}
+        />
       </div>
     </div>
   </section>

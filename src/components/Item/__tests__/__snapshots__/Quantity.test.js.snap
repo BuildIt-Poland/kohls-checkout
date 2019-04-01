@@ -25,7 +25,7 @@ exports[`COMPONENT - Quantity renders Quantity component 1`] = `
   grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
   border-radius: 0.25rem;
-  width: 20rem;
+  width: 15rem;
   border: 2px solid #b0b0b0;
   height: 4.4rem;
 }
