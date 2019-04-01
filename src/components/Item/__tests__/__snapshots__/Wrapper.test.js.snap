@@ -3,7 +3,7 @@
 exports[`COMPONENT - Wrapper renders Wrapper component 1`] = `
 .c0 {
   display: grid;
-  grid-template-columns: 30% auto;
+  grid-template-columns: 30% auto 25%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;

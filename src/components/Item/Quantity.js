@@ -9,10 +9,10 @@ const Wrapper = styled.div`
   grid-column-start: 1;
   grid-column-end: 3;
   display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
   border-radius: ${borderRadiusMedium};
-  grid-template-columns: ${spacingLarge} auto ${spacingLarge};
-  width: 40%;
+  width: 20rem;
   border: ${borderWidthThick} solid ${colorLightGrey};
   height: 4.4rem;
 `;
