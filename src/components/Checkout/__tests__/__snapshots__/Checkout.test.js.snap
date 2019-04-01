@@ -133,7 +133,11 @@ Array [
 <section
     className="c0"
   >
-    <section />
+    <section>
+      <h3>
+        CheckoutDelivery placeholder
+      </h3>
+    </section>
     <div
       className="c1"
     >
