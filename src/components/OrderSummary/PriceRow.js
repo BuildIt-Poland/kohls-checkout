@@ -1,12 +1,9 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const StyledParagraph = styled.p`
-  margin: 0;
+const PriceRow = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 `;
-
-function PriceRow({ children }) {
-  return <StyledParagraph>{children}</StyledParagraph>;
-}
 
 export default PriceRow;

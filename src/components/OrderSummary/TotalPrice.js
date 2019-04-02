@@ -2,21 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { fontSmall } from '../../styles/designTokens';
-import PriceBadge from './PriceBadge';
+import { fontSmall, fontWeightBold } from '../../styles/designTokens';
 import PriceRow from './PriceRow';
 
 const PriceSummary = styled.span`
   font-size: ${fontSmall};
-  font-weight: bold;
+  font-weight: ${fontWeightBold};
 `;
 
 function TotalPrice({ price }) {
   return (
     <PriceRow>
-      <PriceSummary>
-        TOTAL<PriceBadge>${price}</PriceBadge>
-      </PriceSummary>
+      <PriceSummary>TOTAL ${price}</PriceSummary>
     </PriceRow>
   );
 }
