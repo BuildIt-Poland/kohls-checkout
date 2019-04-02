@@ -1,12 +1,13 @@
 import React from 'react';
 import NextStep from '../NextStep';
 import { CHECKOUT_REVIEW_PATH } from '../../constants/routes';
+import OrderSummary from '../OrderSummary';
 
 function CheckoutPayment() {
   return (
     <>
       <section>
-        <h3>CheckoutPayment placeholder</h3>
+        <OrderSummary />
       </section>
       <NextStep label="Review Order" to={CHECKOUT_REVIEW_PATH} />
     </>

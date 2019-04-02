@@ -6,6 +6,7 @@ export const colorTurquoise = '#00a09f';
 export const colorRed = '#e0151d';
 export const colorLightRed = '#fadcdd';
 export const colorLightGrey = '#b0b0b0';
+export const colorGreen = '#9cc472';
 
 // Spacing (mainly for paddings and margins)
 export const spacingLarge = '3rem';
