@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
-.c1 {
+Array [
+  <Header />,
+  .c0 {
+  margin-top: 6rem;
+}
+
+.c2 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -14,7 +20,7 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
   width: 100%;
 }
 
-.c0 {
+.c1 {
   bottom: 0;
   left: 0;
   padding: 1.2rem;
@@ -23,28 +29,36 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
-<section>
-  <Header />
-  <section>
-    <Item />
-    <OrderSummary />
-  </section>
-  <div
+<main
     className="c0"
   >
-    <a
+    <section>
+      <Item />
+      <OrderSummary />
+    </section>
+    <div
       className="c1"
-      href="/checkout/delivery"
-      onClick={[Function]}
     >
-      Checkout
-    </a>
-  </div>
-</section>
+      <a
+        className="c2"
+        href="/checkout/delivery"
+        onClick={[Function]}
+      >
+        Checkout
+      </a>
+    </div>
+  </main>,
+]
 `;
 
 exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
-.c2 {
+Array [
+  <Header />,
+  .c0 {
+  margin-top: 6rem;
+}
+
+.c3 {
   background: #ffffff;
   border-right: 0;
   border: 1px solid #454545;
@@ -63,11 +77,11 @@ exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
   width: 100%;
 }
 
-.c2:last-child {
+.c3:last-child {
   border-right: 1px;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -77,7 +91,7 @@ exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
   text-decoration: none;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -86,57 +100,180 @@ exports[`COMPONENT - App renders correctly "/checkout" route 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c4 {
   margin-top: 100px;
 }
 
-<section>
-  <Header />
-  <nav
+<main
     className="c0"
   >
-    <a
+    <nav
       className="c1"
-      href="/checkout/delivery"
-      onClick={[Function]}
     >
-      <span
+      <a
         className="c2"
+        href="/checkout/delivery"
+        onClick={[Function]}
       >
-        Delivery
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/payment"
-      onClick={[Function]}
-    >
-      <span
+        <span
+          className="c3"
+        >
+          Delivery
+        </span>
+      </a>
+      <a
         className="c2"
+        href="/checkout/payment"
+        onClick={[Function]}
       >
-        Payment
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/review"
-      onClick={[Function]}
-    >
-      <span
+        <span
+          className="c3"
+        >
+          Payment
+        </span>
+      </a>
+      <a
         className="c2"
+        href="/checkout/review"
+        onClick={[Function]}
       >
-        Review
-      </span>
-    </a>
-  </nav>
-  <section
-    className="c3"
-  />
-</section>
+        <span
+          className="c3"
+        >
+          Review
+        </span>
+      </a>
+    </nav>
+    <section
+      className="c4"
+    />
+  </main>,
+]
 `;
 
 exports[`COMPONENT - App renders correctly default route 1`] = `
-<section>
-  <Header />
-</section>
+Array [
+  <Header />,
+  .c0 {
+  margin-top: 6rem;
+}
+
+.c4 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.c4:last-child {
+  margin-bottom: 0;
+}
+
+.c5 {
+  color: #00a09f;
+  font-weight: 700;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.c3 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.c2 {
+  padding-top: 3rem;
+}
+
+.c2:last-child {
+  padding-bottom: 6rem;
+}
+
+<main
+    className="c0"
+  >
+    <article
+      className="c1"
+    >
+      <section
+        className="c2"
+      >
+        <h1
+          className="c3"
+        >
+          Project goals
+        </h1>
+        <p
+          className="c4"
+        >
+          Build base for 
+          <strong>
+            scalable front-end architecture
+          </strong>
+           — easy to work with for developers and QA, fully transparent for stakeholders. 
+          <strong>
+            Automate
+          </strong>
+           as many processes as possible and make their results easily available.
+        </p>
+        <p
+          className="c4"
+        >
+          Make frontend communicate with backend API only by thin layer of services, making it more resilient to inevitable changes.
+        </p>
+      </section>
+      <section
+        className="c2"
+      >
+        <h1
+          className="c3"
+        >
+          Workflow
+        </h1>
+        <p
+          className="c4"
+        >
+          Small, easy to estimate tasks in backlog. Code crafted and delivered according to
+           
+          <a
+            className="c5"
+            href="https://www.atlassian.com/git/tutorials/comparing-workflows"
+          >
+            git workflow
+          </a>
+           — commit and issue pull requests often for easy collaboration between programmers, designers and QA (no one should be afraid to participate in PRs review process). Because only small chunks of code are merged it's easier and faster to recover from bugs or discover 
+          <strong>
+            accessibility and usability
+          </strong>
+           problems.
+        </p>
+      </section>
+      <section
+        className="c2"
+      >
+        <a
+          className="c5"
+          href="/cart"
+          onClick={[Function]}
+        >
+          Take me to Cart
+        </a>
+      </section>
+    </article>
+  </main>,
+]
 `;
