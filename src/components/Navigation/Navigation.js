@@ -12,7 +12,6 @@ const STEPS = {
 
 const Wrapper = styled.nav`
   display: flex;
-  position: fixed;
   width: 100%;
 `;
 

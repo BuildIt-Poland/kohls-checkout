@@ -2,10 +2,32 @@
 
 exports[`COMPONENT - Cart renders Cart component 1`] = `
 Array [
-  <section>
+  .c1 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.c0 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+<article
+    className="c0"
+  >
+    <h1
+      className="c1"
+    >
+      Cart
+    </h1>
     <Item />
     <OrderSummary />
-  </section>,
+  </article>,
   .c1 {
   background: #00a09f;
   color: #ffffff;

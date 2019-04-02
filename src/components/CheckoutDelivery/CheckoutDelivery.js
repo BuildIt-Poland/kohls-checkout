@@ -2,13 +2,12 @@ import React from 'react';
 
 import { CHECKOUT_PAYMENT_PATH } from '../../constants/routes';
 import NextStep from '../NextStep';
+import Headline from '../Headline';
 
 function CheckoutDelivery() {
   return (
     <>
-      <section>
-        <h3>CheckoutDelivery placeholder</h3>
-      </section>
+      <Headline>Delivery</Headline>
       <NextStep label="Continue to Payment" to={CHECKOUT_PAYMENT_PATH} />
     </>
   );

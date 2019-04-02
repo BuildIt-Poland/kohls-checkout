@@ -2,9 +2,20 @@
 
 exports[`COMPONENT - CheckoutReview render CheckoutReview component 1`] = `
 Array [
-  <section>
-    <OrderSummary />
-  </section>,
+  .c0 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+<h1
+    className="c0"
+  >
+    Review
+  </h1>,
+  <OrderSummary />,
   .c1 {
   background: #00a09f;
   color: #ffffff;

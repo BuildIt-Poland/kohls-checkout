@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { fontMedium, fontWeightNormal, spacingSmall } from '../../styles/designTokens';
+import { fontMedium, fontWeightNormal, fontWeightBold, spacingSmall } from '../../styles/designTokens';
 
 const Text = styled.p`
   font-size: ${fontMedium};
   text-decoration: ${({ underline }) => (underline ? 'underline' : 'none')};
-  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
+  font-weight: ${({ bold }) => (bold ? fontWeightBold : fontWeightNormal)};
   font-weight: ${fontWeightNormal};
   line-height: 1.4;
   margin: 0;

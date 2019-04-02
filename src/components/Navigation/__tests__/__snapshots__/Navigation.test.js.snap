@@ -62,7 +62,6 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
   width: 100%;
 }
 
@@ -164,7 +163,6 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
   width: 100%;
 }
 
@@ -266,7 +264,6 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
   width: 100%;
 }
 
