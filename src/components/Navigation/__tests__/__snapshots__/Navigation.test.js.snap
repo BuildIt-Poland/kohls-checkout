@@ -1,53 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab set as Active 1`] = `
-.c2 {
+.c3 {
   background: #222222;
-  border-right: 0;
-  border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
-.c2:last-child {
-  border-right: 1px;
-}
-
-.c3 {
+.c4 {
   background: #ffffff;
-  border-right: 0;
-  border: 1px solid #454545;
   color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
-.c3:last-child {
-  border-right: 1px;
-}
-
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -55,100 +49,127 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
+  border-left: 1px solid #b0b0b0;
+}
+
+.c2:last-child {
+  border-right: 1px solid #b0b0b0;
 }
 
 .c0 {
+  width: 100%;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  height: 4rem;
 }
 
-<nav
+@media (max-width:48em) {
+  .c2:first-child {
+    border-left: 0;
+  }
+
+  .c2:last-child {
+    border-right: 0;
+  }
+}
+
+@media (max-width:48em) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
   className="c0"
 >
-  <Link
+  <nav
     className="c1"
-    to="/checkout/delivery"
   >
-    <span
+    <Link
       className="c2"
+      to="/checkout/delivery"
     >
-      Delivery
-    </span>
-  </Link>
-  <Link
-    className="c1"
-    to="/checkout/payment"
-  >
-    <span
-      className="c3"
+      <span
+        className="c3"
+      >
+        1. Delivery
+      </span>
+    </Link>
+    <Link
+      className="c2"
+      to="/checkout/payment"
     >
-      Payment
-    </span>
-  </Link>
-  <Link
-    className="c1"
-    to="/checkout/review"
-  >
-    <span
-      className="c3"
+      <span
+        className="c4"
+      >
+        2. Payment
+      </span>
+    </Link>
+    <Link
+      className="c2"
+      to="/checkout/review"
     >
-      Review
-    </span>
-  </Link>
-</nav>
+      <span
+        className="c4"
+      >
+        3. Review
+      </span>
+    </Link>
+  </nav>
+</div>
 `;
 
 exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab set as Active 1`] = `
-.c3 {
+.c4 {
   background: #222222;
-  border-right: 0;
-  border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
-.c3:last-child {
-  border-right: 1px;
-}
-
-.c2 {
+.c3 {
   background: #ffffff;
-  border-right: 0;
-  border: 1px solid #454545;
   color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
-.c2:last-child {
-  border-right: 1px;
-}
-
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -156,100 +177,127 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
+  border-left: 1px solid #b0b0b0;
+}
+
+.c2:last-child {
+  border-right: 1px solid #b0b0b0;
 }
 
 .c0 {
+  width: 100%;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  height: 4rem;
 }
 
-<nav
+@media (max-width:48em) {
+  .c2:first-child {
+    border-left: 0;
+  }
+
+  .c2:last-child {
+    border-right: 0;
+  }
+}
+
+@media (max-width:48em) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
   className="c0"
 >
-  <Link
+  <nav
     className="c1"
-    to="/checkout/delivery"
   >
-    <span
+    <Link
       className="c2"
+      to="/checkout/delivery"
     >
-      Delivery
-    </span>
-  </Link>
-  <Link
-    className="c1"
-    to="/checkout/payment"
-  >
-    <span
-      className="c3"
-    >
-      Payment
-    </span>
-  </Link>
-  <Link
-    className="c1"
-    to="/checkout/review"
-  >
-    <span
+      <span
+        className="c3"
+      >
+        1. Delivery
+      </span>
+    </Link>
+    <Link
       className="c2"
+      to="/checkout/payment"
     >
-      Review
-    </span>
-  </Link>
-</nav>
+      <span
+        className="c4"
+      >
+        2. Payment
+      </span>
+    </Link>
+    <Link
+      className="c2"
+      to="/checkout/review"
+    >
+      <span
+        className="c3"
+      >
+        3. Review
+      </span>
+    </Link>
+  </nav>
+</div>
 `;
 
 exports[`COMPONENT - Navigation renders Navigation component with "Review" tab set as Active 1`] = `
-.c3 {
+.c4 {
   background: #222222;
-  border-right: 0;
-  border: 1px solid #454545;
   color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
-.c3:last-child {
-  border-right: 1px;
-}
-
-.c2 {
+.c3 {
   background: #ffffff;
-  border-right: 0;
-  border: 1px solid #454545;
   color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
-.c2:last-child {
-  border-right: 1px;
-}
-
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -257,48 +305,81 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
+  border-left: 1px solid #b0b0b0;
+}
+
+.c2:last-child {
+  border-right: 1px solid #b0b0b0;
 }
 
 .c0 {
+  width: 100%;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  height: 4rem;
 }
 
-<nav
+@media (max-width:48em) {
+  .c2:first-child {
+    border-left: 0;
+  }
+
+  .c2:last-child {
+    border-right: 0;
+  }
+}
+
+@media (max-width:48em) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
   className="c0"
 >
-  <Link
+  <nav
     className="c1"
-    to="/checkout/delivery"
   >
-    <span
+    <Link
       className="c2"
+      to="/checkout/delivery"
     >
-      Delivery
-    </span>
-  </Link>
-  <Link
-    className="c1"
-    to="/checkout/payment"
-  >
-    <span
+      <span
+        className="c3"
+      >
+        1. Delivery
+      </span>
+    </Link>
+    <Link
       className="c2"
+      to="/checkout/payment"
     >
-      Payment
-    </span>
-  </Link>
-  <Link
-    className="c1"
-    to="/checkout/review"
-  >
-    <span
-      className="c3"
+      <span
+        className="c3"
+      >
+        2. Payment
+      </span>
+    </Link>
+    <Link
+      className="c2"
+      to="/checkout/review"
     >
-      Review
-    </span>
-  </Link>
-</nav>
+      <span
+        className="c4"
+      >
+        3. Review
+      </span>
+    </Link>
+  </nav>
+</div>
 `;
