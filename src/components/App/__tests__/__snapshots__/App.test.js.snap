@@ -25,16 +25,18 @@ Array [
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
 }
 
 .c3 {
   bottom: 0;
   left: 0;
-  padding: 1.2rem;
+  padding: 1rem;
   position: fixed;
   width: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  background: #ffffff;
+  border-top: 1px solid #b0b0b0;
 }
 
 .c1 {
@@ -42,6 +44,7 @@ Array [
   padding: 0 2rem;
   margin: 0 auto;
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 <main
@@ -80,96 +83,20 @@ Array [
   margin-top: 6rem;
 }
 
-.c4 {
+.c1 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
   padding-top: 3rem;
-}
-
-.c3 {
-  background: #ffffff;
-  border-right: 0;
-  border: 1px solid #454545;
-  color: #222222;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-
-.c3:last-child {
-  border-right: 1px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+  padding-bottom: 3rem;
 }
 
 <main
     className="c0"
   >
-    <nav
-      className="c1"
-    >
-      <a
-        className="c2"
-        href="/checkout/delivery"
-        onClick={[Function]}
-      >
-        <span
-          className="c3"
-        >
-          Delivery
-        </span>
-      </a>
-      <a
-        className="c2"
-        href="/checkout/payment"
-        onClick={[Function]}
-      >
-        <span
-          className="c3"
-        >
-          Payment
-        </span>
-      </a>
-      <a
-        className="c2"
-        href="/checkout/review"
-        onClick={[Function]}
-      >
-        <span
-          className="c3"
-        >
-          Review
-        </span>
-      </a>
-    </nav>
+    <Navigation />
     <article
-      className="c4"
+      className="c1"
     />
   </main>,
 ]
@@ -182,122 +109,60 @@ Array [
   margin-top: 6rem;
 }
 
-.c4 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: 400;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-.c4:last-child {
-  margin-bottom: 0;
-}
-
-.c5 {
-  color: #00a09f;
-  font-weight: 700;
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1 {
-  max-width: 100rem;
-  padding: 0 2rem;
-  margin: 0 auto;
-}
-
-.c3 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.c2 {
-  padding-top: 3rem;
-}
-
-.c2:last-child {
-  padding-bottom: 6rem;
-}
-
 <main
     className="c0"
   >
-    <article
-      className="c1"
-    >
-      <section
-        className="c2"
-      >
-        <h1
-          className="c3"
-        >
-          Project goals
-        </h1>
-        <p
-          className="c4"
-        >
-          Build base for 
-          <strong>
-            scalable front-end architecture
-          </strong>
-           — easy to work with for developers and QA, fully transparent for stakeholders. 
-          <strong>
-            Automate
-          </strong>
-           as many processes as possible and make their results easily available.
-        </p>
-        <p
-          className="c4"
-        >
-          Make frontend communicate with backend API only by thin layer of services, making it more resilient to inevitable changes.
-        </p>
-      </section>
-      <section
-        className="c2"
-      >
-        <h1
-          className="c3"
-        >
-          Workflow
-        </h1>
-        <p
-          className="c4"
-        >
-          Small, easy to estimate tasks in backlog. Code crafted and delivered according to
-           
-          <a
-            className="c5"
-            href="https://www.atlassian.com/git/tutorials/comparing-workflows"
-          >
-            git workflow
-          </a>
-           — commit and issue pull requests often for easy collaboration between programmers, designers and QA (no one should be afraid to participate in PRs review process). Because only small chunks of code are merged it's easier and faster to recover from bugs or discover 
-          <strong>
-            accessibility and usability
-          </strong>
-           problems.
-        </p>
-      </section>
-      <section
-        className="c2"
-      >
-        <a
-          className="c5"
-          href="/cart"
-          onClick={[Function]}
-        >
-          Take me to Cart
-        </a>
-      </section>
-    </article>
+    <LandingPage
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "7x23d6",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "7x23d6",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+      location={
+        Object {
+          "hash": "",
+          "key": "7x23d6",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        }
+      }
+      match={
+        Object {
+          "isExact": true,
+          "params": Object {},
+          "path": "/",
+          "url": "/",
+        }
+      }
+    />
   </main>,
 ]
 `;

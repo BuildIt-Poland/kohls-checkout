@@ -25,16 +25,18 @@ Array [
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
 }
 
 .c0 {
   bottom: 0;
   left: 0;
-  padding: 1.2rem;
+  padding: 1rem;
   position: fixed;
   width: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  background: #ffffff;
+  border-top: 1px solid #b0b0b0;
 }
 
 <div

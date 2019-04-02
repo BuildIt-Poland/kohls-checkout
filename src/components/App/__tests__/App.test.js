@@ -8,6 +8,8 @@ import App from '../App';
 jest.mock('../../Item', () => 'Item');
 jest.mock('../../Header', () => 'Header');
 jest.mock('../../OrderSummary', () => 'OrderSummary');
+jest.mock('../../Navigation', () => 'Navigation');
+jest.mock('../../LandingPage', () => 'LandingPage');
 
 describe('COMPONENT - App', () => {
   it('renders correctly default route', () => {
