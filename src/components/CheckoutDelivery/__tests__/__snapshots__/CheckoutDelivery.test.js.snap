@@ -2,9 +2,36 @@
 
 exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
 Array [
-  <section>
-    <h3>
-      CheckoutDelivery placeholder
+  .c1 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c0 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+<section>
+    <h3
+      className="c0"
+    >
+      Shipping Address
+      <span
+        onClick={[Function]}
+      >
+        <span
+          className="c1"
+        >
+          Open modal
+        </span>
+      </span>
     </h3>
   </section>,
   .c1 {
@@ -27,6 +54,7 @@ Array [
   position: fixed;
   width: 100%;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 6000;
 }
 
 <div

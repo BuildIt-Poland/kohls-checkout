@@ -105,6 +105,14 @@ Array [
     </a>
   </nav>,
   .c2 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c4 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -117,13 +125,22 @@ Array [
   width: 100%;
 }
 
-.c1 {
+.c3 {
   bottom: 0;
   left: 0;
   padding: 1.2rem;
   position: fixed;
   width: 100%;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 6000;
+}
+
+.c1 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .c0 {
@@ -134,15 +151,26 @@ Array [
     className="c0"
   >
     <section>
-      <h3>
-        CheckoutDelivery placeholder
+      <h3
+        className="c1"
+      >
+        Shipping Address
+        <span
+          onClick={[Function]}
+        >
+          <span
+            className="c2"
+          >
+            Open modal
+          </span>
+        </span>
       </h3>
     </section>
     <div
-      className="c1"
+      className="c3"
     >
       <a
-        className="c2"
+        className="c4"
         href="/checkout/payment"
         onClick={[Function]}
       >
@@ -257,7 +285,23 @@ Array [
       </span>
     </a>
   </nav>,
-  .c11 {
+  .c7 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c4 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c11 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -277,26 +321,15 @@ Array [
   position: fixed;
   width: 100%;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 6000;
 }
 
-.c4 {
+.c2 {
   font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-.c7 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: normal;
-}
-
-.c1 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin: 10px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .c6 {
@@ -304,6 +337,7 @@ Array [
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: bold;
+  text-transform: none;
   color: #9cc472;
 }
 
@@ -312,6 +346,7 @@ Array [
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: normal;
+  text-transform: none;
   color: #9cc472;
 }
 
@@ -328,7 +363,7 @@ Array [
   font-weight: bold;
 }
 
-.c2 {
+.c1 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -341,14 +376,14 @@ Array [
     className="c0"
   >
     <section>
-      <h3
+      <div
         className="c1"
       >
-        Order Summary
-      </h3>
-      <div
-        className="c2"
-      >
+        <h3
+          className="c2"
+        >
+          Order Summary
+        </h3>
         <p
           className="c3"
         >
@@ -560,7 +595,23 @@ Array [
       </span>
     </a>
   </nav>,
-  .c11 {
+  .c7 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c4 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c11 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -580,26 +631,15 @@ Array [
   position: fixed;
   width: 100%;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 6000;
 }
 
-.c4 {
+.c2 {
   font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-.c7 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: normal;
-}
-
-.c1 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin: 10px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .c6 {
@@ -607,6 +647,7 @@ Array [
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: bold;
+  text-transform: none;
   color: #9cc472;
 }
 
@@ -615,6 +656,7 @@ Array [
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: normal;
+  text-transform: none;
   color: #9cc472;
 }
 
@@ -631,7 +673,7 @@ Array [
   font-weight: bold;
 }
 
-.c2 {
+.c1 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -644,14 +686,14 @@ Array [
     className="c0"
   >
     <section>
-      <h3
+      <div
         className="c1"
       >
-        Order Summary
-      </h3>
-      <div
-        className="c2"
-      >
+        <h3
+          className="c2"
+        >
+          Order Summary
+        </h3>
         <p
           className="c3"
         >

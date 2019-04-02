@@ -6,6 +6,7 @@ exports[`COMPONENT - Text renders Text component 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: normal;
+  text-transform: none;
 }
 
 <span
