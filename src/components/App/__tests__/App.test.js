@@ -6,6 +6,7 @@ import { CART_PATH, CHECKOUT_PATH } from '../../../constants/routes';
 import App from '../App';
 
 jest.mock('../../ShoppingCart', () => 'ShoppingCart');
+jest.mock('../../OrderSummary', () => 'OrderSummary');
 
 describe('COMPONENT - App', () => {
   it('renders correctly default route', () => {

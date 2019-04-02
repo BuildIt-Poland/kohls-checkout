@@ -1,12 +1,13 @@
 import React from 'react';
 
 import NextStep from '../NextStep';
+import OrderSummary from '../OrderSummary';
 
 function CheckoutReview() {
   return (
     <>
       <section>
-        <h3>CheckoutReview placeholder</h3>
+        <OrderSummary />
       </section>
       <NextStep label="Place Order" to="/cart" />
     </>

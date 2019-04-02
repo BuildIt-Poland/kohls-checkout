@@ -4,6 +4,7 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
 Array [
   <section>
     <ShoppingCart />
+    <OrderSummary />
   </section>,
   .c1 {
   background: #00a09f;

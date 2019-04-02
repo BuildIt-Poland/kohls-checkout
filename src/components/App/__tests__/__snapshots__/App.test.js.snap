@@ -37,6 +37,7 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
   </h1>
   <section>
     <ShoppingCart />
+    <OrderSummary />
   </section>
   <div
     className="c1"

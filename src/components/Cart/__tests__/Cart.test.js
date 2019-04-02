@@ -3,6 +3,8 @@ import { create } from 'react-test-renderer';
 
 import Cart from '../Cart';
 
+jest.mock('../../Item', () => 'Item');
+jest.mock('../../OrderSummary', () => 'OrderSummary');
 jest.mock('react-router-dom', () => ({
   Link: 'Link'
 }));

@@ -5,7 +5,7 @@ codecov:
 coverage:
   precision: 5
   round: down
-  range: "70...100"
+  range: '40...100'
 
   status:
     project: yes
@@ -21,3 +21,6 @@ parsers:
       macro: no
 
 comment: off
+
+ignore:
+  - 'src/e2eConfig.js'
