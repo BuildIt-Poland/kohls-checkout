@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
-.c3 {
+.c2 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -14,19 +14,13 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
   width: 100%;
 }
 
-.c2 {
+.c1 {
   bottom: 0;
   left: 0;
   padding: 1.2rem;
   position: fixed;
   width: 100%;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
-
-.c1 {
-  border: 0.5px solid #b0b0b0;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .c0 {
@@ -43,16 +37,13 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
   </h1>
   <section>
     <Item />
-    <div
-      className="c1"
-    />
     <OrderSummary />
   </section>
   <div
-    className="c2"
+    className="c1"
   >
     <a
-      className="c3"
+      className="c2"
       href="/checkout/delivery"
       onClick={[Function]}
     >

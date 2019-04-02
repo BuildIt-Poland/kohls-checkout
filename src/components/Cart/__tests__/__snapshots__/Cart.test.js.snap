@@ -2,17 +2,8 @@
 
 exports[`COMPONENT - Cart renders Cart component 1`] = `
 Array [
-  .c0 {
-  border: 0.5px solid #b0b0b0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-<section>
+  <section>
     <Item />
-    <div
-      className="c0"
-    />
     <OrderSummary />
   </section>,
   .c1 {

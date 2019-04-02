@@ -257,7 +257,7 @@ Array [
       </span>
     </a>
   </nav>,
-  .c12 {
+  .c11 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -270,7 +270,7 @@ Array [
   width: 100%;
 }
 
-.c11 {
+.c10 {
   bottom: 0;
   left: 0;
   padding: 1.2rem;
@@ -323,15 +323,9 @@ Array [
   margin: 0;
 }
 
-.c10 {
+.c9 {
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-.c9 {
-  border: 0.5px solid #b0b0b0;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .c2 {
@@ -416,14 +410,11 @@ Array [
             </span>
           </span>
         </p>
-        <div
-          className="c9"
-        />
         <p
           className="c3"
         >
           <span
-            className="c10"
+            className="c9"
           >
             TOTAL
             <span
@@ -451,10 +442,10 @@ Array [
       </div>
     </section>
     <div
-      className="c11"
+      className="c10"
     >
       <a
-        className="c12"
+        className="c11"
         href="/checkout/review"
         onClick={[Function]}
       >
@@ -569,7 +560,7 @@ Array [
       </span>
     </a>
   </nav>,
-  .c12 {
+  .c11 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -582,7 +573,7 @@ Array [
   width: 100%;
 }
 
-.c11 {
+.c10 {
   bottom: 0;
   left: 0;
   padding: 1.2rem;
@@ -635,15 +626,9 @@ Array [
   margin: 0;
 }
 
-.c10 {
+.c9 {
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-.c9 {
-  border: 0.5px solid #b0b0b0;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .c2 {
@@ -728,14 +713,11 @@ Array [
             </span>
           </span>
         </p>
-        <div
-          className="c9"
-        />
         <p
           className="c3"
         >
           <span
-            className="c10"
+            className="c9"
           >
             TOTAL
             <span
@@ -763,10 +745,10 @@ Array [
       </div>
     </section>
     <div
-      className="c11"
+      className="c10"
     >
       <a
-        className="c12"
+        className="c11"
         href="/cart"
         onClick={[Function]}
       >
