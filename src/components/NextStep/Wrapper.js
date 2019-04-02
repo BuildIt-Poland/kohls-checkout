@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { zIndexStickyElement } from '../../styles/designTokens';
 
 const Wrapper = styled.div`

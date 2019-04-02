@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { spacingSmall, fontSmall, colorLightGrey } from '../../styles/designTokens';
 
 const ModalHeader = styled.section`

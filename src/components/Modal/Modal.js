@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import noop from 'lodash.noop';
 
 import ModalContent from './ModalContent';
 import ModalWrapper from './ModalWrapper';
@@ -7,7 +8,7 @@ import ModalHeader from './ModalHeader';
 import CloseModal from './CloseModal';
 import ModalBody from './ModalBody';
 
-function Modal({ children, onClose, title }) {
+function Modal({ children, onClose = noop, title }) {
   return (
     <>
       <ModalWrapper onClick={onClose} />

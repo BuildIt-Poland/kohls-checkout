@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { fontSmall } from '../../styles/designTokens';
 
 const Text = styled.span`
