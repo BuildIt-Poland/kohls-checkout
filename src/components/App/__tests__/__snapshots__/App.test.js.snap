@@ -26,10 +26,8 @@ exports[`COMPONENT - App renders correctly "/cart" route 1`] = `
 <section>
   <Header />
   <section>
-    <h2>
-      Cart placeholder
-    </h2>
     <Item />
+    <OrderSummary />
   </section>
   <div
     className="c0"

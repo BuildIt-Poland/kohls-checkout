@@ -3,13 +3,14 @@ import Item from '../Item';
 
 import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
 import NextStep from '../NextStep';
+import OrderSummary from '../OrderSummary';
 
 function Cart() {
   return (
     <>
       <section>
-        <h2>Cart placeholder</h2>
         <Item />
+        <OrderSummary />
       </section>
       <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />
     </>

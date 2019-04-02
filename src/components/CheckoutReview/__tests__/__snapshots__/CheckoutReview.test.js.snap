@@ -3,9 +3,7 @@
 exports[`COMPONENT - CheckoutReview render CheckoutReview component 1`] = `
 Array [
   <section>
-    <h3>
-      CheckoutReview placeholder
-    </h3>
+    <OrderSummary />
   </section>,
   .c1 {
   background: #00a09f;
