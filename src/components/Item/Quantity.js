@@ -17,11 +17,11 @@ const Wrapper = styled.div`
   height: 4.4rem;
 `;
 
-function Quantity() {
+function Quantity({ quantity }) {
   return (
     <Wrapper>
       <QuantityButton disabled>-</QuantityButton>
-      <QuantityInput />
+      <QuantityInput value={quantity} />
       <QuantityButton>+</QuantityButton>
     </Wrapper>
   );

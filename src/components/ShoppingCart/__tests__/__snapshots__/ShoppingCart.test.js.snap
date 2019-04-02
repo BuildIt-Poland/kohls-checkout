@@ -1,19 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - ShoppingCart renders ShoppingCart component 1`] = `
-.c0 {
+Array [
+  .c0 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 10px;
+}
+
+<h3
+    className="c0"
+  >
+    Shopping Cart
+  </h3>,
+  .c0 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 <div
-  className="c0"
->
-  <ItemsList>
-    <Item />
-    <Item
-      editableQuantity={true}
-    />
-  </ItemsList>
-</div>
+    className="c0"
+  >
+    <ItemsList />
+  </div>,
+]
 `;

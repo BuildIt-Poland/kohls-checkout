@@ -5,7 +5,7 @@ import ItemsList from '../ItemsList';
 
 describe('COMPONENT - ItemsList', () => {
   it('renders ItemsList component', () => {
-    const component = create(<ItemsList />);
+    const component = create(<ItemsList items={[]} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

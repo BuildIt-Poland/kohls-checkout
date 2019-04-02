@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { spacingMedium } from '../../styles/designTokens';
 import ItemsList from '../ItemsList';
-import Item from '../Item';
+import SectionHeader from '../SectionHeader';
 
 const Wrapper = styled.div`
   padding-left: ${spacingMedium};
@@ -13,12 +13,9 @@ const Wrapper = styled.div`
 function ShoppingCart() {
   return (
     <>
-      {/* <SectionHeader title="Shopping Cart"> </SectionHeader> */}
+      <SectionHeader title="Shopping Cart"> </SectionHeader>
       <Wrapper>
-        <ItemsList>
-          <Item />
-          <Item editableQuantity />
-        </ItemsList>
+        <ItemsList />
       </Wrapper>
     </>
   );

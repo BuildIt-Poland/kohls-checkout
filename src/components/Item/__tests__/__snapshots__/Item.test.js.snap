@@ -1,46 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Item renders Item component 1`] = `
+.c4 {
+  border: 0;
+  background: none;
+  color: #222222;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  grid-column-start: 2;
+  text-align: left;
+  padding: 0;
+}
+
 .c1 {
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 
-.c7 {
-  font-size: 1.2rem;
-  color: #222222;
-  margin: 0.2rem 0;
-}
-
 .c3 {
   font-size: 1.8rem;
   font-weight: 400;
-  margin: 1rem 0;
-}
-
-.c4 {
-  font-size: 1.2rem;
-  display: block;
-}
-
-.c8 {
-  font-size: 1.2rem;
-  color: #222222;
-  margin: 0.2rem 0;
-  font-weight: 700;
-}
-
-.c6 {
-  font-size: 1.2rem;
-  color: #222222;
-  margin: 0.2rem 0;
-  text-transform: uppercase;
-  color: #e0151d;
-  font-weight: 700;
-}
-
-.c5 {
   margin: 1rem 0;
 }
 
@@ -55,18 +36,6 @@ exports[`COMPONENT - Item renders Item component 1`] = `
   grid-column-gap: 1rem;
 }
 
-.c9 {
-  border: 0;
-  background: none;
-  color: #222222;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-size: 1.2rem;
-  grid-column-start: 2;
-  text-align: left;
-  padding: 0;
-}
-
 .c2 {
   grid-column-start: 2;
   grid-column-end: 4;
@@ -77,48 +46,16 @@ exports[`COMPONENT - Item renders Item component 1`] = `
 >
   <img
     className="c1"
-    src="https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg"
   />
   <div
     className="c2"
   >
     <h3
       className="c3"
-    >
-      Men's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket
-    </h3>
-    <label
-      className="c4"
-    >
-      Size: 42 SHORT
-    </label>
-    <label
-      className="c4"
-    >
-      Color: Charcoal
-    </label>
-    <div
-      className="c5"
-    >
-      <p
-        className="c6"
-      >
-        Sale $125.00
-      </p>
-      <p
-        className="c7"
-      >
-        Regular $240.00
-      </p>
-      <p
-        className="c8"
-      >
-        Total $115.00
-      </p>
-    </div>
+    />
   </div>
   <button
-    className="c9"
+    className="c4"
   >
     Remove
   </button>
