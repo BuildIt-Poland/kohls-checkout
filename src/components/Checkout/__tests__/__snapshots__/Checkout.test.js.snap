@@ -77,6 +77,7 @@ Array [
     >
       <a
         className="c2"
+        data-testid="navigation-link"
         href="/checkout/delivery"
         onClick={[Function]}
       >
@@ -88,6 +89,7 @@ Array [
       </a>
       <a
         className="c2"
+        data-testid="navigation-link"
         href="/checkout/payment"
         onClick={[Function]}
       >
@@ -99,6 +101,7 @@ Array [
       </a>
       <a
         className="c2"
+        data-testid="navigation-link"
         href="/checkout/review"
         onClick={[Function]}
       >
@@ -163,6 +166,7 @@ Array [
     >
       <a
         className="c3"
+        data-testid="next-step-button"
         href="/checkout/payment"
         onClick={[Function]}
       >
@@ -250,6 +254,7 @@ Array [
     >
       <a
         className="c2"
+        data-testid="navigation-link"
         href="/checkout/delivery"
         onClick={[Function]}
       >
@@ -261,6 +266,7 @@ Array [
       </a>
       <a
         className="c2"
+        data-testid="navigation-link"
         href="/checkout/payment"
         onClick={[Function]}
       >
@@ -272,6 +278,7 @@ Array [
       </a>
       <a
         className="c2"
+        data-testid="navigation-link"
         href="/checkout/review"
         onClick={[Function]}
       >
@@ -513,6 +520,7 @@ Array [
     >
       <a
         className="c10"
+        data-testid="next-step-button"
         href="/checkout/review"
         onClick={[Function]}
       >
@@ -600,6 +608,7 @@ Array [
     >
       <a
         className="c2"
+        data-testid="navigation-link"
         href="/checkout/delivery"
         onClick={[Function]}
       >
@@ -611,6 +620,7 @@ Array [
       </a>
       <a
         className="c2"
+        data-testid="navigation-link"
         href="/checkout/payment"
         onClick={[Function]}
       >
@@ -622,6 +632,7 @@ Array [
       </a>
       <a
         className="c2"
+        data-testid="navigation-link"
         href="/checkout/review"
         onClick={[Function]}
       >
@@ -863,6 +874,7 @@ Array [
     >
       <a
         className="c10"
+        data-testid="next-step-button"
         href="/cart"
         onClick={[Function]}
       >

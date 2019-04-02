@@ -28,7 +28,7 @@ const FlexLink = styled(Link)`
 
 function NavigationButton({ to, isActive, children }) {
   return (
-    <FlexLink to={to}>
+    <FlexLink data-testid="navigation-link" to={to}>
       <LinkContent isActive={isActive}>{children}</LinkContent>
     </FlexLink>
   );

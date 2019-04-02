@@ -45,6 +45,7 @@ Array [
   >
     <Link
       className="c1"
+      data-testid="next-step-button"
       to="/cart"
     >
       Place Order

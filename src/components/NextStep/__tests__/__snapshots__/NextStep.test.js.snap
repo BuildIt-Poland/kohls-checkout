@@ -30,6 +30,7 @@ exports[`COMPONENT - NextStep render NextStep component 1`] = `
 >
   <Link
     className="c1"
+    data-testid="next-step-button"
     to="/"
   >
     Next step

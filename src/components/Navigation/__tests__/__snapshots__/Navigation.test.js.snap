@@ -96,6 +96,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
   >
     <Link
       className="c2"
+      data-testid="navigation-link"
       to="/checkout/delivery"
     >
       <span
@@ -106,6 +107,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
     </Link>
     <Link
       className="c2"
+      data-testid="navigation-link"
       to="/checkout/payment"
     >
       <span
@@ -116,6 +118,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
     </Link>
     <Link
       className="c2"
+      data-testid="navigation-link"
       to="/checkout/review"
     >
       <span
@@ -224,6 +227,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
   >
     <Link
       className="c2"
+      data-testid="navigation-link"
       to="/checkout/delivery"
     >
       <span
@@ -234,6 +238,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
     </Link>
     <Link
       className="c2"
+      data-testid="navigation-link"
       to="/checkout/payment"
     >
       <span
@@ -244,6 +249,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
     </Link>
     <Link
       className="c2"
+      data-testid="navigation-link"
       to="/checkout/review"
     >
       <span
@@ -352,6 +358,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
   >
     <Link
       className="c2"
+      data-testid="navigation-link"
       to="/checkout/delivery"
     >
       <span
@@ -362,6 +369,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
     </Link>
     <Link
       className="c2"
+      data-testid="navigation-link"
       to="/checkout/payment"
     >
       <span
@@ -372,6 +380,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
     </Link>
     <Link
       className="c2"
+      data-testid="navigation-link"
       to="/checkout/review"
     >
       <span

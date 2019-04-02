@@ -66,6 +66,7 @@ Array [
     >
       <a
         className="c4"
+        data-testid="next-step-button"
         href="/checkout/delivery"
         onClick={[Function]}
       >
@@ -122,7 +123,7 @@ Array [
           "entries": Array [
             Object {
               "hash": "",
-              "key": "558cxz",
+              "key": "djcyn1",
               "pathname": "/",
               "search": "",
               "state": undefined,
@@ -136,7 +137,7 @@ Array [
           "listen": [Function],
           "location": Object {
             "hash": "",
-            "key": "558cxz",
+            "key": "djcyn1",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -148,7 +149,7 @@ Array [
       location={
         Object {
           "hash": "",
-          "key": "558cxz",
+          "key": "djcyn1",
           "pathname": "/",
           "search": "",
           "state": undefined,
