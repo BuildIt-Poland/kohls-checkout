@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - NextStep render NextStep component 1`] = `
-.c1 {
+exports[`COMPONENT - NextStep Button render NextStep component 1`] = `
+.c0 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -15,24 +15,9 @@ exports[`COMPONENT - NextStep render NextStep component 1`] = `
   margin: 0 auto;
 }
 
-.c0 {
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  background: #ffffff;
-  border-top: 1px solid #b0b0b0;
-}
-
-<div
+<Link
   className="c0"
 >
-  <Link
-    className="c1"
-    to="/"
-  >
-    Next step
-  </Link>
-</div>
+  Test
+</Link>
 `;

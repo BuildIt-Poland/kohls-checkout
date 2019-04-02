@@ -11,7 +11,8 @@ const Button = styled(Link)`
   padding: 1.2rem;
   text-align: center;
   text-decoration: none;
-  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
 `;
 
 export default Button;
