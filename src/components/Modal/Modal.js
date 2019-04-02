@@ -8,7 +8,7 @@ import ModalHeader from './ModalHeader';
 import CloseModal from './CloseModal';
 import ModalBody from './ModalBody';
 
-function Modal({ children, onClose = noop, title }) {
+function Modal({ children, onClose = noop, title = 'Modal' }) {
   return (
     <>
       <ModalWrapper onClick={onClose} />
@@ -24,7 +24,8 @@ function Modal({ children, onClose = noop, title }) {
 }
 
 Modal.propTypes = {
-  onClose: PropTypes.func
+  onClose: PropTypes.func,
+  title: PropTypes.string
 };
 
 export default Modal;

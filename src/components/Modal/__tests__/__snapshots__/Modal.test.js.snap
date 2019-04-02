@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
+.c1 {
+  background: white;
+  border-radius: 0.5rem;
+  height: auto;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 80%;
+  z-index: 9000;
+}
+
+.c0 {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 8000;
+}
+
+.c2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.c3 {
+  float: right;
+}
+
+.c4 {
+  padding: 1rem;
+  text-align: left;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+  <section
+    class="c1"
+  >
+    <section
+      class="c2"
+    >
+      Modal
+      <span
+        class="c3"
+      >
+        X
+      </span>
+    </section>
+    <section
+      class="c4"
+    >
+      Test
+    </section>
+  </section>
+</div>
+`;
+
+exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
+.c1 {
+  background: white;
+  border-radius: 0.5rem;
+  height: auto;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 80%;
+  z-index: 9000;
+}
+
+.c0 {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 8000;
+}
+
+.c2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.c3 {
+  float: right;
+}
+
+.c4 {
+  padding: 1rem;
+  text-align: left;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+  <section
+    class="c1"
+  >
+    <section
+      class="c2"
+    >
+      Defined Modal Title
+      <span
+        class="c3"
+      >
+        X
+      </span>
+    </section>
+    <section
+      class="c4"
+    >
+      Test
+    </section>
+  </section>
+</div>
+`;

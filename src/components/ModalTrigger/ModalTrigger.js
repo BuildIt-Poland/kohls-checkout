@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Modal from '../Modal/Modal';
 import Text from '../Text/Text';
 
-function ModalTrigger({ title = 'Dialog', content, children }) {
+function ModalTrigger({ title, content, children }) {
   const [isOpen, setModalVisibility] = useState(false);
 
   const toggleModal = () => setModalVisibility(!isOpen);
@@ -30,7 +30,7 @@ function ModalTrigger({ title = 'Dialog', content, children }) {
 }
 
 ModalTrigger.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired
 };
 
