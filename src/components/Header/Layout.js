@@ -9,6 +9,7 @@ const Layout = styled.header`
   background-color: ${colorWhite};
   border-bottom: ${borderWidthThin} solid ${colorLightGrey};
   top: 0;
+  left: 0;
 `;
 
 export default Layout;

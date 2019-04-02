@@ -8,6 +8,7 @@ exports[`COMPONENT - Header Layout renders correctly 1`] = `
   background-color: #ffffff;
   border-bottom: 1px solid #b0b0b0;
   top: 0;
+  left: 0;
 }
 
 <header
