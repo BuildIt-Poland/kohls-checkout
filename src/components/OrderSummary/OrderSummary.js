@@ -8,7 +8,6 @@ import TextHighlight from '../TextHighlight';
 import PriceBadge from './PriceBadge';
 import PriceRow from './PriceRow';
 import TotalPrice from './TotalPrice';
-import Divider from '../Divider';
 
 const Wrapper = styled.div`
   padding-left: ${spacingMedium};
@@ -41,7 +40,6 @@ function OrderSummary() {
             Tax<PriceBadge>$6.38</PriceBadge>
           </Text>
         </PriceRow>
-        <Divider />
         <TotalPrice price={122.7} />
         <PriceRow>
           <Text>
