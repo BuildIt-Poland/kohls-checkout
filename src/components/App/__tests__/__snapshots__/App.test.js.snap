@@ -122,7 +122,7 @@ Array [
           "entries": Array [
             Object {
               "hash": "",
-              "key": "7x23d6",
+              "key": "558cxz",
               "pathname": "/",
               "search": "",
               "state": undefined,
@@ -136,7 +136,7 @@ Array [
           "listen": [Function],
           "location": Object {
             "hash": "",
-            "key": "7x23d6",
+            "key": "558cxz",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -148,7 +148,7 @@ Array [
       location={
         Object {
           "hash": "",
-          "key": "7x23d6",
+          "key": "558cxz",
           "pathname": "/",
           "search": "",
           "state": undefined,
