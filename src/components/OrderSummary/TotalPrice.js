@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { fontSmall, fontWeightBold } from '../../styles/designTokens';
-import Row from './TextRow';
+import TextRow from './TextRow';
 
 const PriceSummary = styled.span`
   font-size: ${fontSmall};
@@ -12,9 +12,9 @@ const PriceSummary = styled.span`
 
 function TotalPrice({ price }) {
   return (
-    <Row>
+    <TextRow>
       <PriceSummary>TOTAL ${price}</PriceSummary>
-    </Row>
+    </TextRow>
   );
 }
 

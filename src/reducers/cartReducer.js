@@ -1,5 +1,3 @@
-// import { INCREASE_COUNT } from '../constants/actionTypes';
-
 const initialState = {
   items: []
 };
