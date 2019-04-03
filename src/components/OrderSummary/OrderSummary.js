@@ -1,51 +1,37 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import { spacingMedium } from '../../styles/designTokens';
-import Text from '../Text/Text';
 import SectionHeader from '../SectionHeader';
 import TextHighlight from '../TextHighlight';
-import PriceBadge from './PriceBadge';
-import PriceRow from './PriceRow';
+import TextRow from './TextRow';
 import TotalPrice from './TotalPrice';
-
-const Wrapper = styled.div`
-  padding-left: ${spacingMedium};
-  padding-right: ${spacingMedium};
-`;
 
 function OrderSummary() {
   return (
-    <Wrapper>
+    <section>
       <SectionHeader>Order Summary</SectionHeader>
-      <PriceRow>
-        <Text>
-          Subtotal<PriceBadge>$125.00</PriceBadge>
-        </Text>
-      </PriceRow>
-      <PriceRow>
-        <TextHighlight bold>
-          Kohl's Cash & Discounts<PriceBadge>-$18.75</PriceBadge>
-        </TextHighlight>
-      </PriceRow>
-      <PriceRow>
-        <Text underline>
-          Shipping<PriceBadge>Free</PriceBadge>
-        </Text>
-      </PriceRow>
+      <TextRow>
+        <span>Subtotal</span>
+        <span>$125.00</span>
+      </TextRow>
+      <TextRow>
+        <span>Kohl's Cash &amp; Discounts</span>
+        <span>-$18.75</span>
+      </TextRow>
+      <TextRow underline>
+        <span>Shipping</span>
+        <span>FREE</span>
+      </TextRow>
       <TextHighlight>You have earned free shipping.</TextHighlight>
-      <PriceRow>
-        <Text underline>
-          Tax<PriceBadge>$6.38</PriceBadge>
-        </Text>
-      </PriceRow>
+      <TextRow>
+        <span>Tax</span>
+        <span>$6.38</span>
+      </TextRow>
       <TotalPrice price={122.7} />
-      <PriceRow>
-        <Text>
-          Your Savings<PriceBadge>$122.70</PriceBadge>
-        </Text>
-      </PriceRow>
-    </Wrapper>
+      <TextRow>
+        <span>Your Savings</span>
+        <span>$122.70</span>
+      </TextRow>
+    </section>
   );
 }
 

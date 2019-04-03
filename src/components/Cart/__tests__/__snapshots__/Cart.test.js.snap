@@ -2,30 +2,55 @@
 
 exports[`COMPONENT - Cart renders Cart component 1`] = `
 Array [
-  <section>
+  .c1 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.c0 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+<article
+    className="c0"
+  >
+    <h1
+      className="c1"
+    >
+      Cart
+    </h1>
     <ShoppingCart />
     <OrderSummary />
-  </section>,
+  </article>,
   .c1 {
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 1.8rem;
+  font-size: 700;
   font-weight: 600;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
 }
 
 .c0 {
   bottom: 0;
   left: 0;
-  padding: 1.2rem;
+  padding: 1rem;
   position: fixed;
   width: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  background: #ffffff;
+  border-top: 1px solid #b0b0b0;
   z-index: 6000;
 }
 
@@ -34,6 +59,7 @@ Array [
   >
     <Link
       className="c1"
+      data-testid="next-step-button"
       to="/checkout/delivery"
     >
       Checkout

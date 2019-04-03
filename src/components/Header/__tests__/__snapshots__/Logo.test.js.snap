@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Header Logo renders correctly 1`] = `
+.c0 {
+  height: 100%;
+  cursor: pointer;
+  padding-top: 2rem;
+}
+
+<a
+  className="c0"
+  data-testid="logo"
+  href="/"
+  onClick={[Function]}
+>
+  <LogoIcon />
+</a>
+`;
