@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { borderRadiusMedium, borderWidthThick, colorLightGrey } from '../../styles/designTokens';
+import { borderRadiusMedium, borderWidthThick, colorLightGrey, borderWidthThin } from '../../styles/designTokens';
 
 const CheckMark = styled.span`
   position: absolute;
@@ -18,7 +18,7 @@ const CheckMark = styled.span`
     top: 0.3rem;
     width: 0.6rem;
     height: 1.6rem;
-    border: solid #95c96f;
+    border: ${borderWidthThin} solid #95c96f;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }
