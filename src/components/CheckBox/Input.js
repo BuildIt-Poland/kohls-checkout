@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 import CheckMark from './CheckMark';
 
-const HiddenCheckBox = styled.input.attrs({
-  type: 'checkbox'
-})`
+const Input = styled.input`
   position: absolute;
   visibility: hidden;
   &:checked ~ ${CheckMark} {
@@ -14,4 +12,4 @@ const HiddenCheckBox = styled.input.attrs({
   }
 `;
 
-export default HiddenCheckBox;
+export default Input;

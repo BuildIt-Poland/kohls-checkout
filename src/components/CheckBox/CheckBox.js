@@ -1,18 +1,18 @@
 import React from 'react';
 
 import Wrapper from './Wrapper';
-import HiddenCheckBox from './HiddenCheckBox';
+import Input from './Input';
 import CheckMark from './CheckMark';
-import CheckBoxLabel from './CheckBoxLabel';
+import Label from './Label';
 
-function CheckBox({ labelText, ...props }) {
+function Checkbox({ label, checked, onChange }) {
   return (
     <Wrapper>
-      <HiddenCheckBox {...props} />
+      <Input type="checkbox" checked={checked} onChange={onChange} />
       <CheckMark />
-      <CheckBoxLabel>{labelText}</CheckBoxLabel>
+      <Label>{label}</Label>
     </Wrapper>
   );
 }
 
-export default CheckBox;
+export default Checkbox;

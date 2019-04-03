@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { fontWeightNormal, spacingSmall, fontMedium, colorBlack } from '../../styles/designTokens';
 
-const CheckBoxLabel = styled.label`
+const Label = styled.label`
   display: block;
   color: ${colorBlack};
   font-size: ${fontMedium};
@@ -11,4 +11,4 @@ const CheckBoxLabel = styled.label`
   cursor: pointer;
 `;
 
-export default CheckBoxLabel;
+export default Label;

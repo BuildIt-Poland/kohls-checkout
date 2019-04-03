@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { spacingLarge, spacingSmall } from '../../styles/designTokens';
 
-const Wrapper = styled.div`
+const Wrapper = styled.label`
   position: relative;
   display: block;
   padding-left: ${spacingLarge};
