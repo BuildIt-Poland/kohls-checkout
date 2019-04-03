@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import BaseContent from '../Content';
+import ContentBase from '../Content';
 
-const Content = styled(BaseContent)`
+const Content = styled(ContentBase)`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;

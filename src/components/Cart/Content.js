@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 import { spacingLarge } from '../../styles/designTokens';
-import BaseContent from '../Content';
+import ContentBase from '../Content';
 
-const Content = styled(BaseContent)`
+const Content = styled(ContentBase)`
   padding-top: ${spacingLarge};
   padding-bottom: ${spacingLarge};
 `;

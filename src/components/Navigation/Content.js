@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 import media from '../../styles/media';
-import BaseContent from '../Content';
+import ContentBase from '../Content';
 
-const Content = styled(BaseContent)`
+const Content = styled(ContentBase)`
   display: flex;
   height: 4rem;
   ${media.tablet`
