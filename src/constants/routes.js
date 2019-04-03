@@ -1,3 +1,4 @@
+export const ROOT_PATH = '/';
 export const CART_PATH = '/cart';
 export const CHECKOUT_PATH = '/checkout/:checkoutStep';
 export const CHECKOUT_DELIVERY_PATH = '/checkout/delivery';

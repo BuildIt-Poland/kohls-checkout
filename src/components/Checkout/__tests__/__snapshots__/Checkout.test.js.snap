@@ -2,53 +2,27 @@
 
 exports[`COMPONENT - Checkout renders correctly for "/delivery" route 1`] = `
 Array [
-  .c2 {
-  background: #222222;
-  border-right: 0;
-  border: 1px solid #454545;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-
-.c2:last-child {
-  border-right: 1px;
-}
-
-.c3 {
+  .c3 {
   background: #ffffff;
-  border-right: 0;
-  border: 1px solid #454545;
   color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
-.c3:last-child {
-  border-right: 1px;
-}
-
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -56,86 +30,166 @@ Array [
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
+  border-left: 1px solid #b0b0b0;
+}
+
+.c2:last-child {
+  border-right: 1px solid #b0b0b0;
 }
 
 .c0 {
+  width: 100%;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
-  width: 100%;
-}
-
-<nav
-    className="c0"
-  >
-    <a
-      className="c1"
-      href="/checkout/delivery"
-      onClick={[Function]}
-    >
-      <span
-        className="c2"
-      >
-        Delivery
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/payment"
-      onClick={[Function]}
-    >
-      <span
-        className="c3"
-      >
-        Payment
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/review"
-      onClick={[Function]}
-    >
-      <span
-        className="c3"
-      >
-        Review
-      </span>
-    </a>
-  </nav>,
-  .c2 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: normal;
-  text-transform: none;
+  height: 6rem;
 }
 
 .c4 {
+  font-weight: 400;
+  padding-right: 0.4rem;
+}
+
+@media (max-width:48em) {
+  .c2:first-child {
+    border-left: 0;
+  }
+
+  .c2:last-child {
+    border-right: 0;
+  }
+}
+
+@media (max-width:48em) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      className="c1"
+    >
+      <a
+        className="c2"
+        data-testid="navigation-link"
+        href="/checkout/delivery"
+        onClick={[Function]}
+      >
+        <span
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            1.
+          </span>
+          Delivery
+        </span>
+      </a>
+      <a
+        className="c2"
+        data-testid="navigation-link"
+        href="/checkout/payment"
+        onClick={[Function]}
+      >
+        <span
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            2.
+          </span>
+          Payment
+        </span>
+      </a>
+      <a
+        className="c2"
+        data-testid="navigation-link"
+        href="/checkout/review"
+        onClick={[Function]}
+      >
+        <span
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            3.
+          </span>
+          Review
+        </span>
+      </a>
+    </nav>
+  </div>,
+  .c0 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.c3 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.c3:last-child {
+  margin-bottom: 0;
+}
+
+.c5 {
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 1.8rem;
+  font-size: 700;
   font-weight: 600;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
 }
 
-.c3 {
+.c4 {
   bottom: 0;
   left: 0;
-  padding: 1.2rem;
+  padding: 1rem;
   position: fixed;
   width: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  background: #ffffff;
+  border-top: 1px solid #b0b0b0;
   z-index: 6000;
 }
 
 .c1 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.c2 {
   font-size: 1.2rem;
   text-align: left;
   margin-top: 10px;
@@ -143,186 +197,219 @@ Array [
   text-transform: uppercase;
 }
 
-.c0 {
-  margin-top: 100px;
-}
-
-<section
+<article
     className="c0"
   >
+    <h1
+      className="c1"
+    >
+      Delivery
+    </h1>
     <section>
       <h3
-        className="c1"
+        className="c2"
       >
         Shipping Address
         <span
           data-testid="modal-trigger"
           onClick={[Function]}
         >
-          <span
-            className="c2"
+          <p
+            className="c3"
           >
             Open modal
-          </span>
+          </p>
         </span>
       </h3>
     </section>
     <div
-      className="c3"
+      className="c4"
     >
       <a
-        className="c4"
+        className="c5"
+        data-testid="next-step-button"
         href="/checkout/payment"
         onClick={[Function]}
       >
         Continue to Payment
       </a>
     </div>
-  </section>,
+  </article>,
 ]
 `;
 
 exports[`COMPONENT - Checkout renders correctly for "/payment" route 1`] = `
 Array [
   .c3 {
-  background: #222222;
-  border-right: 0;
-  border: 1px solid #454545;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-
-.c3:last-child {
-  border-right: 1px;
-}
-
-.c2 {
   background: #ffffff;
-  border-right: 0;
-  border: 1px solid #454545;
   color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-left: 1px solid #b0b0b0;
 }
 
 .c2:last-child {
-  border-right: 1px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  border-right: 1px solid #b0b0b0;
 }
 
 .c0 {
+  width: 100%;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
-  width: 100%;
-}
-
-<nav
-    className="c0"
-  >
-    <a
-      className="c1"
-      href="/checkout/delivery"
-      onClick={[Function]}
-    >
-      <span
-        className="c2"
-      >
-        Delivery
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/payment"
-      onClick={[Function]}
-    >
-      <span
-        className="c3"
-      >
-        Payment
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/review"
-      onClick={[Function]}
-    >
-      <span
-        className="c2"
-      >
-        Review
-      </span>
-    </a>
-  </nav>,
-  .c7 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: normal;
-  text-transform: none;
+  height: 6rem;
 }
 
 .c4 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  text-transform: none;
+  font-weight: 400;
+  padding-right: 0.4rem;
 }
 
-.c11 {
+@media (max-width:48em) {
+  .c2:first-child {
+    border-left: 0;
+  }
+
+  .c2:last-child {
+    border-right: 0;
+  }
+}
+
+@media (max-width:48em) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      className="c1"
+    >
+      <a
+        className="c2"
+        data-testid="navigation-link"
+        href="/checkout/delivery"
+        onClick={[Function]}
+      >
+        <span
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            1.
+          </span>
+          Delivery
+        </span>
+      </a>
+      <a
+        className="c2"
+        data-testid="navigation-link"
+        href="/checkout/payment"
+        onClick={[Function]}
+      >
+        <span
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            2.
+          </span>
+          Payment
+        </span>
+      </a>
+      <a
+        className="c2"
+        data-testid="navigation-link"
+        href="/checkout/review"
+        onClick={[Function]}
+      >
+        <span
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            3.
+          </span>
+          Review
+        </span>
+      </a>
+    </nav>
+  </div>,
+  .c0 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.c8 {
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 1.8rem;
+  font-size: 700;
   font-weight: 600;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
 }
 
-.c10 {
+.c7 {
   bottom: 0;
   left: 0;
-  padding: 1.2rem;
+  padding: 1rem;
   position: fixed;
   width: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  background: #ffffff;
+  border-top: 1px solid #b0b0b0;
   z-index: 6000;
+}
+
+.c1 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .c2 {
@@ -333,306 +420,343 @@ Array [
   text-transform: uppercase;
 }
 
-.c6 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: none;
-  color: #9cc472;
-}
-
-.c8 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  text-transform: none;
-  color: #9cc472;
-}
-
 .c5 {
-  float: right;
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #00a09f;
+}
+
+.c5:last-child {
+  margin-bottom: 0;
 }
 
 .c3 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
   margin: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c9 {
+.c3:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.c1 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.c0 {
-  margin-top: 100px;
-}
-
-<section
+<article
     className="c0"
   >
+    <h1
+      className="c1"
+    >
+      Payment
+    </h1>
     <section>
-      <div
-        className="c1"
+      <h3
+        className="c2"
       >
-        <h3
-          className="c2"
-        >
-          Order Summary
-        </h3>
-        <p
-          className="c3"
-        >
-          <span
-            className="c4"
-          >
-            Subtotal
-            <span
-              className="c5"
-            >
-              $125.00
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c6"
-          >
-            Kohl's Cash & Discounts
-            <span
-              className="c5"
-            >
-              -$18.75
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c7"
-          >
-            Shipping
-            <span
-              className="c5"
-            >
-              Free
-            </span>
-          </span>
-        </p>
-        <span
-          className="c8"
-        >
-          You have earned free shipping.
+        Order Summary
+      </h3>
+      <p
+        className="c3"
+      >
+        <span>
+          Subtotal
         </span>
-        <p
-          className="c3"
+        <span>
+          $125.00
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span>
+          Kohl's Cash & Discounts
+        </span>
+        <span>
+          -$18.75
+        </span>
+      </p>
+      <p
+        className="c4"
+      >
+        <span>
+          Shipping
+        </span>
+        <span>
+          FREE
+        </span>
+      </p>
+      <p
+        className="c5"
+      >
+        You have earned free shipping.
+      </p>
+      <p
+        className="c3"
+      >
+        <span>
+          Tax
+        </span>
+        <span>
+          $6.38
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span
+          className="c6"
         >
-          <span
-            className="c7"
-          >
-            Tax
-            <span
-              className="c5"
-            >
-              $6.38
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c9"
-          >
-            TOTAL
-            <span
-              className="c5"
-            >
-              $
-              122.7
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c4"
-          >
-            Your Savings
-            <span
-              className="c5"
-            >
-              $122.70
-            </span>
-          </span>
-        </p>
-      </div>
+          TOTAL $
+          122.7
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span>
+          Your Savings
+        </span>
+        <span>
+          $122.70
+        </span>
+      </p>
     </section>
     <div
-      className="c10"
+      className="c7"
     >
       <a
-        className="c11"
+        className="c8"
+        data-testid="next-step-button"
         href="/checkout/review"
         onClick={[Function]}
       >
         Review Order
       </a>
     </div>
-  </section>,
+  </article>,
 ]
 `;
 
 exports[`COMPONENT - Checkout renders correctly for "/review" route 1`] = `
 Array [
   .c3 {
-  background: #222222;
-  border-right: 0;
-  border: 1px solid #454545;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-
-.c3:last-child {
-  border-right: 1px;
-}
-
-.c2 {
   background: #ffffff;
-  border-right: 0;
-  border: 1px solid #454545;
   color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-left: 1px solid #b0b0b0;
 }
 
 .c2:last-child {
-  border-right: 1px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  border-right: 1px solid #b0b0b0;
 }
 
 .c0 {
+  width: 100%;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
-  width: 100%;
-}
-
-<nav
-    className="c0"
-  >
-    <a
-      className="c1"
-      href="/checkout/delivery"
-      onClick={[Function]}
-    >
-      <span
-        className="c2"
-      >
-        Delivery
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/payment"
-      onClick={[Function]}
-    >
-      <span
-        className="c2"
-      >
-        Payment
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/review"
-      onClick={[Function]}
-    >
-      <span
-        className="c3"
-      >
-        Review
-      </span>
-    </a>
-  </nav>,
-  .c7 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: normal;
-  text-transform: none;
+  height: 6rem;
 }
 
 .c4 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  text-transform: none;
+  font-weight: 400;
+  padding-right: 0.4rem;
 }
 
-.c11 {
+@media (max-width:48em) {
+  .c2:first-child {
+    border-left: 0;
+  }
+
+  .c2:last-child {
+    border-right: 0;
+  }
+}
+
+@media (max-width:48em) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <nav
+      className="c1"
+    >
+      <a
+        className="c2"
+        data-testid="navigation-link"
+        href="/checkout/delivery"
+        onClick={[Function]}
+      >
+        <span
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            1.
+          </span>
+          Delivery
+        </span>
+      </a>
+      <a
+        className="c2"
+        data-testid="navigation-link"
+        href="/checkout/payment"
+        onClick={[Function]}
+      >
+        <span
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            2.
+          </span>
+          Payment
+        </span>
+      </a>
+      <a
+        className="c2"
+        data-testid="navigation-link"
+        href="/checkout/review"
+        onClick={[Function]}
+      >
+        <span
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            3.
+          </span>
+          Review
+        </span>
+      </a>
+    </nav>
+  </div>,
+  .c0 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.c8 {
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 1.8rem;
+  font-size: 700;
   font-weight: 600;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
 }
 
-.c10 {
+.c7 {
   bottom: 0;
   left: 0;
-  padding: 1.2rem;
+  padding: 1rem;
   position: fixed;
   width: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  background: #ffffff;
+  border-top: 1px solid #b0b0b0;
   z-index: 6000;
+}
+
+.c1 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .c2 {
@@ -643,161 +767,167 @@ Array [
   text-transform: uppercase;
 }
 
-.c6 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: none;
-  color: #9cc472;
-}
-
-.c8 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  text-transform: none;
-  color: #9cc472;
-}
-
 .c5 {
-  float: right;
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #00a09f;
+}
+
+.c5:last-child {
+  margin-bottom: 0;
 }
 
 .c3 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
   margin: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c9 {
+.c3:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.c1 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.c0 {
-  margin-top: 100px;
-}
-
-<section
+<article
     className="c0"
   >
+    <h1
+      className="c1"
+    >
+      Review
+    </h1>
     <section>
-      <div
-        className="c1"
+      <h3
+        className="c2"
       >
-        <h3
-          className="c2"
-        >
-          Order Summary
-        </h3>
-        <p
-          className="c3"
-        >
-          <span
-            className="c4"
-          >
-            Subtotal
-            <span
-              className="c5"
-            >
-              $125.00
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c6"
-          >
-            Kohl's Cash & Discounts
-            <span
-              className="c5"
-            >
-              -$18.75
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c7"
-          >
-            Shipping
-            <span
-              className="c5"
-            >
-              Free
-            </span>
-          </span>
-        </p>
-        <span
-          className="c8"
-        >
-          You have earned free shipping.
+        Order Summary
+      </h3>
+      <p
+        className="c3"
+      >
+        <span>
+          Subtotal
         </span>
-        <p
-          className="c3"
+        <span>
+          $125.00
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span>
+          Kohl's Cash & Discounts
+        </span>
+        <span>
+          -$18.75
+        </span>
+      </p>
+      <p
+        className="c4"
+      >
+        <span>
+          Shipping
+        </span>
+        <span>
+          FREE
+        </span>
+      </p>
+      <p
+        className="c5"
+      >
+        You have earned free shipping.
+      </p>
+      <p
+        className="c3"
+      >
+        <span>
+          Tax
+        </span>
+        <span>
+          $6.38
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span
+          className="c6"
         >
-          <span
-            className="c7"
-          >
-            Tax
-            <span
-              className="c5"
-            >
-              $6.38
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c9"
-          >
-            TOTAL
-            <span
-              className="c5"
-            >
-              $
-              122.7
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c4"
-          >
-            Your Savings
-            <span
-              className="c5"
-            >
-              $122.70
-            </span>
-          </span>
-        </p>
-      </div>
+          TOTAL $
+          122.7
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span>
+          Your Savings
+        </span>
+        <span>
+          $122.70
+        </span>
+      </p>
     </section>
     <div
-      className="c10"
+      className="c7"
     >
       <a
-        className="c11"
+        className="c8"
+        data-testid="next-step-button"
         href="/cart"
         onClick={[Function]}
       >
         Place Order
       </a>
     </div>
-  </section>,
+  </article>,
 ]
 `;

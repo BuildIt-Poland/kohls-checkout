@@ -1,3 +1,5 @@
+/* global cy*/
+
 const getBtnAndClick = (selector, content) =>
   cy
     .get(selector)
@@ -10,15 +12,15 @@ describe('Navigation.test.js', () => {
   });
 
   it('goes through all steps by one button', () => {
-    getBtnAndClick('.sc-gZMcBi', 'Continue to Payment');
-    getBtnAndClick('.sc-gZMcBi', 'Review Order');
-    getBtnAndClick('.sc-gZMcBi', 'Place Order');
+    getBtnAndClick('[data-testid="next-step-button"]', 'Continue to Payment');
+    getBtnAndClick('[data-testid="next-step-button"]', 'Review Order');
+    getBtnAndClick('[data-testid="next-step-button"]', 'Place Order');
   });
 
   it('goes through all navigation tabs', () => {
-    getBtnAndClick('.sc-VigVT', 'Delivery');
-    getBtnAndClick('.sc-VigVT', 'Payment');
-    getBtnAndClick('.sc-VigVT', 'Review');
-    getBtnAndClick('.sc-gZMcBi', 'Place Order');
+    getBtnAndClick('[data-testid="navigation-link"]', 'Delivery');
+    getBtnAndClick('[data-testid="navigation-link"]', 'Payment');
+    getBtnAndClick('[data-testid="navigation-link"]', 'Review');
+    getBtnAndClick('[data-testid="next-step-button"]', 'Place Order');
   });
 });

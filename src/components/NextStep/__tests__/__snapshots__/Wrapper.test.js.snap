@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - NextStep Wrapper render NextStep component 1`] = `
+.c0 {
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  border-top: 1px solid #b0b0b0;
+  z-index: 6000;
+}
+
+<div
+  className="c0"
+/>
+`;
