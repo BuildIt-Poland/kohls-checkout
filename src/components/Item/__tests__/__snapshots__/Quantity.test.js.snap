@@ -35,7 +35,6 @@ exports[`COMPONENT - Quantity renders Quantity component 1`] = `
 >
   <button
     className="c1"
-    disabled={true}
   >
     -
   </button>
