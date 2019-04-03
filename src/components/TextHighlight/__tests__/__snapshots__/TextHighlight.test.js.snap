@@ -6,6 +6,7 @@ exports[`COMPONENT - TextHighlight renders TextHighlight component 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: normal;
+  text-transform: none;
   color: #9cc472;
 }
 
