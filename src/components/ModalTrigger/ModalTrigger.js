@@ -23,7 +23,9 @@ function ModalTrigger({ title, content, children }) {
 
   return (
     <>
-      <span onClick={toggleModal}>{children}</span>
+      <span onClick={toggleModal} data-testid="modal-trigger">
+        {children}
+      </span>
       {renderModal()}
     </>
   );

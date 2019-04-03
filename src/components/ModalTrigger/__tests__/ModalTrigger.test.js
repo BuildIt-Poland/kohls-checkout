@@ -14,17 +14,16 @@ describe('COMPONENT - ModalTrigger', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('renders ModalTrigger component', async () => {
-    const { container, getByText, unmount } = render(
+  it('renders Modal component after clicking ModalTrigger', async () => {
+    const { getByTestId } = render(
       <ModalTrigger content="Test Content" title="Test Modal Title">
         Trigger
-      </ModalTrigger>,
-      { container: document.body }
+      </ModalTrigger>
     );
 
-    fireEvent.click(getByText('Trigger'));
+    fireEvent.click(getByTestId('modal-trigger'));
 
-    expect(container).toMatchSnapshot();
-    unmount();
+    expect(getByTestId('modal-header')).toHaveTextContent('Test Modal Title');
+    expect(getByTestId('modal-body')).toHaveTextContent('Test Content');
   });
 });

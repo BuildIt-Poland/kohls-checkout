@@ -156,6 +156,7 @@ Array [
       >
         Shipping Address
         <span
+          data-testid="modal-trigger"
           onClick={[Function]}
         >
           <span

@@ -52,6 +52,7 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
   >
     <section
       class="c2"
+      data-testid="modal-header"
     >
       Modal
       <span
@@ -62,6 +63,7 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
     </section>
     <section
       class="c4"
+      data-testid="modal-body"
     >
       Test
     </section>
@@ -121,6 +123,7 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
   >
     <section
       class="c2"
+      data-testid="modal-header"
     >
       Defined Modal Title
       <span
@@ -131,6 +134,7 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
     </section>
     <section
       class="c4"
+      data-testid="modal-body"
     >
       Test
     </section>

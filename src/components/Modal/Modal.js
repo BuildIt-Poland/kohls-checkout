@@ -13,11 +13,11 @@ function Modal({ children, onClose = noop, title = 'Modal' }) {
     <>
       <ModalWrapper onClick={onClose} />
       <ModalContent>
-        <ModalHeader>
+        <ModalHeader data-testid="modal-header">
           {title}
           <CloseModal onClick={onClose}>X</CloseModal>
         </ModalHeader>
-        <ModalBody>{children}</ModalBody>
+        <ModalBody data-testid="modal-body">{children}</ModalBody>
       </ModalContent>
     </>
   );
