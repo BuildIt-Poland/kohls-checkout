@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import ItemsList from './ItemsList';
-import { increaseQuantity, decreaseQuantity } from '../../actions/quantityActions';
+import { updateQuantity } from '../../actions/quantityActions';
 
 function mapStateToProps(state) {
   return {
@@ -11,8 +11,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    handleClickUp: cartItemId => dispatch(increaseQuantity(cartItemId)),
-    handleClickDown: cartItemId => dispatch(decreaseQuantity(cartItemId))
+    handleUpdate: (cartItemId, quantity) => dispatch(updateQuantity(cartItemId, quantity))
   };
 }
 

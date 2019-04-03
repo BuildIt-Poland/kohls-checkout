@@ -35,14 +35,18 @@ exports[`COMPONENT - Quantity renders Quantity component 1`] = `
 >
   <button
     className="c1"
+    disabled={false}
+    onClick={[Function]}
   >
     -
   </button>
   <input
     className="c2"
+    onChange={[Function]}
   />
   <button
     className="c1"
+    onClick={[Function]}
   >
     +
   </button>

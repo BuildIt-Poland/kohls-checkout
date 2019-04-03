@@ -1,15 +1,9 @@
-import { INCREASE_QUANTITY, DECREASE_QUANTITY } from '../constants/actionTypes';
+import { UPDATE_QUANTITY } from '../constants/actionTypes';
 
-export function increaseQuantity(cartItemId) {
+export function updateQuantity(cartItemId, quantity) {
   return {
-    type: INCREASE_QUANTITY,
-    cartItemId
-  };
-}
-
-export function decreaseQuantity(cartItemId) {
-  return {
-    type: DECREASE_QUANTITY,
-    cartItemId
+    type: UPDATE_QUANTITY,
+    cartItemId,
+    quantity
   };
 }
