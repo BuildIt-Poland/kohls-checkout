@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 function ShoppingCart() {
   return (
     <>
-      <SectionHeader title="Shopping Cart"> </SectionHeader>
+      <SectionHeader>Shopping Cart</SectionHeader>
       <Wrapper>
         <ItemsList />
       </Wrapper>

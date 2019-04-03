@@ -27,7 +27,6 @@ exports[`COMPONENT - Quantity renders Quantity component 1`] = `
   border-radius: 0.25rem;
   width: 15rem;
   border: 2px solid #b0b0b0;
-  height: 4.4rem;
 }
 
 <div

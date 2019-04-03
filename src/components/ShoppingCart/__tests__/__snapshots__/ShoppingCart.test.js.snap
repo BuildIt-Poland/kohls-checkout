@@ -12,9 +12,8 @@ Array [
 
 <h3
     className="c0"
-    title="Shopping Cart"
   >
-     
+    Shopping Cart
   </h3>,
   .c0 {
   padding-left: 2rem;

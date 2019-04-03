@@ -14,7 +14,6 @@ const Wrapper = styled.div`
   border-radius: ${borderRadiusMedium};
   width: 15rem;
   border: ${borderWidthThick} solid ${colorLightGrey};
-  height: 4.4rem;
 `;
 
 function Quantity({ cartItemId, currentQuantity, handleUpdate }) {
