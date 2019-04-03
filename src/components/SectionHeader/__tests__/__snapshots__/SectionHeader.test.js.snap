@@ -2,14 +2,14 @@
 
 exports[`COMPONENT - SectionHeader renders SectionHeader component 1`] = `
 .c0 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin: 10px;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 <h3
   className="c0"
->
-  Section Header
-</h3>
+/>
 `;

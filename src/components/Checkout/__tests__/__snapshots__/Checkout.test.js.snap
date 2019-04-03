@@ -120,6 +120,7 @@ Array [
         href="/checkout/review"
         onClick={[Function]}
       >
+<<<<<<< HEAD
         <span
           className="c3"
         >
@@ -142,6 +143,21 @@ Array [
 }
 
 .c3 {
+=======
+        Review
+      </span>
+    </a>
+  </nav>,
+  .c2 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c4 {
+>>>>>>> master
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -155,14 +171,31 @@ Array [
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .c2 {
+=======
+.c3 {
+>>>>>>> master
   bottom: 0;
   left: 0;
   padding: 1rem;
   position: fixed;
   width: 100%;
+<<<<<<< HEAD
   background: #ffffff;
   border-top: 1px solid #b0b0b0;
+=======
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 6000;
+}
+
+.c1 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+>>>>>>> master
 }
 
 .c1 {
@@ -176,8 +209,30 @@ Array [
 <article
     className="c0"
   >
+<<<<<<< HEAD
     <h1
       className="c1"
+=======
+    <section>
+      <h3
+        className="c1"
+      >
+        Shipping Address
+        <span
+          data-testid="modal-trigger"
+          onClick={[Function]}
+        >
+          <span
+            className="c2"
+          >
+            Open modal
+          </span>
+        </span>
+      </h3>
+    </section>
+    <div
+      className="c3"
+>>>>>>> master
     >
       Delivery
     </h1>
@@ -185,8 +240,12 @@ Array [
       className="c2"
     >
       <a
+<<<<<<< HEAD
         className="c3"
         data-testid="next-step-button"
+=======
+        className="c4"
+>>>>>>> master
         href="/checkout/payment"
         onClick={[Function]}
       >
@@ -317,6 +376,7 @@ Array [
         href="/checkout/review"
         onClick={[Function]}
       >
+<<<<<<< HEAD
         <span
           className="c3"
         >
@@ -339,6 +399,29 @@ Array [
 }
 
 .c8 {
+=======
+        Review
+      </span>
+    </a>
+  </nav>,
+  .c7 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c4 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c11 {
+>>>>>>> master
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -358,6 +441,7 @@ Array [
   padding: 1rem;
   position: fixed;
   width: 100%;
+<<<<<<< HEAD
   background: #ffffff;
   border-top: 1px solid #b0b0b0;
 }
@@ -374,18 +458,36 @@ Array [
   font-size: 1.8rem;
   text-align: center;
   margin: 10px;
+=======
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 6000;
+}
+
+.c2 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+>>>>>>> master
 }
 
 .c5 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
+<<<<<<< HEAD
   font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
   color: #00a09f;
+=======
+  font-weight: bold;
+  text-transform: none;
+  color: #9cc472;
+>>>>>>> master
 }
 
 .c5:last-child {
@@ -396,6 +498,7 @@ Array [
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
+<<<<<<< HEAD
   font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
@@ -410,6 +513,11 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+=======
+  font-weight: normal;
+  text-transform: none;
+  color: #9cc472;
+>>>>>>> master
 }
 
 .c3:last-child {
@@ -436,8 +544,19 @@ Array [
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .c4:last-child {
   margin-bottom: 0;
+=======
+.c9 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.c1 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+>>>>>>> master
 }
 
 .c6 {
@@ -454,6 +573,7 @@ Array [
       Payment
     </h1>
     <section>
+<<<<<<< HEAD
       <h3
         className="c2"
       >
@@ -507,6 +627,58 @@ Array [
       <p
         className="c3"
       >
+=======
+      <div
+        className="c1"
+      >
+        <h3
+          className="c2"
+        >
+          Order Summary
+        </h3>
+        <p
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            Subtotal
+            <span
+              className="c5"
+            >
+              $125.00
+            </span>
+          </span>
+        </p>
+        <p
+          className="c3"
+        >
+          <span
+            className="c6"
+          >
+            Kohl's Cash & Discounts
+            <span
+              className="c5"
+            >
+              -$18.75
+            </span>
+          </span>
+        </p>
+        <p
+          className="c3"
+        >
+          <span
+            className="c7"
+          >
+            Shipping
+            <span
+              className="c5"
+            >
+              Free
+            </span>
+          </span>
+        </p>
+>>>>>>> master
         <span
           className="c6"
         >
@@ -661,6 +833,7 @@ Array [
         href="/checkout/review"
         onClick={[Function]}
       >
+<<<<<<< HEAD
         <span
           className="c3"
         >
@@ -683,6 +856,29 @@ Array [
 }
 
 .c8 {
+=======
+        Review
+      </span>
+    </a>
+  </nav>,
+  .c7 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c4 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c11 {
+>>>>>>> master
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -702,6 +898,7 @@ Array [
   padding: 1rem;
   position: fixed;
   width: 100%;
+<<<<<<< HEAD
   background: #ffffff;
   border-top: 1px solid #b0b0b0;
 }
@@ -718,18 +915,36 @@ Array [
   font-size: 1.8rem;
   text-align: center;
   margin: 10px;
+=======
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 6000;
+}
+
+.c2 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+>>>>>>> master
 }
 
 .c5 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
+<<<<<<< HEAD
   font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
   color: #00a09f;
+=======
+  font-weight: bold;
+  text-transform: none;
+  color: #9cc472;
+>>>>>>> master
 }
 
 .c5:last-child {
@@ -740,6 +955,7 @@ Array [
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
+<<<<<<< HEAD
   font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
@@ -754,6 +970,11 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+=======
+  font-weight: normal;
+  text-transform: none;
+  color: #9cc472;
+>>>>>>> master
 }
 
 .c3:last-child {
@@ -780,8 +1001,19 @@ Array [
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .c4:last-child {
   margin-bottom: 0;
+=======
+.c9 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.c1 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+>>>>>>> master
 }
 
 .c6 {
@@ -798,6 +1030,7 @@ Array [
       Review
     </h1>
     <section>
+<<<<<<< HEAD
       <h3
         className="c2"
       >
@@ -851,6 +1084,58 @@ Array [
       <p
         className="c3"
       >
+=======
+      <div
+        className="c1"
+      >
+        <h3
+          className="c2"
+        >
+          Order Summary
+        </h3>
+        <p
+          className="c3"
+        >
+          <span
+            className="c4"
+          >
+            Subtotal
+            <span
+              className="c5"
+            >
+              $125.00
+            </span>
+          </span>
+        </p>
+        <p
+          className="c3"
+        >
+          <span
+            className="c6"
+          >
+            Kohl's Cash & Discounts
+            <span
+              className="c5"
+            >
+              -$18.75
+            </span>
+          </span>
+        </p>
+        <p
+          className="c3"
+        >
+          <span
+            className="c7"
+          >
+            Shipping
+            <span
+              className="c5"
+            >
+              Free
+            </span>
+          </span>
+        </p>
+>>>>>>> master
         <span
           className="c6"
         >

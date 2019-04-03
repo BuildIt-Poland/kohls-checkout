@@ -2,6 +2,7 @@
 
 exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
 Array [
+<<<<<<< HEAD
   .c0 {
   margin: 0;
   margin-bottom: 2rem;
@@ -15,6 +16,41 @@ Array [
   >
     Delivery
   </h1>,
+=======
+  .c1 {
+  font-size: 1.2rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.c0 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+<section>
+    <h3
+      className="c0"
+    >
+      Shipping Address
+      <span
+        data-testid="modal-trigger"
+        onClick={[Function]}
+      >
+        <span
+          className="c1"
+        >
+          Open modal
+        </span>
+      </span>
+    </h3>
+  </section>,
+>>>>>>> master
   .c1 {
   background: #00a09f;
   color: #ffffff;
@@ -35,8 +71,13 @@ Array [
   padding: 1rem;
   position: fixed;
   width: 100%;
+<<<<<<< HEAD
   background: #ffffff;
   border-top: 1px solid #b0b0b0;
+=======
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 6000;
+>>>>>>> master
 }
 
 <div

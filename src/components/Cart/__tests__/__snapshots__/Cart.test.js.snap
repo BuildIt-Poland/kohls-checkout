@@ -49,8 +49,13 @@ Array [
   padding: 1rem;
   position: fixed;
   width: 100%;
+<<<<<<< HEAD
   background: #ffffff;
   border-top: 1px solid #b0b0b0;
+=======
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 6000;
+>>>>>>> master
 }
 
 <div
