@@ -8,7 +8,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -21,14 +21,14 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
   width: 100%;
 }
 
-.c4 {
+.c5 {
   background: #ffffff;
   color: #222222;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -69,7 +69,12 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 4rem;
+  height: 6rem;
+}
+
+.c4 {
+  font-weight: 400;
+  padding-right: 0.4rem;
 }
 
 @media (max-width:48em) {
@@ -102,7 +107,12 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
       <span
         className="c3"
       >
-        1. Delivery
+        <span
+          className="c4"
+        >
+          1.
+        </span>
+        Delivery
       </span>
     </Link>
     <Link
@@ -111,9 +121,14 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
       to="/checkout/payment"
     >
       <span
-        className="c4"
+        className="c5"
       >
-        2. Payment
+        <span
+          className="c4"
+        >
+          2.
+        </span>
+        Payment
       </span>
     </Link>
     <Link
@@ -122,9 +137,14 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
       to="/checkout/review"
     >
       <span
-        className="c4"
+        className="c5"
       >
-        3. Review
+        <span
+          className="c4"
+        >
+          3.
+        </span>
+        Review
       </span>
     </Link>
   </nav>
@@ -132,14 +152,14 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
 `;
 
 exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab set as Active 1`] = `
-.c4 {
+.c5 {
   background: #222222;
   color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -159,7 +179,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -200,7 +220,12 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 4rem;
+  height: 6rem;
+}
+
+.c4 {
+  font-weight: 400;
+  padding-right: 0.4rem;
 }
 
 @media (max-width:48em) {
@@ -233,7 +258,12 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
       <span
         className="c3"
       >
-        1. Delivery
+        <span
+          className="c4"
+        >
+          1.
+        </span>
+        Delivery
       </span>
     </Link>
     <Link
@@ -242,9 +272,14 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
       to="/checkout/payment"
     >
       <span
-        className="c4"
+        className="c5"
       >
-        2. Payment
+        <span
+          className="c4"
+        >
+          2.
+        </span>
+        Payment
       </span>
     </Link>
     <Link
@@ -255,7 +290,12 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
       <span
         className="c3"
       >
-        3. Review
+        <span
+          className="c4"
+        >
+          3.
+        </span>
+        Review
       </span>
     </Link>
   </nav>
@@ -263,14 +303,14 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
 `;
 
 exports[`COMPONENT - Navigation renders Navigation component with "Review" tab set as Active 1`] = `
-.c4 {
+.c5 {
   background: #222222;
   color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -290,7 +330,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -331,7 +371,12 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 4rem;
+  height: 6rem;
+}
+
+.c4 {
+  font-weight: 400;
+  padding-right: 0.4rem;
 }
 
 @media (max-width:48em) {
@@ -364,7 +409,12 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
       <span
         className="c3"
       >
-        1. Delivery
+        <span
+          className="c4"
+        >
+          1.
+        </span>
+        Delivery
       </span>
     </Link>
     <Link
@@ -375,7 +425,12 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
       <span
         className="c3"
       >
-        2. Payment
+        <span
+          className="c4"
+        >
+          2.
+        </span>
+        Payment
       </span>
     </Link>
     <Link
@@ -384,9 +439,14 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
       to="/checkout/review"
     >
       <span
-        className="c4"
+        className="c5"
       >
-        3. Review
+        <span
+          className="c4"
+        >
+          3.
+        </span>
+        Review
       </span>
     </Link>
   </nav>

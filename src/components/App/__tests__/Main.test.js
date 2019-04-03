@@ -1,7 +1,7 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import Main from '../MainContent';
+import Main from '../Main';
 
 describe('COMPONENT - App Main', () => {
   it('renders correctly', () => {

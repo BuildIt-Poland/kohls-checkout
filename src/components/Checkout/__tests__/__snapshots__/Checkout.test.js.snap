@@ -9,7 +9,7 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -50,7 +50,12 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 4rem;
+  height: 6rem;
+}
+
+.c4 {
+  font-weight: 400;
+  padding-right: 0.4rem;
 }
 
 @media (max-width:48em) {
@@ -84,7 +89,12 @@ Array [
         <span
           className="c3"
         >
-          1. Delivery
+          <span
+            className="c4"
+          >
+            1.
+          </span>
+          Delivery
         </span>
       </a>
       <a
@@ -96,7 +106,12 @@ Array [
         <span
           className="c3"
         >
-          2. Payment
+          <span
+            className="c4"
+          >
+            2.
+          </span>
+          Payment
         </span>
       </a>
       <a
@@ -108,7 +123,12 @@ Array [
         <span
           className="c3"
         >
-          3. Review
+          <span
+            className="c4"
+          >
+            3.
+          </span>
+          Review
         </span>
       </a>
     </nav>
@@ -125,7 +145,7 @@ Array [
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 1.8rem;
+  font-size: 700;
   font-weight: 600;
   padding: 1.2rem;
   text-align: center;
@@ -186,7 +206,7 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -227,7 +247,12 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 4rem;
+  height: 6rem;
+}
+
+.c4 {
+  font-weight: 400;
+  padding-right: 0.4rem;
 }
 
 @media (max-width:48em) {
@@ -261,7 +286,12 @@ Array [
         <span
           className="c3"
         >
-          1. Delivery
+          <span
+            className="c4"
+          >
+            1.
+          </span>
+          Delivery
         </span>
       </a>
       <a
@@ -273,7 +303,12 @@ Array [
         <span
           className="c3"
         >
-          2. Payment
+          <span
+            className="c4"
+          >
+            2.
+          </span>
+          Payment
         </span>
       </a>
       <a
@@ -285,7 +320,12 @@ Array [
         <span
           className="c3"
         >
-          3. Review
+          <span
+            className="c4"
+          >
+            3.
+          </span>
+          Review
         </span>
       </a>
     </nav>
@@ -302,7 +342,7 @@ Array [
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 1.8rem;
+  font-size: 700;
   font-weight: 600;
   padding: 1.2rem;
   text-align: center;
@@ -510,7 +550,7 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -551,7 +591,12 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 4rem;
+  height: 6rem;
+}
+
+.c4 {
+  font-weight: 400;
+  padding-right: 0.4rem;
 }
 
 @media (max-width:48em) {
@@ -585,7 +630,12 @@ Array [
         <span
           className="c3"
         >
-          1. Delivery
+          <span
+            className="c4"
+          >
+            1.
+          </span>
+          Delivery
         </span>
       </a>
       <a
@@ -597,7 +647,12 @@ Array [
         <span
           className="c3"
         >
-          2. Payment
+          <span
+            className="c4"
+          >
+            2.
+          </span>
+          Payment
         </span>
       </a>
       <a
@@ -609,7 +664,12 @@ Array [
         <span
           className="c3"
         >
-          3. Review
+          <span
+            className="c4"
+          >
+            3.
+          </span>
+          Review
         </span>
       </a>
     </nav>
@@ -626,7 +686,7 @@ Array [
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 1.8rem;
+  font-size: 700;
   font-weight: 600;
   padding: 1.2rem;
   text-align: center;

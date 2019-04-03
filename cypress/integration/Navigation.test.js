@@ -1,3 +1,5 @@
+/* global cy*/
+
 const getBtnAndClick = (selector, content) =>
   cy
     .get(selector)
