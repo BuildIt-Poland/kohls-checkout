@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - ModalTrigger renders ModalTrigger with closed Modal 1`] = `
+<div>
+  <span
+    data-testid="modal-trigger"
+  >
+    Trigger
+  </span>
+</div>
+`;

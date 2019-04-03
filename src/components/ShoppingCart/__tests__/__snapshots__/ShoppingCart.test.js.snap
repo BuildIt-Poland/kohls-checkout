@@ -3,15 +3,17 @@
 exports[`COMPONENT - ShoppingCart renders ShoppingCart component 1`] = `
 Array [
   .c0 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin: 10px;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 <h3
     className="c0"
   >
-    Shopping Cart
+     
   </h3>,
   .c0 {
   padding-left: 2rem;
