@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 
 import { ROOT_PATH, CHECKOUT_PATH, CART_PATH } from '../../constants/routes';
 import Header from '../Header';
-import MainContent from './MainContent';
+import Main from './Main';
 import LandingPage from '../LandingPage';
 import Cart from '../Cart';
 import Checkout from '../Checkout';
@@ -12,11 +12,11 @@ function App() {
   return (
     <>
       <Header />
-      <MainContent>
+      <Main>
         <Route exact path={ROOT_PATH} component={LandingPage} />
         <Route exact path={CART_PATH} component={Cart} />
         <Route exact path={CHECKOUT_PATH} component={Checkout} />
-      </MainContent>
+      </Main>
     </>
   );
 }
