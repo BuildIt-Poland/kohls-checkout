@@ -2,802 +2,351 @@
 
 exports[`COMPONENT - Checkout renders correctly for "/delivery" route 1`] = `
 Array [
-  .c2 {
-  background: #222222;
-  border-right: 0;
-  border: 1px solid #454545;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-
-.c2:last-child {
-  border-right: 1px;
-}
-
-.c3 {
-  background: #ffffff;
-  border-right: 0;
-  border: 1px solid #454545;
-  color: #222222;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-
-.c3:last-child {
-  border-right: 1px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  width: 100%;
-}
-
-<nav
-    className="c0"
-  >
-    <a
-      className="c1"
-      href="/checkout/delivery"
-      onClick={[Function]}
-    >
-      <span
-        className="c2"
-      >
-        Delivery
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/payment"
-      onClick={[Function]}
-    >
-      <span
-        className="c3"
-      >
-        Payment
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/review"
-      onClick={[Function]}
-    >
-      <span
-        className="c3"
-      >
-        Review
-      </span>
-    </a>
-  </nav>,
-  .c2 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: normal;
-  text-transform: none;
-}
-
-.c4 {
-  background: #00a09f;
-  color: #ffffff;
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 600;
-  padding: 1.2rem;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-}
-
-.c3 {
-  bottom: 0;
-  left: 0;
-  padding: 1.2rem;
-  position: fixed;
-  width: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
-  z-index: 6000;
-}
-
-.c1 {
-  font-size: 1.2rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.c0 {
+  <NavigationMock
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "keow05",
+            "pathname": "/checkout/delivery",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "keow05",
+          "pathname": "/checkout/delivery",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+    location={
+      Object {
+        "hash": "",
+        "key": "keow05",
+        "pathname": "/checkout/delivery",
+        "search": "",
+        "state": undefined,
+      }
+    }
+    match={
+      Object {
+        "isExact": true,
+        "params": Object {
+          "checkoutStep": "delivery",
+        },
+        "path": "/checkout/:checkoutStep",
+        "url": "/checkout/delivery",
+      }
+    }
+  />,
+  .c0 {
   margin-top: 100px;
 }
 
 <section
     className="c0"
   >
-    <section>
-      <h3
-        className="c1"
-      >
-        Shipping Address
-        <span
-          data-testid="modal-trigger"
-          onClick={[Function]}
-        >
-          <span
-            className="c2"
-          >
-            Open modal
-          </span>
-        </span>
-      </h3>
-    </section>
-    <div
-      className="c3"
-    >
-      <a
-        className="c4"
-        href="/checkout/payment"
-        onClick={[Function]}
-      >
-        Continue to Payment
-      </a>
-    </div>
+    <CheckoutDeliveryMock
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "keow05",
+              "pathname": "/checkout/delivery",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "keow05",
+            "pathname": "/checkout/delivery",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+      location={
+        Object {
+          "hash": "",
+          "key": "keow05",
+          "pathname": "/checkout/delivery",
+          "search": "",
+          "state": undefined,
+        }
+      }
+      match={
+        Object {
+          "isExact": true,
+          "params": Object {},
+          "path": "/checkout/delivery",
+          "url": "/checkout/delivery",
+        }
+      }
+    />
   </section>,
 ]
 `;
 
 exports[`COMPONENT - Checkout renders correctly for "/payment" route 1`] = `
 Array [
-  .c3 {
-  background: #222222;
-  border-right: 0;
-  border: 1px solid #454545;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-
-.c3:last-child {
-  border-right: 1px;
-}
-
-.c2 {
-  background: #ffffff;
-  border-right: 0;
-  border: 1px solid #454545;
-  color: #222222;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-
-.c2:last-child {
-  border-right: 1px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  width: 100%;
-}
-
-<nav
-    className="c0"
-  >
-    <a
-      className="c1"
-      href="/checkout/delivery"
-      onClick={[Function]}
-    >
-      <span
-        className="c2"
-      >
-        Delivery
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/payment"
-      onClick={[Function]}
-    >
-      <span
-        className="c3"
-      >
-        Payment
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/review"
-      onClick={[Function]}
-    >
-      <span
-        className="c2"
-      >
-        Review
-      </span>
-    </a>
-  </nav>,
-  .c7 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: normal;
-  text-transform: none;
-}
-
-.c4 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  text-transform: none;
-}
-
-.c11 {
-  background: #00a09f;
-  color: #ffffff;
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 600;
-  padding: 1.2rem;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-}
-
-.c10 {
-  bottom: 0;
-  left: 0;
-  padding: 1.2rem;
-  position: fixed;
-  width: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
-  z-index: 6000;
-}
-
-.c2 {
-  font-size: 1.2rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.c6 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: none;
-  color: #9cc472;
-}
-
-.c8 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  text-transform: none;
-  color: #9cc472;
-}
-
-.c5 {
-  float: right;
-}
-
-.c3 {
-  margin: 0;
-}
-
-.c9 {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.c1 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.c0 {
+  <NavigationMock
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "9rqx2t",
+            "pathname": "/checkout/payment",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "9rqx2t",
+          "pathname": "/checkout/payment",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+    location={
+      Object {
+        "hash": "",
+        "key": "9rqx2t",
+        "pathname": "/checkout/payment",
+        "search": "",
+        "state": undefined,
+      }
+    }
+    match={
+      Object {
+        "isExact": true,
+        "params": Object {
+          "checkoutStep": "payment",
+        },
+        "path": "/checkout/:checkoutStep",
+        "url": "/checkout/payment",
+      }
+    }
+  />,
+  .c0 {
   margin-top: 100px;
 }
 
 <section
     className="c0"
   >
-    <section>
-      <div
-        className="c1"
-      >
-        <h3
-          className="c2"
-        >
-          Order Summary
-        </h3>
-        <p
-          className="c3"
-        >
-          <span
-            className="c4"
-          >
-            Subtotal
-            <span
-              className="c5"
-            >
-              $125.00
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c6"
-          >
-            Kohl's Cash & Discounts
-            <span
-              className="c5"
-            >
-              -$18.75
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c7"
-          >
-            Shipping
-            <span
-              className="c5"
-            >
-              Free
-            </span>
-          </span>
-        </p>
-        <span
-          className="c8"
-        >
-          You have earned free shipping.
-        </span>
-        <p
-          className="c3"
-        >
-          <span
-            className="c7"
-          >
-            Tax
-            <span
-              className="c5"
-            >
-              $6.38
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c9"
-          >
-            TOTAL
-            <span
-              className="c5"
-            >
-              $
-              122.7
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c4"
-          >
-            Your Savings
-            <span
-              className="c5"
-            >
-              $122.70
-            </span>
-          </span>
-        </p>
-      </div>
-    </section>
-    <div
-      className="c10"
-    >
-      <a
-        className="c11"
-        href="/checkout/review"
-        onClick={[Function]}
-      >
-        Review Order
-      </a>
-    </div>
+    <CheckoutPaymentMock
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "9rqx2t",
+              "pathname": "/checkout/payment",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "9rqx2t",
+            "pathname": "/checkout/payment",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+      location={
+        Object {
+          "hash": "",
+          "key": "9rqx2t",
+          "pathname": "/checkout/payment",
+          "search": "",
+          "state": undefined,
+        }
+      }
+      match={
+        Object {
+          "isExact": true,
+          "params": Object {},
+          "path": "/checkout/payment",
+          "url": "/checkout/payment",
+        }
+      }
+    />
   </section>,
 ]
 `;
 
 exports[`COMPONENT - Checkout renders correctly for "/review" route 1`] = `
 Array [
-  .c3 {
-  background: #222222;
-  border-right: 0;
-  border: 1px solid #454545;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-
-.c3:last-child {
-  border-right: 1px;
-}
-
-.c2 {
-  background: #ffffff;
-  border-right: 0;
-  border: 1px solid #454545;
-  color: #222222;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-
-.c2:last-child {
-  border-right: 1px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  width: 100%;
-}
-
-<nav
-    className="c0"
-  >
-    <a
-      className="c1"
-      href="/checkout/delivery"
-      onClick={[Function]}
-    >
-      <span
-        className="c2"
-      >
-        Delivery
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/payment"
-      onClick={[Function]}
-    >
-      <span
-        className="c2"
-      >
-        Payment
-      </span>
-    </a>
-    <a
-      className="c1"
-      href="/checkout/review"
-      onClick={[Function]}
-    >
-      <span
-        className="c3"
-      >
-        Review
-      </span>
-    </a>
-  </nav>,
-  .c7 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: normal;
-  text-transform: none;
-}
-
-.c4 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  text-transform: none;
-}
-
-.c11 {
-  background: #00a09f;
-  color: #ffffff;
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 600;
-  padding: 1.2rem;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-}
-
-.c10 {
-  bottom: 0;
-  left: 0;
-  padding: 1.2rem;
-  position: fixed;
-  width: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
-  z-index: 6000;
-}
-
-.c2 {
-  font-size: 1.2rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.c6 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: none;
-  color: #9cc472;
-}
-
-.c8 {
-  font-size: 1.2rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  text-transform: none;
-  color: #9cc472;
-}
-
-.c5 {
-  float: right;
-}
-
-.c3 {
-  margin: 0;
-}
-
-.c9 {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.c1 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.c0 {
+  <NavigationMock
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "8t1tmc",
+            "pathname": "/checkout/review",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "8t1tmc",
+          "pathname": "/checkout/review",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+    location={
+      Object {
+        "hash": "",
+        "key": "8t1tmc",
+        "pathname": "/checkout/review",
+        "search": "",
+        "state": undefined,
+      }
+    }
+    match={
+      Object {
+        "isExact": true,
+        "params": Object {
+          "checkoutStep": "review",
+        },
+        "path": "/checkout/:checkoutStep",
+        "url": "/checkout/review",
+      }
+    }
+  />,
+  .c0 {
   margin-top: 100px;
 }
 
 <section
     className="c0"
   >
-    <section>
-      <div
-        className="c1"
-      >
-        <h3
-          className="c2"
-        >
-          Order Summary
-        </h3>
-        <p
-          className="c3"
-        >
-          <span
-            className="c4"
-          >
-            Subtotal
-            <span
-              className="c5"
-            >
-              $125.00
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c6"
-          >
-            Kohl's Cash & Discounts
-            <span
-              className="c5"
-            >
-              -$18.75
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c7"
-          >
-            Shipping
-            <span
-              className="c5"
-            >
-              Free
-            </span>
-          </span>
-        </p>
-        <span
-          className="c8"
-        >
-          You have earned free shipping.
-        </span>
-        <p
-          className="c3"
-        >
-          <span
-            className="c7"
-          >
-            Tax
-            <span
-              className="c5"
-            >
-              $6.38
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c9"
-          >
-            TOTAL
-            <span
-              className="c5"
-            >
-              $
-              122.7
-            </span>
-          </span>
-        </p>
-        <p
-          className="c3"
-        >
-          <span
-            className="c4"
-          >
-            Your Savings
-            <span
-              className="c5"
-            >
-              $122.70
-            </span>
-          </span>
-        </p>
-      </div>
-    </section>
-    <div
-      className="c10"
-    >
-      <a
-        className="c11"
-        href="/cart"
-        onClick={[Function]}
-      >
-        Place Order
-      </a>
-    </div>
+    <CheckoutReviewMock
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "8t1tmc",
+              "pathname": "/checkout/review",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "8t1tmc",
+            "pathname": "/checkout/review",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+      location={
+        Object {
+          "hash": "",
+          "key": "8t1tmc",
+          "pathname": "/checkout/review",
+          "search": "",
+          "state": undefined,
+        }
+      }
+      match={
+        Object {
+          "isExact": true,
+          "params": Object {},
+          "path": "/checkout/review",
+          "url": "/checkout/review",
+        }
+      }
+    />
   </section>,
 ]
 `;
