@@ -5,7 +5,8 @@ import ContentBase from '../Content';
 
 const Content = styled(ContentBase)`
   display: flex;
-  height: 4rem;
+  height: 6rem;
+
   ${media.tablet`
     padding: 0;
   `};
