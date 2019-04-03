@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import noop from 'lodash.noop';
 
-import Content from './Content';
+import Wrapper from './Wrapper';
 import Overlay from './Overlay';
 import Header from './Header';
 import CloseModal from './CloseModal';
@@ -12,13 +12,13 @@ function Modal({ children, onClose = noop, title = 'Modal' }) {
   return (
     <>
       <Overlay onClick={onClose} />
-      <Content>
+      <Wrapper>
         <Header data-testid="modal-header">
           {title}
           <CloseModal onClick={onClose}>X</CloseModal>
         </Header>
         <Body data-testid="modal-body">{children}</Body>
-      </Content>
+      </Wrapper>
     </>
   );
 }

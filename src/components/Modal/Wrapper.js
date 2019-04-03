@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { zIndexModal } from '../../styles/designTokens';
 
-const ModalContent = styled.section`
+const Wrapper = styled.section`
   background: white;
   border-radius: 0.5rem;
   height: auto;
@@ -13,4 +13,4 @@ const ModalContent = styled.section`
   z-index: ${zIndexModal};
 `;
 
-export default ModalContent;
+export default Wrapper;
