@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
-const PriceRow = styled.div`
+import Text from '../Text';
+
+const Row = styled(Text)`
   width: 100%;
   display: flex;
   justify-content: space-between;
 `;
 
-export default PriceRow;
+export default Row;

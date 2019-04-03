@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - OrderSummary PriceRow render NextStep component 1`] = `
+exports[`COMPONENT - OrderSummary TextRow render NextStep component 1`] = `
 .c0 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13,7 +21,11 @@ exports[`COMPONENT - OrderSummary PriceRow render NextStep component 1`] = `
   justify-content: space-between;
 }
 
-<div
+.c0:last-child {
+  margin-bottom: 0;
+}
+
+<p
   className="c0"
 />
 `;

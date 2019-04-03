@@ -10,7 +10,7 @@ exports[`COMPONENT - TextHighlight renders TextHighlight component 1`] = `
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-  color: #9cc472;
+  color: #00a09f;
 }
 
 .c0:last-child {

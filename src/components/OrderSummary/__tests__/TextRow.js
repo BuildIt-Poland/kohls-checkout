@@ -1,11 +1,11 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import PriceRow from '../PriceRow';
+import TextRow from '../TextRow';
 
-describe('COMPONENT - OrderSummary PriceRow', () => {
+describe('COMPONENT - OrderSummary TextRow', () => {
   it('render NextStep component', () => {
-    const component = create(<PriceRow />);
+    const component = create(<TextRow />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

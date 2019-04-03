@@ -1,37 +1,36 @@
 import React from 'react';
 
-import Text from '../Text/Text';
 import SectionHeader from '../SectionHeader';
 import TextHighlight from '../TextHighlight';
-import PriceRow from './PriceRow';
+import TextRow from './TextRow';
 import TotalPrice from './TotalPrice';
 
 function OrderSummary() {
   return (
     <section>
       <SectionHeader title="Order Summary" />
-      <PriceRow>
-        <Text>Subtotal</Text>
-        <Text>$125.00</Text>
-      </PriceRow>
-      <PriceRow>
-        <TextHighlight bold>Kohl's Cash &amp; Discounts</TextHighlight>
-        <TextHighlight>-$18.75</TextHighlight>
-      </PriceRow>
-      <PriceRow>
-        <Text underline>Shipping</Text>
-        <Text underline>FREE</Text>
-      </PriceRow>
+      <TextRow>
+        <span>Subtotal</span>
+        <span>$125.00</span>
+      </TextRow>
+      <TextRow>
+        <span>Kohl's Cash &amp; Discounts</span>
+        <span>-$18.75</span>
+      </TextRow>
+      <TextRow underline>
+        <span>Shipping</span>
+        <span>FREE</span>
+      </TextRow>
       <TextHighlight>You have earned free shipping.</TextHighlight>
-      <PriceRow>
-        <Text underline>Tax</Text>
-        <Text underline>$6.38</Text>
-      </PriceRow>
+      <TextRow>
+        <span>Tax</span>
+        <span>$6.38</span>
+      </TextRow>
       <TotalPrice price={122.7} />
-      <PriceRow>
-        <Text>Your Savings</Text>
-        <Text>$122.70</Text>
-      </PriceRow>
+      <TextRow>
+        <span>Your Savings</span>
+        <span>$122.70</span>
+      </TextRow>
     </section>
   );
 }

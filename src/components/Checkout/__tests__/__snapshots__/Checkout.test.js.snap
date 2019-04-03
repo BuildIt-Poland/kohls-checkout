@@ -298,7 +298,7 @@ Array [
   padding-bottom: 3rem;
 }
 
-.c10 {
+.c8 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -312,7 +312,7 @@ Array [
   margin: 0 auto;
 }
 
-.c9 {
+.c7 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -330,36 +330,6 @@ Array [
   line-height: 1;
 }
 
-.c4 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: 400;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-.c4:last-child {
-  margin-bottom: 0;
-}
-
-.c7 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: 400;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-.c7:last-child {
-  margin-bottom: 0;
-}
-
 .c2 {
   font-size: 1.8rem;
   text-align: center;
@@ -370,19 +340,19 @@ Array [
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-  color: #9cc472;
+  color: #00a09f;
 }
 
 .c5:last-child {
   margin-bottom: 0;
 }
 
-.c6 {
+.c3 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -391,14 +361,6 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-  color: #9cc472;
-}
-
-.c6:last-child {
-  margin-bottom: 0;
-}
-
-.c3 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -410,7 +372,35 @@ Array [
   justify-content: space-between;
 }
 
-.c8 {
+.c3:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -429,97 +419,77 @@ Array [
       >
         Order Summary
       </h3>
-      <div
-        className="c3"
-      >
-        <p
-          className="c4"
-        >
-          Subtotal
-        </p>
-        <p
-          className="c4"
-        >
-          $125.00
-        </p>
-      </div>
-      <div
-        className="c3"
-      >
-        <p
-          className="c5"
-        >
-          Kohl's Cash & Discounts
-        </p>
-        <p
-          className="c6"
-        >
-          -$18.75
-        </p>
-      </div>
-      <div
-        className="c3"
-      >
-        <p
-          className="c7"
-        >
-          Shipping
-        </p>
-        <p
-          className="c7"
-        >
-          FREE
-        </p>
-      </div>
       <p
-        className="c6"
+        className="c3"
+      >
+        <span>
+          Subtotal
+        </span>
+        <span>
+          $125.00
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span>
+          Kohl's Cash & Discounts
+        </span>
+        <span>
+          -$18.75
+        </span>
+      </p>
+      <p
+        className="c4"
+      >
+        <span>
+          Shipping
+        </span>
+        <span>
+          FREE
+        </span>
+      </p>
+      <p
+        className="c5"
       >
         You have earned free shipping.
       </p>
-      <div
+      <p
         className="c3"
       >
-        <p
-          className="c7"
-        >
+        <span>
           Tax
-        </p>
-        <p
-          className="c7"
-        >
+        </span>
+        <span>
           $6.38
-        </p>
-      </div>
-      <div
+        </span>
+      </p>
+      <p
         className="c3"
       >
         <span
-          className="c8"
+          className="c6"
         >
           TOTAL $
           122.7
         </span>
-      </div>
-      <div
+      </p>
+      <p
         className="c3"
       >
-        <p
-          className="c4"
-        >
+        <span>
           Your Savings
-        </p>
-        <p
-          className="c4"
-        >
+        </span>
+        <span>
           $122.70
-        </p>
-      </div>
+        </span>
+      </p>
     </section>
     <div
-      className="c9"
+      className="c7"
     >
       <a
-        className="c10"
+        className="c8"
         data-testid="next-step-button"
         href="/checkout/review"
         onClick={[Function]}
@@ -652,7 +622,7 @@ Array [
   padding-bottom: 3rem;
 }
 
-.c10 {
+.c8 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -666,7 +636,7 @@ Array [
   margin: 0 auto;
 }
 
-.c9 {
+.c7 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -684,36 +654,6 @@ Array [
   line-height: 1;
 }
 
-.c4 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: 400;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-.c4:last-child {
-  margin-bottom: 0;
-}
-
-.c7 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: 400;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-.c7:last-child {
-  margin-bottom: 0;
-}
-
 .c2 {
   font-size: 1.8rem;
   text-align: center;
@@ -724,19 +664,19 @@ Array [
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-  color: #9cc472;
+  color: #00a09f;
 }
 
 .c5:last-child {
   margin-bottom: 0;
 }
 
-.c6 {
+.c3 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -745,14 +685,6 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-  color: #9cc472;
-}
-
-.c6:last-child {
-  margin-bottom: 0;
-}
-
-.c3 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -764,7 +696,35 @@ Array [
   justify-content: space-between;
 }
 
-.c8 {
+.c3:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -783,97 +743,77 @@ Array [
       >
         Order Summary
       </h3>
-      <div
-        className="c3"
-      >
-        <p
-          className="c4"
-        >
-          Subtotal
-        </p>
-        <p
-          className="c4"
-        >
-          $125.00
-        </p>
-      </div>
-      <div
-        className="c3"
-      >
-        <p
-          className="c5"
-        >
-          Kohl's Cash & Discounts
-        </p>
-        <p
-          className="c6"
-        >
-          -$18.75
-        </p>
-      </div>
-      <div
-        className="c3"
-      >
-        <p
-          className="c7"
-        >
-          Shipping
-        </p>
-        <p
-          className="c7"
-        >
-          FREE
-        </p>
-      </div>
       <p
-        className="c6"
+        className="c3"
+      >
+        <span>
+          Subtotal
+        </span>
+        <span>
+          $125.00
+        </span>
+      </p>
+      <p
+        className="c3"
+      >
+        <span>
+          Kohl's Cash & Discounts
+        </span>
+        <span>
+          -$18.75
+        </span>
+      </p>
+      <p
+        className="c4"
+      >
+        <span>
+          Shipping
+        </span>
+        <span>
+          FREE
+        </span>
+      </p>
+      <p
+        className="c5"
       >
         You have earned free shipping.
       </p>
-      <div
+      <p
         className="c3"
       >
-        <p
-          className="c7"
-        >
+        <span>
           Tax
-        </p>
-        <p
-          className="c7"
-        >
+        </span>
+        <span>
           $6.38
-        </p>
-      </div>
-      <div
+        </span>
+      </p>
+      <p
         className="c3"
       >
         <span
-          className="c8"
+          className="c6"
         >
           TOTAL $
           122.7
         </span>
-      </div>
-      <div
+      </p>
+      <p
         className="c3"
       >
-        <p
-          className="c4"
-        >
+        <span>
           Your Savings
-        </p>
-        <p
-          className="c4"
-        >
+        </span>
+        <span>
           $122.70
-        </p>
-      </div>
+        </span>
+      </p>
     </section>
     <div
-      className="c9"
+      className="c7"
     >
       <a
-        className="c10"
+        className="c8"
         data-testid="next-step-button"
         href="/cart"
         onClick={[Function]}
