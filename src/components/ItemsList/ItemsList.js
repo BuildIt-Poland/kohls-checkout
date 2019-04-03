@@ -12,14 +12,7 @@ function ItemsList({ items, handleUpdate, handleRemove }) {
   return (
     <Wrapper>
       {items.map((item, index) => (
-        <Item
-          key={index}
-          item={item}
-          itemId={index}
-          editableQuantity
-          handleUpdate={handleUpdate}
-          handleRemove={handleRemove}
-        />
+        <Item key={index} item={item} editableQuantity handleUpdate={handleUpdate} handleRemove={handleRemove} />
       ))}
     </Wrapper>
   );

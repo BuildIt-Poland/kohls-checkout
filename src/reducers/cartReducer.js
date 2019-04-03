@@ -15,6 +15,20 @@ const initialState = {
         discount: 125
       },
       quantity: 1
+    },
+    {
+      id: 'EOK32943983',
+      name: "WoMen's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket",
+      imgUrl: 'https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/6/_103433446.jpg',
+      variants: {
+        size: '42 SHORT',
+        color: 'Charcoal'
+      },
+      price: {
+        regular: 440,
+        discount: 140
+      },
+      quantity: 1
     }
   ]
 };
@@ -25,8 +39,8 @@ function cartReducer(state = initialState, action) {
     case UPDATE_QUANTITY:
       return {
         ...state,
-        items: items.map((item, index) => {
-          if (index !== action.cartItemId) {
+        items: items.map(item => {
+          if (item.id !== action.cartItemId) {
             return item;
           }
           return {
@@ -38,7 +52,7 @@ function cartReducer(state = initialState, action) {
     case REMOVE_ITEM:
       return {
         ...state,
-        items: state.items.filter((item, index) => index !== action.cartItemId)
+        items: state.items.filter(item => item.id !== action.cartItemId)
       };
     default:
       return state;
