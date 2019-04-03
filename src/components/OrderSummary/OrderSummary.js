@@ -8,7 +8,7 @@ import TotalPrice from './TotalPrice';
 function OrderSummary() {
   return (
     <section>
-      <SectionHeader title="Order Summary" />
+      <SectionHeader>Order Summary</SectionHeader>
       <TextRow>
         <span>Subtotal</span>
         <span>$125.00</span>

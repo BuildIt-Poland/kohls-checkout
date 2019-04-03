@@ -5,16 +5,11 @@ exports[`COMPONENT - Text renders Text component 1`] = `
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-<<<<<<< HEAD
   font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-=======
-  font-weight: normal;
-  text-transform: none;
->>>>>>> master
 }
 
 .c0:last-child {
