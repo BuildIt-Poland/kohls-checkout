@@ -1,16 +1,13 @@
-import React from 'react';
 import styled from 'styled-components';
 
-import { fontMedium } from '../../styles/designTokens';
+import { fontSmall } from '../../styles/designTokens';
 
-const Header = styled.h3`
-  font-size: ${fontMedium};
-  text-align: center;
-  margin: 10px;
+const SectionHeader = styled.h3`
+  font-size: ${fontSmall};
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 `;
-
-function SectionHeader({ title = 'Section Header' }) {
-  return <Header>{title}</Header>;
-}
 
 export default SectionHeader;

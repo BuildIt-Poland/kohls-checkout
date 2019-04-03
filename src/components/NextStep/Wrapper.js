@@ -1,12 +1,22 @@
 import styled from 'styled-components';
 
+import {
+  colorWhite,
+  colorLightGrey,
+  borderWidthThin,
+  spacingSmall,
+  zIndexStickyElement
+} from '../../styles/designTokens';
+
 const Wrapper = styled.div`
   bottom: 0;
   left: 0;
-  padding: 1.2rem;
+  padding: ${spacingSmall};
   position: fixed;
   width: 100%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background: ${colorWhite};
+  border-top: ${borderWidthThin} solid ${colorLightGrey};
+  z-index: ${zIndexStickyElement};
 `;
 
 export default Wrapper;

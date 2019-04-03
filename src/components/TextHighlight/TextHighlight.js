@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import Text from '../Text/Text';
-import { colorGreen } from '../../styles/designTokens';
+import { colorTurquoise } from '../../styles/designTokens';
 
 const TextHighlight = styled(Text)`
-  color: ${colorGreen};
+  color: ${colorTurquoise};
 `;
 
 export default TextHighlight;

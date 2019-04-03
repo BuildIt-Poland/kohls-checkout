@@ -7,7 +7,9 @@ import Wrapper from './Wrapper';
 function NextStep({ label = 'Next step', to }) {
   return (
     <Wrapper>
-      <Button to={to}>{label}</Button>
+      <Button data-testid="next-step-button" to={to}>
+        {label}
+      </Button>
     </Wrapper>
   );
 }

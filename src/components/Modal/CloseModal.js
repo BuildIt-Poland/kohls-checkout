@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const PriceBadge = styled.span`
+const CloseModal = styled.span`
   float: right;
 `;
 
-export default PriceBadge;
+export default CloseModal;

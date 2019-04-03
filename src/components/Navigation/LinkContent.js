@@ -1,21 +1,16 @@
 import styled from 'styled-components';
 
-import { colorBlack, colorWhite, fontSmall, colorDarkGrey } from '../../styles/designTokens';
+import { colorBlack, colorWhite, fontMedium, fontWeightBold } from '../../styles/designTokens';
 
 const LinkContent = styled.span`
   background: ${({ isActive }) => (isActive ? colorBlack : colorWhite)};
-  border-right: 0;
-  border: 1px solid ${colorDarkGrey};
   color: ${({ isActive }) => (isActive ? colorWhite : colorBlack)};
   display: flex;
-  font-size: ${fontSmall};
-  font-weight: 500;
+  font-size: ${fontMedium};
+  font-weight: ${fontWeightBold};
   justify-content: center;
-  padding: 15px;
+  align-items: center;
   width: 100%;
-  &:last-child {
-    border-right: 1px;
-  }
 `;
 
 export default LinkContent;

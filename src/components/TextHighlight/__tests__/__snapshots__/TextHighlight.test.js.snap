@@ -2,14 +2,22 @@
 
 exports[`COMPONENT - TextHighlight renders TextHighlight component 1`] = `
 .c0 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: normal;
-  color: #9cc472;
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #00a09f;
 }
 
-<span
+.c0:last-child {
+  margin-bottom: 0;
+}
+
+<p
   className="c0"
 />
 `;

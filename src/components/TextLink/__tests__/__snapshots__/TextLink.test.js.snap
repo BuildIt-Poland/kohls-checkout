@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - TextLink renders correctly 1`] = `
+.c0 {
+  color: #00a09f;
+  font-weight: 700;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<a
+  className="c0"
+/>
+`;
