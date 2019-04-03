@@ -1,4 +1,4 @@
-import { UPDATE_QUANTITY } from '../constants/actionTypes';
+import { UPDATE_QUANTITY, REMOVE_ITEM } from '../constants/actionTypes';
 
 const initialState = {
   items: [
@@ -34,6 +34,11 @@ function cartReducer(state = initialState, action) {
             quantity: action.quantity
           };
         })
+      };
+    case REMOVE_ITEM:
+      return {
+        ...state,
+        items: state.items.filter((item, index) => index !== action.cartItemId)
       };
     default:
       return state;

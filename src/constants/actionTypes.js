@@ -1,2 +1,3 @@
 export const INCREASE_COUNT = 'INCREASE_COUNT';
 export const UPDATE_QUANTITY = 'UPDATE_QUANTITY';
+export const REMOVE_ITEM = 'REMOVE_ITEM';

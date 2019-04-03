@@ -51,7 +51,7 @@ const renderPrices = function(item) {
   );
 };
 
-function Item({ item = {}, editableQuantity = false, itemId = 0, handleUpdate }) {
+function Item({ item = {}, editableQuantity = false, itemId = 0, handleUpdate, handleRemove }) {
   return (
     <Wrapper>
       <Image src={item.imgUrl} />
@@ -68,7 +68,7 @@ function Item({ item = {}, editableQuantity = false, itemId = 0, handleUpdate })
           handleUpdate={handleUpdate}
         />
       ) : null}
-      <RemoveButton editableQuantity={editableQuantity}>Remove</RemoveButton>
+      <RemoveButton editableQuantity={editableQuantity} cartItemId={itemId} handleRemove={handleRemove} />
     </Wrapper>
   );
 }

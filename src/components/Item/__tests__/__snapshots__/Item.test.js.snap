@@ -56,6 +56,7 @@ exports[`COMPONENT - Item renders Item component 1`] = `
   </div>
   <button
     className="c4"
+    onClick={[Function]}
   >
     Remove
   </button>
