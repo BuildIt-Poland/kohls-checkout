@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { zIndexModalOverlay } from '../../styles/designTokens';
 
-const ModalWrapper = styled.div`
+const Overlay = styled.div`
   background: rgba(0, 0, 0, 0.6);
   height: 100%;
   left: 0;
@@ -11,4 +11,4 @@ const ModalWrapper = styled.div`
   z-index: ${zIndexModalOverlay};
 `;
 
-export default ModalWrapper;
+export default Overlay;
