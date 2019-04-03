@@ -20,7 +20,6 @@ function Quantity({ cartItemId, currentQuantity, handleUpdate }) {
   const [quantityInput, setQuantityInput] = useState(currentQuantity);
 
   const updateQuantity = function(type) {
-    console.log('updateQuantity called');
     const newValue = type === 'up' ? quantityInput + 1 : quantityInput - 1;
     handleChange(newValue);
   };
