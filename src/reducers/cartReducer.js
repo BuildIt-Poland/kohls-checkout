@@ -1,4 +1,4 @@
-import { UPDATE_QUANTITY, REMOVE_ITEM } from '../constants/actionTypes';
+import { SET_QUANTITY, REMOVE_ITEM, INCREASE_QUANTITY, DECREASE_QUANTITY } from '../constants/actionTypes';
 
 const initialState = {
   items: [
@@ -33,10 +33,32 @@ const initialState = {
   ]
 };
 
+const updateItemQuantity = function(array, type, action) {
+  return array.map(item => {
+    if (item.id !== action.cartItemId) {
+      return item;
+    }
+    return {
+      ...item,
+      quantity: type === 'up' ? item.quantity + 1 : item.quantity - 1
+    };
+  });
+};
+
 function cartReducer(state = initialState, action) {
   const items = state.items;
   switch (action.type) {
-    case UPDATE_QUANTITY:
+    case INCREASE_QUANTITY:
+      return {
+        ...state,
+        items: updateItemQuantity(items, 'up', action)
+      };
+    case DECREASE_QUANTITY:
+      return {
+        ...state,
+        items: updateItemQuantity(items, 'down', action)
+      };
+    case SET_QUANTITY:
       return {
         ...state,
         items: items.map(item => {

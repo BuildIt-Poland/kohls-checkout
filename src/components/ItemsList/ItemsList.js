@@ -8,11 +8,19 @@ const Wrapper = styled.div`
   margin: ${spacingSmall} 0;
 `;
 
-function ItemsList({ items, handleUpdate, handleRemove }) {
+function ItemsList({ items, handleUpdate, handleRemove, handleIncrease, handleDecrease }) {
   return (
     <Wrapper>
       {items.map((item, index) => (
-        <Item key={index} item={item} editableQuantity handleUpdate={handleUpdate} handleRemove={handleRemove} />
+        <Item
+          key={index}
+          item={item}
+          editableQuantity
+          handleUpdate={handleUpdate}
+          handleIncrease={handleIncrease}
+          handleDecrease={handleDecrease}
+          handleRemove={handleRemove}
+        />
       ))}
     </Wrapper>
   );

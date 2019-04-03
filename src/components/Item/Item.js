@@ -51,7 +51,7 @@ const renderPrices = function(item) {
   );
 };
 
-function Item({ item = {}, editableQuantity = false, handleUpdate, handleRemove }) {
+function Item({ item = {}, editableQuantity = false, handleIncrease, handleDecrease, handleUpdate, handleRemove }) {
   return (
     <Wrapper>
       <Image src={item.imgUrl} />
@@ -62,10 +62,11 @@ function Item({ item = {}, editableQuantity = false, handleUpdate, handleRemove 
       </Details>
       {editableQuantity ? (
         <Quantity
-          quantity={item.quantity}
-          currentQuantity={item.quantity}
           cartItemId={item.id}
+          currentQuantity={item.quantity}
           handleUpdate={handleUpdate}
+          handleIncrease={handleIncrease}
+          handleDecrease={handleDecrease}
         />
       ) : null}
       <RemoveButton editableQuantity={editableQuantity} cartItemId={item.id} handleRemove={handleRemove} />

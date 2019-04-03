@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { borderRadiusMedium, colorLightGrey, borderWidthThick } from '../../styles/designTokens';
@@ -16,27 +16,19 @@ const Wrapper = styled.div`
   border: ${borderWidthThick} solid ${colorLightGrey};
 `;
 
-function Quantity({ cartItemId, currentQuantity, handleUpdate }) {
-  const [quantityInput, setQuantityInput] = useState(currentQuantity);
-
-  const updateQuantity = function(type) {
-    const newValue = type === 'up' ? quantityInput + 1 : quantityInput - 1;
-    handleChange(newValue);
-  };
-
-  const handleChange = function(value) {
+function Quantity({ cartItemId, currentQuantity, handleIncrease, handleDecrease, handleUpdate }) {
+  const handleChange = function(value, itemId) {
     const newValue = parseInt(value, 10);
-    setQuantityInput(newValue);
-    handleUpdate(cartItemId, newValue);
+    handleUpdate(itemId, newValue);
   };
 
   return (
     <Wrapper>
-      <QuantityButton onClick={() => updateQuantity('down')} disabled={quantityInput < 2}>
+      <QuantityButton onClick={() => handleDecrease(cartItemId)} disabled={currentQuantity < 2}>
         -
       </QuantityButton>
-      <QuantityInput value={quantityInput} onChange={e => handleChange(e.target.value)} />
-      <QuantityButton onClick={() => updateQuantity('up')}>+</QuantityButton>
+      <QuantityInput value={currentQuantity} onChange={e => handleChange(e.target.value, cartItemId)} />
+      <QuantityButton onClick={() => handleIncrease(cartItemId)}>+</QuantityButton>
     </Wrapper>
   );
 }
