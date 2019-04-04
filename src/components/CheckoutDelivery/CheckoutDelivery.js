@@ -17,7 +17,7 @@ function CheckoutDelivery() {
       <section>
         <SectionHeader>
           Shipping Address
-          <ModalTrigger title="Shipping &amp; Pickup Options" content={SHIPPING_DETAILS_MODAL_CONTENT}>
+          <ModalTrigger title="Shipping &amp; Pickup" content={SHIPPING_DETAILS_MODAL_CONTENT}>
             <Text underline>Open modal</Text>
           </ModalTrigger>
         </SectionHeader>

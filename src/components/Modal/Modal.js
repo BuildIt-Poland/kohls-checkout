@@ -14,7 +14,7 @@ function Modal({ children, onClose = noop, title = 'Modal' }) {
     <>
       <Overlay onClick={onClose} />
       <Wrapper role="dialog" aria-labelledby="dialog-label" aria-modal="true">
-        <Header id="dialog-label" data-testid="modal-header">
+        <Header as="h3" id="dialog-label" data-testid="modal-header">
           {title}
           <CloseButton aria-label="close" onClick={onClose}>
             <Cross />

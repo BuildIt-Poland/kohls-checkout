@@ -13,6 +13,8 @@ const Header = styled(SectionHeader)`
   justify-content: space-between;
   margin: 0;
   padding: 0 ${spacingSmall} 0 ${spacingMedium};
+  text-align: left;
+  line-height: 1;
 `;
 
 export default Header;
