@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { fontWeightNormal, spacingSmall, fontMedium, colorBlack } from '../../styles/designTokens';
 
-const Label = styled.label`
+const Text = styled.span`
   display: block;
   color: ${colorBlack};
   font-size: ${fontMedium};
@@ -11,4 +11,4 @@ const Label = styled.label`
   cursor: pointer;
 `;
 
-export default Label;
+export default Text;

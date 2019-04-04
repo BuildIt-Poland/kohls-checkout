@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Label renders Label component 1`] = `
+exports[`COMPONENT - Text renders Text component 1`] = `
 .c0 {
   display: block;
   color: #222222;
@@ -10,7 +10,7 @@ exports[`COMPONENT - Label renders Label component 1`] = `
   cursor: pointer;
 }
 
-<label
+<span
   className="c0"
 />
 `;

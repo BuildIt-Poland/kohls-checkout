@@ -54,7 +54,7 @@ exports[`COMPONENT - Checkbox renders checked Checkbox component 1`] = `
   <span
     className="c2"
   />
-  <label
+  <span
     className="c3"
   />
   <span
@@ -118,7 +118,7 @@ exports[`COMPONENT - Checkbox renders unchecked Checkbox component 1`] = `
   <span
     className="c2"
   />
-  <label
+  <span
     className="c3"
   />
 </label>

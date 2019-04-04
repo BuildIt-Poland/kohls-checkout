@@ -3,7 +3,7 @@ import React from 'react';
 import Wrapper from './Wrapper';
 import Input from './Input';
 import CheckMark from './CheckMark';
-import Label from './Label';
+import Text from './Text';
 import Tick from './Tick';
 
 function Checkbox({ label, checked, onChange }) {
@@ -11,7 +11,7 @@ function Checkbox({ label, checked, onChange }) {
     <Wrapper>
       <Input type="checkbox" checked={checked} onChange={onChange} />
       <CheckMark />
-      <Label>{label}</Label>
+      <Text>{label}</Text>
       {checked && <Tick />}
     </Wrapper>
   );
