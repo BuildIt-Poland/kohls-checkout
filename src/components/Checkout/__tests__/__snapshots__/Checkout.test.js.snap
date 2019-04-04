@@ -432,7 +432,6 @@ Array [
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 400;
-  font-weight: 400;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
@@ -447,7 +446,6 @@ Array [
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
@@ -471,7 +469,6 @@ Array [
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
@@ -787,7 +784,6 @@ Array [
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 400;
-  font-weight: 400;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
@@ -802,7 +798,6 @@ Array [
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
@@ -826,7 +821,6 @@ Array [
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
