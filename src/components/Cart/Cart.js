@@ -6,17 +6,18 @@ import Headline from '../Headline';
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
 import Content from './Content';
+import Wraper from './Wrapper';
 
 function Cart() {
   return (
-    <>
-      <Content as="article">
+    <Wraper>
+      <Content as="section">
         <Headline>Cart</Headline>
         <Item />
-        <OrderSummary />
       </Content>
+      <OrderSummary />
       <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />
-    </>
+    </Wraper>
   );
 }
 
