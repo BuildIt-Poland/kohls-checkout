@@ -134,14 +134,24 @@ Array [
     </nav>
   </div>,
   .c0 {
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+
+.c1 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .c3 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.c4 {
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -152,11 +162,11 @@ Array [
   margin-bottom: 1rem;
 }
 
-.c3:last-child {
+.c4:last-child {
   margin-bottom: 0;
 }
 
-.c5 {
+.c6 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -170,7 +180,7 @@ Array [
   margin: 0 auto;
 }
 
-.c4 {
+.c5 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -181,7 +191,7 @@ Array [
   z-index: 6000;
 }
 
-.c1 {
+.c2 {
   margin: 0;
   margin-bottom: 2rem;
   font-size: 3rem;
@@ -189,43 +199,40 @@ Array [
   line-height: 1;
 }
 
-.c2 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 <article
     className="c0"
   >
-    <h1
+    <section
       className="c1"
     >
-      Delivery
-    </h1>
-    <section>
-      <h2
+      <h1
         className="c2"
       >
-        Shipping Address
-        <span
-          data-testid="modal-trigger"
-          onClick={[Function]}
+        Delivery
+      </h1>
+      <section>
+        <h2
+          className="c3"
         >
-          <p
-            className="c3"
+          Shipping Address
+          <span
+            data-testid="modal-trigger"
+            onClick={[Function]}
           >
-            Open modal
-          </p>
-        </span>
-      </h2>
+            <p
+              className="c4"
+            >
+              Open modal
+            </p>
+          </span>
+        </h2>
+      </section>
     </section>
     <div
-      className="c4"
+      className="c5"
     >
       <a
-        className="c5"
+        className="c6"
         data-testid="next-step-button"
         href="/checkout/payment"
         onClick={[Function]}
@@ -370,18 +377,22 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
+  .c0 {
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+
+.c1 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
 }
 
-.c0 {
-  max-width: 100rem;
-  padding: 0 2rem;
-  margin: 0 auto;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.c4 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .c9 {
@@ -409,19 +420,12 @@ Array [
   z-index: 6000;
 }
 
-.c1 {
+.c2 {
   margin: 0;
   margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
-}
-
-.c4 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .c5 {
@@ -479,7 +483,7 @@ Array [
   margin-bottom: 0;
 }
 
-.c2 {
+.c3 {
   border-top: 1px solid #b0b0b0;
   padding-top: 2rem;
 }
@@ -487,16 +491,20 @@ Array [
 <article
     className="c0"
   >
-    <h1
+    <section
       className="c1"
     >
-      Payment
-    </h1>
+      <h1
+        className="c2"
+      >
+        Payment
+      </h1>
+    </section>
     <section
-      className="c2"
+      className="c3"
     >
       <section
-        className="c3"
+        className="c1"
       >
         <h2
           className="c4"
@@ -719,18 +727,22 @@ Array [
       </a>
     </nav>
   </div>,
-  .c3 {
+  .c0 {
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+
+.c1 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
 }
 
-.c0 {
-  max-width: 100rem;
-  padding: 0 2rem;
-  margin: 0 auto;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.c4 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .c9 {
@@ -758,19 +770,12 @@ Array [
   z-index: 6000;
 }
 
-.c1 {
+.c2 {
   margin: 0;
   margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
-}
-
-.c4 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .c5 {
@@ -828,7 +833,7 @@ Array [
   margin-bottom: 0;
 }
 
-.c2 {
+.c3 {
   border-top: 1px solid #b0b0b0;
   padding-top: 2rem;
 }
@@ -836,16 +841,20 @@ Array [
 <article
     className="c0"
   >
-    <h1
+    <section
       className="c1"
     >
-      Review
-    </h1>
+      <h1
+        className="c2"
+      >
+        Review
+      </h1>
+    </section>
     <section
-      className="c2"
+      className="c3"
     >
       <section
-        className="c3"
+        className="c1"
       >
         <h2
           className="c4"

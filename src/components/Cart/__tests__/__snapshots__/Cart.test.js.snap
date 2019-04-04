@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Cart renders Cart component 1`] = `
+.c0 {
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+
 .c2 {
   margin: 0;
   margin-bottom: 2rem;
@@ -38,12 +43,6 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.c0 {
-  padding-bottom: 12rem;
 }
 
 <article

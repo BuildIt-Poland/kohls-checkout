@@ -1,21 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
-Array [
-  .c0 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
+.c0 {
+  padding-top: 3rem;
+  padding-bottom: 12rem;
 }
 
-<h1
-    className="c0"
-  >
-    Delivery
-  </h1>,
-  .c1 {
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.c3 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.c4 {
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -26,35 +30,11 @@ Array [
   margin-bottom: 1rem;
 }
 
-.c1:last-child {
+.c4:last-child {
   margin-bottom: 0;
 }
 
-.c0 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-<section>
-    <h2
-      className="c0"
-    >
-      Shipping Address
-      <span
-        data-testid="modal-trigger"
-        onClick={[Function]}
-      >
-        <p
-          className="c1"
-        >
-          Open modal
-        </p>
-      </span>
-    </h2>
-  </section>,
-  .c1 {
+.c6 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -68,7 +48,7 @@ Array [
   margin: 0 auto;
 }
 
-.c0 {
+.c5 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -79,16 +59,53 @@ Array [
   z-index: 6000;
 }
 
-<div
-    className="c0"
+.c2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+<article
+  className="c0"
+>
+  <section
+    className="c1"
+  >
+    <h1
+      className="c2"
+    >
+      Delivery
+    </h1>
+    <section>
+      <h2
+        className="c3"
+      >
+        Shipping Address
+        <span
+          data-testid="modal-trigger"
+          onClick={[Function]}
+        >
+          <p
+            className="c4"
+          >
+            Open modal
+          </p>
+        </span>
+      </h2>
+    </section>
+  </section>
+  <div
+    className="c5"
   >
     <Link
-      className="c1"
+      className="c6"
       data-testid="next-step-button"
       to="/checkout/payment"
     >
       Continue to Payment
     </Link>
-  </div>,
-]
+  </div>
+</article>
 `;
