@@ -2,19 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { fontSmall, fontWeightBold } from '../../styles/designTokens';
+import { fontWeightBold, borderWidthThin, colorLightGrey, spacingMedium } from '../../styles/designTokens';
 import TextRow from './TextRow';
 
-const PriceSummary = styled.span`
-  font-size: ${fontSmall};
+const Total = styled.span`
   font-weight: ${fontWeightBold};
+`;
+
+const Row = styled(TextRow)`
+  border-top: ${borderWidthThin} solid ${colorLightGrey};
+  padding-top: ${spacingMedium};
+  margin-top: ${spacingMedium};
 `;
 
 function TotalPrice({ price }) {
   return (
-    <TextRow>
-      <PriceSummary>TOTAL ${price}</PriceSummary>
-    </TextRow>
+    <Row>
+      <Total>Total</Total>
+      <Total>${price}</Total>
+    </Row>
   );
 }
 
