@@ -49,7 +49,6 @@ exports[`COMPONENT - Checkbox renders checked Checkbox component 1`] = `
   <input
     checked={true}
     className="c1"
-    data-testid="checkbox-input"
     type="checkbox"
   />
   <span
@@ -114,7 +113,6 @@ exports[`COMPONENT - Checkbox renders unchecked Checkbox component 1`] = `
   <input
     checked={false}
     className="c1"
-    data-testid="checkbox-input"
     type="checkbox"
   />
   <span
