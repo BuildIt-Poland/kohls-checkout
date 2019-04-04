@@ -16,6 +16,7 @@ Array [
     Delivery
   </h1>,
   .c1 {
+  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;

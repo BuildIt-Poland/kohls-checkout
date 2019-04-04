@@ -2,6 +2,7 @@
 
 exports[`COMPONENT - OrderSummary TotalPrice render NextStep component 1`] = `
 .c0 {
+  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;

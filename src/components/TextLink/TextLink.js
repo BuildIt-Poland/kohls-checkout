@@ -7,6 +7,7 @@ const TextLink = styled.a`
   font-weight: ${fontWeightBold};
   font-size: ${fontMedium};
   text-decoration: underline;
+  text-transform: none;
 `;
 
 export default TextLink;
