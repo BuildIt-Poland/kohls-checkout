@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+import { InfoCircle } from '../Icons';
 import Modal from '../Modal/Modal';
 import Text from '../Text/Text';
 
@@ -23,9 +24,9 @@ function ModalTrigger({ title, content, children }) {
 
   return (
     <>
-      <span onClick={toggleModal} data-testid="modal-trigger">
-        {children}
-      </span>
+      <button onClick={toggleModal} data-testid="modal-trigger">
+        <InfoCircle />
+      </button>
       {renderModal()}
     </>
   );
