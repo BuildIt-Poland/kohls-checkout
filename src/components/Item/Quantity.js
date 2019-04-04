@@ -18,21 +18,22 @@ const Wrapper = styled.div`
 `;
 
 function Quantity({
-  cartItemId,
   currentQuantity,
   handleIncreaseItemQuantity = noop,
   handleDecreaseItemQuantity = noop,
-  handleUpdateItemQuantity = noop
+  handleSetItemQuantity = noop
 }) {
-  const handleChange = (value, itemId) => handleUpdateItemQuantity(itemId, parseInt(value, 10));
+  const handleChange = e => {
+    handleSetItemQuantity(parseInt(e.target.value, 10));
+  };
 
   return (
     <Wrapper>
-      <QuantityButton onClick={() => handleDecreaseItemQuantity(cartItemId)} disabled={currentQuantity < 2}>
+      <QuantityButton onClick={handleDecreaseItemQuantity} disabled={currentQuantity < 2}>
         -
       </QuantityButton>
-      <QuantityInput value={currentQuantity} onChange={e => handleChange(e.target.value, cartItemId)} />
-      <QuantityButton onClick={() => handleIncreaseItemQuantity(cartItemId)}>+</QuantityButton>
+      <QuantityInput value={currentQuantity} onChange={handleChange} />
+      <QuantityButton onClick={handleIncreaseItemQuantity}>+</QuantityButton>
     </Wrapper>
   );
 }

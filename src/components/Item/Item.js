@@ -14,7 +14,7 @@ import PriceBox from './PriceBox';
 import Wrapper from './Wrapper';
 import Details from './Details';
 
-const getTotalPrice = ({ quantity, price }) => quantity * (price.regular - price.discount);
+const getTotalPrice = (quantity, price) => quantity * (price.regular - price.discount);
 
 const renderAttributes = function({ variants }) {
   if (!variants) {
@@ -41,7 +41,7 @@ const renderPrices = function({ price, quantity }) {
     <PriceBox>
       <DiscountPrice>Sale ${price.discount}</DiscountPrice>
       <Price>Regular ${price.regular}</Price>
-      <TotalPrice>Total ${getTotalPrice({ quantity, price })}</TotalPrice>
+      <TotalPrice>Total ${getTotalPrice(quantity, price)}</TotalPrice>
     </PriceBox>
   );
 };
@@ -51,7 +51,7 @@ const renderQuantity = function(
   editableQuantity,
   handleIncreaseItemQuantity,
   handleDecreaseItemQuantity,
-  handleUpdateItemQuantity
+  handleSetItemQuantity
 ) {
   if (!editableQuantity) {
     return null;
@@ -59,9 +59,8 @@ const renderQuantity = function(
 
   return (
     <Quantity
-      cartItemId={id}
       currentQuantity={quantity}
-      handleUpdateItemQuantity={handleUpdateItemQuantity}
+      handleSetItemQuantity={handleSetItemQuantity}
       handleIncreaseItemQuantity={handleIncreaseItemQuantity}
       handleDecreaseItemQuantity={handleDecreaseItemQuantity}
     />
@@ -74,7 +73,7 @@ function Item({
   handleRemoveItem = noop,
   handleIncreaseItemQuantity = noop,
   handleDecreaseItemQuantity = noop,
-  handleUpdateItemQuantity = noop
+  handleSetItemQuantity = noop
 }) {
   const { id, imgUrl, name } = item;
   return (
@@ -90,9 +89,9 @@ function Item({
         editableQuantity,
         handleIncreaseItemQuantity,
         handleDecreaseItemQuantity,
-        handleUpdateItemQuantity
+        handleSetItemQuantity
       )}
-      <RemoveButton editableQuantity={editableQuantity} cartItemId={id} handleRemoveItem={handleRemoveItem} />
+      <RemoveButton editableQuantity={editableQuantity} cartItemId={id} handleClick={handleRemoveItem} />
     </Wrapper>
   );
 }

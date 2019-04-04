@@ -15,9 +15,9 @@ const Wrapper = styled.button`
   padding: 0;
 `;
 
-function RemoveButton({ editableQuantity, cartItemId, handleRemoveItem = noop }) {
+function RemoveButton({ editableQuantity, handleClick = noop }) {
   return (
-    <Wrapper editableQuantity={editableQuantity} onClick={() => handleRemoveItem(cartItemId)}>
+    <Wrapper editableQuantity={editableQuantity} onClick={handleClick}>
       Remove
     </Wrapper>
   );
