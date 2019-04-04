@@ -15,7 +15,7 @@ function OrderSummary() {
           <span>Subtotal</span>
           <span>$125.00</span>
         </TextRow>
-        <TextRow>
+        <TextRow highlight>
           <span>Kohl's Cash &amp; Discounts</span>
           <span>-$18.75</span>
         </TextRow>

@@ -2,13 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { fontLarge } from '../../styles/designTokens';
+import { fontLarge, spacingSmall } from '../../styles/designTokens';
 
 const Header = styled.h2`
   font-size: ${fontLarge};
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: ${spacingSmall} 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

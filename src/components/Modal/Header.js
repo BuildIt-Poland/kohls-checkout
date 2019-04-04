@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
-import SectionHeader from '../SectionHeader';
+import { spacingMedium, colorLightGrey, borderWidthThin, spacingSmall, fontLarge } from '../../styles/designTokens';
 
-import { spacingMedium, colorLightGrey, borderWidthThin, spacingSmall } from '../../styles/designTokens';
-
-const Header = styled(SectionHeader)`
+const Header = styled.h3`
   height: 6rem;
+  font-size: ${fontLarge};
   border-bottom: ${borderWidthThin} solid ${colorLightGrey};
   text-align: center;
   display: flex;
