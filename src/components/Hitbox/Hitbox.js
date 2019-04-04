@@ -11,6 +11,10 @@ const Hitbox = styled.button`
   min-width: 2rem;
   min-height: 2rem;
   cursor: pointer;
+
+  svg {
+    display: block;
+  }
 `;
 
 export default Hitbox;

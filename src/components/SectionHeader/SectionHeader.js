@@ -11,6 +11,7 @@ const Header = styled.h2`
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 function SectionHeader({ actionElement, children }) {
