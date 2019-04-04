@@ -1,4 +1,5 @@
 import React from 'react';
+
 import NextStep from '../NextStep';
 import { CHECKOUT_REVIEW_PATH } from '../../constants/routes';
 import OrderSummary from '../OrderSummary';

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Text renders Text component 1`] = `
+.c0 {
+  display: block;
+  color: #222222;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+<span
+  className="c0"
+/>
+`;

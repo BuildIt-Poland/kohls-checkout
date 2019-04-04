@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - CheckMark renders CheckMark component 1`] = `
+.c0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.8rem;
+  width: 2.8rem;
+  border: 2px solid #b0b0b0;
+  border-radius: 0.25rem;
+}
+
+<span
+  className="c0"
+/>
+`;
