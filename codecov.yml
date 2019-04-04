@@ -24,3 +24,7 @@ comment: off
 
 ignore:
   - 'src/e2eConfig.js'
+  - 'src/index.js',
+  - 'src/serviceWorker.js',
+  - 'src/components/Root/*',
+  - 'src/constants/*'
