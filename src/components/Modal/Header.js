@@ -1,14 +1,18 @@
 import styled from 'styled-components';
 
-import { spacingSmall, fontSmall, colorLightGrey } from '../../styles/designTokens';
+import SectionHeader from '../SectionHeader';
 
-const Header = styled.section`
-  font-size: ${fontSmall};
-  font-weight: bold;
-  padding: ${spacingSmall};
+import { spacingMedium, colorLightGrey, borderWidthThin, spacingSmall } from '../../styles/designTokens';
+
+const Header = styled(SectionHeader)`
+  height: 6rem;
+  border-bottom: ${borderWidthThin} solid ${colorLightGrey};
   text-align: center;
-  text-transform: uppercase;
-  border-bottom: 1px solid ${colorLightGrey};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 ${spacingSmall} 0 ${spacingMedium};
 `;
 
 export default Header;
