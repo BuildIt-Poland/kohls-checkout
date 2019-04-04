@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
-import { fontSmall } from '../../styles/designTokens';
+import { fontLarge } from '../../styles/designTokens';
 
-const SectionHeader = styled.h3`
-  font-size: ${fontSmall};
+const SectionHeader = styled.h2`
+  font-size: ${fontLarge};
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-transform: uppercase;
 `;
 
 export default SectionHeader;
