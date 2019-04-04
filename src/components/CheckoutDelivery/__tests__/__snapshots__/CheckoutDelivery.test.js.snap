@@ -2,19 +2,6 @@
 
 exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
 Array [
-  .c0 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-<h1
-    className="c0"
-  >
-    Delivery
-  </h1>,
   .c1 {
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
@@ -36,6 +23,14 @@ Array [
   margin-top: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 <section>
