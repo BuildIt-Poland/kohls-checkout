@@ -1,10 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
-<<<<<<< HEAD
 .c0 {
   padding-top: 3rem;
   padding-bottom: 12rem;
+}
+
+.c2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .c1 {
@@ -13,32 +20,7 @@ exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
   margin: 0 auto;
 }
 
-.c3 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .c4 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: 400;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-.c4:last-child {
-  margin-bottom: 0;
-}
-
-.c6 {
-=======
-Array [
-  .c1 {
   border: 0;
   background: none;
   -webkit-align-items: center;
@@ -51,60 +33,19 @@ Array [
   justify-content: center;
   min-width: 2rem;
   min-height: 2rem;
+  cursor: pointer;
 }
 
-.c0 {
-  font-size: 1.2rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.c4 svg {
+  display: block;
 }
 
-<section>
-    <h3
-      className="c0"
-    >
-      Shipping Address
-      <button
-        className="c1"
-        data-testid="modal-trigger"
-        onClick={[Function]}
-      >
-        <svg
-          height="18"
-          width="18"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="9"
-            cy="9"
-            fill="#222"
-            r="9"
-          />
-          <path
-            d="M9.833 6.241H8.167V4.724h1.666v1.517zM8.167 7.49h1.666v5.786H8.167V7.49z"
-            fill="#fff"
-          />
-        </svg>
-      </button>
-    </h3>
-  </section>,
-  .c1 {
->>>>>>> master
+.c6 {
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 700;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 700;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;
@@ -124,12 +65,22 @@ Array [
   z-index: 6000;
 }
 
-.c2 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
+.c3 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <article
@@ -148,16 +99,28 @@ Array [
         className="c3"
       >
         Shipping Address
-        <span
+        <button
+          className="c4"
           data-testid="modal-trigger"
           onClick={[Function]}
         >
-          <p
-            className="c4"
+          <svg
+            height="18"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            Open modal
-          </p>
-        </span>
+            <circle
+              cx="9"
+              cy="9"
+              fill="#222"
+              r="9"
+            />
+            <path
+              d="M9.833 6.241H8.167V4.724h1.666v1.517zM8.167 7.49h1.666v5.786H8.167V7.49z"
+              fill="#fff"
+            />
+          </svg>
+        </button>
       </h2>
     </section>
   </section>

@@ -18,8 +18,8 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 700;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 700;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;

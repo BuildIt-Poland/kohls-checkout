@@ -138,38 +138,21 @@ Array [
   padding-bottom: 12rem;
 }
 
+.c2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .c1 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-.c3 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .c4 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: 400;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-.c4:last-child {
-  margin-bottom: 0;
-}
-
-.c6 {
-=======
-.c2 {
   border: 0;
   background: none;
   -webkit-align-items: center;
@@ -182,15 +165,19 @@ Array [
   justify-content: center;
   min-width: 2rem;
   min-height: 2rem;
+  cursor: pointer;
 }
 
-.c4 {
->>>>>>> master
+.c4 svg {
+  display: block;
+}
+
+.c6 {
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 700;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 700;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;
@@ -199,11 +186,7 @@ Array [
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
 .c5 {
-=======
-.c3 {
->>>>>>> master
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -214,20 +197,10 @@ Array [
   z-index: 6000;
 }
 
-<<<<<<< HEAD
-.c2 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-=======
-.c1 {
-  font-size: 1.2rem;
+.c3 {
+  font-size: 2.4rem;
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  margin: 1rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -236,13 +209,15 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
->>>>>>> master
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <article
     className="c0"
   >
-<<<<<<< HEAD
     <section
       className="c1"
     >
@@ -256,16 +231,28 @@ Array [
           className="c3"
         >
           Shipping Address
-          <span
+          <button
+            className="c4"
             data-testid="modal-trigger"
             onClick={[Function]}
           >
-            <p
-              className="c4"
+            <svg
+              height="18"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              Open modal
-            </p>
-          </span>
+              <circle
+                cx="9"
+                cy="9"
+                fill="#222"
+                r="9"
+              />
+              <path
+                d="M9.833 6.241H8.167V4.724h1.666v1.517zM8.167 7.49h1.666v5.786H8.167V7.49z"
+                fill="#fff"
+              />
+            </svg>
+          </button>
         </h2>
       </section>
     </section>
@@ -274,42 +261,6 @@ Array [
     >
       <a
         className="c6"
-=======
-    <section>
-      <h3
-        className="c1"
-      >
-        Shipping Address
-        <button
-          className="c2"
-          data-testid="modal-trigger"
-          onClick={[Function]}
-        >
-          <svg
-            height="18"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="9"
-              cy="9"
-              fill="#222"
-              r="9"
-            />
-            <path
-              d="M9.833 6.241H8.167V4.724h1.666v1.517zM8.167 7.49h1.666v5.786H8.167V7.49z"
-              fill="#fff"
-            />
-          </svg>
-        </button>
-      </h3>
-    </section>
-    <div
-      className="c3"
-    >
-      <a
-        className="c4"
->>>>>>> master
         data-testid="next-step-button"
         href="/checkout/payment"
         onClick={[Function]}
@@ -459,25 +410,26 @@ Array [
   padding-bottom: 12rem;
 }
 
+.c2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .c1 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
 }
 
-.c4 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.c9 {
+.c10 {
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 700;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 700;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;
@@ -486,7 +438,7 @@ Array [
   margin: 0 auto;
 }
 
-.c8 {
+.c9 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -497,19 +449,10 @@ Array [
   z-index: 6000;
 }
 
-.c2 {
-<<<<<<< HEAD
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-=======
-  font-size: 1.2rem;
+.c4 {
+  font-size: 2.4rem;
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  margin: 1rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -518,7 +461,10 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
->>>>>>> master
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5 {
@@ -529,24 +475,7 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-<<<<<<< HEAD
-=======
-  color: #00a09f;
-}
-
-.c5:last-child {
-  margin-bottom: 0;
-}
-
-.c3 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
->>>>>>> master
+  color: #222222;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -562,10 +491,6 @@ Array [
   margin-bottom: 0;
 }
 
-.c7 {
-  font-weight: 700;
-}
-
 .c6 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
@@ -574,6 +499,35 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
+  color: #00a09f;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6:last-child {
+  margin-bottom: 0;
+}
+
+.c8 {
+  font-weight: 700;
+}
+
+.c7 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -588,21 +542,13 @@ Array [
   margin-top: 2rem;
 }
 
-.c6:last-child {
+.c7:last-child {
   margin-bottom: 0;
 }
 
 .c3 {
   border-top: 1px solid #b0b0b0;
   padding-top: 2rem;
-}
-
-.c1 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
 }
 
 <article
@@ -639,7 +585,7 @@ Array [
           </span>
         </p>
         <p
-          className="c5"
+          className="c6"
         >
           <span>
             Kohl's Cash & Discounts
@@ -669,15 +615,15 @@ Array [
           </span>
         </p>
         <p
-          className="c6"
+          className="c7"
         >
           <span
-            className="c7"
+            className="c8"
           >
             Total
           </span>
           <span
-            className="c7"
+            className="c8"
           >
             $
             122.7
@@ -696,10 +642,10 @@ Array [
       </section>
     </section>
     <div
-      className="c8"
+      className="c9"
     >
       <a
-        className="c9"
+        className="c10"
         data-testid="next-step-button"
         href="/checkout/review"
         onClick={[Function]}
@@ -849,25 +795,26 @@ Array [
   padding-bottom: 12rem;
 }
 
+.c2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .c1 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
 }
 
-.c4 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.c9 {
+.c11 {
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 700;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 700;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;
@@ -876,7 +823,7 @@ Array [
   margin: 0 auto;
 }
 
-.c8 {
+.c10 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -887,20 +834,10 @@ Array [
   z-index: 6000;
 }
 
-<<<<<<< HEAD
-.c2 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-=======
-.c1 {
-  font-size: 1.2rem;
+.c3 {
+  font-size: 2.4rem;
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  margin: 1rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -909,10 +846,13 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
->>>>>>> master
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 {
+.c6 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -920,24 +860,7 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-<<<<<<< HEAD
-=======
-  color: #00a09f;
-}
-
-.c5:last-child {
-  margin-bottom: 0;
-}
-
-.c3 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
->>>>>>> master
+  color: #222222;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -949,15 +872,11 @@ Array [
   justify-content: space-between;
 }
 
-.c5:last-child {
+.c6:last-child {
   margin-bottom: 0;
 }
 
 .c7 {
-  font-weight: 700;
-}
-
-.c6 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -965,6 +884,35 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
+  color: #00a09f;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c7:last-child {
+  margin-bottom: 0;
+}
+
+.c9 {
+  font-weight: 700;
+}
+
+.c8 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -979,16 +927,16 @@ Array [
   margin-top: 2rem;
 }
 
-.c6:last-child {
+.c8:last-child {
   margin-bottom: 0;
 }
 
-.c3 {
+.c5 {
   border-top: 1px solid #b0b0b0;
   padding-top: 2rem;
 }
 
-.c2 {
+.c4 {
   color: #00a09f;
   font-weight: 700;
   font-size: 1.8rem;
@@ -1000,62 +948,56 @@ Array [
 <article
     className="c0"
   >
-<<<<<<< HEAD
     <section
       className="c1"
     >
       <h1
         className="c2"
-=======
-    <section>
-      <h3
-        className="c1"
-      >
-        Shipping Details
-        <a
-          className="c2"
-          href="/checkout/delivery"
-          onClick={[Function]}
-        >
-          Edit
-        </a>
-      </h3>
-    </section>
-    <section>
-      <h3
-        className="c1"
-      >
-        Payment Information
-        <a
-          className="c2"
-          href="/checkout/payment"
-          onClick={[Function]}
-        >
-          Edit
-        </a>
-      </h3>
-    </section>
-    <section>
-      <h3
-        className="c1"
->>>>>>> master
       >
         Review
       </h1>
+      <section>
+        <h2
+          className="c3"
+        >
+          Shipping Details
+          <a
+            className="c4"
+            href="/checkout/delivery"
+            onClick={[Function]}
+          >
+            Edit
+          </a>
+        </h2>
+      </section>
+      <section>
+        <h2
+          className="c3"
+        >
+          Payment Information
+          <a
+            className="c4"
+            href="/checkout/payment"
+            onClick={[Function]}
+          >
+            Edit
+          </a>
+        </h2>
+      </section>
     </section>
     <section
-      className="c3"
+      className="c5"
     >
       <section
         className="c1"
       >
         <h2
-          className="c4"
+          className="c3"
         >
           Order Summary
         </h2>
         <p
-          className="c5"
+          className="c6"
         >
           <span>
             Subtotal
@@ -1065,7 +1007,7 @@ Array [
           </span>
         </p>
         <p
-          className="c5"
+          className="c7"
         >
           <span>
             Kohl's Cash & Discounts
@@ -1075,7 +1017,7 @@ Array [
           </span>
         </p>
         <p
-          className="c5"
+          className="c6"
         >
           <span>
             Shipping
@@ -1085,7 +1027,7 @@ Array [
           </strong>
         </p>
         <p
-          className="c5"
+          className="c6"
         >
           <span>
             Tax
@@ -1095,22 +1037,22 @@ Array [
           </span>
         </p>
         <p
-          className="c6"
+          className="c8"
         >
           <span
-            className="c7"
+            className="c9"
           >
             Total
           </span>
           <span
-            className="c7"
+            className="c9"
           >
             $
             122.7
           </span>
         </p>
         <p
-          className="c5"
+          className="c6"
         >
           <span>
             Your Savings
@@ -1122,10 +1064,10 @@ Array [
       </section>
     </section>
     <div
-      className="c8"
+      className="c10"
     >
       <a
-        className="c9"
+        className="c11"
         data-testid="next-step-button"
         href="/cart"
         onClick={[Function]}

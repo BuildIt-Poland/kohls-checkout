@@ -14,10 +14,11 @@ exports[`COMPONENT - Hitbox renders correctly 1`] = `
   justify-content: center;
   min-width: 2rem;
   min-height: 2rem;
-<<<<<<< HEAD
   cursor: pointer;
-=======
->>>>>>> master
+}
+
+.c0 svg {
+  display: block;
 }
 
 <button

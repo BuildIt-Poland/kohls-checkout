@@ -25,11 +25,8 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
 }
 
 .c2 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
   height: 6rem;
+  font-size: 2.4rem;
   border-bottom: 1px solid #b0b0b0;
   text-align: center;
   display: -webkit-box;
@@ -66,6 +63,10 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
   cursor: pointer;
   width: 4rem;
   height: 4rem;
+}
+
+.c3 svg {
+  display: block;
 }
 
 .c4 {
@@ -145,11 +146,8 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
 }
 
 .c2 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
   height: 6rem;
+  font-size: 2.4rem;
   border-bottom: 1px solid #b0b0b0;
   text-align: center;
   display: -webkit-box;
@@ -186,6 +184,10 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
   cursor: pointer;
   width: 4rem;
   height: 4rem;
+}
+
+.c3 svg {
+  display: block;
 }
 
 .c4 {

@@ -19,6 +19,10 @@ exports[`COMPONENT - Modal CloseButton renders correctly 1`] = `
   height: 4rem;
 }
 
+.c0 svg {
+  display: block;
+}
+
 <button
   className="c0"
 />
