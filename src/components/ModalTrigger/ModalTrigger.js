@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import Modal from '../Modal/Modal';
-import Text from '../Text/Text';
+import Modal from '../Modal';
+import Text from '../Text';
 
 function ModalTrigger({ title, content, children }) {
   const [isOpen, setModalVisibility] = useState(false);
