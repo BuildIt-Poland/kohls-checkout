@@ -190,11 +190,10 @@ Array [
 }
 
 .c2 {
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 
 <article
@@ -206,7 +205,7 @@ Array [
       Delivery
     </h1>
     <section>
-      <h3
+      <h2
         className="c2"
       >
         Shipping Address
@@ -220,7 +219,7 @@ Array [
             Open modal
           </p>
         </span>
-      </h3>
+      </h2>
     </section>
     <div
       className="c4"
@@ -371,7 +370,13 @@ Array [
       </a>
     </nav>
   </div>,
-  .c0 {
+  .c3 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.c0 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
@@ -379,7 +384,7 @@ Array [
   padding-bottom: 3rem;
 }
 
-.c8 {
+.c9 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -393,7 +398,7 @@ Array [
   margin: 0 auto;
 }
 
-.c7 {
+.c8 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -412,12 +417,11 @@ Array [
   line-height: 1;
 }
 
-.c2 {
-  font-size: 1.2rem;
+.c4 {
+  font-size: 2.4rem;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 
 .c5 {
@@ -429,14 +433,26 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-  color: #00a09f;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5:last-child {
   margin-bottom: 0;
 }
 
-.c3 {
+.c7 {
+  font-weight: 700;
+}
+
+.c6 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -454,39 +470,18 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  border-top: 1px solid #b0b0b0;
+  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
-.c3:last-child {
+.c6:last-child {
   margin-bottom: 0;
 }
 
-.c4 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: 400;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c4:last-child {
-  margin-bottom: 0;
-}
-
-.c6 {
-  font-size: 1.2rem;
-  font-weight: 700;
+.c2 {
+  border-top: 1px solid #b0b0b0;
+  padding-top: 2rem;
 }
 
 <article
@@ -497,83 +492,89 @@ Array [
     >
       Payment
     </h1>
-    <section>
-      <h3
-        className="c2"
-      >
-        Order Summary
-      </h3>
-      <p
+    <section
+      className="c2"
+    >
+      <section
         className="c3"
       >
-        <span>
-          Subtotal
-        </span>
-        <span>
-          $125.00
-        </span>
-      </p>
-      <p
-        className="c3"
-      >
-        <span>
-          Kohl's Cash & Discounts
-        </span>
-        <span>
-          -$18.75
-        </span>
-      </p>
-      <p
-        className="c4"
-      >
-        <span>
-          Shipping
-        </span>
-        <span>
-          FREE
-        </span>
-      </p>
-      <p
-        className="c5"
-      >
-        You have earned free shipping.
-      </p>
-      <p
-        className="c3"
-      >
-        <span>
-          Tax
-        </span>
-        <span>
-          $6.38
-        </span>
-      </p>
-      <p
-        className="c3"
-      >
-        <span
+        <h2
+          className="c4"
+        >
+          Order Summary
+        </h2>
+        <p
+          className="c5"
+        >
+          <span>
+            Subtotal
+          </span>
+          <span>
+            $125.00
+          </span>
+        </p>
+        <p
+          className="c5"
+        >
+          <span>
+            Kohl's Cash & Discounts
+          </span>
+          <span>
+            -$18.75
+          </span>
+        </p>
+        <p
+          className="c5"
+        >
+          <span>
+            Shipping
+          </span>
+          <strong>
+            FREE
+          </strong>
+        </p>
+        <p
+          className="c5"
+        >
+          <span>
+            Tax
+          </span>
+          <span>
+            $6.38
+          </span>
+        </p>
+        <p
           className="c6"
         >
-          TOTAL $
-          122.7
-        </span>
-      </p>
-      <p
-        className="c3"
-      >
-        <span>
-          Your Savings
-        </span>
-        <span>
-          $122.70
-        </span>
-      </p>
+          <span
+            className="c7"
+          >
+            Total
+          </span>
+          <span
+            className="c7"
+          >
+            $
+            122.7
+          </span>
+        </p>
+        <p
+          className="c5"
+        >
+          <span>
+            Your Savings
+          </span>
+          <span>
+            $122.70
+          </span>
+        </p>
+      </section>
     </section>
     <div
-      className="c7"
+      className="c8"
     >
       <a
-        className="c8"
+        className="c9"
         data-testid="next-step-button"
         href="/checkout/review"
         onClick={[Function]}
@@ -718,7 +719,13 @@ Array [
       </a>
     </nav>
   </div>,
-  .c0 {
+  .c3 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.c0 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
@@ -726,7 +733,7 @@ Array [
   padding-bottom: 3rem;
 }
 
-.c8 {
+.c9 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -740,7 +747,7 @@ Array [
   margin: 0 auto;
 }
 
-.c7 {
+.c8 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -759,12 +766,11 @@ Array [
   line-height: 1;
 }
 
-.c2 {
-  font-size: 1.2rem;
+.c4 {
+  font-size: 2.4rem;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 
 .c5 {
@@ -776,14 +782,26 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-  color: #00a09f;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5:last-child {
   margin-bottom: 0;
 }
 
-.c3 {
+.c7 {
+  font-weight: 700;
+}
+
+.c6 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -801,39 +819,18 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  border-top: 1px solid #b0b0b0;
+  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
-.c3:last-child {
+.c6:last-child {
   margin-bottom: 0;
 }
 
-.c4 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: 400;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c4:last-child {
-  margin-bottom: 0;
-}
-
-.c6 {
-  font-size: 1.2rem;
-  font-weight: 700;
+.c2 {
+  border-top: 1px solid #b0b0b0;
+  padding-top: 2rem;
 }
 
 <article
@@ -844,83 +841,89 @@ Array [
     >
       Review
     </h1>
-    <section>
-      <h3
-        className="c2"
-      >
-        Order Summary
-      </h3>
-      <p
+    <section
+      className="c2"
+    >
+      <section
         className="c3"
       >
-        <span>
-          Subtotal
-        </span>
-        <span>
-          $125.00
-        </span>
-      </p>
-      <p
-        className="c3"
-      >
-        <span>
-          Kohl's Cash & Discounts
-        </span>
-        <span>
-          -$18.75
-        </span>
-      </p>
-      <p
-        className="c4"
-      >
-        <span>
-          Shipping
-        </span>
-        <span>
-          FREE
-        </span>
-      </p>
-      <p
-        className="c5"
-      >
-        You have earned free shipping.
-      </p>
-      <p
-        className="c3"
-      >
-        <span>
-          Tax
-        </span>
-        <span>
-          $6.38
-        </span>
-      </p>
-      <p
-        className="c3"
-      >
-        <span
+        <h2
+          className="c4"
+        >
+          Order Summary
+        </h2>
+        <p
+          className="c5"
+        >
+          <span>
+            Subtotal
+          </span>
+          <span>
+            $125.00
+          </span>
+        </p>
+        <p
+          className="c5"
+        >
+          <span>
+            Kohl's Cash & Discounts
+          </span>
+          <span>
+            -$18.75
+          </span>
+        </p>
+        <p
+          className="c5"
+        >
+          <span>
+            Shipping
+          </span>
+          <strong>
+            FREE
+          </strong>
+        </p>
+        <p
+          className="c5"
+        >
+          <span>
+            Tax
+          </span>
+          <span>
+            $6.38
+          </span>
+        </p>
+        <p
           className="c6"
         >
-          TOTAL $
-          122.7
-        </span>
-      </p>
-      <p
-        className="c3"
-      >
-        <span>
-          Your Savings
-        </span>
-        <span>
-          $122.70
-        </span>
-      </p>
+          <span
+            className="c7"
+          >
+            Total
+          </span>
+          <span
+            className="c7"
+          >
+            $
+            122.7
+          </span>
+        </p>
+        <p
+          className="c5"
+        >
+          <span>
+            Your Savings
+          </span>
+          <span>
+            $122.70
+          </span>
+        </p>
+      </section>
     </section>
     <div
-      className="c7"
+      className="c8"
     >
       <a
-        className="c8"
+        className="c9"
         data-testid="next-step-button"
         href="/cart"
         onClick={[Function]}

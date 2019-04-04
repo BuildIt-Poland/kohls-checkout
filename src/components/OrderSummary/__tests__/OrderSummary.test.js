@@ -7,6 +7,6 @@ describe('COMPONENT - OrderSummary', () => {
   it('renders correctly with corrrect headline', () => {
     const { container } = render(<OrderSummary />);
 
-    expect(container.querySelector('h3')).toHaveTextContent('Order Summary');
+    expect(container.querySelector('h2')).toHaveTextContent('Order Summary');
   });
 });

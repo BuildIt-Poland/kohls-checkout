@@ -31,15 +31,14 @@ Array [
 }
 
 .c0 {
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 
 <section>
-    <h3
+    <h2
       className="c0"
     >
       Shipping Address
@@ -53,7 +52,7 @@ Array [
           Open modal
         </p>
       </span>
-    </h3>
+    </h2>
   </section>,
   .c1 {
   background: #00a09f;

@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - OrderSummary TotalPrice render NextStep component 1`] = `
+.c1 {
+  font-weight: 700;
+}
+
 .c0 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
@@ -19,15 +23,13 @@ exports[`COMPONENT - OrderSummary TotalPrice render NextStep component 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  border-top: 1px solid #b0b0b0;
+  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
 .c0:last-child {
   margin-bottom: 0;
-}
-
-.c1 {
-  font-size: 1.2rem;
-  font-weight: 700;
 }
 
 <p
@@ -36,7 +38,12 @@ exports[`COMPONENT - OrderSummary TotalPrice render NextStep component 1`] = `
   <span
     className="c1"
   >
-    TOTAL $
+    Total
+  </span>
+  <span
+    className="c1"
+  >
+    $
   </span>
 </p>
 `;
