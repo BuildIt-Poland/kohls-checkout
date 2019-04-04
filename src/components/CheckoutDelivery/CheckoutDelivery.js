@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { CHECKOUT_PAYMENT_PATH } from '../../constants/routes';
+import Page from '../Page';
+import Content from '../Content';
 import ModalTrigger from '../ModalTrigger';
 import Text from '../Text';
 import NextStep from '../NextStep';
@@ -12,18 +14,20 @@ const SHIPPING_DETAILS_MODAL_CONTENT =
 
 function CheckoutDelivery() {
   return (
-    <>
-      <Headline>Delivery</Headline>
-      <section>
-        <SectionHeader>
-          Shipping Address
-          <ModalTrigger title="Shipping &amp; Pickup" content={SHIPPING_DETAILS_MODAL_CONTENT}>
-            <Text underline>Open modal</Text>
-          </ModalTrigger>
-        </SectionHeader>
-      </section>
+    <Page>
+      <Content>
+        <Headline>Delivery</Headline>
+        <section>
+          <SectionHeader>
+            Shipping Address
+            <ModalTrigger title="Shipping &amp; Pickup" content={SHIPPING_DETAILS_MODAL_CONTENT}>
+              <Text underline>Open modal</Text>
+            </ModalTrigger>
+          </SectionHeader>
+        </section>
+      </Content>
       <NextStep label="Continue to Payment" to={CHECKOUT_PAYMENT_PATH} />
-    </>
+    </Page>
   );
 }
 

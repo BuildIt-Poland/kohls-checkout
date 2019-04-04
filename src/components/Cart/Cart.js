@@ -2,22 +2,22 @@ import React from 'react';
 import Item from '../Item';
 
 import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
+import Page from '../Page';
 import Headline from '../Headline';
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
-import Content from './Content';
-import Wraper from './Wrapper';
+import Content from '../Content';
 
 function Cart() {
   return (
-    <Wraper>
-      <Content as="section">
+    <Page>
+      <Content>
         <Headline>Cart</Headline>
         <Item />
       </Content>
       <OrderSummary />
       <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />
-    </Wraper>
+    </Page>
   );
 }
 
