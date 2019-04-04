@@ -504,11 +504,7 @@ Array [
       <h3
         className="c2"
       >
-        <p
-          className="c3"
-        >
-          Order Summary
-        </p>
+        Order Summary
       </h3>
       <p
         className="c3"
@@ -887,11 +883,7 @@ Array [
       <h3
         className="c1"
       >
-        <p
-          className="c3"
-        >
-          Order Summary
-        </p>
+        Order Summary
       </h3>
       <p
         className="c3"
