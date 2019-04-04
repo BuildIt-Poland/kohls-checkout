@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - OrderSummary TotalPrice render NextStep component 1`] = `
+exports[`COMPONENT - OrderSummary TotalPrice renders TotalPrice component 1`] = `
 .c0 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
