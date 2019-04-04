@@ -66,11 +66,11 @@ Other scripts which may be helpful:
 
 ## Conventions
 
-# Issuing PR
+### Issuing PR
 Please make sure that your **branch** names are correct. For example: `feature/krc-10-cart-icon-component` -- start with type of PR (*feature/fix/chore*) followed by a slash, followed by Jira issue ID and a very short description at the end.
 For the *pull request* title use Jira ID in brackets followed by short description: `[KRC-10] Cart icon component`. Put short summary of your contribution in PR's description field and in case of *components* attach a screenshot.
 
-# Coding style
+### Coding style
 Please follow a few simple rules (prettier and linter takes care of the rest):
 * use regular **function()** instead of **arrow functions** at the top level (applies for functional components as well)
 * use **arrow functions** for anonymous functions
