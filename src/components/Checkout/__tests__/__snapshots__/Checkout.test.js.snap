@@ -141,7 +141,7 @@ Array [
   padding-bottom: 3rem;
 }
 
-.c3 {
+.c2 {
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -152,11 +152,11 @@ Array [
   margin-bottom: 1rem;
 }
 
-.c3:last-child {
+.c2:last-child {
   margin-bottom: 0;
 }
 
-.c5 {
+.c4 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -170,7 +170,7 @@ Array [
   margin: 0 auto;
 }
 
-.c4 {
+.c3 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -182,32 +182,27 @@ Array [
 }
 
 .c1 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.c2 {
   font-size: 1.2rem;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 <article
     className="c0"
   >
-    <h1
-      className="c1"
-    >
-      Delivery
-    </h1>
     <section>
       <h3
-        className="c2"
+        className="c1"
       >
         Shipping Address
         <span
@@ -215,7 +210,7 @@ Array [
           onClick={[Function]}
         >
           <p
-            className="c3"
+            className="c2"
           >
             Open modal
           </p>
@@ -223,10 +218,10 @@ Array [
       </h3>
     </section>
     <div
-      className="c4"
+      className="c3"
     >
       <a
-        className="c5"
+        className="c4"
         data-testid="next-step-button"
         href="/checkout/payment"
         onClick={[Function]}
@@ -404,20 +399,20 @@ Array [
   z-index: 6000;
 }
 
-.c1 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
 .c2 {
   font-size: 1.2rem;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5 {
@@ -487,6 +482,14 @@ Array [
 .c6 {
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.c1 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 <article
@@ -752,19 +755,19 @@ Array [
 }
 
 .c1 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.c2 {
   font-size: 1.2rem;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5 {
@@ -836,17 +839,49 @@ Array [
   font-weight: 700;
 }
 
+.c2 {
+  color: #00a09f;
+  font-weight: 700;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: none;
+}
+
 <article
     className="c0"
   >
-    <h1
-      className="c1"
-    >
-      Review
-    </h1>
     <section>
       <h3
-        className="c2"
+        className="c1"
+      >
+        Shipping Details
+        <a
+          className="c2"
+          href="/checkout/delivery"
+          onClick={[Function]}
+        >
+          Edit
+        </a>
+      </h3>
+    </section>
+    <section>
+      <h3
+        className="c1"
+      >
+        Payment Information
+        <a
+          className="c2"
+          href="/checkout/payment"
+          onClick={[Function]}
+        >
+          Edit
+        </a>
+      </h3>
+    </section>
+    <section>
+      <h3
+        className="c1"
       >
         Order Summary
       </h3>

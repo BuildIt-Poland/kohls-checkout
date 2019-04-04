@@ -2,12 +2,14 @@ import React from 'react';
 
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
-import Headline from '../Headline';
+import PaymentInformation from '../PaymentInformation';
+import ShippingDetails from '../ShippingDetails';
 
 function CheckoutReview() {
   return (
     <>
-      <Headline>Review</Headline>
+      <ShippingDetails />
+      <PaymentInformation />
       <OrderSummary />
       <NextStep label="Place Order" to="/cart" />
     </>
