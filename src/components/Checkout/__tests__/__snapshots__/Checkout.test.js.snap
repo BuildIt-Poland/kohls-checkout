@@ -142,7 +142,6 @@ Array [
 }
 
 .c3 {
-  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -422,7 +421,6 @@ Array [
 }
 
 .c5 {
-  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -439,7 +437,6 @@ Array [
 }
 
 .c3 {
-  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -464,7 +461,6 @@ Array [
 }
 
 .c4 {
-  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -768,7 +764,6 @@ Array [
 }
 
 .c5 {
-  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -785,7 +780,6 @@ Array [
 }
 
 .c2 {
-  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -810,7 +804,6 @@ Array [
 }
 
 .c4 {
-  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;

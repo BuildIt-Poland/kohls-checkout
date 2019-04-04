@@ -3,7 +3,6 @@
 exports[`COMPONENT - CheckoutReview render CheckoutReview component 1`] = `
 Array [
   .c1 {
-  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -62,7 +61,6 @@ Array [
     </h3>
   </section>,
   .c1 {
-  color: #222222;
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
