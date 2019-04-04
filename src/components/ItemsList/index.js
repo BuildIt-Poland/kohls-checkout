@@ -11,10 +11,10 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    handleRemove: cartItemId => dispatch(removeItem(cartItemId)),
-    handleUpdate: (cartItemId, quantity) => dispatch(updateQuantity(cartItemId, quantity)),
-    handleIncrease: cartItemId => dispatch(increaseQuantity(cartItemId)),
-    handleDecrease: cartItemId => dispatch(decreaseQuantity(cartItemId))
+    handleRemoveItem: cartItemId => dispatch(removeItem(cartItemId)),
+    handleUpdateItemQuantity: (cartItemId, quantity) => dispatch(updateQuantity(cartItemId, quantity)),
+    handleIncreaseItemQuantity: cartItemId => dispatch(increaseQuantity(cartItemId)),
+    handleDecreaseItemQuantity: cartItemId => dispatch(decreaseQuantity(cartItemId))
   };
 }
 

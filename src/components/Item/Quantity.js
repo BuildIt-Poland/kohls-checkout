@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import noop from 'lodash.noop';
 
 import { borderRadiusMedium, colorLightGrey, borderWidthThick } from '../../styles/designTokens';
 import QuantityButton from './QuantityButton';
@@ -16,19 +17,22 @@ const Wrapper = styled.div`
   border: ${borderWidthThick} solid ${colorLightGrey};
 `;
 
-function Quantity({ cartItemId, currentQuantity, handleIncrease, handleDecrease, handleUpdate }) {
-  const handleChange = function(value, itemId) {
-    const newValue = parseInt(value, 10);
-    handleUpdate(itemId, newValue);
-  };
+function Quantity({
+  cartItemId,
+  currentQuantity,
+  handleIncreaseItemQuantity = noop,
+  handleDecreaseItemQuantity = noop,
+  handleUpdateItemQuantity = noop
+}) {
+  const handleChange = (value, itemId) => handleUpdateItemQuantity(itemId, parseInt(value, 10));
 
   return (
     <Wrapper>
-      <QuantityButton onClick={() => handleDecrease(cartItemId)} disabled={currentQuantity < 2}>
+      <QuantityButton onClick={() => handleDecreaseItemQuantity(cartItemId)} disabled={currentQuantity < 2}>
         -
       </QuantityButton>
       <QuantityInput value={currentQuantity} onChange={e => handleChange(e.target.value, cartItemId)} />
-      <QuantityButton onClick={() => handleIncrease(cartItemId)}>+</QuantityButton>
+      <QuantityButton onClick={() => handleIncreaseItemQuantity(cartItemId)}>+</QuantityButton>
     </Wrapper>
   );
 }

@@ -1,5 +1,5 @@
 import reducer from '../cartReducer';
-import * as types from '../../constants/actionTypes';
+import { INCREASE_QUANTITY, DECREASE_QUANTITY, SET_QUANTITY, REMOVE_ITEM } from '../../constants/actionTypes';
 
 const initialState = {
   items: [
@@ -36,12 +36,12 @@ const initialState = {
 
 describe('cart reducer', () => {
   it('returns the initial state', () => {
-    expect(reducer(undefined, {})).toEqual(initialState);
+    expect(reducer(initialState, {})).toEqual(initialState);
   });
 
   it('handles action INCREASE_QUANTITY', () => {
     const action = {
-      type: types.INCREASE_QUANTITY,
+      type: INCREASE_QUANTITY,
       cartItemId: 'EOK3293KSD'
     };
 
@@ -78,12 +78,12 @@ describe('cart reducer', () => {
       ]
     };
 
-    expect(reducer(undefined, action)).toEqual(expectedState);
+    expect(reducer(initialState, action)).toEqual(expectedState);
   });
 
   it('handles action DECREASE_QUANTITY', () => {
     const action = {
-      type: types.DECREASE_QUANTITY,
+      type: DECREASE_QUANTITY,
       cartItemId: 'EOK3293KSD'
     };
 
@@ -120,12 +120,12 @@ describe('cart reducer', () => {
       ]
     };
 
-    expect(reducer(undefined, action)).toEqual(expectedState);
+    expect(reducer(initialState, action)).toEqual(expectedState);
   });
 
   it('handles action SET_QUANTITY', () => {
     const action = {
-      type: types.SET_QUANTITY,
+      type: SET_QUANTITY,
       cartItemId: 'EOK3293KSD',
       quantity: 10
     };
@@ -163,12 +163,12 @@ describe('cart reducer', () => {
       ]
     };
 
-    expect(reducer(undefined, action)).toEqual(expectedState);
+    expect(reducer(initialState, action)).toEqual(expectedState);
   });
 
   it('handles action REMOVE_ITEM', () => {
     const action = {
-      type: types.REMOVE_ITEM,
+      type: REMOVE_ITEM,
       cartItemId: 'EOK3293KSD'
     };
 
@@ -191,6 +191,6 @@ describe('cart reducer', () => {
       ]
     };
 
-    expect(reducer(undefined, action)).toEqual(expectedState);
+    expect(reducer(initialState, action)).toEqual(expectedState);
   });
 });

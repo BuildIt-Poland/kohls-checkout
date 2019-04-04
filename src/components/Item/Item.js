@@ -1,4 +1,5 @@
 import React from 'react';
+import noop from 'lodash.noop';
 
 import { NO_SIZE, NO_COLOR } from '../../constants/attributes';
 import RemoveButton from '../RemoveButton/RemoveButton';
@@ -13,20 +14,15 @@ import PriceBox from './PriceBox';
 import Wrapper from './Wrapper';
 import Details from './Details';
 
-const getTotalPrice = function(item) {
-  const { quantity, price } = item;
-  return quantity * (price.regular - price.discount);
-};
+const getTotalPrice = ({ quantity, price }) => quantity * (price.regular - price.discount);
 
-const renderAttributes = function(item) {
-  const { variants } = item;
-
+const renderAttributes = function({ variants }) {
   if (!variants) {
     return null;
   }
 
-  const size = variants.size ? variants.size : NO_SIZE;
-  const color = variants.color ? variants.color : NO_COLOR;
+  const size = variants.size || NO_SIZE;
+  const color = variants.color || NO_COLOR;
 
   return (
     <>
@@ -36,40 +32,67 @@ const renderAttributes = function(item) {
   );
 };
 
-const renderPrices = function(item) {
-  if (!item.price) {
+const renderPrices = function({ price, quantity }) {
+  if (!price) {
     return null;
   }
-  const { price } = item;
 
   return (
     <PriceBox>
       <DiscountPrice>Sale ${price.discount}</DiscountPrice>
       <Price>Regular ${price.regular}</Price>
-      <TotalPrice>Total ${getTotalPrice(item)}</TotalPrice>
+      <TotalPrice>Total ${getTotalPrice({ quantity, price })}</TotalPrice>
     </PriceBox>
   );
 };
 
-function Item({ item = {}, editableQuantity = false, handleIncrease, handleDecrease, handleUpdate, handleRemove }) {
+const renderQuantity = function(
+  { id, quantity },
+  editableQuantity,
+  handleIncreaseItemQuantity,
+  handleDecreaseItemQuantity,
+  handleUpdateItemQuantity
+) {
+  if (!editableQuantity) {
+    return null;
+  }
+
+  return (
+    <Quantity
+      cartItemId={id}
+      currentQuantity={quantity}
+      handleUpdateItemQuantity={handleUpdateItemQuantity}
+      handleIncreaseItemQuantity={handleIncreaseItemQuantity}
+      handleDecreaseItemQuantity={handleDecreaseItemQuantity}
+    />
+  );
+};
+
+function Item({
+  item = {},
+  editableQuantity = false,
+  handleRemoveItem = noop,
+  handleIncreaseItemQuantity = noop,
+  handleDecreaseItemQuantity = noop,
+  handleUpdateItemQuantity = noop
+}) {
+  const { id, imgUrl, name } = item;
   return (
     <Wrapper>
-      <Image src={item.imgUrl} />
+      <Image src={imgUrl} />
       <Details>
-        <Title>{item.name}</Title>
+        <Title>{name}</Title>
         {renderAttributes(item)}
         {renderPrices(item)}
       </Details>
-      {editableQuantity ? (
-        <Quantity
-          cartItemId={item.id}
-          currentQuantity={item.quantity}
-          handleUpdate={handleUpdate}
-          handleIncrease={handleIncrease}
-          handleDecrease={handleDecrease}
-        />
-      ) : null}
-      <RemoveButton editableQuantity={editableQuantity} cartItemId={item.id} handleRemove={handleRemove} />
+      {renderQuantity(
+        item,
+        editableQuantity,
+        handleIncreaseItemQuantity,
+        handleDecreaseItemQuantity,
+        handleUpdateItemQuantity
+      )}
+      <RemoveButton editableQuantity={editableQuantity} cartItemId={id} handleRemoveItem={handleRemoveItem} />
     </Wrapper>
   );
 }

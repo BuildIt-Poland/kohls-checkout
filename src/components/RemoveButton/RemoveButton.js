@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import noop from 'lodash.noop';
 
 import { colorBlack, fontSmall } from '../../styles/designTokens';
 
@@ -9,14 +10,14 @@ const Wrapper = styled.button`
   color: ${colorBlack};
   text-decoration: underline;
   font-size: ${fontSmall};
-  grid-column-start: ${props => (props.editableQuantity ? 3 : 2)};
-  text-align: ${props => (props.editableQuantity ? 'right' : 'left')};
+  grid-column-start: ${({ editableQuantity }) => (editableQuantity ? 3 : 2)};
+  text-align: ${({ editableQuantity }) => (editableQuantity ? 'right' : 'left')};
   padding: 0;
 `;
 
-function RemoveButton({ editableQuantity, cartItemId, handleRemove }) {
+function RemoveButton({ editableQuantity, cartItemId, handleRemoveItem = noop }) {
   return (
-    <Wrapper editableQuantity={editableQuantity} onClick={() => handleRemove(cartItemId)}>
+    <Wrapper editableQuantity={editableQuantity} onClick={() => handleRemoveItem(cartItemId)}>
       Remove
     </Wrapper>
   );

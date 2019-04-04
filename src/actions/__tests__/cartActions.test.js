@@ -1,46 +1,46 @@
-import * as actions from '../cartActions';
-import * as types from '../../constants/actionTypes';
+import { updateQuantity, increaseQuantity, decreaseQuantity, removeItem } from '../cartActions';
+import { SET_QUANTITY, INCREASE_QUANTITY, DECREASE_QUANTITY, REMOVE_ITEM } from '../../constants/actionTypes';
 
 describe('cart actions', () => {
   it('creates an action to update quantity', () => {
     const cartItemId = 'EOK3293KSD';
     const quantity = 1;
     const expectedAction = {
-      type: types.SET_QUANTITY,
+      type: SET_QUANTITY,
       cartItemId,
       quantity
     };
 
-    expect(actions.updateQuantity(cartItemId, quantity)).toEqual(expectedAction);
+    expect(updateQuantity(cartItemId, quantity)).toEqual(expectedAction);
   });
 
   it('creates an action to increase quantity', () => {
     const cartItemId = 'EOK3293KSD';
     const expectedAction = {
-      type: types.INCREASE_QUANTITY,
+      type: INCREASE_QUANTITY,
       cartItemId
     };
 
-    expect(actions.increaseQuantity(cartItemId)).toEqual(expectedAction);
+    expect(increaseQuantity(cartItemId)).toEqual(expectedAction);
   });
 
   it('creates an action to decrease quantity', () => {
     const cartItemId = 'EOK3293KSD';
     const expectedAction = {
-      type: types.DECREASE_QUANTITY,
+      type: DECREASE_QUANTITY,
       cartItemId
     };
 
-    expect(actions.decreaseQuantity(cartItemId)).toEqual(expectedAction);
+    expect(decreaseQuantity(cartItemId)).toEqual(expectedAction);
   });
 
   it('creates an action to remove item', () => {
     const cartItemId = 'EOK3293KSD';
     const expectedAction = {
-      type: types.REMOVE_ITEM,
+      type: REMOVE_ITEM,
       cartItemId
     };
 
-    expect(actions.removeItem(cartItemId)).toEqual(expectedAction);
+    expect(removeItem(cartItemId)).toEqual(expectedAction);
   });
 });

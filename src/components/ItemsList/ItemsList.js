@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import noop from 'lodash.noop';
 
 import { spacingSmall } from '../../styles/designTokens';
 import Item from '../Item/Item';
@@ -8,7 +9,13 @@ const Wrapper = styled.div`
   margin: ${spacingSmall} 0;
 `;
 
-function ItemsList({ items, handleUpdate, handleRemove, handleIncrease, handleDecrease }) {
+function ItemsList({
+  items = [],
+  handleRemoveItem = noop,
+  handleUpdateItemQuantity = noop,
+  handleIncreaseItemQuantity = noop,
+  handleDecreaseItemQuantity = noop
+}) {
   return (
     <Wrapper>
       {items.map((item, index) => (
@@ -16,10 +23,10 @@ function ItemsList({ items, handleUpdate, handleRemove, handleIncrease, handleDe
           key={index}
           item={item}
           editableQuantity
-          handleUpdate={handleUpdate}
-          handleIncrease={handleIncrease}
-          handleDecrease={handleDecrease}
-          handleRemove={handleRemove}
+          handleUpdateItemQuantity={handleUpdateItemQuantity}
+          handleIncreaseItemQuantity={handleIncreaseItemQuantity}
+          handleDecreaseItemQuantity={handleDecreaseItemQuantity}
+          handleRemoveItem={handleRemoveItem}
         />
       ))}
     </Wrapper>

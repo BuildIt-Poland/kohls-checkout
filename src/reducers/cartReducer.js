@@ -45,33 +45,35 @@ const updateItemQuantity = function(array, itemId, quantity) {
     }
     return {
       ...item,
-      quantity: quantity
+      quantity
     };
   });
 };
 
 function cartReducer(state = initialState, action) {
-  const currentQuantity = getItemQuantity(state.items, action.cartItemId);
+  const { items } = state;
+  const { cartItemId } = action;
+  const currentQuantity = getItemQuantity(items, cartItemId);
   switch (action.type) {
     case INCREASE_QUANTITY:
       return {
         ...state,
-        items: updateItemQuantity(state.items, action.cartItemId, currentQuantity + 1)
+        items: updateItemQuantity(items, cartItemId, currentQuantity + 1)
       };
     case DECREASE_QUANTITY:
       return {
         ...state,
-        items: updateItemQuantity(state.items, action.cartItemId, currentQuantity - 1)
+        items: updateItemQuantity(items, cartItemId, currentQuantity - 1)
       };
     case SET_QUANTITY:
       return {
         ...state,
-        items: updateItemQuantity(state.items, action.cartItemId, action.quantity)
+        items: updateItemQuantity(items, cartItemId, action.quantity)
       };
     case REMOVE_ITEM:
       return {
         ...state,
-        items: state.items.filter(item => item.id !== action.cartItemId)
+        items: items.filter(item => item.id !== cartItemId)
       };
     default:
       return state;
