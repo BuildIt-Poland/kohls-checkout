@@ -74,6 +74,7 @@ For the *pull request* title use Jira ID in brackets followed by short descripti
 Please follow a few simple rules (prettier and linter takes care of the rest):
 * use regular **function()** instead of **arrow functions** at the top level (applies for functional components as well)
 * use **arrow functions** for anonymous functions
+* for targeting components directly in tests (e2e and unit) use **data-testid** property, for example: `<button data-testid="next-step-button">Next step</button>`
 * follow TODO comments with @ symbol and your GitHub handle, for instance: `//TODO Implement something important @myhandle`
 * separate external and internal imports with new line
 * keep your imports order correct -- the higher a file is in directory structure, the higher on the list it should be:

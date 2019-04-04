@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - PaymentInformation renders PaymentInformation component 1`] = `
+.c1 {
+  color: #00a09f;
+  font-weight: 700;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+.c0 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<section>
+  <h3
+    className="c0"
+  >
+    Payment Information
+    <MockedLink
+      className="c1"
+      to="/checkout/payment"
+    >
+      Edit
+    </MockedLink>
+  </h3>
+</section>
+`;

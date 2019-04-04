@@ -5,7 +5,6 @@ const Text = styled.p`
   font-size: ${fontMedium};
   text-decoration: ${({ underline }) => (underline ? 'underline' : 'none')};
   font-weight: ${({ bold }) => (bold ? fontWeightBold : fontWeightNormal)};
-  font-weight: ${fontWeightNormal};
   line-height: 1.4;
   margin: 0;
   margin-bottom: ${spacingSmall};

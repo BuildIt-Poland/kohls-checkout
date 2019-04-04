@@ -7,6 +7,7 @@ exports[`COMPONENT - TextLink renders correctly 1`] = `
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+  text-transform: none;
 }
 
 <a

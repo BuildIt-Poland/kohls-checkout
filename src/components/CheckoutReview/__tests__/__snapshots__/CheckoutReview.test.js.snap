@@ -1,6 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - CheckoutReview render CheckoutReview component 1`] = `
+<<<<<<< HEAD
 .c0 {
   padding-top: 3rem;
   padding-bottom: 12rem;
@@ -13,6 +14,87 @@ exports[`COMPONENT - CheckoutReview render CheckoutReview component 1`] = `
 }
 
 .c4 {
+=======
+Array [
+  .c1 {
+  color: #00a09f;
+  font-weight: 700;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+.c0 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<section>
+    <h3
+      className="c0"
+    >
+      Shipping Details
+      <Link
+        className="c1"
+        to="/checkout/delivery"
+      >
+        Edit
+      </Link>
+    </h3>
+  </section>,
+  .c1 {
+  color: #00a09f;
+  font-weight: 700;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+.c0 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<section>
+    <h3
+      className="c0"
+    >
+      Payment Information
+      <Link
+        className="c1"
+        to="/checkout/payment"
+      >
+        Edit
+      </Link>
+    </h3>
+  </section>,
+  <OrderSummary />,
+  .c1 {
+>>>>>>> master
   background: #00a09f;
   color: #ffffff;
   display: block;

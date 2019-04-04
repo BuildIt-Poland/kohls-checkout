@@ -144,6 +144,7 @@ Array [
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .c3 {
   font-size: 2.4rem;
   text-align: left;
@@ -167,6 +168,24 @@ Array [
 }
 
 .c6 {
+=======
+.c2 {
+  border: 0;
+  background: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
+.c4 {
+>>>>>>> master
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -180,7 +199,11 @@ Array [
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .c5 {
+=======
+.c3 {
+>>>>>>> master
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -191,17 +214,35 @@ Array [
   z-index: 6000;
 }
 
+<<<<<<< HEAD
 .c2 {
   margin: 0;
   margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
+=======
+.c1 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+>>>>>>> master
 }
 
 <article
     className="c0"
   >
+<<<<<<< HEAD
     <section
       className="c1"
     >
@@ -233,6 +274,42 @@ Array [
     >
       <a
         className="c6"
+=======
+    <section>
+      <h3
+        className="c1"
+      >
+        Shipping Address
+        <button
+          className="c2"
+          data-testid="modal-trigger"
+          onClick={[Function]}
+        >
+          <svg
+            height="18"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="9"
+              cy="9"
+              fill="#222"
+              r="9"
+            />
+            <path
+              d="M9.833 6.241H8.167V4.724h1.666v1.517zM8.167 7.49h1.666v5.786H8.167V7.49z"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+      </h3>
+    </section>
+    <div
+      className="c3"
+    >
+      <a
+        className="c4"
+>>>>>>> master
         data-testid="next-step-button"
         href="/checkout/payment"
         onClick={[Function]}
@@ -421,11 +498,27 @@ Array [
 }
 
 .c2 {
+<<<<<<< HEAD
   margin: 0;
   margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
+=======
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+>>>>>>> master
 }
 
 .c5 {
@@ -433,10 +526,27 @@ Array [
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+<<<<<<< HEAD
+=======
+  color: #00a09f;
+}
+
+.c5:last-child {
+  margin-bottom: 0;
+}
+
+.c3 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
+>>>>>>> master
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -460,7 +570,6 @@ Array [
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
@@ -486,6 +595,14 @@ Array [
 .c3 {
   border-top: 1px solid #b0b0b0;
   padding-top: 2rem;
+}
+
+.c1 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 <article
@@ -770,12 +887,29 @@ Array [
   z-index: 6000;
 }
 
+<<<<<<< HEAD
 .c2 {
   margin: 0;
   margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
+=======
+.c1 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+>>>>>>> master
 }
 
 .c5 {
@@ -783,10 +917,27 @@ Array [
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+<<<<<<< HEAD
+=======
+  color: #00a09f;
+}
+
+.c5:last-child {
+  margin-bottom: 0;
+}
+
+.c3 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
+>>>>>>> master
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -810,7 +961,6 @@ Array [
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: 400;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
@@ -838,14 +988,57 @@ Array [
   padding-top: 2rem;
 }
 
+.c2 {
+  color: #00a09f;
+  font-weight: 700;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: none;
+}
+
 <article
     className="c0"
   >
+<<<<<<< HEAD
     <section
       className="c1"
     >
       <h1
         className="c2"
+=======
+    <section>
+      <h3
+        className="c1"
+      >
+        Shipping Details
+        <a
+          className="c2"
+          href="/checkout/delivery"
+          onClick={[Function]}
+        >
+          Edit
+        </a>
+      </h3>
+    </section>
+    <section>
+      <h3
+        className="c1"
+      >
+        Payment Information
+        <a
+          className="c2"
+          href="/checkout/payment"
+          onClick={[Function]}
+        >
+          Edit
+        </a>
+      </h3>
+    </section>
+    <section>
+      <h3
+        className="c1"
+>>>>>>> master
       >
         Review
       </h1>

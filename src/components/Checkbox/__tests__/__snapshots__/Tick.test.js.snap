@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Tick renders Tick component 1`] = `
+.c0 {
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+}
+
+.c0 svg {
+  fill: #00a09f;
+}
+
+<span
+  className="c0"
+>
+  <svg
+    fill="#222"
+    height="16"
+    width="20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.591 15.517L0 7.926l3.182-3.181 4.409 4.408L16.745 0l3.181 3.182z"
+    />
+  </svg>
+</span>
+`;
