@@ -42,7 +42,16 @@
         "lines": 5,
         "statements": 5
       }
-    }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js}",
+      "!<rootDir>/node_modules/",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/e2eConfig.js",
+      "!src/components/Root/*",
+      "!src/constants/*"
+    ]
   },
   "prettier": {
     "singleQuote": true,
