@@ -1,8 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - ModalTrigger renders ModalTrigger with closed Modal 1`] = `
+.c0 {
+  border: 0;
+  background: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
 <div>
   <button
+    class="c0"
     data-testid="modal-trigger"
   >
     <svg

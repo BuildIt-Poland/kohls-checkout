@@ -2,7 +2,22 @@
 
 exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
 Array [
-  .c0 {
+  .c1 {
+  border: 0;
+  background: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
+.c0 {
   font-size: 1.2rem;
   text-align: left;
   margin-top: 10px;
@@ -24,6 +39,7 @@ Array [
     >
       Shipping Address
       <button
+        className="c1"
         data-testid="modal-trigger"
         onClick={[Function]}
       >

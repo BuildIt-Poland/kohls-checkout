@@ -141,7 +141,22 @@ Array [
   padding-bottom: 3rem;
 }
 
-.c3 {
+.c2 {
+  border: 0;
+  background: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
+.c4 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -155,7 +170,7 @@ Array [
   margin: 0 auto;
 }
 
-.c2 {
+.c3 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -191,6 +206,7 @@ Array [
       >
         Shipping Address
         <button
+          className="c2"
           data-testid="modal-trigger"
           onClick={[Function]}
         >
@@ -214,10 +230,10 @@ Array [
       </h3>
     </section>
     <div
-      className="c2"
+      className="c3"
     >
       <a
-        className="c3"
+        className="c4"
         data-testid="next-step-button"
         href="/checkout/payment"
         onClick={[Function]}

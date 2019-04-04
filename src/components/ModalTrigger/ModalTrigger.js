@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { InfoCircle } from '../Icons';
-import Modal from '../Modal/Modal';
-import Text from '../Text/Text';
+import Modal from '../Modal';
+import Text from '../Text';
+import Hitbox from '../Hitbox';
 
 function ModalTrigger({ title, content, children }) {
   const [isOpen, setModalVisibility] = useState(false);
@@ -24,9 +25,9 @@ function ModalTrigger({ title, content, children }) {
 
   return (
     <>
-      <button onClick={toggleModal} data-testid="modal-trigger">
+      <Hitbox onClick={toggleModal} data-testid="modal-trigger">
         <InfoCircle />
-      </button>
+      </Hitbox>
       {renderModal()}
     </>
   );
