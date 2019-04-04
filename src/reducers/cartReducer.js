@@ -33,43 +33,40 @@ const initialState = {
   ]
 };
 
-const updateItemQuantity = function(array, type, action) {
+const getItemQuantity = function(array, itemId) {
+  const item = array.find(item => item.id === itemId);
+  return item ? item.quantity : null;
+};
+
+const updateItemQuantity = function(array, itemId, quantity) {
   return array.map(item => {
-    if (item.id !== action.cartItemId) {
+    if (item.id !== itemId) {
       return item;
     }
     return {
       ...item,
-      quantity: type === 'up' ? item.quantity + 1 : item.quantity - 1
+      quantity: quantity
     };
   });
 };
 
 function cartReducer(state = initialState, action) {
-  const items = state.items;
+  const currentQuantity = getItemQuantity(state.items, action.cartItemId);
   switch (action.type) {
     case INCREASE_QUANTITY:
       return {
         ...state,
-        items: updateItemQuantity(items, 'up', action)
+        items: updateItemQuantity(state.items, action.cartItemId, currentQuantity + 1)
       };
     case DECREASE_QUANTITY:
       return {
         ...state,
-        items: updateItemQuantity(items, 'down', action)
+        items: updateItemQuantity(state.items, action.cartItemId, currentQuantity - 1)
       };
     case SET_QUANTITY:
       return {
         ...state,
-        items: items.map(item => {
-          if (item.id !== action.cartItemId) {
-            return item;
-          }
-          return {
-            ...item,
-            quantity: action.quantity
-          };
-        })
+        items: updateItemQuantity(state.items, action.cartItemId, action.quantity)
       };
     case REMOVE_ITEM:
       return {
