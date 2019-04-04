@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Wrapper renders Wrapper component 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  padding-left: 3rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+<label
+  className="c0"
+/>
+`;
