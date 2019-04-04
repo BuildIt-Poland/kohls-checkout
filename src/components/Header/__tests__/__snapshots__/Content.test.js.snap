@@ -20,7 +20,7 @@ exports[`COMPONENT - Header Content renders correctly 1`] = `
   height: 100%;
 }
 
-<div
+<section
   className="c0"
 />
 `;

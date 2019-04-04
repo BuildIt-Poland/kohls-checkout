@@ -1,14 +1,19 @@
 import styled from 'styled-components';
 
-import { spacingSmall, fontSmall, colorLightGrey } from '../../styles/designTokens';
+import { spacingMedium, colorLightGrey, borderWidthThin, spacingSmall, fontLarge } from '../../styles/designTokens';
 
-const Header = styled.section`
-  font-size: ${fontSmall};
-  font-weight: bold;
-  padding: ${spacingSmall};
+const Header = styled.h3`
+  height: 6rem;
+  font-size: ${fontLarge};
+  border-bottom: ${borderWidthThin} solid ${colorLightGrey};
   text-align: center;
-  text-transform: uppercase;
-  border-bottom: 1px solid ${colorLightGrey};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 ${spacingSmall} 0 ${spacingMedium};
+  text-align: left;
+  line-height: 1;
 `;
 
 export default Header;

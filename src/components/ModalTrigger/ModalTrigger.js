@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { InfoCircle } from '../Icons';
+import Hitbox from '../Hitbox';
 import Modal from '../Modal';
 import Text from '../Text';
-import Hitbox from '../Hitbox';
 
-function ModalTrigger({ title, content, children }) {
+function ModalTrigger({ title, content }) {
   const [isOpen, setModalVisibility] = useState(false);
 
   const toggleModal = () => setModalVisibility(!isOpen);

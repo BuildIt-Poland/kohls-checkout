@@ -5,6 +5,12 @@ exports[`COMPONENT - Header Logo renders correctly 1`] = `
   height: 100%;
   cursor: pointer;
   padding-top: 2rem;
+  position: relative;
+}
+
+.c1 {
+  position: absolute;
+  left: -99999rem;
 }
 
 <a
@@ -13,6 +19,11 @@ exports[`COMPONENT - Header Logo renders correctly 1`] = `
   href="/"
   onClick={[Function]}
 >
+  <span
+    className="c1"
+  >
+    The Store
+  </span>
   <LogoIcon />
 </a>
 `;

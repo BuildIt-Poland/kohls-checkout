@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Hitbox renders correctly 1`] = `
+exports[`COMPONENT - Modal CloseButton renders correctly 1`] = `
 .c0 {
   border: 0;
   background: none;
@@ -15,6 +15,8 @@ exports[`COMPONENT - Hitbox renders correctly 1`] = `
   min-width: 2rem;
   min-height: 2rem;
   cursor: pointer;
+  width: 4rem;
+  height: 4rem;
 }
 
 .c0 svg {

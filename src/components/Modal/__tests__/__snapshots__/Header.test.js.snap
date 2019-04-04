@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Modal Header renders correctly 1`] = `
+.c0 {
+  height: 6rem;
+  font-size: 2.4rem;
+  border-bottom: 1px solid #b0b0b0;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 1rem 0 2rem;
+  text-align: left;
+  line-height: 1;
+}
+
+<h3
+  className="c0"
+/>
+`;

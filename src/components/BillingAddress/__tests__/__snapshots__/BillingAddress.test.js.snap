@@ -2,11 +2,9 @@
 
 exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
 .c0 {
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  margin: 1rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,6 +13,10 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -30,6 +32,7 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
+  color: #222222;
   margin: 0;
 }
 
@@ -45,6 +48,7 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
+  color: #222222;
   margin: 0;
 }
 
@@ -65,10 +69,15 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
   justify-content: center;
   min-width: 2rem;
   min-height: 2rem;
+  cursor: pointer;
+}
+
+.c1 svg {
+  display: block;
 }
 
 <section>
-  <h3
+  <h2
     className="c0"
   >
     Billing Address
@@ -94,7 +103,7 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
         />
       </svg>
     </button>
-  </h3>
+  </h2>
   <address
     className="c2"
   >

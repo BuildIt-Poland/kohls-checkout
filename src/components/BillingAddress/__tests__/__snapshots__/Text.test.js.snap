@@ -9,6 +9,7 @@ exports[`COMPONENT - Text renders Text component 1`] = `
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
+  color: #222222;
   margin: 0;
 }
 

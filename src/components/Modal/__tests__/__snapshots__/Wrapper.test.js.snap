@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Modal Wrapper renders correctly 1`] = `
+.c0 {
+  background: white;
+  height: auto;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 60%;
+  z-index: 9000;
+}
+
+@media (max-width:26.25em) {
+  .c0 {
+    width: calc(100% - 2rem - 2rem);
+  }
+}
+
+<section
+  className="c0"
+/>
+`;

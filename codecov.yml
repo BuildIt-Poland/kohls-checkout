@@ -5,7 +5,7 @@ codecov:
 coverage:
   precision: 5
   round: down
-  range: '70...100'
+  range: "70...100"
 
   status:
     project: yes
@@ -21,10 +21,10 @@ parsers:
       macro: no
 
 ignore:
-  - 'src/e2eConfig.js'
-  - 'src/index.js',
-  - 'src/serviceWorker.js',
-  - 'src/components/Root/*',
-  - 'src/constants/*'
+  - "src/e2eConfig.js"
+  - "src/index.js"
+  - "src/serviceWorker.js"
+  - "src/components/Root/*"
+  - "src/constants/*"
 
 comment: off

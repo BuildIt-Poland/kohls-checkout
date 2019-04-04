@@ -1,11 +1,12 @@
+// Generic page wrapper
+
 import styled from 'styled-components';
 
 import { spacingLarge } from '../../styles/designTokens';
-import ContentBase from '../Content';
 
-const Content = styled(ContentBase)`
+const Page = styled.article`
   padding-top: ${spacingLarge};
-  padding-bottom: ${spacingLarge};
+  padding-bottom: 12rem;
 `;
 
-export default Content;
+export default Page;

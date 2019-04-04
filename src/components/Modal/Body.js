@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import { spacingSmall } from '../../styles/designTokens';
+import { spacingMedium } from '../../styles/designTokens';
 
 const Body = styled.section`
-  padding: ${spacingSmall};
-  text-align: left;
+  padding: ${spacingMedium};
 `;
 
 export default Body;
