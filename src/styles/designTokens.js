@@ -3,6 +3,7 @@ export const colorBlack = '#222222';
 export const colorDarkGrey = '#454545';
 export const colorWhite = '#ffffff';
 export const colorTurquoise = '#00a09f';
+export const colorTurquoiseDimmed = '#008484';
 export const colorRed = '#e0151d';
 export const colorLightRed = '#fadcdd';
 export const colorLightGrey = '#b0b0b0';
@@ -21,7 +22,8 @@ export const borderRadiusMedium = '0.25rem';
 // Font size
 export const fontSmall = '1.2rem';
 export const fontMedium = '1.8rem';
-export const fontLarge = '3rem';
+export const fontLarge = '2.4rem';
+export const fontXLarge = '3rem';
 
 // Font weight
 export const fontWeightNormal = 400;

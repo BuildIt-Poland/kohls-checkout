@@ -4,7 +4,7 @@ import { create } from 'react-test-renderer';
 import TextRow from '../TextRow';
 
 describe('COMPONENT - OrderSummary TextRow', () => {
-  it('render NextStep component', () => {
+  it('renders TextRow component', () => {
     const component = create(<TextRow />);
 
     expect(component.toJSON()).toMatchSnapshot();

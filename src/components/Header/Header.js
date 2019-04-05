@@ -9,7 +9,7 @@ import Logo from './Logo';
 function Header() {
   return (
     <Layout>
-      <Content>
+      <Content as="div">
         <Logo />
         <CartIcon />
       </Content>

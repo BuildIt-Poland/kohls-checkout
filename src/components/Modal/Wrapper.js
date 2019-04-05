@@ -1,16 +1,21 @@
 import styled from 'styled-components';
-import { zIndexModal } from '../../styles/designTokens';
+
+import { zIndexModal, spacingMedium } from '../../styles/designTokens';
+import media from '../../styles/media';
 
 const Wrapper = styled.section`
   background: white;
-  border-radius: 0.5rem;
   height: auto;
   left: 50%;
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 60%;
   z-index: ${zIndexModal};
+
+  ${media.phone`
+    width: calc(100% - ${spacingMedium} - ${spacingMedium});
+  `};
 `;
 
 export default Wrapper;

@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - Quantity renders Quantity component 1`] = `
 .c1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 700;
   background: none;
   box-shadow: none;
@@ -22,12 +22,11 @@ exports[`COMPONENT - Quantity renders Quantity component 1`] = `
   grid-column-start: 1;
   grid-column-end: 3;
   display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
   border-radius: 0.25rem;
-  grid-template-columns: 3rem auto 3rem;
-  width: 40%;
+  width: 15rem;
   border: 2px solid #b0b0b0;
-  height: 4.4rem;
 }
 
 <div
@@ -35,15 +34,18 @@ exports[`COMPONENT - Quantity renders Quantity component 1`] = `
 >
   <button
     className="c1"
-    disabled={true}
+    disabled={false}
+    onClick={[Function]}
   >
     -
   </button>
   <input
     className="c2"
+    onChange={[Function]}
   />
   <button
     className="c1"
+    onClick={[Function]}
   >
     +
   </button>

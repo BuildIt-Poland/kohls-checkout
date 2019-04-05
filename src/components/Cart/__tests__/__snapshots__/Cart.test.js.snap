@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Cart renders Cart component 1`] = `
-Array [
-  .c1 {
+.c0 {
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+
+.c2 {
   margin: 0;
   margin-bottom: 2rem;
   font-size: 3rem;
@@ -10,31 +14,12 @@ Array [
   line-height: 1;
 }
 
-.c0 {
-  max-width: 100rem;
-  padding: 0 2rem;
-  margin: 0 auto;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-<article
-    className="c0"
-  >
-    <h1
-      className="c1"
-    >
-      Cart
-    </h1>
-    <Item />
-    <OrderSummary />
-  </article>,
-  .c1 {
+.c4 {
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 700;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 700;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;
@@ -43,7 +28,7 @@ Array [
   margin: 0 auto;
 }
 
-.c0 {
+.c3 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -54,16 +39,36 @@ Array [
   z-index: 6000;
 }
 
-<div
-    className="c0"
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+<article
+  className="c0"
+>
+  <section
+    className="c1"
+  >
+    <h1
+      className="c2"
+    >
+      Cart
+    </h1>
+    <ShoppingCart />
+  </section>
+  <OrderSummary />
+  <div
+    className="c3"
   >
     <Link
-      className="c1"
+      className="c4"
       data-testid="next-step-button"
       to="/checkout/delivery"
     >
       Checkout
     </Link>
-  </div>,
-]
+  </div>
+</article>
 `;

@@ -3,7 +3,6 @@
 exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
 .c1 {
   background: white;
-  border-radius: 0.5rem;
   height: auto;
   left: 50%;
   position: fixed;
@@ -11,7 +10,7 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  width: 80%;
+  width: 60%;
   z-index: 9000;
 }
 
@@ -26,21 +25,58 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
 }
 
 .c2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 1rem;
-  text-align: center;
-  text-transform: uppercase;
+  height: 6rem;
+  font-size: 2.4rem;
   border-bottom: 1px solid #b0b0b0;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 1rem 0 2rem;
+  text-align: left;
+  line-height: 1;
 }
 
 .c3 {
-  float: right;
+  border: 0;
+  background: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+}
+
+.c3 svg {
+  display: block;
 }
 
 .c4 {
-  padding: 1rem;
-  text-align: left;
+  padding: 2rem;
+}
+
+@media (max-width:26.25em) {
+  .c1 {
+    width: calc(100% - 2rem - 2rem);
+  }
 }
 
 <div>
@@ -48,19 +84,33 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
     class="c0"
   />
   <section
+    aria-labelledby="dialog-label"
+    aria-modal="true"
     class="c1"
+    role="dialog"
   >
-    <section
+    <h3
       class="c2"
       data-testid="modal-header"
+      id="dialog-label"
     >
       Modal
-      <span
+      <button
+        aria-label="close"
         class="c3"
       >
-        X
-      </span>
-    </section>
+        <svg
+          height="19"
+          width="19"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.54 19.064l6.987-6.986 6.986 6.987 2.475-2.475-6.987-6.987 6.987-6.986L16.513.142 9.527 7.128 2.541.142.065 2.617l6.987 6.986-6.986 6.986z"
+            fill="#b0b0b0"
+          />
+        </svg>
+      </button>
+    </h3>
     <section
       class="c4"
       data-testid="modal-body"
@@ -74,7 +124,6 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
 exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
 .c1 {
   background: white;
-  border-radius: 0.5rem;
   height: auto;
   left: 50%;
   position: fixed;
@@ -82,7 +131,7 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  width: 80%;
+  width: 60%;
   z-index: 9000;
 }
 
@@ -97,21 +146,58 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
 }
 
 .c2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 1rem;
-  text-align: center;
-  text-transform: uppercase;
+  height: 6rem;
+  font-size: 2.4rem;
   border-bottom: 1px solid #b0b0b0;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 1rem 0 2rem;
+  text-align: left;
+  line-height: 1;
 }
 
 .c3 {
-  float: right;
+  border: 0;
+  background: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+}
+
+.c3 svg {
+  display: block;
 }
 
 .c4 {
-  padding: 1rem;
-  text-align: left;
+  padding: 2rem;
+}
+
+@media (max-width:26.25em) {
+  .c1 {
+    width: calc(100% - 2rem - 2rem);
+  }
 }
 
 <div>
@@ -119,19 +205,33 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
     class="c0"
   />
   <section
+    aria-labelledby="dialog-label"
+    aria-modal="true"
     class="c1"
+    role="dialog"
   >
-    <section
+    <h3
       class="c2"
       data-testid="modal-header"
+      id="dialog-label"
     >
       Defined Modal Title
-      <span
+      <button
+        aria-label="close"
         class="c3"
       >
-        X
-      </span>
-    </section>
+        <svg
+          height="19"
+          width="19"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.54 19.064l6.987-6.986 6.986 6.987 2.475-2.475-6.987-6.987 6.987-6.986L16.513.142 9.527 7.128 2.541.142.065 2.617l6.987 6.986-6.986 6.986z"
+            fill="#b0b0b0"
+          />
+        </svg>
+      </button>
+    </h3>
     <section
       class="c4"
       data-testid="modal-body"

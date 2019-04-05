@@ -1,5 +1,12 @@
 import styled from 'styled-components';
-import { fontMedium, fontWeightNormal, fontWeightBold, spacingSmall } from '../../styles/designTokens';
+import {
+  fontMedium,
+  fontWeightNormal,
+  fontWeightBold,
+  spacingSmall,
+  colorBlack,
+  colorTurquoiseDimmed
+} from '../../styles/designTokens';
 
 const Text = styled.p`
   font-size: ${fontMedium};
@@ -8,6 +15,7 @@ const Text = styled.p`
   line-height: 1.4;
   margin: 0;
   margin-bottom: ${spacingSmall};
+  color: ${({ highlight }) => (highlight ? colorTurquoiseDimmed : colorBlack)};
 
   &:last-child {
     margin-bottom: 0;

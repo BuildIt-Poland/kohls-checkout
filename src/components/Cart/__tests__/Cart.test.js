@@ -8,6 +8,7 @@ jest.mock('../../OrderSummary', () => 'OrderSummary');
 jest.mock('react-router-dom', () => ({
   Link: 'Link'
 }));
+jest.mock('../../ShoppingCart', () => 'ShoppingCart');
 
 describe('COMPONENT - Cart', () => {
   it('renders Cart component', () => {

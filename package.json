@@ -37,12 +37,21 @@
   "jest": {
     "coverageThreshold": {
       "global": {
-        "branches": 0,
-        "functions": 5,
-        "lines": 5,
-        "statements": 5
+        "branches": 50,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
       }
-    }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js}",
+      "!<rootDir>/node_modules/",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/e2eConfig.js",
+      "!src/components/Root/*",
+      "!src/constants/*"
+    ]
   },
   "prettier": {
     "singleQuote": true,
@@ -80,7 +89,7 @@
     "react-test-renderer": "16.8.6",
     "react-testing-library": "6.0.3",
     "redux-devtools-extension": "2.13.8",
-    "serve": "10.1.2",
+    "serve": "11.0.0",
     "serve-handler": "5.0.8"
   },
   "browserslist": [

@@ -8,11 +8,18 @@ const Link = styled(LinkBase)`
   height: 100%;
   cursor: pointer;
   padding-top: 2rem;
+  position: relative;
+`;
+
+const AccessibleText = styled.span`
+  position: absolute;
+  left: -99999rem;
 `;
 
 function Logo() {
   return (
     <Link data-testid="logo" to="/">
+      <AccessibleText>The Store</AccessibleText>
       <LogoIcon />
     </Link>
   );

@@ -5,10 +5,21 @@ codecov:
 coverage:
   precision: 5
   round: down
-  range: '40...100'
+  range: "70...100"
 
   status:
-    project: yes
+    project:
+      default:
+        target: auto
+        threshold: 5
+        base: auto
+        branches: null
+        if_no_uploads: error
+        if_not_found: success
+        if_ci_failed: error
+        only_pulls: false
+        flags: null
+        paths: null
     patch: no
     changes: no
 
@@ -20,7 +31,11 @@ parsers:
       method: no
       macro: no
 
-comment: off
-
 ignore:
-  - 'src/e2eConfig.js'
+  - "src/e2eConfig.js"
+  - "src/index.js"
+  - "src/serviceWorker.js"
+  - "src/components/Root/*"
+  - "src/constants/*"
+
+comment: off

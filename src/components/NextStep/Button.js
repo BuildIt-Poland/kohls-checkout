@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { colorTurquoise, colorWhite, fontWeightBold } from '../../styles/designTokens';
+import { colorTurquoise, colorWhite, fontWeightBold, fontLarge } from '../../styles/designTokens';
 
 const Button = styled(Link)`
   background: ${colorTurquoise};
   color: ${colorWhite};
   display: block;
-  font-size: ${fontWeightBold};
-  font-weight: 600;
+  font-size: ${fontLarge};
+  font-weight: ${fontWeightBold};
   padding: 1.2rem;
   text-align: center;
   text-decoration: none;
