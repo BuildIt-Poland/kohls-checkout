@@ -2,16 +2,20 @@
 
 exports[`COMPONENT - Icons Cart renders correctly 1`] = `
 <svg
-  aria-labelledby="title desc"
+  aria-labelledby="icon-logo-title icon-logo-desc"
   height="35"
   role="img"
   width="133"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <title>
+  <title
+    id="icon-logo-title"
+  >
     The Store
   </title>
-  <desc>
+  <desc
+    id="icon-logo-desc"
+  >
     Official storefront by Buildit
   </desc>
   <path

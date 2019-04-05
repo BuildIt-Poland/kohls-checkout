@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - ShoppingCart renders ShoppingCart component 1`] = `
+Array [
+  .c0 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<h2
+    className="c0"
+  >
+    Shopping Cart
+  </h2>,
+  .c0 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+<div
+    className="c0"
+  >
+    <ItemsList />
+  </div>,
+]
+`;
