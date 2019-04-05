@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Wrapper from './Wrapper';
 import { AmexCard } from '../Icons';
@@ -10,5 +11,9 @@ function Amex({ small }) {
     </Wrapper>
   );
 }
+
+Amex.propTypes = {
+  cardNumber: PropTypes.bool
+};
 
 export default Amex;

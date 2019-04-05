@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import SectionHeader from '../SectionHeader';
 import { AMEX, MASTERCARD, VISA } from '../../constants/paymentCardsTypes';
@@ -27,5 +28,9 @@ function CardName({ cardNumber }) {
     </>
   );
 }
+
+CardName.propTypes = {
+  cardNumber: PropTypes.string.isRequired
+};
 
 export default CardName;

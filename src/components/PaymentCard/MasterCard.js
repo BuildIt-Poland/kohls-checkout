@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { MasterCard as MasterCardIcon } from '../Icons';
 import Wrapper from './Wrapper';
@@ -10,5 +11,9 @@ function MasterCard({ small }) {
     </Wrapper>
   );
 }
+
+MasterCard.propTypes = {
+  cardNumber: PropTypes.bool
+};
 
 export default MasterCard;

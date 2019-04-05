@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import { default as DefaultPaymentCard } from '../PaymentCard';
 
@@ -16,5 +17,9 @@ function PaymentCard({ cardNumber }) {
     </Wrapper>
   );
 }
+
+PaymentCard.propTypes = {
+  cardNumber: PropTypes.string.isRequired
+};
 
 export default PaymentCard;

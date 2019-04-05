@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import CardNumber from './CardNumber';
 import Wrapper from './Wrapper';
@@ -20,5 +21,11 @@ function PaymentMethod({ cardNumber, expiries, price }) {
     </Wrapper>
   );
 }
+
+PaymentMethod.propTypes = {
+  cardNumber: PropTypes.string.isRequired,
+  expiries: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired
+};
 
 export default PaymentMethod;
