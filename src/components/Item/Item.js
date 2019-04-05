@@ -1,5 +1,8 @@
 import React from 'react';
+import noop from 'lodash.noop';
 
+import { NO_SIZE, NO_COLOR } from '../../constants/attributes';
+import RemoveButton from '../RemoveButton';
 import Image from './Image';
 import Price from './Price';
 import Title from './Title';
@@ -9,20 +12,86 @@ import TotalPrice from './TotalPrice';
 import DiscountPrice from './DiscountPrice';
 import PriceBox from './PriceBox';
 import Wrapper from './Wrapper';
+import Details from './Details';
 
-function Item() {
+const getTotalPrice = (quantity, price) => quantity * (price.regular - price.discount);
+
+const renderAttributes = function({ variants }) {
+  if (!variants) {
+    return null;
+  }
+
+  const size = variants.size || NO_SIZE;
+  const color = variants.color || NO_COLOR;
+
+  return (
+    <>
+      <Attribute>Size: {size}</Attribute>
+      <Attribute>Color: {color}</Attribute>
+    </>
+  );
+};
+
+const renderPrices = function({ price, quantity }) {
+  if (!price) {
+    return null;
+  }
+
+  return (
+    <PriceBox>
+      <DiscountPrice>Sale ${price.discount}</DiscountPrice>
+      <Price>Regular ${price.regular}</Price>
+      <TotalPrice>Total ${getTotalPrice(quantity, price)}</TotalPrice>
+    </PriceBox>
+  );
+};
+
+const renderQuantity = function(
+  { id, quantity },
+  editableQuantity,
+  handleIncreaseItemQuantity,
+  handleDecreaseItemQuantity,
+  handleSetItemQuantity
+) {
+  if (!editableQuantity) {
+    return null;
+  }
+
+  return (
+    <Quantity
+      currentQuantity={quantity}
+      handleSetItemQuantity={handleSetItemQuantity}
+      handleIncreaseItemQuantity={handleIncreaseItemQuantity}
+      handleDecreaseItemQuantity={handleDecreaseItemQuantity}
+    />
+  );
+};
+
+function Item({
+  item = {},
+  editableQuantity = false,
+  handleRemoveItem = noop,
+  handleIncreaseItemQuantity = noop,
+  handleDecreaseItemQuantity = noop,
+  handleSetItemQuantity = noop
+}) {
+  const { id, imgUrl, name } = item;
   return (
     <Wrapper>
-      <Image src="https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg" />
-      <Title>Men's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket</Title>
-      <Attribute>Size: 42 SHORT</Attribute>
-      <Attribute>Color: Charcoal</Attribute>
-      <PriceBox>
-        <DiscountPrice>Sale $125.00</DiscountPrice>
-        <Price>Regular $240.00</Price>
-        <TotalPrice>Total $115.00</TotalPrice>
-      </PriceBox>
-      <Quantity />
+      <Image src={imgUrl} />
+      <Details>
+        <Title>{name}</Title>
+        {renderAttributes(item)}
+        {renderPrices(item)}
+      </Details>
+      {renderQuantity(
+        item,
+        editableQuantity,
+        handleIncreaseItemQuantity,
+        handleDecreaseItemQuantity,
+        handleSetItemQuantity
+      )}
+      <RemoveButton editableQuantity={editableQuantity} cartItemId={id} handleClick={handleRemoveItem} />
     </Wrapper>
   );
 }
