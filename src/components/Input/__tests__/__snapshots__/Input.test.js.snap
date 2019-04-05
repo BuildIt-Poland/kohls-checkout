@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Input Input with error renders correctly Input 1`] = `
+Array [
+  .c1 {
+  border: 1px solid #e0151d;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c1:disabled {
+  background-color: #454545;
+}
+
+.c0 {
+  margin-bottom: 1rem;
+}
+
+<label
+    className="c0"
+  >
+    Dummy Label
+    <input
+      className="c1"
+      placeholder="Dummy placeHolder"
+      type="text"
+    />
+  </label>,
+  .c0 {
+  font-style: italic;
+  color: #e0151d;
+}
+
+<div
+    className="c0"
+  >
+    dummyError
+  </div>,
+]
+`;
+
+exports[`COMPONENT - Input Input with error should render correctly Input 1`] = `
+Array [
+  .c2 {
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0.9rem 1rem 0.7rem;
+  font-size: 1.2rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c2:disabled {
+  background-color: #eee;
+}
+
+.c0 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<label
+    className="c0"
+  >
+    Dummy Label
+    <div
+      className="c1"
+    >
+      <input
+        className="c2"
+        placeholder="Dummy placeHolder"
+        type="text"
+      />
+    </div>
+  </label>,
+  .c0 {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  font-style: italic;
+  color: red;
+}
+
+<div
+    className="c0"
+  >
+    dummyError
+  </div>,
+]
+`;
+
+exports[`COMPONENT - Input Input without error renders correctly Input 1`] = `
+.c1 {
+  border: 1px solid #222222;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c1:disabled {
+  background-color: #454545;
+}
+
+.c0 {
+  margin-bottom: 1rem;
+}
+
+<label
+  className="c0"
+>
+  Dummy Label
+  <input
+    className="c1"
+    placeholder="Dummy placeHolder"
+    type="text"
+  />
+</label>
+`;
+
+exports[`COMPONENT - Input Input without error should render correctly Input 1`] = `
+.c2 {
+  border: 1px solid #454545;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0.9rem 1rem 0.7rem;
+  font-size: 1.2rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c2:disabled {
+  background-color: #eee;
+}
+
+.c0 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+<label
+  className="c0"
+>
+  Dummy Label
+  <div
+    className="c1"
+  >
+    <input
+      className="c2"
+      placeholder="Dummy placeHolder"
+      type="text"
+    />
+  </div>
+</label>
+`;
+
+exports[`COMPONENT - Input Input without label renders correctly Input 1`] = `
+.c0 {
+  border: 1px solid #222222;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c0:disabled {
+  background-color: #454545;
+}
+
+<input
+  className="c0"
+  placeholder="Dummy placeHolder"
+  type="text"
+/>
+`;

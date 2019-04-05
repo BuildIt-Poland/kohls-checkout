@@ -17,6 +17,7 @@ export const borderWidthThin = '1px';
 // Radius
 export const bordeRadiusCircle = '50%';
 export const borderRadiusMedium = '0.25rem';
+export const borderRadiusLarge = '0.75rem';
 
 // Font size
 export const fontSmall = '1.2rem';
