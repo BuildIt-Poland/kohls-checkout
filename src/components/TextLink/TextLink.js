@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import { colorTurquoise, fontWeightBold, fontMedium } from '../../styles/designTokens';
+import { colorTurquoiseDimmed, fontWeightBold, fontMedium } from '../../styles/designTokens';
 
 const TextLink = styled.a`
-  color: ${colorTurquoise};
+  color: ${colorTurquoiseDimmed};
   font-weight: ${fontWeightBold};
   font-size: ${fontMedium};
   text-decoration: underline;
