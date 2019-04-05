@@ -2,7 +2,7 @@ import React from 'react';
 import noop from 'lodash.noop';
 
 import { NO_SIZE, NO_COLOR } from '../../constants/attributes';
-import RemoveButton from '../RemoveButton/RemoveButton';
+import RemoveButton from '../RemoveButton';
 import Image from './Image';
 import Price from './Price';
 import Title from './Title';
