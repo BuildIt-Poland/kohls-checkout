@@ -59,7 +59,7 @@ exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component
       <span
         className="c3"
       >
-        Tue. 02 19 - Wed. 03. 19
+        Tue. Apr. 19 - Wed. May. 19
       </span>
     </p>
     <p
@@ -130,7 +130,7 @@ exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders corr
       <span
         className="c3"
       >
-        Tue. 02 19 - Wed. 03. 19
+        Tue. Apr. 19 - Wed. May. 19
       </span>
     </p>
   </div>
