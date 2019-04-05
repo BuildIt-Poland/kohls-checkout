@@ -2,12 +2,14 @@
 
 exports[`COMPONENT - Icons Cart renders correctly 1`] = `
 <svg
-  aria-labelledby="title"
+  aria-labelledby="icon-cart-title"
   height="37"
   width="41"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <title>
+  <title
+    id="icon-cart-title"
+  >
     Cart
   </title>
   <path

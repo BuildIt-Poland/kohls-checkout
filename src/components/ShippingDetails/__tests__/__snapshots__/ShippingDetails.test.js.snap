@@ -20,7 +20,7 @@ exports[`COMPONENT - ShippingDetails renders ShippingDetails component 1`] = `
 }
 
 .c1 {
-  color: #00a09f;
+  color: #008484;
   font-weight: 700;
   font-size: 1.8rem;
   -webkit-text-decoration: underline;

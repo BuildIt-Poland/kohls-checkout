@@ -499,7 +499,7 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-  color: #00a09f;
+  color: #008484;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -884,7 +884,7 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
-  color: #00a09f;
+  color: #008484;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -937,7 +937,7 @@ Array [
 }
 
 .c4 {
-  color: #00a09f;
+  color: #008484;
   font-weight: 700;
   font-size: 1.8rem;
   -webkit-text-decoration: underline;
