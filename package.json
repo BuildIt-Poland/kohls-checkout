@@ -89,7 +89,7 @@
     "react-test-renderer": "16.8.6",
     "react-testing-library": "6.0.3",
     "redux-devtools-extension": "2.13.8",
-    "serve": "10.1.2",
+    "serve": "11.0.0",
     "serve-handler": "5.0.8"
   },
   "browserslist": [
