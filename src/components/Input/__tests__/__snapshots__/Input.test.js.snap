@@ -41,62 +41,6 @@ Array [
 ]
 `;
 
-exports[`COMPONENT - Input Input with error should render correctly Input 1`] = `
-Array [
-  .c2 {
-  border: 1px solid red;
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-  background-color: white;
-  padding: 0.9rem 1rem 0.7rem;
-  font-size: 1.2rem;
-  outline: 0;
-  width: 100%;
-}
-
-.c2:disabled {
-  background-color: #eee;
-}
-
-.c0 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  width: 100%;
-}
-
-.c1 {
-  position: relative;
-}
-
-<label
-    className="c0"
-  >
-    Dummy Label
-    <div
-      className="c1"
-    >
-      <input
-        className="c2"
-        placeholder="Dummy placeHolder"
-        type="text"
-      />
-    </div>
-  </label>,
-  .c0 {
-  font-size: 1rem;
-  margin-top: 0.2rem;
-  font-style: italic;
-  color: red;
-}
-
-<div
-    className="c0"
-  >
-    dummyError
-  </div>,
-]
-`;
-
 exports[`COMPONENT - Input Input without error renders correctly Input 1`] = `
 .c1 {
   border: 1px solid #222222;
@@ -123,48 +67,6 @@ exports[`COMPONENT - Input Input without error renders correctly Input 1`] = `
     placeholder="Dummy placeHolder"
     type="text"
   />
-</label>
-`;
-
-exports[`COMPONENT - Input Input without error should render correctly Input 1`] = `
-.c2 {
-  border: 1px solid #454545;
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-  background-color: white;
-  padding: 0.9rem 1rem 0.7rem;
-  font-size: 1.2rem;
-  outline: 0;
-  width: 100%;
-}
-
-.c2:disabled {
-  background-color: #eee;
-}
-
-.c0 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  width: 100%;
-}
-
-.c1 {
-  position: relative;
-}
-
-<label
-  className="c0"
->
-  Dummy Label
-  <div
-    className="c1"
-  >
-    <input
-      className="c2"
-      placeholder="Dummy placeHolder"
-      type="text"
-    />
-  </div>
 </label>
 `;
 
