@@ -1,11 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - ItemsList renders ItemsList component 1`] = `
+exports[`COMPONENT - ItemsList renders correct number of items 1`] = `
 .c0 {
-  margin: 1rem 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-<div
+<ul
   className="c0"
-/>
+>
+  <Item />
+  <Item />
+</ul>
 `;
+
+exports[`COMPONENT - ItemsList renders info message if there are 0 items in cart 1`] = `
+<Text>
+  There are no items in your cart.
+</Text>
+`;
+
+exports[`COMPONENT - ItemsList renders nothing if there were no items provided 1`] = `null`;

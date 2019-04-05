@@ -6,12 +6,14 @@ import Headline from '../Headline';
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
 import Content from '../Content';
+import ItemsList from '../ItemsList';
 
 function Cart() {
   return (
     <Page>
       <Content>
         <Headline>Cart</Headline>
+        <ItemsList />
       </Content>
       <OrderSummary />
       <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />

@@ -1,21 +1,29 @@
 import React from 'react';
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-import { spacingSmall } from '../../styles/designTokens';
-import Item from '../Item';
+import Item from '../Item2';
+import Text from '../Text';
+import List from './List';
 
-const Wrapper = styled.div`
-  margin: ${spacingSmall} 0;
-`;
-
-function ItemsList({ items = [] }) {
+function ItemsList({ items }) {
+  // TODO Handle loding state in first check @blurbyte
+  if (!items) {
+    return null;
+  }
+  if (items && !items.length) {
+    return <Text>There are no items in your cart.</Text>;
+  }
   return (
-    <Wrapper>
+    <List>
       {items.map((item, index) => (
-        <Item key={index} item={item} editableQuantity itemId={item.id} />
+        <Item key={index} />
       ))}
-    </Wrapper>
+    </List>
   );
 }
+
+ItemsList.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object)
+};
 
 export default ItemsList;
