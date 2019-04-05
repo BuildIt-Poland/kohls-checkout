@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import CardNumber from './CardNumber';
 import Wrapper from './Wrapper';
 import PaymentCard from './PaymentCard';
 import CardName from './CardName';
-import CardExpires from './CardExpires';
+import Text from '../Text';
 import Price from './Price';
 
 function PaymentMethod({ cardNumber, expiries, price }) {
@@ -14,10 +13,14 @@ function PaymentMethod({ cardNumber, expiries, price }) {
   return (
     <Wrapper>
       <PaymentCard cardNumber={cardNumber} />
-      <CardName cardNumber={cardNumber} />
-      <CardNumber>{maskCardNumber(cardNumber)}</CardNumber>
-      <CardExpires>Expires {expiries}</CardExpires>
-      <Price bold>${price}</Price>
+      <div>
+        <CardName cardNumber={cardNumber} />
+        <Text as="span">{maskCardNumber(cardNumber)}</Text>
+        <Price as="span" bold>
+          ${price}
+        </Price>
+        <Text>Expires {expiries}</Text>
+      </div>
     </Wrapper>
   );
 }

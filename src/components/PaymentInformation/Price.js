@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-import { default as DefaultText } from '../Text';
+import { spacingSmall } from '../../styles/designTokens';
 
-const Price = styled(DefaultText)`
-  grid-column-start: 3;
-  grid-row-start: 2;
+import Text from '../Text';
+
+const Price = styled(Text)`
+  margin-left: ${spacingSmall};
 `;
 
 export default Price;

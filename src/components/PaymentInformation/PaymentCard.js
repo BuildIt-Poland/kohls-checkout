@@ -7,7 +7,6 @@ import { default as DefaultPaymentCard } from '../PaymentCard';
 const Wrapper = styled.div`
   grid-column-start: 1;
   grid-row-start: 1;
-  grid-row-end: 4;
 `;
 
 function PaymentCard({ cardNumber }) {

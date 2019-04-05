@@ -809,7 +809,7 @@ Array [
   margin: 0 auto;
 }
 
-.c11 {
+.c10 {
   border: 0;
   background: none;
   -webkit-align-items: center;
@@ -825,11 +825,11 @@ Array [
   cursor: pointer;
 }
 
-.c11 svg {
+.c10 svg {
   display: block;
 }
 
-.c15 {
+.c8 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -840,11 +840,11 @@ Array [
   color: #222222;
 }
 
-.c15:last-child {
+.c8:last-child {
   margin-bottom: 0;
 }
 
-.c22 {
+.c20 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -858,7 +858,7 @@ Array [
   margin: 0 auto;
 }
 
-.c21 {
+.c19 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -887,7 +887,7 @@ Array [
   align-items: center;
 }
 
-.c17 {
+.c15 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -907,11 +907,11 @@ Array [
   justify-content: space-between;
 }
 
-.c17:last-child {
+.c15:last-child {
   margin-bottom: 0;
 }
 
-.c18 {
+.c16 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -931,15 +931,15 @@ Array [
   justify-content: space-between;
 }
 
-.c18:last-child {
+.c16:last-child {
   margin-bottom: 0;
 }
 
-.c20 {
+.c18 {
   font-weight: 700;
 }
 
-.c19 {
+.c17 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -962,11 +962,11 @@ Array [
   margin-top: 2rem;
 }
 
-.c19:last-child {
+.c17:last-child {
   margin-bottom: 0;
 }
 
-.c16 {
+.c14 {
   border-top: 1px solid #b0b0b0;
   padding-top: 2rem;
 }
@@ -980,16 +980,32 @@ Array [
   text-transform: none;
 }
 
-.c12 {
+.c11 {
   padding: 0;
   font-style: normal;
+}
+
+.c12 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  margin: 0;
+}
+
+.c12:last-child {
+  margin-bottom: 0;
 }
 
 .c13 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
@@ -1001,73 +1017,22 @@ Array [
   margin-bottom: 0;
 }
 
-.c14 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-  color: #222222;
-  margin: 0;
-}
-
-.c14:last-child {
-  margin-bottom: 0;
-}
-
-.c8 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-  color: #222222;
-  grid-column-start: 2;
-  grid-row-start: 3;
-}
-
-.c8:last-child {
-  margin-bottom: 0;
-}
-
 .c5 {
   display: grid;
-  grid-template-columns: 30% 45% auto;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
 }
 
 .c7 {
   width: 132px;
-  height: 172px;
 }
 
 .c6 {
   grid-column-start: 1;
   grid-row-start: 1;
-  grid-row-end: 4;
 }
 
 .c9 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-  color: #222222;
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
-
-.c9:last-child {
-  margin-bottom: 0;
-}
-
-.c10 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1076,11 +1041,10 @@ Array [
   margin: 0;
   margin-bottom: 1rem;
   color: #222222;
-  grid-column-start: 3;
-  grid-row-start: 2;
+  margin-left: 1rem;
 }
 
-.c10:last-child {
+.c9:last-child {
   margin-bottom: 0;
 }
 
@@ -1137,7 +1101,8 @@ Array [
               className="c7"
             >
               <svg
-                viewBox="0 0 66 42"
+                id="Layer_1"
+                viewBox="0 0 66 44"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -1145,50 +1110,53 @@ Array [
                   fill="#a0a0a0"
                 />
                 <path
-                  d="M62.833 41H3.167C1.975 41 1 40.035 1 38.856V3.144C1 1.965 1.975 1 3.167 1h59.666C64.025 1 65 1.965 65 3.144v35.713C65 40.035 64.025 41 62.833 41z"
-                  fill="#010101"
-                />
-                <path
-                  d="M26.5 6.741h13.146v21.242H26.5z"
-                  fill="#f16122"
-                />
-                <path
-                  d="M27.857 17.361c0-4.309 2.04-8.147 5.216-10.621a13.691 13.691 0 0 0-8.44-2.888c-7.542 0-13.655 6.048-13.655 13.509S17.092 30.87 24.633 30.87c3.186 0 6.117-1.079 8.44-2.888-3.176-2.473-5.216-6.311-5.216-10.621z"
-                  fill="#e91d25"
-                />
-                <path
-                  d="M55.168 17.361c0 7.461-6.114 13.509-13.655 13.509a13.691 13.691 0 0 1-8.44-2.888c3.176-2.474 5.216-6.312 5.216-10.621s-2.04-8.147-5.216-10.621a13.691 13.691 0 0 1 8.44-2.888c7.542 0 13.655 6.049 13.655 13.509z"
-                  fill="#f79e1d"
-                />
-                <path
-                  d="M18.963 37.665v-2.262c0-.849-.517-1.413-1.398-1.42-.463-.008-.942.135-1.276.639-.251-.398-.646-.639-1.2-.639-.387 0-.798.105-1.094.526v-.436h-.729v3.592h.737v-2.059c0-.624.38-.954.919-.954.524 0 .82.338.82.947v2.066h.737v-2.059c0-.624.395-.954.919-.954.539 0 .828.338.828.947v2.066h.737zm11.834-3.592h-1.322v-1.089h-.737v1.089h-.767v.654h.767v1.698c0 .834.296 1.33 1.231 1.33.342 0 .737-.105.987-.278l-.228-.639a1.472 1.472 0 0 1-.699.203c-.395 0-.555-.24-.555-.601v-1.713h1.322l.001-.654zm6.738-.09c-.456 0-.782.21-.987.526v-.436h-.722v3.592h.729v-2.021c0-.594.289-.977.805-.977.16 0 .327.022.494.09l.243-.676a1.699 1.699 0 0 0-.562-.098zm-10.187.376c-.38-.248-.904-.376-1.481-.376-.919 0-1.481.428-1.481 1.142 0 .586.41.939 1.223 1.052l.372.053c.433.06.668.21.668.413 0 .278-.319.458-.858.458-.57 0-.942-.173-1.208-.376l-.372.564c.539.391 1.185.466 1.572.466 1.048 0 1.626-.481 1.626-1.165 0-.631-.441-.954-1.238-1.067l-.372-.053c-.342-.045-.646-.15-.646-.391 0-.263.289-.443.722-.443.463 0 .912.173 1.132.308l.341-.585zm11.015 1.51c0 1.089.737 1.886 1.907 1.886.547 0 .912-.12 1.307-.428l-.38-.564a1.61 1.61 0 0 1-.949.323c-.63-.008-1.124-.496-1.124-1.217 0-.721.494-1.21 1.124-1.217.342 0 .653.113.949.323l.38-.564c-.395-.308-.76-.428-1.307-.428-1.17 0-1.907.796-1.907 1.886zm-5.105-1.886c-1.063 0-1.793.759-1.793 1.878 0 1.142.76 1.894 1.846 1.894.547 0 1.048-.135 1.489-.503l-.387-.533c-.304.24-.691.376-1.056.376-.509 0-1.025-.286-1.117-.932h2.712c.008-.098.015-.195.015-.3-.007-1.121-.691-1.88-1.709-1.88zm-.015.669c.539 0 .904.346.957.909h-1.96c.069-.526.418-.909 1.003-.909zm-9.829 1.217v-1.796h-.729v.436c-.251-.323-.661-.526-1.177-.526-1.018 0-1.793.789-1.793 1.886s.775 1.886 1.793 1.886c.517 0 .927-.203 1.177-.526v.436h.729v-1.796zm-2.94 0c0-.676.433-1.217 1.132-1.217.668 0 1.109.519 1.109 1.217s-.441 1.217-1.109 1.217c-.699 0-1.132-.541-1.132-1.217zm28.029-1.886c-.456 0-.782.21-.987.526v-.436h-.722v3.592h.729v-2.021c0-.594.289-.977.805-.977.16 0 .327.022.494.09l.243-.676a1.69 1.69 0 0 0-.562-.098zm-2.795 1.886v-1.796h-.729v.436c-.251-.323-.661-.526-1.177-.526-1.018 0-1.793.789-1.793 1.886s.775 1.886 1.793 1.886c.517 0 .927-.203 1.177-.526v.436h.729v-1.796zm-2.94 0c0-.676.433-1.217 1.132-1.217.668 0 1.109.519 1.109 1.217s-.441 1.217-1.109 1.217c-.699 0-1.132-.541-1.132-1.217zm10.27 0v-3.238h-.729v1.878c-.251-.323-.661-.526-1.178-.526-1.018 0-1.793.789-1.793 1.886s.775 1.886 1.793 1.886c.517 0 .927-.203 1.178-.526v.436h.729v-1.796zm-2.94 0c0-.676.433-1.217 1.132-1.217.668 0 1.109.519 1.109 1.217s-.441 1.217-1.109 1.217c-.699 0-1.132-.541-1.132-1.217z"
+                  d="M63 41H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h60c1.1 0 2 .9 2 2v36c0 1.1-.9 2-2 2z"
                   fill="#fff"
+                />
+                <path
+                  d="M63 41H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h60c1.1 0 2 .9 2 2v36c0 1.1-.9 2-2 2z"
+                  fill="#fff"
+                />
+                <path
+                  d="M2.066 34.501h61.867v5.457H2.066z"
+                  fill="#f7b600"
+                />
+                <path
+                  d="M2.066 2.049h61.867v5.458H2.066z"
+                  fill="#1a1f71"
+                />
+                <path
+                  d="M26.83 13.268l-6.391 15H16.27l-3.145-11.971c-.191-.736-.357-1.007-.937-1.318-.948-.507-2.514-.981-3.891-1.276l.093-.435h6.712c.855 0 1.624.56 1.819 1.528l1.661 8.681 4.103-10.209h4.145zm16.336 10.104c.017-3.959-5.562-4.178-5.525-5.947.012-.538.533-1.11 1.672-1.256.565-.072 2.123-.13 3.89.671l.691-3.182c-.949-.338-2.17-.663-3.689-.663-3.899 0-6.642 2.038-6.664 4.958-.025 2.16 1.959 3.364 3.451 4.083 1.538.735 2.054 1.207 2.046 1.864-.011 1.006-1.227 1.452-2.359 1.469-1.984.031-3.134-.528-4.051-.948l-.716 3.288c.923.416 2.624.777 4.385.796 4.146-.001 6.856-2.015 6.869-5.133m10.296 4.897h3.647l-3.186-15h-3.364c-.758 0-1.397.432-1.68 1.1l-5.919 13.9h4.142l.822-2.24h5.06l.478 2.24zm-4.402-5.315l2.076-5.633 1.194 5.633h-3.27zm-16.594-9.686l-3.261 15h-3.944l3.261-15h3.944z"
+                  fill="#1a1f71"
+                  id="Mark_1_"
                 />
               </svg>
             </div>
           </div>
-          <h2
-            className="c3"
-          >
-            Master Card
-          </h2>
-          <p
-            className="c8"
-          >
-            XXXX-XXXX-XXXX-2468
-          </p>
-          <p
-            className="c9"
-          >
-            Expires 
-            04/21
-          </p>
-          <p
-            className="c10"
-          >
-            $
-            220.5
-          </p>
+          <div>
+            <h2
+              className="c3"
+            >
+              Visa
+            </h2>
+            <span
+              className="c8"
+            >
+              XXXX-XXXX-XXXX-1111
+            </span>
+            <span
+              className="c9"
+            >
+              $
+              220.5
+            </span>
+            <p
+              className="c8"
+            >
+              Expires 
+              04/21
+            </p>
+          </div>
         </div>
         <section>
           <h2
@@ -1196,7 +1164,7 @@ Array [
           >
             Billing Address
             <button
-              className="c11"
+              className="c10"
               data-testid="modal-trigger"
               onClick={[Function]}
             >
@@ -1219,25 +1187,25 @@ Array [
             </button>
           </h2>
           <address
-            className="c12"
+            className="c11"
           >
             <p
-              className="c13"
+              className="c12"
             >
               Asd Bgh
             </p>
             <p
-              className="c14"
+              className="c13"
             >
               228 Park Ave S
             </p>
             <p
-              className="c14"
+              className="c13"
             >
               New York, NY 10003
             </p>
             <p
-              className="c14"
+              className="c13"
             >
               (444) 444-4444
             </p>
@@ -1249,14 +1217,14 @@ Array [
           Email Address
         </h2>
         <p
-          className="c15"
+          className="c8"
         >
           asdasdasd@adasad.com
         </p>
       </section>
     </section>
     <section
-      className="c16"
+      className="c14"
     >
       <section
         className="c1"
@@ -1267,7 +1235,7 @@ Array [
           Order Summary
         </h2>
         <p
-          className="c17"
+          className="c15"
         >
           <span>
             Subtotal
@@ -1277,7 +1245,7 @@ Array [
           </span>
         </p>
         <p
-          className="c18"
+          className="c16"
         >
           <span>
             Kohl's Cash & Discounts
@@ -1287,7 +1255,7 @@ Array [
           </span>
         </p>
         <p
-          className="c17"
+          className="c15"
         >
           <span>
             Shipping
@@ -1297,7 +1265,7 @@ Array [
           </strong>
         </p>
         <p
-          className="c17"
+          className="c15"
         >
           <span>
             Tax
@@ -1307,22 +1275,22 @@ Array [
           </span>
         </p>
         <p
-          className="c19"
+          className="c17"
         >
           <span
-            className="c20"
+            className="c18"
           >
             Total
           </span>
           <span
-            className="c20"
+            className="c18"
           >
             $
             122.7
           </span>
         </p>
         <p
-          className="c17"
+          className="c15"
         >
           <span>
             Your Savings
@@ -1334,10 +1302,10 @@ Array [
       </section>
     </section>
     <div
-      className="c21"
+      className="c19"
     >
       <a
-        className="c22"
+        className="c20"
         data-testid="next-step-button"
         href="/cart"
         onClick={[Function]}

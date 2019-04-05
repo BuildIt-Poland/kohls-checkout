@@ -6,14 +6,14 @@ import Content from '../Content';
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
 import PaymentInformation from '../PaymentInformation';
-import ShippingDetails from '../ShippingDetails';
+import ShippingDetailsEdit from '../ShippingDetailsEdit';
 
 function CheckoutReview() {
   return (
     <Page>
       <Content>
         <Headline>Review</Headline>
-        <ShippingDetails />
+        <ShippingDetailsEdit />
         <PaymentInformation />
       </Content>
       <OrderSummary />

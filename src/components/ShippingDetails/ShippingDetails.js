@@ -1,22 +1,43 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
-import SectionHeader from '../SectionHeader';
-import TextLink from '../TextLink';
+import Shipping from '../Icons/Shipping';
+import Text from '../Text';
+import { colorLightGrey } from '../../styles/designTokens';
 
-function ShippingDetails() {
-  const textLink = (
-    <TextLink as={Link} to={CHECKOUT_DELIVERY_PATH}>
-      Edit
-    </TextLink>
-  );
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
-  return (
-    <section>
-      <SectionHeader actionElement={textLink}>Shipping Details</SectionHeader>
-    </section>
-  );
-}
+const Message = styled.div`
+  flex-grow: 1;
+  padding: 0 1rem;
+`;
+
+const ArrivalDates = styled.span`
+  font-weight: bold;
+`;
+
+const ShippingDetails = ({ minDate, maxDate, shippingPromo }) => (
+  <Wrapper>
+    <Shipping fill={colorLightGrey} />
+    <Message>
+      <Text>
+        Ship to Me <br />
+        <span>Arrives </span>
+        <ArrivalDates>{`${minDate} - ${maxDate}`}</ArrivalDates>
+      </Text>
+      {shippingPromo && <Text>{shippingPromo}</Text>}
+    </Message>
+  </Wrapper>
+);
+
+ShippingDetails.propTypes = {
+  minDate: PropTypes.string.isRequired,
+  maxDate: PropTypes.string.isRequired,
+  shippingPromo: PropTypes.string
+};
 
 export default ShippingDetails;

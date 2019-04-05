@@ -1,14 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import SectionHeader from '../SectionHeader';
 import { AMEX, MASTERCARD, VISA } from '../../constants/paymentCardsTypes';
-
-const Text = styled(SectionHeader)`
-  grid-column-start: 2;
-  grid-row-start: 2;
-`;
+import SectionHeader from '../SectionHeader';
 
 function CardName({ cardNumber }) {
   return (
@@ -16,11 +10,11 @@ function CardName({ cardNumber }) {
       {(() => {
         switch (true) {
           case VISA().test(cardNumber):
-            return <Text>Visa</Text>;
+            return <SectionHeader bold>Visa</SectionHeader>;
           case MASTERCARD().test(cardNumber):
-            return <Text>Master Card</Text>;
+            return <SectionHeader bold>Master Card</SectionHeader>;
           case AMEX().test(cardNumber):
-            return <Text>American Express</Text>;
+            return <SectionHeader bold>American Express</SectionHeader>;
           default:
             return null;
         }
