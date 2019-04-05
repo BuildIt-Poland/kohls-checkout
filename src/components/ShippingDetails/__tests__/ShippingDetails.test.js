@@ -8,8 +8,8 @@ jest.mock('../../Icons/Shipping', () => 'Shipping');
 describe('COMPONENT - ShippingDetails', () => {
   it('Renders correctly ShippingDetails component', () => {
     const props = {
-      minDate: 'Tue. 02 19',
-      maxDate: 'Wed. 03. 19',
+      minDate: 'Tue. Apr. 19',
+      maxDate: 'Wed. May. 19',
       shippingPromo: 'Free after $85'
     };
 
@@ -21,9 +21,8 @@ describe('COMPONENT - ShippingDetails', () => {
   describe('When there is no shippingPromo', () => {
     it('Renders correctly ShippingDetails component without shipping promo', () => {
       const props = {
-        minDate: 'Tue. 02 19',
-        maxDate: 'Wed. 03. 19',
-        shippingPromo: null
+        minDate: 'Tue. Apr. 19',
+        maxDate: 'Wed. May. 19'
       };
 
       const component = create(<ShippingDetails {...props} />);
