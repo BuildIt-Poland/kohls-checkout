@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Shipping from '../Icons/Shipping';
 import Text from '../Text';
+import { colorLightGrey } from '../../styles/designTokens';
 
 const Wrapper = styled.div`
   display: flex;
@@ -20,11 +21,13 @@ const ArrivalDates = styled.span`
 
 const ShippingDetails = ({ minDate, maxDate, shippingPromo }) => (
   <Wrapper>
-    <Shipping />
+    <Shipping fill={colorLightGrey} />
     <Message>
-      <Text>Ship to Me</Text>
-      <span>Arrives </span>
-      <ArrivalDates>{`${minDate} - ${maxDate}`}</ArrivalDates>
+      <Text>
+        Ship to Me <br />
+        <span>Arrives </span>
+        <ArrivalDates>{`${minDate} - ${maxDate}`}</ArrivalDates>
+      </Text>
       {shippingPromo && <Text>{shippingPromo}</Text>}
     </Message>
   </Wrapper>

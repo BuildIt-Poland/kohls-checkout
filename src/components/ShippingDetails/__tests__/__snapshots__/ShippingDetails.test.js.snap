@@ -42,23 +42,26 @@ exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component
 <div
   className="c0"
 >
-  <Shipping />
+  <Shipping
+    fill="#b0b0b0"
+  />
   <div
     className="c1"
   >
     <p
       className="c2"
     >
-      Ship to Me
+      Ship to Me 
+      <br />
+      <span>
+        Arrives 
+      </span>
+      <span
+        className="c3"
+      >
+        Tue. 02 19 - Wed. 03. 19
+      </span>
     </p>
-    <span>
-      Arrives 
-    </span>
-    <span
-      className="c3"
-    >
-      Tue. 02 19 - Wed. 03. 19
-    </span>
     <p
       className="c2"
     >
@@ -110,23 +113,26 @@ exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders corr
 <div
   className="c0"
 >
-  <Shipping />
+  <Shipping
+    fill="#b0b0b0"
+  />
   <div
     className="c1"
   >
     <p
       className="c2"
     >
-      Ship to Me
+      Ship to Me 
+      <br />
+      <span>
+        Arrives 
+      </span>
+      <span
+        className="c3"
+      >
+        Tue. 02 19 - Wed. 03. 19
+      </span>
     </p>
-    <span>
-      Arrives 
-    </span>
-    <span
-      className="c3"
-    >
-      Tue. 02 19 - Wed. 03. 19
-    </span>
   </div>
 </div>
 `;
