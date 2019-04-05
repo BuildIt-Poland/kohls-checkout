@@ -2,11 +2,9 @@
 
 exports[`COMPONENT - SectionHeader renders SectionHeader component 1`] = `
 .c0 {
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  margin: 1rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,9 +13,13 @@ exports[`COMPONENT - SectionHeader renders SectionHeader component 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-<h3
+<h2
   className="c0"
 />
 `;

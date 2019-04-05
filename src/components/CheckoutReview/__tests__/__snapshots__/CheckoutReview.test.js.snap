@@ -1,90 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - CheckoutReview render CheckoutReview component 1`] = `
-Array [
-  .c1 {
-  color: #00a09f;
-  font-weight: 700;
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  text-transform: none;
-}
-
 .c0 {
-  font-size: 1.2rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 12rem;
 }
 
-<section>
-    <h3
-      className="c0"
-    >
-      Shipping Details
-      <Link
-        className="c1"
-        to="/checkout/delivery"
-      >
-        Edit
-      </Link>
-    </h3>
-  </section>,
-  .c1 {
-  color: #00a09f;
+.c2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
   font-weight: 700;
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  text-transform: none;
+  line-height: 1;
 }
 
-.c0 {
-  font-size: 1.2rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 
-<section>
-    <h3
-      className="c0"
-    >
-      Payment Information
-      <Link
-        className="c1"
-        to="/checkout/payment"
-      >
-        Edit
-      </Link>
-    </h3>
-  </section>,
-  <OrderSummary />,
-  .c1 {
+.c6 {
   background: #00a09f;
   color: #ffffff;
   display: block;
-  font-size: 700;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 700;
   padding: 1.2rem;
   text-align: center;
   -webkit-text-decoration: none;
@@ -93,7 +34,7 @@ Array [
   margin: 0 auto;
 }
 
-.c0 {
+.c5 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -104,16 +45,82 @@ Array [
   z-index: 6000;
 }
 
-<div
-    className="c0"
+.c4 {
+  color: #00a09f;
+  font-weight: 700;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+.c3 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<article
+  className="c0"
+>
+  <section
+    className="c1"
+  >
+    <h1
+      className="c2"
+    >
+      Review
+    </h1>
+    <section>
+      <h2
+        className="c3"
+      >
+        Shipping Details
+        <Link
+          className="c4"
+          to="/checkout/delivery"
+        >
+          Edit
+        </Link>
+      </h2>
+    </section>
+    <section>
+      <h2
+        className="c3"
+      >
+        Payment Information
+        <Link
+          className="c4"
+          to="/checkout/payment"
+        >
+          Edit
+        </Link>
+      </h2>
+    </section>
+  </section>
+  <OrderSummary />
+  <div
+    className="c5"
   >
     <Link
-      className="c1"
+      className="c6"
       data-testid="next-step-button"
       to="/cart"
     >
       Place Order
     </Link>
-  </div>,
-]
+  </div>
+</article>
 `;

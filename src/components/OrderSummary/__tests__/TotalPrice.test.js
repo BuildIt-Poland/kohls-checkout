@@ -4,7 +4,7 @@ import { create } from 'react-test-renderer';
 import TotalPrice from '../TotalPrice';
 
 describe('COMPONENT - OrderSummary TotalPrice', () => {
-  it('render NextStep component', () => {
+  it('renders TotalPrice component', () => {
     const component = create(<TotalPrice />);
 
     expect(component.toJSON()).toMatchSnapshot();
