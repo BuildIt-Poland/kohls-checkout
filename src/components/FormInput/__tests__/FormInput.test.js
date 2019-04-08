@@ -31,16 +31,4 @@ describe('COMPONENT - FormInput', () => {
       expect(component.toJSON()).toMatchSnapshot();
     });
   });
-
-  describe('Input without label', () => {
-    it('renders correctly Input', () => {
-      const props = {
-        placeholder: 'Dummy placeHolder',
-        type: 'text'
-      };
-      const component = create(<FormInput {...props} />);
-
-      expect(component.toJSON()).toMatchSnapshot();
-    });
-  });
 });

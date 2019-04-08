@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
 import {
   spacingSmall,
   borderWidthThin,
@@ -22,15 +22,6 @@ const StyledInput = styled.input`
   }
 `;
 
-const Input = props => {
-  return <StyledInput {...props} />;
-};
-
-Input.propTypes = {
-  label: PropTypes.string,
-  error: PropTypes.string,
-  type: PropTypes.string.isRequired,
-  className: PropTypes.any
-};
+const Input = props => <StyledInput {...props} />;
 
 export default Input;
