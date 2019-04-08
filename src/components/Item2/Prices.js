@@ -37,7 +37,7 @@ Prices.propTypes = {
   price: PropTypes.shape({
     regular: PropTypes.number.isRequired,
     discount: PropTypes.number
-  }),
+  }).isRequired,
   quantity: PropTypes.number.isRequired
 };
 

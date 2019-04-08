@@ -5,7 +5,7 @@ exports[`COMPONENT - Item Thumbnail renders correctly 1`] = `
   position: relative;
   width: 100%;
   padding: 1rem;
-  min-height: 14.4rem;
+  height: 14.4rem;
 }
 
 .c2 {
