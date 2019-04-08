@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - FormInput FormInput without error renders correctly FormInput 1`] = `
+.c0 {
+  margin-bottom: 1rem;
+}
+
+<label
+  className="c0"
+>
+  Dummy Label
+  <Input
+    placeholder="Dummy placeHolder"
+    type="text"
+  />
+</label>
+`;
+
+exports[`COMPONENT - FormInput Input with error renders correctly Input 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 1rem;
+}
+
+<label
+    className="c0"
+  >
+    Dummy Label
+    <Input
+      error="dummyError"
+      placeholder="Dummy placeHolder"
+      type="text"
+    />
+  </label>,
+  .c0 {
+  font-style: italic;
+  color: #e0151d;
+}
+
+<div
+    className="c0"
+  >
+    dummyError
+  </div>,
+]
+`;
+
+exports[`COMPONENT - FormInput Input without label renders correctly Input 1`] = `
+<Input
+  placeholder="Dummy placeHolder"
+  type="text"
+/>
+`;
