@@ -2,15 +2,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
 import TextBlock from './TextBlock';
 import SmallText from './SmallText';
-
-const VariantName = styled.span`
-  display: inline-block;
-  width: 6rem;
-`;
+import Label from './Label';
 
 const NO_SIZE = 'No size';
 const NO_COLOR = 'Multi/None';
@@ -19,11 +14,11 @@ function Variants({ variants }) {
   return (
     <TextBlock>
       <SmallText>
-        <VariantName>Size:</VariantName>
+        <Label>Size:</Label>
         {variants.size ? variants.size : NO_SIZE}
       </SmallText>
       <SmallText>
-        <VariantName>Color:</VariantName>
+        <Label>Color:</Label>
         {variants.color ? variants.color : NO_COLOR}
       </SmallText>
     </TextBlock>

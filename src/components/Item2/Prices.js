@@ -6,6 +6,7 @@ import Text from '../Text';
 import TextBlock from './TextBlock';
 import SmallText from './SmallText';
 import Discount from './Discount';
+import Label from './Label';
 
 export function totalPrice(quantity, regularPrice, discountPrice) {
   if (discountPrice) {
@@ -17,9 +18,17 @@ export function totalPrice(quantity, regularPrice, discountPrice) {
 function Prices({ price, quantity }) {
   return (
     <TextBlock>
-      {price.discount && <Discount>Sale: {formattedPrice(price.discount)}</Discount>}
-      <SmallText strikeOff={!!price.discount}>Regular: {formattedPrice(price.regular)}</SmallText>
-      <Text bold>Total: {formattedPrice(totalPrice(quantity, price.regular, price.discount))}</Text>
+      {price.discount && (
+        <Discount>
+          <Label>Sale:</Label> {formattedPrice(price.discount)}
+        </Discount>
+      )}
+      <SmallText strikeOff={!!price.discount}>
+        <Label>Regular:</Label> {formattedPrice(price.regular)}
+      </SmallText>
+      <Text bold>
+        <Label>Total:</Label> {formattedPrice(totalPrice(quantity, price.regular, price.discount))}
+      </Text>
     </TextBlock>
   );
 }

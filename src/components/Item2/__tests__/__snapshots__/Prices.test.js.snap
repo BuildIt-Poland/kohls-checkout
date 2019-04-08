@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Item Prices renders correctly 1`] = `
-.c3 {
+.c4 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -12,7 +12,7 @@ exports[`COMPONENT - Item Prices renders correctly 1`] = `
   color: #222222;
 }
 
-.c3:last-child {
+.c4:last-child {
   margin-bottom: 0;
 }
 
@@ -20,7 +20,7 @@ exports[`COMPONENT - Item Prices renders correctly 1`] = `
   margin-bottom: 1rem;
 }
 
-.c2 {
+.c3 {
   font-size: 1.4rem;
   font-weight: 400;
   color: #222222;
@@ -40,32 +40,52 @@ exports[`COMPONENT - Item Prices renders correctly 1`] = `
   font-weight: 700;
 }
 
+.c2 {
+  display: inline-block;
+  width: 6rem;
+}
+
 <div
   className="c0"
 >
   <p
     className="c1"
   >
-    Sale: 
+    <span
+      className="c2"
+    >
+      Sale:
+    </span>
+     
     $11.00
-  </p>
-  <p
-    className="c2"
-  >
-    Regular: 
-    $21.00
   </p>
   <p
     className="c3"
   >
-    Total: 
+    <span
+      className="c2"
+    >
+      Regular:
+    </span>
+     
+    $21.00
+  </p>
+  <p
+    className="c4"
+  >
+    <span
+      className="c2"
+    >
+      Total:
+    </span>
+     
     $22.00
   </p>
 </div>
 `;
 
 exports[`COMPONENT - Item Prices renders correctly withregular price only without discount 1`] = `
-.c2 {
+.c3 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -76,7 +96,7 @@ exports[`COMPONENT - Item Prices renders correctly withregular price only withou
   color: #222222;
 }
 
-.c2:last-child {
+.c3:last-child {
   margin-bottom: 0;
 }
 
@@ -93,19 +113,34 @@ exports[`COMPONENT - Item Prices renders correctly withregular price only withou
   text-decoration: none;
 }
 
+.c2 {
+  display: inline-block;
+  width: 6rem;
+}
+
 <div
   className="c0"
 >
   <p
     className="c1"
   >
-    Regular: 
+    <span
+      className="c2"
+    >
+      Regular:
+    </span>
+     
     $21.00
   </p>
   <p
-    className="c2"
+    className="c3"
   >
-    Total: 
+    <span
+      className="c2"
+    >
+      Total:
+    </span>
+     
     $42.00
   </p>
 </div>
