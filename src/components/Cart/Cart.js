@@ -2,6 +2,7 @@ import React from 'react';
 
 import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
 import Page from '../Page';
+import InfoBanner from '../InfoBanner';
 import Headline from '../Headline';
 import NextStep from '../NextStep';
 import ShoppingCart from '../ShoppingCart';
@@ -11,6 +12,7 @@ import Content from '../Content';
 function Cart() {
   return (
     <Page>
+      <InfoBanner />
       <Content>
         <Headline>Cart</Headline>
         <ShoppingCart />

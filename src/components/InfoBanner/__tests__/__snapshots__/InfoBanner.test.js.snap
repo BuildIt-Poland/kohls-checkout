@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - infoBanner renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #00afd3;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.c1 {
+  font-weight: 700;
+}
+
+<div
+  className="c0"
+>
+  You have received 
+  <span
+    className="c1"
+  >
+    free shipping
+  </span>
+</div>
+`;
