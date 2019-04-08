@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Wrapper from './Wrapper';
 import { AmexCard } from '../Icons';
+import Wrapper from './Wrapper';
 
 function Amex({ small }) {
   return (

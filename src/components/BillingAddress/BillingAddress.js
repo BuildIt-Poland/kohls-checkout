@@ -1,9 +1,9 @@
 import React from 'react';
 
 import SectionHeader from '../SectionHeader';
+import ModalTrigger from '../ModalTrigger';
 import Address from './Address';
 import Text from './Text';
-import ModalTrigger from '../ModalTrigger';
 
 function BillingAddress({ name, address }) {
   const modalTrigger = (

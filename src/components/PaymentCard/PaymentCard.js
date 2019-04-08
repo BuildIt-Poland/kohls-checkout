@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { getCreditCardType } from '../../utils/creditCardType';
 import Visa from './Visa';
 import Mastercard from './MasterCard';
 import Amex from './Amex';
-import { getCreditCardType } from '../../utils/creditCardType';
 
 function PaymentCard({ cardNumber }) {
   const renderCard = () => {

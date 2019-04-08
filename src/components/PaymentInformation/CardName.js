@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SectionHeader from '../SectionHeader';
 import { getCreditCardType } from '../../utils/creditCardType';
+import SectionHeader from '../SectionHeader';
 
 function CardName({ cardNumber }) {
   const renderCardName = () => {
