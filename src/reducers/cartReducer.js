@@ -11,7 +11,7 @@ const initialState = {
         color: 'Dark Blue'
       },
       price: {
-        regular: 24000,
+        regular: 24099,
         discount: 12500
       },
       quantity: 1

@@ -47,19 +47,19 @@ exports[`COMPONENT - Item Prices renders correctly 1`] = `
     className="c1"
   >
     Sale: 
-    1100
+    $11.00
   </p>
   <p
     className="c2"
   >
     Regular: 
-    2100
+    $21.00
   </p>
   <p
     className="c3"
   >
     Total: 
-    2200
+    $22.00
   </p>
 </div>
 `;
@@ -100,13 +100,13 @@ exports[`COMPONENT - Item Prices renders correctly withregular price only withou
     className="c1"
   >
     Regular: 
-    2100
+    $21.00
   </p>
   <p
     className="c2"
   >
     Total: 
-    4200
+    $42.00
   </p>
 </div>
 `;

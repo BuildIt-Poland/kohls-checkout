@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { formattedPrice } from '../../utils';
 import Text from '../Text';
 import TextBlock from './TextBlock';
 import SmallText from './SmallText';
@@ -16,9 +17,9 @@ export function totalPrice(quantity, regularPrice, discountPrice) {
 function Prices({ price, quantity }) {
   return (
     <TextBlock>
-      {price.discount && <Discount>Sale: {price.discount}</Discount>}
-      <SmallText strikeOff={!!price.discount}>Regular: {price.regular}</SmallText>
-      <Text bold>Total: {totalPrice(quantity, price.regular, price.discount)}</Text>
+      {price.discount && <Discount>Sale: {formattedPrice(price.discount)}</Discount>}
+      <SmallText strikeOff={!!price.discount}>Regular: {formattedPrice(price.regular)}</SmallText>
+      <Text bold>Total: {formattedPrice(totalPrice(quantity, price.regular, price.discount))}</Text>
     </TextBlock>
   );
 }
