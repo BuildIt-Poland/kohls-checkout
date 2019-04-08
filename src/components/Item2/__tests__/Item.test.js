@@ -20,8 +20,9 @@ describe('COMPONENT - Item', () => {
       quantity: 1
     };
 
-    const { container } = render(<Item {...props} />);
+    const { container, getByTestId } = render(<Item {...props} />);
 
     expect(container.querySelector('h3')).toHaveTextContent('RIDER JACKET - jeans jacket - dark blue');
+    expect(getByTestId('total-price')).toHaveTextContent('Total: $125.00');
   });
 });

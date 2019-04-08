@@ -26,7 +26,7 @@ function Prices({ price, quantity }) {
       <SmallText strikeOff={!!price.discount}>
         <Label>Regular:</Label> {formattedPrice(price.regular)}
       </SmallText>
-      <Text bold>
+      <Text bold data-testid="total-price">
         <Label>Total:</Label> {formattedPrice(totalPrice(quantity, price.regular, price.discount))}
       </Text>
     </TextBlock>

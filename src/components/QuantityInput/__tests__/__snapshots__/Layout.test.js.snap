@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Item Page renders correctly 1`] = `
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 12rem 4rem;
+}
+
+<div
+  className="c0"
+/>
+`;

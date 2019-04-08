@@ -72,6 +72,7 @@ exports[`COMPONENT - Item Prices renders correctly 1`] = `
   </p>
   <p
     className="c4"
+    data-testid="total-price"
   >
     <span
       className="c2"
@@ -134,6 +135,7 @@ exports[`COMPONENT - Item Prices renders correctly withregular price only withou
   </p>
   <p
     className="c3"
+    data-testid="total-price"
   >
     <span
       className="c2"
