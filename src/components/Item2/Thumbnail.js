@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   position: relative;
   width: 100%;
   padding: ${spacingSmall};
-  min-height: 14.4rem;
+  height: 14.4rem;
 `;
 
 const Image = styled.img`
