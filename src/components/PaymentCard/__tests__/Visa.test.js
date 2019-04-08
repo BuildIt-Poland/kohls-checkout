@@ -3,6 +3,10 @@ import { create } from 'react-test-renderer';
 
 import Visa from '../Visa';
 
+jest.mock('../../Icons', () => ({
+  VisaCard: 'VisaCardIcon'
+}));
+
 describe('COMPONENT - Visa', () => {
   it('renders Visa component', () => {
     const component = create(<Visa />);

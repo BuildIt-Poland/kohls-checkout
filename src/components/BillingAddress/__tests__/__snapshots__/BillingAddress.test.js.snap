@@ -110,22 +110,22 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
     <p
       className="c3"
     >
-      Name
+      John Robinson
     </p>
     <p
       className="c4"
     >
-      
+      228 Park Ave S
     </p>
     <p
       className="c4"
     >
-      
+      New York, NY 10003
     </p>
     <p
       className="c4"
     >
-      
+      (444) 444-4444
     </p>
   </address>
 </section>

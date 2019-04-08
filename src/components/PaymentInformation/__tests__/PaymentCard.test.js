@@ -3,6 +3,8 @@ import { create } from 'react-test-renderer';
 
 import PaymentCard from '../PaymentCard';
 
+jest.mock('../../PaymentCard', () => 'PaymentCard');
+
 describe('COMPONENT - PaymentCard', () => {
   it('renders PaymentCard component', () => {
     const component = create(<PaymentCard cardNumber="5338876271187903" />);

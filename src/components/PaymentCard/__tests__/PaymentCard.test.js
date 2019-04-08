@@ -3,6 +3,12 @@ import { create } from 'react-test-renderer';
 
 import PaymentCard from '../PaymentCard';
 
+jest.mock('../../Icons', () => ({
+  MasterCard: 'MasterCardIcon',
+  VisaCard: 'VisaCardIcon',
+  AmexCard: 'MasterCardIcon'
+}));
+
 describe('COMPONENT - PaymentCard', () => {
   it('renders PaymentCard component', () => {
     const component = create(<PaymentCard />);

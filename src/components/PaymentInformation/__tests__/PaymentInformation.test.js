@@ -1,5 +1,5 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import { render } from 'react-testing-library';
 
 import PaymentInformation from '../PaymentInformation';
 
@@ -9,8 +9,8 @@ jest.mock('react-router-dom', () => ({
 
 describe('COMPONENT - PaymentInformation', () => {
   it('renders PaymentInformation component', () => {
-    const component = create(<PaymentInformation />);
+    const { container } = render(<PaymentInformation />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(container.querySelector('h2')).toHaveTextContent('Payment Information');
   });
 });
