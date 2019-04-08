@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - Attribute renders Attribute component 1`] = `
 .c0 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   display: block;
 }
 

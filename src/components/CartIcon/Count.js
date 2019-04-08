@@ -7,7 +7,7 @@ const Count = styled.div`
   color: ${colorWhite};
   font-weight: ${fontWeightBold};
   font-size: ${fontSmall};
-  padding-bottom: 0.7rem;
+  padding-bottom: 0.8rem;
 `;
 
 export default Count;

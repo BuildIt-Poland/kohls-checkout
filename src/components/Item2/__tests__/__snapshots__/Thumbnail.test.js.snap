@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Item Thumbnail renders correctly 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  min-height: 14.4rem;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,160,160,0.1);
+  z-index: 1;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+  <img
+    alt="Very nice image"
+    className="c2"
+    src="http://taylor.swift.com/pic.jpg"
+  />
+</div>
+`;

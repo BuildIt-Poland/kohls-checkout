@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Item Variants renders correctly when both size and color are provided 1`] = `
+.c0 {
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #222222;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 {
+  display: inline-block;
+  width: 6rem;
+}
+
+<div
+  className="c0"
+>
+  <p
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Size:
+    </span>
+    42 Small
+  </p>
+  <p
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Color:
+    </span>
+    Blue
+  </p>
+</div>
+`;
+
+exports[`COMPONENT - Item Variants renders correctly when only color is provided 1`] = `
+.c0 {
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #222222;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 {
+  display: inline-block;
+  width: 6rem;
+}
+
+<div
+  className="c0"
+>
+  <p
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Size:
+    </span>
+    No size
+  </p>
+  <p
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Color:
+    </span>
+    Blue
+  </p>
+</div>
+`;
+
+exports[`COMPONENT - Item Variants renders correctly when only size is provided 1`] = `
+.c0 {
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #222222;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 {
+  display: inline-block;
+  width: 6rem;
+}
+
+<div
+  className="c0"
+>
+  <p
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Size:
+    </span>
+    42 Small
+  </p>
+  <p
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Color:
+    </span>
+    Multi/None
+  </p>
+</div>
+`;

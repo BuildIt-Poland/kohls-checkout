@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Item Prices renders correctly 1`] = `
+.c3 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c3:last-child {
+  margin-bottom: 0;
+}
+
+.c0 {
+  margin-bottom: 1rem;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #222222;
+  margin: 0;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.c1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #222222;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #e0151d;
+  font-weight: 700;
+}
+
+<div
+  className="c0"
+>
+  <p
+    className="c1"
+  >
+    Sale: 
+    1100
+  </p>
+  <p
+    className="c2"
+  >
+    Regular: 
+    2100
+  </p>
+  <p
+    className="c3"
+  >
+    Total: 
+    2200
+  </p>
+</div>
+`;
+
+exports[`COMPONENT - Item Prices renders correctly withregular price only without discount 1`] = `
+.c2 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c2:last-child {
+  margin-bottom: 0;
+}
+
+.c0 {
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #222222;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+  className="c0"
+>
+  <p
+    className="c1"
+  >
+    Regular: 
+    2100
+  </p>
+  <p
+    className="c2"
+  >
+    Total: 
+    4200
+  </p>
+</div>
+`;

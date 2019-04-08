@@ -1,11 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - DiscountPrice renders DiscountPrice component 1`] = `
+exports[`COMPONENT - Item Discount renders correctly 1`] = `
 .c0 {
   font-size: 1.4rem;
+  font-weight: 400;
   color: #222222;
-  margin: 0.2rem 0;
-  text-transform: uppercase;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   color: #e0151d;
   font-weight: 700;
 }

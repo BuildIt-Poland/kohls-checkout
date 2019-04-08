@@ -3,11 +3,11 @@ import { SET_QUANTITY, REMOVE_ITEM, INCREASE_QUANTITY, DECREASE_QUANTITY } from 
 const initialState = {
   items: [
     {
-      id: 'EOK3293KSD',
+      id: '64a673c2-59e3-11e9-8647-d663bd873d93',
       name: 'RIDER JACKET - jeans jacket - dark blue',
       imgUrl: 'https://mosaic03.ztat.net/vgs/media/catalog_hd/LE/42/2T/01/0K/11/LE422T010-K11@8.1.jpg',
       variants: {
-        size: '42 SHORT',
+        size: '46 Medium',
         color: 'Dark Blue'
       },
       price: {
@@ -17,18 +17,17 @@ const initialState = {
       quantity: 1
     },
     {
-      id: 'EOK32943983',
+      id: '71380d3a-59e3-11e9-8647-d663bd873d93',
       name: 'WOMAN JACKET FIX HOOD - outdoor - mint',
       imgUrl: 'https://mosaic03.ztat.net/vgs/media/catalog_hd/C7/04/1F/06/LL/11/C7041F06L-L11@9.jpg',
       variants: {
-        size: '42 SHORT',
+        size: '42 Short',
         color: 'Mint'
       },
       price: {
-        regular: 44000,
-        discount: 14000
+        regular: 44000
       },
-      quantity: 1
+      quantity: 2
     }
   ]
 };

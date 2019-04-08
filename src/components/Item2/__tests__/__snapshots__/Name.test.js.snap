@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Item Name renders correctly 1`] = `
+.c0 {
+  color: #222222;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+<h3
+  className="c0"
+>
+  Denim Jacket
+</h3>
+`;
