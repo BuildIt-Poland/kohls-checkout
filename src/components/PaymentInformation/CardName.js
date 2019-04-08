@@ -1,26 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { AMEX, MASTERCARD, VISA } from '../../constants/paymentCardsTypes';
 import SectionHeader from '../SectionHeader';
+import { getCreditCardType } from '../../utils/creditCardType';
 
 function CardName({ cardNumber }) {
-  return (
-    <>
-      {(() => {
-        switch (true) {
-          case VISA().test(cardNumber):
-            return <SectionHeader bold>Visa</SectionHeader>;
-          case MASTERCARD().test(cardNumber):
-            return <SectionHeader bold>Master Card</SectionHeader>;
-          case AMEX().test(cardNumber):
-            return <SectionHeader bold>American Express</SectionHeader>;
-          default:
-            return null;
-        }
-      })()}
-    </>
-  );
+  const renderCardName = () => {
+    const cardType = getCreditCardType(cardNumber);
+
+    switch (cardType) {
+      case 'VISA':
+        return <SectionHeader bold>Visa</SectionHeader>;
+      case 'MASTER_CARD':
+        return <SectionHeader bold>Master Card</SectionHeader>;
+      case 'AM_EX':
+        return <SectionHeader bold>American Express</SectionHeader>;
+      default:
+        return null;
+    }
+  };
+
+  return <>{renderCardName()}</>;
 }
 
 CardName.propTypes = {

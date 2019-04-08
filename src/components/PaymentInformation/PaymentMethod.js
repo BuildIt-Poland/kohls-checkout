@@ -8,14 +8,14 @@ import Text from '../Text';
 import Price from './Price';
 
 function PaymentMethod({ cardNumber, expiries, price }) {
-  const maskCardNumber = cardNumber => cardNumber.replace(/^(\d{4}){3}(?=\d{4})/gi, 'XXXX-XXXX-XXXX-');
+  const hideCardNumber = () => `XXXX-XXXX-XXXX-${cardNumber.slice(12)}`;
 
   return (
     <Wrapper>
       <PaymentCard cardNumber={cardNumber} />
       <div>
         <CardName cardNumber={cardNumber} />
-        <Text as="span">{maskCardNumber(cardNumber)}</Text>
+        <Text as="span">{hideCardNumber()}</Text>
         <Price as="span" bold>
           ${price}
         </Price>

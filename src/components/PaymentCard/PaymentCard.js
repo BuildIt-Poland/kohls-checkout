@@ -4,25 +4,25 @@ import PropTypes from 'prop-types';
 import Visa from './Visa';
 import Mastercard from './MasterCard';
 import Amex from './Amex';
-import { AMEX, MASTERCARD, VISA } from '../../constants/paymentCardsTypes';
+import { getCreditCardType } from '../../utils/creditCardType';
 
 function PaymentCard({ cardNumber }) {
-  return (
-    <>
-      {(() => {
-        switch (true) {
-          case VISA().test(cardNumber):
-            return <Visa />;
-          case MASTERCARD().test(cardNumber):
-            return <Mastercard />;
-          case AMEX().test(cardNumber):
-            return <Amex />;
-          default:
-            return null;
-        }
-      })()}
-    </>
-  );
+  const renderCard = () => {
+    const cardType = getCreditCardType(cardNumber);
+
+    switch (cardType) {
+      case 'VISA':
+        return <Visa />;
+      case 'MASTER_CARD':
+        return <Mastercard />;
+      case 'AM_EX':
+        return <Amex />;
+      default:
+        return null;
+    }
+  };
+
+  return <>{renderCard()}</>;
 }
 
 PaymentCard.propTypes = {
