@@ -8,6 +8,7 @@ const Article = styled.article`
   padding-top: ${spacingLarge};
   padding-bottom: 12rem;
 `;
+
 const DEFAULT_TITLE = 'The Store';
 
 function Page({ children, title }) {
