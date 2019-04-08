@@ -16,7 +16,7 @@ function ItemsList({ items }) {
   return (
     <List>
       {items.map((item, index) => (
-        <Item key={index} />
+        <Item key={index} {...item} />
       ))}
     </List>
   );
