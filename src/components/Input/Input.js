@@ -22,29 +22,8 @@ const StyledInput = styled.input`
   }
 `;
 
-const Label = styled.label`
-  margin-bottom: ${spacingSmall};
-`;
-
-const ErrorLabel = styled.div`
-  font-style: italic;
-  color: ${colorRed};
-`;
-
-const Input = ({ className, label, error, ...props }) => {
-  return (
-    <>
-      {label ? (
-        <Label className={className}>
-          {label}
-          <StyledInput error={error} {...props} />
-        </Label>
-      ) : (
-        <StyledInput error={error} {...props} />
-      )}
-      {error && <ErrorLabel>{error}</ErrorLabel>}
-    </>
-  );
+const Input = props => {
+  return <StyledInput {...props} />;
 };
 
 Input.propTypes = {
