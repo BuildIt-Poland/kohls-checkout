@@ -3,7 +3,7 @@ import { create } from 'react-test-renderer';
 
 import ItemsList from '../ItemsList';
 
-jest.mock('../../Item2', () => 'Item');
+jest.mock('../../Item', () => 'Item');
 jest.mock('../../Text', () => 'Text');
 
 describe('COMPONENT - ItemsList', () => {
