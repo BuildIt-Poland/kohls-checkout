@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - PaymentInformation renders PaymentInformation component 1`] = `
-.c1 {
-  color: #008484;
-  font-weight: 700;
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  text-transform: none;
-}
-
+exports[`CardName COMPONENT - CardName renders CardName component 1`] = `
 .c0 {
   font-size: 2.4rem;
   text-align: left;
@@ -28,17 +19,9 @@ exports[`COMPONENT - PaymentInformation renders PaymentInformation component 1`]
   align-items: center;
 }
 
-<section>
-  <h2
-    className="c0"
-  >
-    Payment Information
-    <MockedLink
-      className="c1"
-      to="/checkout/payment"
-    >
-      Edit
-    </MockedLink>
-  </h2>
-</section>
+<h2
+  className="c0"
+>
+  Master Card
+</h2>
 `;

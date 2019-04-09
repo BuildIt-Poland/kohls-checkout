@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Wrapper renders Wrapper component 1`] = `
+.c0 {
+  width: 132px;
+}
+
+<div
+  className="c0"
+/>
+`;

@@ -5,7 +5,12 @@ import BillingAddress from '../BillingAddress';
 
 describe('COMPONENT - BillingAddress', () => {
   it('renders BillingAddress component', () => {
-    const component = create(<BillingAddress />);
+    const address = {
+      street: '228 Park Ave S',
+      city: 'New York, NY 10003',
+      phoneNumber: '(444) 444-4444'
+    };
+    const component = create(<BillingAddress name="John Robinson" address={address} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

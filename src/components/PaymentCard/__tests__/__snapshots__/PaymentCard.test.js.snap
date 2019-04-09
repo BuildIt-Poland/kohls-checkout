@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - PaymentCard renders PaymentCard component for American Express 1`] = `
+.c0 {
+  width: 132px;
+}
+
+<div
+  className="c0"
+>
+  <MasterCardIcon />
+</div>
+`;
+
+exports[`COMPONENT - PaymentCard renders PaymentCard component for MasterCard 1`] = `
+.c0 {
+  width: 132px;
+}
+
+<div
+  className="c0"
+>
+  <MasterCardIcon />
+</div>
+`;
+
+exports[`COMPONENT - PaymentCard renders PaymentCard component for Visa 1`] = `
+.c0 {
+  width: 132px;
+}
+
+<div
+  className="c0"
+>
+  <VisaCardIcon />
+</div>
+`;
+
+exports[`COMPONENT - PaymentCard renders PaymentCard component for incorrect card number 1`] = `null`;

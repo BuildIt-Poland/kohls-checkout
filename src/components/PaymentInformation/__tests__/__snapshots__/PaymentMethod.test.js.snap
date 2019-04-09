@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
+Array [
+  .c0 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<h2
+    className="c0"
+  >
+    Payment Method
+  </h2>,
+  .c3 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c3:last-child {
+  margin-bottom: 0;
+}
+
+.c2 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+}
+
+.c1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.c4 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  margin-left: 1rem;
+}
+
+.c4:last-child {
+  margin-bottom: 0;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <PaymentCard
+        cardNumber="5555555555554444"
+      />
+    </div>
+    <div>
+      <h2
+        className="c2"
+      >
+        Master Card
+      </h2>
+      <span
+        className="c3"
+      >
+        XXXX-XXXX-XXXX-4444
+      </span>
+      <span
+        className="c4"
+      >
+        $
+        220.5
+      </span>
+      <p
+        className="c3"
+      >
+        Expires 
+        04/21
+      </p>
+    </div>
+  </div>,
+]
+`;
