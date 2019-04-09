@@ -5,28 +5,7 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
   padding-bottom: 12rem;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background-color: #00afd3;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-
 .c2 {
-  font-weight: 700;
-}
-
-.c4 {
   margin: 0;
   margin-bottom: 2rem;
   font-size: 3rem;
@@ -34,7 +13,7 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
   line-height: 1;
 }
 
-.c6 {
+.c4 {
   background: #00a09f;
   color: #ffffff;
   display: block;
@@ -48,7 +27,7 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
   margin: 0 auto;
 }
 
-.c5 {
+.c3 {
   bottom: 0;
   left: 0;
   padding: 1rem;
@@ -59,7 +38,7 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
   z-index: 6000;
 }
 
-.c3 {
+.c1 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
@@ -68,21 +47,12 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
 <article
   className="c0"
 >
-  <div
+  <InfoBanner />
+  <section
     className="c1"
   >
-    You have received 
-    <span
-      className="c2"
-    >
-      free shipping
-    </span>
-  </div>
-  <section
-    className="c3"
-  >
     <h1
-      className="c4"
+      className="c2"
     >
       Cart
     </h1>
@@ -90,10 +60,10 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
   </section>
   <OrderSummary />
   <div
-    className="c5"
+    className="c3"
   >
     <Link
-      className="c6"
+      className="c4"
       data-testid="next-step-button"
       to="/checkout/delivery"
     >
