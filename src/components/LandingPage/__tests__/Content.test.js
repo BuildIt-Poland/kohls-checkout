@@ -1,11 +1,11 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import Section from '../Section';
+import Content from '../Content';
 
-describe('COMPONENT - LandingPage Section', () => {
+describe('COMPONENT - LandingPage Content', () => {
   it('renders correctly', () => {
-    const component = create(<Section />);
+    const component = create(<Content />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
