@@ -12,13 +12,11 @@ import Content from '../Content';
 function Cart() {
   return (
     <Page title="Cart">
-      <InfoBanner
-        children={
-          <span>
-            you have received <b>free shipping</b>
-          </span>
-        }
-      />
+      <InfoBanner>
+        <span>
+          you have received <b>free shipping</b>
+        </span>
+      </InfoBanner>
       <Content>
         <Headline>Cart</Headline>
         <ShoppingCart />
