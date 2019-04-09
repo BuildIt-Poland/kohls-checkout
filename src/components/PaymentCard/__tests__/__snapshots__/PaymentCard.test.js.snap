@@ -36,4 +36,4 @@ exports[`COMPONENT - PaymentCard renders PaymentCard component for Visa 1`] = `
 </div>
 `;
 
-exports[`COMPONENT - PaymentCard renders PaymentCard component incorrect card number 1`] = `null`;
+exports[`COMPONENT - PaymentCard renders PaymentCard component for incorrect card number 1`] = `null`;
