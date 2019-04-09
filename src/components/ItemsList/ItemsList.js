@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Item from '../Item2';
+import CartItemControls from '../CartItemControls';
 import Text from '../Text';
 import List from './List';
 
@@ -16,7 +17,7 @@ function ItemsList({ items }) {
   return (
     <List>
       {items.map((item, index) => (
-        <Item key={index} {...item} />
+        <Item key={index} {...item} itemControls={CartItemControls} />
       ))}
     </List>
   );

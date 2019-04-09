@@ -20,6 +20,10 @@ exports[`COMPONENT - Item Prices renders correctly 1`] = `
   margin-bottom: 1rem;
 }
 
+.c0:last-child {
+  margin-bottom: 0;
+}
+
 .c3 {
   font-size: 1.4rem;
   font-weight: 400;
@@ -103,6 +107,10 @@ exports[`COMPONENT - Item Prices renders correctly withregular price only withou
 
 .c0 {
   margin-bottom: 1rem;
+}
+
+.c0:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {

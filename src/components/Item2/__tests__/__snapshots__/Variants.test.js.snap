@@ -5,6 +5,10 @@ exports[`COMPONENT - Item Variants renders correctly when both size and color ar
   margin-bottom: 1rem;
 }
 
+.c0:last-child {
+  margin-bottom: 0;
+}
+
 .c1 {
   font-size: 1.4rem;
   font-weight: 400;
@@ -50,6 +54,10 @@ exports[`COMPONENT - Item Variants renders correctly when only color is provided
   margin-bottom: 1rem;
 }
 
+.c0:last-child {
+  margin-bottom: 0;
+}
+
 .c1 {
   font-size: 1.4rem;
   font-weight: 400;
@@ -93,6 +101,10 @@ exports[`COMPONENT - Item Variants renders correctly when only color is provided
 exports[`COMPONENT - Item Variants renders correctly when only size is provided 1`] = `
 .c0 {
   margin-bottom: 1rem;
+}
+
+.c0:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
