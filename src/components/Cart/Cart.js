@@ -11,7 +11,7 @@ import Content from '../Content';
 
 function Cart() {
   return (
-    <Page>
+    <Page title="Cart">
       <InfoBanner />
       <Content>
         <Headline>Cart</Headline>
