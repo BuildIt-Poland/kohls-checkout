@@ -17,7 +17,7 @@ function CheckoutDelivery() {
   );
 
   return (
-    <Page>
+    <Page title="Delivery">
       <Content>
         <Headline>Delivery</Headline>
         <section>

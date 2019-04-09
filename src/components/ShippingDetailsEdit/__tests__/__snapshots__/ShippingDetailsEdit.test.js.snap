@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - ShippingDetailsEdit renders ShippingDetailsEdit component 1`] = `
+.c0 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  color: #008484;
+  font-weight: 700;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+<section>
+  <h2
+    className="c0"
+  >
+    Shipping Details
+    <MockedLink
+      className="c1"
+      to="/checkout/delivery"
+    >
+      Edit
+    </MockedLink>
+  </h2>
+</section>
+`;

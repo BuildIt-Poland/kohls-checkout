@@ -1,18 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - ShippingDetails renders ShippingDetails component 1`] = `
+exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component 1`] = `
+.c2 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c2:last-child {
+  margin-bottom: 0;
+}
+
 .c0 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin: 1rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -20,25 +28,111 @@ exports[`COMPONENT - ShippingDetails renders ShippingDetails component 1`] = `
 }
 
 .c1 {
-  color: #00a09f;
-  font-weight: 700;
-  font-size: 1.8rem;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  text-transform: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 1rem;
 }
 
-<section>
-  <h2
-    className="c0"
+.c3 {
+  font-weight: bold;
+}
+
+<div
+  className="c0"
+>
+  <Shipping
+    fill="#b0b0b0"
+  />
+  <div
+    className="c1"
   >
-    Shipping Details
-    <MockedLink
-      className="c1"
-      to="/checkout/delivery"
+    <p
+      className="c2"
     >
-      Edit
-    </MockedLink>
-  </h2>
-</section>
+      Ship to Me 
+      <br />
+      <span>
+        Arrives 
+      </span>
+      <span
+        className="c3"
+      >
+        Tue. Apr. 19 - Wed. May. 19
+      </span>
+    </p>
+    <p
+      className="c2"
+    >
+      Free after $85
+    </p>
+  </div>
+</div>
+`;
+
+exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders correctly ShippingDetails component without shipping promo 1`] = `
+.c2 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c2:last-child {
+  margin-bottom: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.c3 {
+  font-weight: bold;
+}
+
+<div
+  className="c0"
+>
+  <Shipping
+    fill="#b0b0b0"
+  />
+  <div
+    className="c1"
+  >
+    <p
+      className="c2"
+    >
+      Ship to Me 
+      <br />
+      <span>
+        Arrives 
+      </span>
+      <span
+        className="c3"
+      >
+        Tue. Apr. 19 - Wed. May. 19
+      </span>
+    </p>
+  </div>
+</div>
 `;

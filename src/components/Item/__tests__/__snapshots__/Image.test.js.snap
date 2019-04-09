@@ -5,8 +5,6 @@ exports[`COMPONENT - Image renders Image component 1`] = `
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 7;
 }
 
 <img

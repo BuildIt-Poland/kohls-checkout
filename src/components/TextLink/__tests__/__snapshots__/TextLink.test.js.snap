@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - TextLink renders correctly 1`] = `
 .c0 {
-  color: #00a09f;
+  color: #008484;
   font-weight: 700;
   font-size: 1.8rem;
   -webkit-text-decoration: underline;

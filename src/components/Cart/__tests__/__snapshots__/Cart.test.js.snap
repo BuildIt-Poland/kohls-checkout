@@ -56,7 +56,7 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
     >
       Cart
     </h1>
-    <Item />
+    <ShoppingCart />
   </section>
   <OrderSummary />
   <div
