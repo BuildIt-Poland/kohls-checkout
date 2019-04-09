@@ -48,12 +48,10 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
   className="c0"
 >
   <InfoBanner>
-    <span>
-      you have received 
-      <b>
-        free shipping
-      </b>
-    </span>
+    you have received 
+    <strong>
+      free shipping
+    </strong>
   </InfoBanner>
   <section
     className="c1"
