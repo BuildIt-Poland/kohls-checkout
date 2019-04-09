@@ -9,7 +9,7 @@ import Headline from '../Headline';
 
 function CheckoutPayment() {
   return (
-    <Page>
+    <Page title="Payment">
       <Content>
         <Headline>Payment</Headline>
       </Content>

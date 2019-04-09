@@ -10,7 +10,7 @@ import ShippingDetailsEdit from '../ShippingDetailsEdit';
 
 function CheckoutReview() {
   return (
-    <Page>
+    <Page title="Review">
       <Content>
         <Headline>Review</Headline>
         <ShippingDetailsEdit />

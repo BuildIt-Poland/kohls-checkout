@@ -10,7 +10,7 @@ import Content from '../Content';
 
 function Cart() {
   return (
-    <Page>
+    <Page title="Cart">
       <Content>
         <Headline>Cart</Headline>
         <ShoppingCart />
