@@ -83,7 +83,7 @@ exports[`COMPONENT - Item Variants renders correctly when only color is provided
     >
       Size:
     </span>
-    No size
+    NO SIZE
   </p>
   <p
     className="c1"

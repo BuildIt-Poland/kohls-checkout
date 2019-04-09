@@ -1,4 +1,9 @@
-import { SET_QUANTITY, REMOVE_ITEM, INCREASE_QUANTITY, DECREASE_QUANTITY } from '../constants/actionTypes';
+import {
+  CART_SET_ITEM_QUANTITY,
+  CART_INCREASE_ITEM_QUANTITY,
+  CART_DECREASE_ITEM_QUANTITY,
+  CART_REMOVE_ITEM
+} from '../constants/actionTypes';
 
 const initialState = {
   items: [
@@ -51,28 +56,28 @@ const updateItemQuantity = function(array, itemId, quantity) {
 
 function cartReducer(state = initialState, action) {
   const { items } = state;
-  const { cartItemId } = action;
-  const currentQuantity = getItemQuantity(items, cartItemId);
+  const { itemId } = action;
+  const currentQuantity = getItemQuantity(items, itemId);
   switch (action.type) {
-    case INCREASE_QUANTITY:
+    case CART_INCREASE_ITEM_QUANTITY:
       return {
         ...state,
-        items: updateItemQuantity(items, cartItemId, currentQuantity + 1)
+        items: updateItemQuantity(items, itemId, currentQuantity + 1)
       };
-    case DECREASE_QUANTITY:
+    case CART_DECREASE_ITEM_QUANTITY:
       return {
         ...state,
-        items: updateItemQuantity(items, cartItemId, currentQuantity - 1)
+        items: updateItemQuantity(items, itemId, currentQuantity - 1)
       };
-    case SET_QUANTITY:
+    case CART_SET_ITEM_QUANTITY:
       return {
         ...state,
-        items: updateItemQuantity(items, cartItemId, action.quantity)
+        items: updateItemQuantity(items, itemId, action.quantity)
       };
-    case REMOVE_ITEM:
+    case CART_REMOVE_ITEM:
       return {
         ...state,
-        items: items.filter(item => item.id !== cartItemId)
+        items: items.filter(item => item.id !== itemId)
       };
     default:
       return state;

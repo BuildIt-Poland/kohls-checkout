@@ -2,13 +2,11 @@
 
 import React from 'react';
 
+import { NO_SIZE, NO_COLOR } from '../../constants/variants';
 import { itemVariants } from '../../types';
 import TextBlock from './TextBlock';
 import SmallText from './SmallText';
 import Label from './Label';
-
-const NO_SIZE = 'No size';
-const NO_COLOR = 'Multi/None';
 
 function Variants({ variants }) {
   return (
