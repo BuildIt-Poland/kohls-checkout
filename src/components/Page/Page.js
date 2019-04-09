@@ -1,6 +1,7 @@
 // Generic page wrapper
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import { spacingLarge } from '../../styles/designTokens';
 
@@ -18,5 +19,9 @@ function Page({ children, title }) {
 
   return <Article>{children}</Article>;
 }
+
+Page.propTypes = {
+  title: PropTypes.string
+};
 
 export default Page;
