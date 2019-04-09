@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Input renders correctly Input 1`] = `
+.c0 {
+  border: 1px solid #222222;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c0:disabled {
+  background-color: #454545;
+}
+
+<input
+  className="c0"
+  placeholder="Dummy placeHolder"
+  type="text"
+/>
+`;
+
+exports[`COMPONENT - Input renders correctly Input with error 1`] = `
+.c0 {
+  border: 1px solid #e0151d;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c0:disabled {
+  background-color: #454545;
+}
+
+<input
+  className="c0"
+  placeholder="Dummy placeHolder"
+  type="text"
+/>
+`;
