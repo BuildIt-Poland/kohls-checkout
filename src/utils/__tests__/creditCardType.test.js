@@ -2,7 +2,7 @@ import creditCardType from '../creditCardType';
 
 describe('creditCardType', () => {
   it('returns UNKNOWN type', () => {
-    const cardType = creditCardType();
+    const cardType = creditCardType('9086');
 
     expect(cardType).toEqual('UNKNOWN');
   });

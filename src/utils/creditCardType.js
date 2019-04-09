@@ -5,7 +5,7 @@ import {
   CREDIT_CARD_UNKNOWN
 } from '../constants/creditCardTypes';
 
-const creditCardType = (cardNumber = '') => {
+const creditCardType = cardNumber => {
   if (cardNumber.match(/^4[0-9]{5}/gi)) {
     return CREDIT_CARD_VISA;
   } else if (cardNumber.match(/^5[1-5][0-9]{4}/gi)) {

@@ -10,8 +10,8 @@ jest.mock('../../Icons', () => ({
 }));
 
 describe('COMPONENT - PaymentCard', () => {
-  it('renders PaymentCard component', () => {
-    const component = create(<PaymentCard />);
+  it('renders PaymentCard component for incorrect card number', () => {
+    const component = create(<PaymentCard cardNumber="9887786" />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
