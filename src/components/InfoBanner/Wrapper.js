@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colorTurquoise, colorWhite, fontSmall, spacingMedium } from '../../styles/designTokens';
+import { colorTurquoise, colorWhite, fontMedium, spacingMedium } from '../../styles/designTokens';
 
 const Layout = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ const Layout = styled.div`
   background-color: ${colorTurquoise};
   color: ${colorWhite};
   text-transform: uppercase;
-  font-size: ${fontSmall};
+  font-size: ${fontMedium};
 `;
 
 export default Layout;
