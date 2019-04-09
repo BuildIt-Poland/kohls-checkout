@@ -30,7 +30,13 @@ exports[`COMPONENT - ItemsList renders correct number of items 1`] = `
 `;
 
 exports[`COMPONENT - ItemsList renders info message if there are 0 items in cart 1`] = `
-<Text>
+.c0 {
+  padding-bottom: 3rem;
+}
+
+<Text
+  className="c0"
+>
   There are no items in your cart.
 </Text>
 `;

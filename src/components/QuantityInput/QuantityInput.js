@@ -7,6 +7,7 @@ import Layout from './Layout';
 import Quantity from './Quantity';
 import Button from './Button';
 
+// TODO Add actual input for quantity @blurbyte
 function QuantityInput({ quantity, decreaseQuantity, increseQuantity }) {
   return (
     <Layout>

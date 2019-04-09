@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { item } from '../../types';
 import Item from '../Item';
 import CartItemControls from '../CartItemControls';
-import Text from '../Text';
 import List from './List';
+import NoItemsMessage from './NoItemsMessage';
 
 function ItemsList({ items }) {
   // TODO Handle loding state in first check @blurbyte
@@ -12,19 +13,19 @@ function ItemsList({ items }) {
     return null;
   }
   if (items && !items.length) {
-    return <Text>There are no items in your cart.</Text>;
+    return <NoItemsMessage>There are no items in your cart.</NoItemsMessage>;
   }
   return (
     <List>
-      {items.map((item, index) => (
-        <Item key={index} item={item} itemControls={CartItemControls} />
+      {items.map(item => (
+        <Item key={item.id} item={item} itemControls={CartItemControls} />
       ))}
     </List>
   );
 }
 
 ItemsList.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object)
+  items: PropTypes.arrayOf(item)
 };
 
 export default ItemsList;
