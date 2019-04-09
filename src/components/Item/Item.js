@@ -5,6 +5,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { item } from '../../types';
 import ListItem from './ListItem';
 import Layout from './Layout';
 import Thumbnail from './Thumbnail';
@@ -12,8 +13,8 @@ import Name from './Name';
 import Variants from './Variants';
 import Prices from './Prices';
 
-function Item({ itemControls: ItemControls, ...props }) {
-  const { name, imgUrl, variants, price, quantity } = props;
+function Item({ itemControls: ItemControls, item }) {
+  const { name, imgUrl, variants, price, quantity } = item;
   return (
     <ListItem>
       <Layout>
@@ -24,24 +25,13 @@ function Item({ itemControls: ItemControls, ...props }) {
           <Prices price={price} quantity={quantity} />
         </section>
       </Layout>
-      {ItemControls && <ItemControls {...props} />}
+      {ItemControls && <ItemControls {...item} />}
     </ListItem>
   );
 }
 
 Item.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  imgUrl: PropTypes.string.isRequired,
-  variants: PropTypes.shape({
-    size: PropTypes.string,
-    color: PropTypes.string
-  }).isRequired,
-  price: PropTypes.shape({
-    regular: PropTypes.number.isRequired,
-    discount: PropTypes.number
-  }).isRequired,
-  quantity: PropTypes.number.isRequired,
+  item: item,
   itemControls: PropTypes.func
 };
 

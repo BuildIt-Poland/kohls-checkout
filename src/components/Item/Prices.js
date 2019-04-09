@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { formattedPrice } from '../../utils';
+import { itemPrice } from '../../types';
 import Text from '../Text';
 import TextBlock from './TextBlock';
 import SmallText from './SmallText';
@@ -34,10 +35,7 @@ function Prices({ price, quantity }) {
 }
 
 Prices.propTypes = {
-  price: PropTypes.shape({
-    regular: PropTypes.number.isRequired,
-    discount: PropTypes.number
-  }).isRequired,
+  price: itemPrice.isRequired,
   quantity: PropTypes.number.isRequired
 };
 

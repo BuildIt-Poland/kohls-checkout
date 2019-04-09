@@ -17,7 +17,7 @@ function ItemsList({ items }) {
   return (
     <List>
       {items.map((item, index) => (
-        <Item key={index} {...item} itemControls={CartItemControls} />
+        <Item key={index} item={item} itemControls={CartItemControls} />
       ))}
     </List>
   );

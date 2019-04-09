@@ -11,11 +11,19 @@ exports[`COMPONENT - ItemsList renders correct number of items 1`] = `
   className="c0"
 >
   <Item
-    id="test-id-1"
+    item={
+      Object {
+        "id": "test-id-1",
+      }
+    }
     itemControls={[Function]}
   />
   <Item
-    id="test-id-2"
+    item={
+      Object {
+        "id": "test-id-2",
+      }
+    }
     itemControls={[Function]}
   />
 </ul>

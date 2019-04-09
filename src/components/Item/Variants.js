@@ -1,8 +1,8 @@
 // Displaying item variants, assuming we've got color and size only
 
 import React from 'react';
-import PropTypes from 'prop-types';
 
+import { itemVariants } from '../../types';
 import TextBlock from './TextBlock';
 import SmallText from './SmallText';
 import Label from './Label';
@@ -26,10 +26,7 @@ function Variants({ variants }) {
 }
 
 Variants.propTypes = {
-  variants: PropTypes.shape({
-    color: PropTypes.string,
-    size: PropTypes.string
-  }).isRequired
+  variants: itemVariants.isRequired
 };
 
 export default Variants;
