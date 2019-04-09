@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Visa renders Visa component 1`] = `
+.c0 {
+  width: 132px;
+}
+
+<div
+  className="c0"
+>
+  <VisaCardIcon />
+</div>
+`;
+
+exports[`COMPONENT - Visa renders small Visa component 1`] = `
+.c0 {
+  width: 44px;
+}
+
+<div
+  className="c0"
+>
+  <VisaCardIcon />
+</div>
+`;

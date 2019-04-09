@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Amex renders Amex component 1`] = `
+.c0 {
+  width: 132px;
+}
+
+<div
+  className="c0"
+>
+  <MasterCardIcon />
+</div>
+`;
+
+exports[`COMPONENT - Amex renders small Amex component 1`] = `
+.c0 {
+  width: 44px;
+}
+
+<div
+  className="c0"
+>
+  <MasterCardIcon />
+</div>
+`;
