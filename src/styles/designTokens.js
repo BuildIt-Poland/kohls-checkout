@@ -7,7 +7,6 @@ export const colorTurquoiseDimmed = '#008484';
 export const colorRed = '#e0151d';
 export const colorLightRed = '#fadcdd';
 export const colorLightGrey = '#b0b0b0';
-export const colorLightBlue = '#00afd3';
 
 // Spacing (mainly for paddings and margins)
 export const spacingLarge = '3rem';
