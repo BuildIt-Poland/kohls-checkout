@@ -3,10 +3,7 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { spacingLarge } from '../../styles/designTokens';
-
 const Article = styled.article`
-  padding-top: ${spacingLarge};
   padding-bottom: 12rem;
 `;
 

@@ -2,7 +2,6 @@
 
 exports[`COMPONENT - Cart renders Cart component 1`] = `
 .c0 {
-  padding-top: 3rem;
   padding-bottom: 12rem;
 }
 
@@ -48,6 +47,12 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
 <article
   className="c0"
 >
+  <InfoBanner>
+    you have received 
+    <strong>
+      free shipping
+    </strong>
+  </InfoBanner>
   <section
     className="c1"
   >
