@@ -21,7 +21,8 @@ function Page({ children, title }) {
 }
 
 Page.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  children: PropTypes.node.isRequired
 };
 
 export default Page;
