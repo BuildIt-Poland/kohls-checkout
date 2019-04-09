@@ -32,7 +32,7 @@ const initialState = {
       price: {
         regular: 44000
       },
-      quantity: 2
+      quantity: 1
     }
   ]
 };

@@ -36,7 +36,7 @@ exports[`COMPONENT - CartIcon renders correctly 1`] = `
   <div
     className="c1"
   >
-    4
+    3
   </div>
   <SimpleCartIcon />
 </a>
