@@ -13,9 +13,7 @@ function Cart() {
   return (
     <Page title="Cart">
       <InfoBanner>
-        <span>
-          you have received <b>free shipping</b>
-        </span>
+        you have received <strong>free shipping</strong>
       </InfoBanner>
       <Content>
         <Headline>Cart</Headline>
