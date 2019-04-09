@@ -1,30 +1,40 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import CardName from '../CardName';
+import CardName, { creditCardName } from '../CardName';
 
-describe('COMPONENT - CardName', () => {
-  it('renders CardName component', () => {
-    const component = create(<CardName />);
+describe('CardName', () => {
+  describe('COMPONENT - CardName', () => {
+    it('renders CardName component', () => {
+      const component = create(<CardName cardNumber="5338876271187903" />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+      expect(component.toJSON()).toMatchSnapshot();
+    });
   });
 
-  it('renders CardName component for MasterCard', () => {
-    const component = create(<CardName cardNumber="5338876271187903" />);
+  describe('METHOD - creditCardName', () => {
+    it('returns string - Master Card', () => {
+      const name = creditCardName('5338876271187903');
 
-    expect(component.toJSON()).toMatchSnapshot();
-  });
+      expect(name).toBe('Master Card');
+    });
 
-  it('renders CardName component for American Express', () => {
-    const component = create(<CardName cardNumber="349061596855405" />);
+    it('returns string - American Express', () => {
+      const name = creditCardName('349061596855405');
 
-    expect(component.toJSON()).toMatchSnapshot();
-  });
+      expect(name).toBe('American Express');
+    });
 
-  it('renders CardName component for Visa', () => {
-    const component = create(<CardName cardNumber="4485448764804164" />);
+    it('returns string - Visa', () => {
+      const name = creditCardName('4485448764804164');
 
-    expect(component.toJSON()).toMatchSnapshot();
+      expect(name).toBe('Visa');
+    });
+
+    it('returns null when card number is incorrect', () => {
+      const name = creditCardName('6556');
+
+      expect(name).toEqual(null);
+    });
   });
 });

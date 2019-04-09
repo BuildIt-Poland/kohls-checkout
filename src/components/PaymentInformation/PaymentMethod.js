@@ -8,9 +8,11 @@ import PaymentCard from './PaymentCard';
 import CardName from './CardName';
 import Price from './Price';
 
-function PaymentMethod({ cardNumber, expiries, price }) {
-  const hideCardNumber = () => `XXXX-XXXX-XXXX-${cardNumber.slice(12)}`;
+function hiddenCardNumber(cardNumber) {
+  return `XXXX-XXXX-XXXX-${cardNumber.slice(12)}`;
+}
 
+function PaymentMethod({ cardNumber, expiries, price }) {
   return (
     <>
       <SectionHeader>Payment Method</SectionHeader>
@@ -18,7 +20,7 @@ function PaymentMethod({ cardNumber, expiries, price }) {
         <PaymentCard cardNumber={cardNumber} />
         <div>
           <CardName cardNumber={cardNumber} />
-          <Text as="span">{hideCardNumber()}</Text>
+          <Text as="span">{hiddenCardNumber(cardNumber)}</Text>
           <Price as="span" bold>
             ${price}
           </Price>

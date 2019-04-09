@@ -1,29 +1,27 @@
-import { getCreditCardType } from '../creditCardType';
+import creditCardType from '../creditCardType';
 
-describe('creditCardType.test.js', () => {
-  describe('getCreditCard method', () => {
-    it('returns UNKNOWN type', () => {
-      const cardType = getCreditCardType();
+describe('creditCardType', () => {
+  it('returns UNKNOWN type', () => {
+    const cardType = creditCardType();
 
-      expect(cardType).toEqual('UNKNOWN');
-    });
+    expect(cardType).toEqual('UNKNOWN');
+  });
 
-    it('returns MASTER_CARD type', () => {
-      const cardType = getCreditCardType('5274583403795712');
+  it('returns MASTER_CARD type', () => {
+    const cardType = creditCardType('5274583403795712');
 
-      expect(cardType).toEqual('MASTER_CARD');
-    });
+    expect(cardType).toEqual('MASTER_CARD');
+  });
 
-    it('returns VISA type', () => {
-      const cardType = getCreditCardType('4892265751726193');
+  it('returns VISA type', () => {
+    const cardType = creditCardType('4892265751726193');
 
-      expect(cardType).toEqual('VISA');
-    });
+    expect(cardType).toEqual('VISA');
+  });
 
-    it('returns AM_EX type', () => {
-      const cardType = getCreditCardType('377159154382062');
+  it('returns AM_EX type', () => {
+    const cardType = creditCardType('377159154382062');
 
-      expect(cardType).toEqual('AM_EX');
-    });
+    expect(cardType).toEqual('AM_EX');
   });
 });

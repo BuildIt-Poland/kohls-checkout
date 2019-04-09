@@ -1,34 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - CardName renders CardName component 1`] = `null`;
-
-exports[`COMPONENT - CardName renders CardName component for American Express 1`] = `
-.c0 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin: 1rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-<h2
-  className="c0"
->
-  American Express
-</h2>
-`;
-
-exports[`COMPONENT - CardName renders CardName component for MasterCard 1`] = `
+exports[`CardName COMPONENT - CardName renders CardName component 1`] = `
 .c0 {
   font-size: 2.4rem;
   text-align: left;
@@ -51,31 +23,5 @@ exports[`COMPONENT - CardName renders CardName component for MasterCard 1`] = `
   className="c0"
 >
   Master Card
-</h2>
-`;
-
-exports[`COMPONENT - CardName renders CardName component for Visa 1`] = `
-.c0 {
-  font-size: 2.4rem;
-  text-align: left;
-  margin: 1rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-<h2
-  className="c0"
->
-  Visa
 </h2>
 `;

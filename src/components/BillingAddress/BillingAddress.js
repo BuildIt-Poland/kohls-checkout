@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import SectionHeader from '../SectionHeader';
 import ModalTrigger from '../ModalTrigger';
@@ -23,5 +24,10 @@ function BillingAddress({ name, address }) {
     </section>
   );
 }
+
+BillingAddress.propTypes = {
+  name: PropTypes.string.isRequired,
+  address: PropTypes.object.isRequired
+};
 
 export default BillingAddress;
