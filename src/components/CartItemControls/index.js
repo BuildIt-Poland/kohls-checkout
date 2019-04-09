@@ -5,7 +5,7 @@ import CartItemControls from './CartItemControls';
 
 function mapDispatchToprops(dispatch) {
   return {
-    increseQuantity: itemId => dispatch(increaseItemQuantity(itemId)),
+    increaseQuantity: itemId => dispatch(increaseItemQuantity(itemId)),
     decreaseQuantity: itemId => dispatch(decreaseItemQuantity(itemId)),
     remove: itemId => dispatch(removeItem(itemId))
   };

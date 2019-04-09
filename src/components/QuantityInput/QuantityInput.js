@@ -8,7 +8,7 @@ import Quantity from './Quantity';
 import Button from './Button';
 
 // TODO Add actual input for quantity @blurbyte
-function QuantityInput({ quantity, decreaseQuantity, increseQuantity }) {
+function QuantityInput({ quantity, decreaseQuantity, increaseQuantity }) {
   return (
     <Layout>
       <Button
@@ -20,7 +20,7 @@ function QuantityInput({ quantity, decreaseQuantity, increseQuantity }) {
         &ndash;
       </Button>
       <Quantity>{quantity}</Quantity>
-      <Button onClick={increseQuantity} aria-label="increase quantity" data-testid="increase-quantity-button">
+      <Button onClick={increaseQuantity} aria-label="increase quantity" data-testid="increase-quantity-button">
         +
       </Button>
     </Layout>
@@ -30,7 +30,7 @@ function QuantityInput({ quantity, decreaseQuantity, increseQuantity }) {
 QuantityInput.propTypes = {
   quantity: PropTypes.number.isRequired,
   decreaseQuantity: PropTypes.func.isRequired,
-  increseQuantity: PropTypes.func.isRequired
+  increaseQuantity: PropTypes.func.isRequired
 };
 
 export default QuantityInput;

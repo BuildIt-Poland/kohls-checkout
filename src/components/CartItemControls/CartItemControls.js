@@ -4,12 +4,12 @@ import QuantityInput from '../QuantityInput';
 import Wrapper from './Wrapper';
 import RemoveItem from './RemoveItem';
 
-function CartItemControls({ id, quantity, increseQuantity, decreaseQuantity, remove }) {
+function CartItemControls({ id, quantity, increaseQuantity, decreaseQuantity, remove }) {
   return (
     <Wrapper>
       <QuantityInput
         quantity={quantity}
-        increseQuantity={() => increseQuantity(id)}
+        increaseQuantity={() => increaseQuantity(id)}
         decreaseQuantity={() => decreaseQuantity(id)}
       />
       <RemoveItem
