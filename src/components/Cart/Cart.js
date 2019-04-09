@@ -10,7 +10,7 @@ import ItemsList from '../ItemsList';
 
 function Cart() {
   return (
-    <Page>
+    <Page title="Cart">
       <Content>
         <Headline>Cart</Headline>
         <ItemsList />
