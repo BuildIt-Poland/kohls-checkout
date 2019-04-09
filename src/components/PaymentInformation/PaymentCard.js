@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { default as DefaultPaymentCard } from '../PaymentCard';
+import DefaultPaymentCard from '../PaymentCard';
 
 const Wrapper = styled.div`
   grid-column-start: 1;

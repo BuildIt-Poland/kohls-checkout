@@ -25,9 +25,15 @@ function BillingAddress({ name, address }) {
   );
 }
 
+const address = PropTypes.shape({
+  street: PropTypes.string.isRequired,
+  city: PropTypes.string.isRequired,
+  phoneNumber: PropTypes.string.isRequired
+});
+
 BillingAddress.propTypes = {
   name: PropTypes.string.isRequired,
-  address: PropTypes.object.isRequired
+  address: address.isRequired
 };
 
 export default BillingAddress;
