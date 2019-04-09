@@ -47,7 +47,14 @@ exports[`COMPONENT - Cart renders Cart component 1`] = `
 <article
   className="c0"
 >
-  <InfoBanner />
+  <InfoBanner>
+    <span>
+      you have received 
+      <b>
+        free shipping
+      </b>
+    </span>
+  </InfoBanner>
   <section
     className="c1"
   >

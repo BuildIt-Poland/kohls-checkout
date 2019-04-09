@@ -19,17 +19,17 @@ exports[`COMPONENT - infoBanner renders correctly 1`] = `
 }
 
 .c1 {
-  font-weight: 700;
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 
 <div
   className="c0"
+  role="banner"
 >
-  You have received 
-  <span
+  <section
     className="c1"
-  >
-    free shipping
-  </span>
+  />
 </div>
 `;

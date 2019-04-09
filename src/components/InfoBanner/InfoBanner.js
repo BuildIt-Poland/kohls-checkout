@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Layout from './Layout';
-import Highlight from './Highlight';
+import Wrapper from './Wrapper';
+import Content from '../Content';
 
-function InfoBanner() {
+function InfoBanner({ children }) {
   return (
-    <Layout>
-      You have received&nbsp;<Highlight>free shipping</Highlight>
-    </Layout>
+    <Wrapper role="banner">
+      <Content>{children}</Content>
+    </Wrapper>
   );
 }
 
