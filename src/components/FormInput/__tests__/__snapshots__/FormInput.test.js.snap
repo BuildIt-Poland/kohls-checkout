@@ -2,7 +2,14 @@
 
 exports[`COMPONENT - FormInput FormInput without error renders correctly FormInput 1`] = `
 .c0 {
-  margin-bottom: 1rem;
+  position: relative;
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.c1 {
+  margin-top: 0.4rem;
 }
 
 <label
@@ -10,6 +17,7 @@ exports[`COMPONENT - FormInput FormInput without error renders correctly FormInp
 >
   Dummy Label
   <Input
+    className="c1"
     placeholder="Dummy placeHolder"
     type="text"
   />
@@ -18,12 +26,20 @@ exports[`COMPONENT - FormInput FormInput without error renders correctly FormInp
 
 exports[`COMPONENT - FormInput Input with error renders correctly Input 1`] = `
 .c0 {
-  margin-bottom: 1rem;
+  position: relative;
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  color: #e0151d;
+  padding-top: 0.2rem;
 }
 
 .c1 {
-  font-style: italic;
-  color: #e0151d;
+  margin-top: 0.4rem;
 }
 
 <label
@@ -31,12 +47,13 @@ exports[`COMPONENT - FormInput Input with error renders correctly Input 1`] = `
 >
   Dummy Label
   <Input
+    className="c1"
     error="dummyError"
     placeholder="Dummy placeHolder"
     type="text"
   />
   <div
-    className="c1"
+    className="c2"
   >
     dummyError
   </div>

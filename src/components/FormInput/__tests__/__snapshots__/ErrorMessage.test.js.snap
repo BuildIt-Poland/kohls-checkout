@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - FormInput ErrorMessage renders correctly 1`] = `
+.c0 {
+  font-size: 1.4rem;
+  color: #e0151d;
+  padding-top: 0.2rem;
+}
+
+<div
+  className="c0"
+/>
+`;

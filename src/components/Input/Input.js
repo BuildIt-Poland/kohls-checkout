@@ -1,29 +1,29 @@
-import React from 'react';
 import styled from 'styled-components';
 
 import {
   spacingSmall,
+  fontMedium,
   borderWidthThin,
-  borderRadiusLarge,
-  colorDarkGrey,
-  colorBlack,
+  colorLightGrey,
+  colorTurquoise,
   colorRed
 } from '../../styles/designTokens';
 
-const StyledInput = styled.input`
-  border: ${borderWidthThin} solid ${props => (props.error ? colorRed : colorBlack)};
-  border-radius: ${borderRadiusLarge};
-  padding: ${spacingSmall};
+const Input = styled.input`
+  border: ${borderWidthThin} solid ${props => (props.error ? colorRed : colorLightGrey)};
+  height: 4rem;
+  padding: 0 ${spacingSmall};
+  font-size: ${fontMedium};
   outline: 0;
   width: 100%;
 
-  :disabled {
-    background-color: ${colorDarkGrey};
+  &:disabled {
+    background-color: ${colorLightGrey};
+  }
+
+  &:focus {
+    border-color: ${props => (props.error ? colorRed : colorTurquoise)};
   }
 `;
-
-function Input(props) {
-  return <StyledInput {...props} />;
-}
 
 export default Input;

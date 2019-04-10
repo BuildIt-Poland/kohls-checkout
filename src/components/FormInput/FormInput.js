@@ -1,18 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
-import { spacingSmall, colorRed } from '../../styles/designTokens';
-import Input from '../Input';
-
-const Label = styled.label`
-  margin-bottom: ${spacingSmall};
-`;
-
-const ErrorMessage = styled.div`
-  font-style: italic;
-  color: ${colorRed};
-`;
+import Label from './Label';
+import ErrorMessage from './ErrorMessage';
+import Input from './Input';
 
 const InputForm = ({ className, label, error, ...props }) => {
   return (
