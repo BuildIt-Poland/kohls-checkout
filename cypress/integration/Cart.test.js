@@ -22,7 +22,7 @@ describe('Cart.test.js', () => {
     firstElement('[data-testid="quantity"]').should('contain', '1');
   });
 
-  it('remove item from list', () => {
+  it('remove item from items list', () => {
     firstElement('[data-testid="remove-product-button"]').click();
 
     cy.get('[data-testid="list-item"]').its('length').should('eq', 1);
