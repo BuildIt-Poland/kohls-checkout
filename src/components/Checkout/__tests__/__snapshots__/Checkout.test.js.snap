@@ -561,6 +561,7 @@ Array [
         Payment
       </h1>
     </section>
+    <CreditCardInfo />
     <section
       className="c3"
     >

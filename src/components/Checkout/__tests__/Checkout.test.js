@@ -5,6 +5,8 @@ import { MemoryRouter } from 'react-router-dom';
 import { CHECKOUT_REVIEW_PATH, CHECKOUT_PAYMENT_PATH, CHECKOUT_DELIVERY_PATH } from '../../../constants/routes';
 import Checkout from '../Checkout';
 
+jest.mock('../../CreditCardInfo', () => 'CreditCardInfo');
+
 describe('COMPONENT - Checkout', () => {
   it('renders correctly for "/delivery" route', () => {
     const component = create(
