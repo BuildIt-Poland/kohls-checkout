@@ -1,19 +1,18 @@
-import DropDown from './DropDown';
+import DropDown from '../';
 import React from 'react';
-import { shallow } from 'enzyme';
+import { create } from 'react-test-renderer';
+
+jest.mock('../../Icons', () => ({
+  Chevron: 'Chevron'
+}));
 
 describe('DropDown', () => {
   describe('When DropDown is enabled', () => {
-    let component;
-    let onChangeMock = jest.fn();
-
-    beforeEach(() => {
+    it('Renders correctly the component', () => {
       const props = {
         label: 'Select Date',
         disabled: false,
-        onChange: onChangeMock,
         error: 'Error Message',
-
         options: [
           {
             label: 'MM',
@@ -30,54 +29,16 @@ describe('DropDown', () => {
         ]
       };
 
-      component = shallow(<DropDown {...props} />);
-    });
-
-    afterEach(() => {
-      component.unmount();
-    });
-
-    it('Should see the error message', () => {
-      expect(component.find('ErrorLabel').exists()).toBe(true);
-    });
-
-    it('Should set disabled to false', () => {
-      expect(component.find('Select').props().disabled).toBe(false);
-    });
-
-    it('Should load 3 options', () => {
-      expect(component.find('option').length).toBe(3);
-    });
-
-    it('Should render label', () => {
-      expect(component.find('Label').exists()).toBe(true);
-      expect(component.find('Label').text()).toBe('Select Date');
-    });
-
-    describe('When select an option ', () => {
-      beforeEach(() => {
-        component.find('Select').simulate('change');
-      });
-
-      afterEach(() => {
-        onChangeMock.mockReset();
-      });
-
-      it('should trigger onChange', () => {
-        expect(onChangeMock).toHaveBeenCalled();
-      });
+      const component = create(<DropDown {...props} />);
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 
-  describe('When DropDown is disabled and there is no errors', () => {
-    let component;
-    let onChangeMock = jest.fn();
-
-    beforeEach(() => {
+  describe('When DropDown is disabled', () => {
+    it('Renders correctly the component', () => {
       const props = {
         label: 'Select Date',
         disabled: true,
-        onChange: onChangeMock,
         options: [
           {
             label: 'MM',
@@ -94,24 +55,34 @@ describe('DropDown', () => {
         ]
       };
 
-      component = shallow(<DropDown {...props} />);
+      const component = create(<DropDown {...props} />);
+      expect(component.toJSON()).toMatchSnapshot();
     });
+  });
 
-    afterEach(() => {
-      component.unmount();
-    });
+  describe('When DropDown as an error', () => {
+    it('Renders correctly the component', () => {
+      const props = {
+        label: 'Select Date',
+        error: 'DummyError',
+        options: [
+          {
+            label: 'MM',
+            value: null
+          },
+          {
+            label: '1',
+            value: '1'
+          },
+          {
+            label: '2',
+            value: '2'
+          }
+        ]
+      };
 
-    it('Should not the error message', () => {
-      expect(component.find('ErrorLabel').exists()).toBe(false);
-    });
-
-    it('Should set disabled to true', () => {
-      expect(component.find('Select').props().disabled).toBe(true);
-    });
-
-    it('Should render label', () => {
-      expect(component.find('Label').exists()).toBe(true);
-      expect(component.find('Label').text()).toBe('Select Date');
+      const component = create(<DropDown {...props} />);
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });
