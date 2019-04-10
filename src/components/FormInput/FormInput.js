@@ -1,25 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Field } from 'formik';
 
 import Label from './Label';
 import ErrorMessage from './ErrorMessage';
 import Input from './Input';
 
-const InputForm = ({ className, label, error, ...props }) => {
+const FormInput = ({ name, placeholder, type, label }) => {
   return (
-    <Label className={className}>
-      {label}
-      <Input error={error} {...props} />
-      {error && <ErrorMessage>{error}</ErrorMessage>}
-    </Label>
+    <Field name={name}>
+      {({ field, form }) => (
+        <Label>
+          {label}
+          <Input
+            type={type}
+            placeholder={placeholder}
+            error={form.touched[field.name] && form.errors[field.name]}
+            {...field}
+          />
+          {form.touched[field.name] && form.errors[field.name] && (
+            <ErrorMessage>{form.errors[field.name]}</ErrorMessage>
+          )}
+        </Label>
+      )}
+    </Field>
   );
 };
 
-InputForm.propTypes = {
+FormInput.propTypes = {
   label: PropTypes.string.isRequired,
   error: PropTypes.string,
   type: PropTypes.string.isRequired,
   className: PropTypes.string
 };
 
-export default InputForm;
+export default FormInput;

@@ -11,6 +11,7 @@ import {
 
 const Input = styled.input`
   border: ${borderWidthThin} solid ${props => (props.error ? colorRed : colorLightGrey)};
+  border-radius: 0;
   height: 4rem;
   padding: 0 ${spacingSmall};
   font-size: ${fontMedium};
