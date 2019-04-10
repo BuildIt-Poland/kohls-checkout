@@ -1,15 +1,13 @@
 import styled from 'styled-components';
-import { colorTurquoise, colorWhite, fontMedium, spacingMedium } from '../../styles/designTokens';
+import { colorTurquoise, colorWhite, fontMedium, spacingSmall } from '../../styles/designTokens';
 
-const Layout = styled.div`
+const Wrapper = styled.section`
   display: flex;
   justify-content: center;
-  margin-bottom: ${spacingMedium};
-  padding: 1rem;
+  padding: ${spacingSmall};
   background-color: ${colorTurquoise};
   color: ${colorWhite};
-  text-transform: uppercase;
   font-size: ${fontMedium};
 `;
 
-export default Layout;
+export default Wrapper;
