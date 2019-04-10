@@ -11,17 +11,19 @@ import ItemsList from '../ItemsList';
 
 function Cart() {
   return (
-    <Page title="Cart">
+    <>
       <InfoBanner>
-        you have received <strong>free shipping</strong>
+        You have received <strong>free shipping</strong>!
       </InfoBanner>
-      <Content>
-        <Headline>Cart</Headline>
-        <ItemsList />
-      </Content>
-      <OrderSummary />
-      <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />
-    </Page>
+      <Page title="Cart">
+        <Content>
+          <Headline>Cart</Headline>
+          <ItemsList />
+        </Content>
+        <OrderSummary />
+        <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />
+      </Page>
+    </>
   );
 }
 

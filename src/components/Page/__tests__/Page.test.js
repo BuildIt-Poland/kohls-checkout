@@ -3,7 +3,7 @@ import { create } from 'react-test-renderer';
 
 import Page from '../Page';
 
-describe('COMPONENT - Item Page', () => {
+describe('COMPONENT - Page', () => {
   it('renders correctly', () => {
     const component = create(<Page />);
 
