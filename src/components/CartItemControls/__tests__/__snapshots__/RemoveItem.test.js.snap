@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - CartItemControls RemoveItem renders correctly 1`] = `
+.c0 {
+  color: #008484;
+  font-weight: 700;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-transform: none;
+  color: #b0b0b0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+<a
+  className="c0"
+/>
+`;

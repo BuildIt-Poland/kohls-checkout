@@ -4,7 +4,7 @@ import CartIcon from './CartIcon';
 
 function mapStateToProps(state) {
   return {
-    count: state.cart.items.length
+    items: state.cart.items
   };
 }
 

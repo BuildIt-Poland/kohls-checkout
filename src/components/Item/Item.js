@@ -1,99 +1,38 @@
+// Displays product image, name, prices and variants
+// Used in cart and checkout
+// Injects props to optional ItemControls component
+
 import React from 'react';
-import noop from 'lodash.noop';
+import PropTypes from 'prop-types';
 
-import { NO_SIZE, NO_COLOR } from '../../constants/attributes';
-import RemoveButton from '../RemoveButton';
-import Image from './Image';
-import Price from './Price';
-import Title from './Title';
-import Attribute from './Attribute';
-import Quantity from './Quantity';
-import TotalPrice from './TotalPrice';
-import DiscountPrice from './DiscountPrice';
-import PriceBox from './PriceBox';
-import Wrapper from './Wrapper';
-import Details from './Details';
+import { item } from '../../types';
+import ListItem from './ListItem';
+import Layout from './Layout';
+import Thumbnail from './Thumbnail';
+import Name from './Name';
+import Variants from './Variants';
+import Prices from './Prices';
 
-const getTotalPrice = (quantity, price) => quantity * (price.regular - price.discount);
-
-const renderAttributes = function({ variants }) {
-  if (!variants) {
-    return null;
-  }
-
-  const size = variants.size || NO_SIZE;
-  const color = variants.color || NO_COLOR;
-
+function Item({ itemControls: ItemControls, item }) {
+  const { name, imgUrl, variants, price, quantity } = item;
   return (
-    <>
-      <Attribute>Size: {size}</Attribute>
-      <Attribute>Color: {color}</Attribute>
-    </>
-  );
-};
-
-const renderPrices = function({ price, quantity }) {
-  if (!price) {
-    return null;
-  }
-
-  return (
-    <PriceBox>
-      <DiscountPrice>Sale ${price.discount}</DiscountPrice>
-      <Price>Regular ${price.regular}</Price>
-      <TotalPrice>Total ${getTotalPrice(quantity, price)}</TotalPrice>
-    </PriceBox>
-  );
-};
-
-const renderQuantity = function(
-  { id, quantity },
-  editableQuantity,
-  handleIncreaseItemQuantity,
-  handleDecreaseItemQuantity,
-  handleSetItemQuantity
-) {
-  if (!editableQuantity) {
-    return null;
-  }
-
-  return (
-    <Quantity
-      currentQuantity={quantity}
-      handleSetItemQuantity={handleSetItemQuantity}
-      handleIncreaseItemQuantity={handleIncreaseItemQuantity}
-      handleDecreaseItemQuantity={handleDecreaseItemQuantity}
-    />
-  );
-};
-
-function Item({
-  item = {},
-  editableQuantity = false,
-  handleRemoveItem = noop,
-  handleIncreaseItemQuantity = noop,
-  handleDecreaseItemQuantity = noop,
-  handleSetItemQuantity = noop
-}) {
-  const { id, imgUrl, name } = item;
-  return (
-    <Wrapper>
-      <Image src={imgUrl} />
-      <Details>
-        <Title>{name}</Title>
-        {renderAttributes(item)}
-        {renderPrices(item)}
-      </Details>
-      {renderQuantity(
-        item,
-        editableQuantity,
-        handleIncreaseItemQuantity,
-        handleDecreaseItemQuantity,
-        handleSetItemQuantity
-      )}
-      <RemoveButton editableQuantity={editableQuantity} cartItemId={id} handleClick={handleRemoveItem} />
-    </Wrapper>
+    <ListItem>
+      <Layout>
+        <Thumbnail src={imgUrl} alt={name} />
+        <section>
+          <Name>{name}</Name>
+          <Variants variants={variants} />
+          <Prices price={price} quantity={quantity} />
+        </section>
+      </Layout>
+      {ItemControls && <ItemControls {...item} />}
+    </ListItem>
   );
 }
+
+Item.propTypes = {
+  item: item,
+  itemControls: PropTypes.func
+};
 
 export default Item;

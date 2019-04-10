@@ -44,6 +44,7 @@ exports[`COMPONENT - OrderSummary TotalPrice renders TotalPrice component 1`] = 
     className="c1"
   >
     $
+    128
   </span>
 </p>
 `;

@@ -22,6 +22,8 @@ const StyledInput = styled.input`
   }
 `;
 
-const Input = props => <StyledInput {...props} />;
+function Input(props) {
+  return <StyledInput {...props} />;
+}
 
 export default Input;

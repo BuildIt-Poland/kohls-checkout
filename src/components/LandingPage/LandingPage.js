@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Page from '../Page';
 import Text from '../Text';
 import TextLink from '../TextLink';
-import Content from '../Content';
 import Headline from '../Headline';
-import Section from './Section';
+import Content from './Content';
 
 function LandingPage() {
   return (
-    <Content as="article">
-      <Section>
+    <Page>
+      <Content>
         <Headline>Project goals</Headline>
         <Text>
           Build base for <strong>scalable front-end architecture</strong> &mdash; easy to work with for developers and
@@ -21,8 +21,8 @@ function LandingPage() {
           Make frontend communicate with backend API only by thin layer of services, making it more resilient to
           inevitable changes.
         </Text>
-      </Section>
-      <Section>
+      </Content>
+      <Content>
         <Headline>Workflow</Headline>
         <Text>
           Small, easy to estimate tasks in backlog. Code crafted and delivered according to{' '}
@@ -31,13 +31,13 @@ function LandingPage() {
           should be afraid to participate in PRs review process). Because only small chunks of code are merged it's
           easier and faster to recover from bugs or discover <strong>accessibility and usability</strong> problems.
         </Text>
-      </Section>
-      <Section>
+      </Content>
+      <Content>
         <TextLink as={Link} to="/cart">
           Take me to Cart
         </TextLink>
-      </Section>
-    </Content>
+      </Content>
+    </Page>
   );
 }
 

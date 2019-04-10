@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import { Link as LinkBase } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { item } from '../../types';
+import { totalCartItemsCount } from '../../utils';
 import { Cart as SimpleCartIcon } from '../Icons';
 import Count from './Count';
 
@@ -17,17 +19,17 @@ const Link = styled(LinkBase)`
   position: relative;
 `;
 
-function CartIcon({ count }) {
+function CartIcon({ items }) {
   return (
     <Link data-testid="cart-icon" to="/cart">
-      <Count>{count}</Count>
+      <Count>{totalCartItemsCount(items)}</Count>
       <SimpleCartIcon />
     </Link>
   );
 }
 
 CartIcon.propTypes = {
-  count: PropTypes.number.isRequired
+  items: PropTypes.arrayOf(item)
 };
 
 export default CartIcon;

@@ -1,5 +1,10 @@
 import reducer from '../cartReducer';
-import { INCREASE_QUANTITY, DECREASE_QUANTITY, SET_QUANTITY, REMOVE_ITEM } from '../../constants/actionTypes';
+import {
+  CART_SET_ITEM_QUANTITY,
+  CART_INCREASE_ITEM_QUANTITY,
+  CART_DECREASE_ITEM_QUANTITY,
+  CART_REMOVE_ITEM
+} from '../../constants/actionTypes';
 
 const initialState = {
   items: [
@@ -41,8 +46,8 @@ describe('cart reducer', () => {
 
   it('handles action INCREASE_QUANTITY', () => {
     const action = {
-      type: INCREASE_QUANTITY,
-      cartItemId: 'EOK3293KSD'
+      type: CART_INCREASE_ITEM_QUANTITY,
+      itemId: 'EOK3293KSD'
     };
 
     const expectedState = {
@@ -78,13 +83,16 @@ describe('cart reducer', () => {
       ]
     };
 
+    Object.freeze(initialState);
+    Object.freeze(action);
+
     expect(reducer(initialState, action)).toEqual(expectedState);
   });
 
   it('handles action DECREASE_QUANTITY', () => {
     const action = {
-      type: DECREASE_QUANTITY,
-      cartItemId: 'EOK3293KSD'
+      type: CART_DECREASE_ITEM_QUANTITY,
+      itemId: 'EOK3293KSD'
     };
 
     const expectedState = {
@@ -120,13 +128,16 @@ describe('cart reducer', () => {
       ]
     };
 
+    Object.freeze(initialState);
+    Object.freeze(action);
+
     expect(reducer(initialState, action)).toEqual(expectedState);
   });
 
   it('handles action SET_QUANTITY', () => {
     const action = {
-      type: SET_QUANTITY,
-      cartItemId: 'EOK3293KSD',
+      type: CART_SET_ITEM_QUANTITY,
+      itemId: 'EOK3293KSD',
       quantity: 10
     };
 
@@ -163,13 +174,16 @@ describe('cart reducer', () => {
       ]
     };
 
+    Object.freeze(initialState);
+    Object.freeze(action);
+
     expect(reducer(initialState, action)).toEqual(expectedState);
   });
 
   it('handles action REMOVE_ITEM', () => {
     const action = {
-      type: REMOVE_ITEM,
-      cartItemId: 'EOK3293KSD'
+      type: CART_REMOVE_ITEM,
+      itemId: 'EOK3293KSD'
     };
 
     const expectedState = {
@@ -190,6 +204,9 @@ describe('cart reducer', () => {
         }
       ]
     };
+
+    Object.freeze(initialState);
+    Object.freeze(action);
 
     expect(reducer(initialState, action)).toEqual(expectedState);
   });

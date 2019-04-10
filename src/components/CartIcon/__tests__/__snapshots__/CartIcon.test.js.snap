@@ -5,8 +5,8 @@ exports[`COMPONENT - CartIcon renders correctly 1`] = `
   position: absolute;
   color: #ffffff;
   font-weight: 700;
-  font-size: 1.2rem;
-  padding-bottom: 0.7rem;
+  font-size: 1.4rem;
+  padding-bottom: 0.8rem;
 }
 
 .c0 {
@@ -36,7 +36,7 @@ exports[`COMPONENT - CartIcon renders correctly 1`] = `
   <div
     className="c1"
   >
-    4
+    3
   </div>
   <SimpleCartIcon />
 </a>

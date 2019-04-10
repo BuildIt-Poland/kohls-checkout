@@ -5,9 +5,9 @@ import Page from '../Page';
 import InfoBanner from '../InfoBanner';
 import Headline from '../Headline';
 import NextStep from '../NextStep';
-import ShoppingCart from '../ShoppingCart';
 import OrderSummary from '../OrderSummary';
 import Content from '../Content';
+import ItemsList from '../ItemsList';
 
 function Cart() {
   return (
@@ -17,7 +17,7 @@ function Cart() {
       </InfoBanner>
       <Content>
         <Headline>Cart</Headline>
-        <ShoppingCart />
+        <ItemsList />
       </Content>
       <OrderSummary />
       <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />

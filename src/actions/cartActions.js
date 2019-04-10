@@ -1,28 +1,33 @@
-import { SET_QUANTITY, REMOVE_ITEM, INCREASE_QUANTITY, DECREASE_QUANTITY } from '../constants/actionTypes';
+import {
+  CART_SET_ITEM_QUANTITY,
+  CART_INCREASE_ITEM_QUANTITY,
+  CART_DECREASE_ITEM_QUANTITY,
+  CART_REMOVE_ITEM
+} from '../constants/actionTypes';
 
-export function updateQuantity(cartItemId, quantity) {
+export function setItemQuantity(itemId, quantity) {
   return {
-    type: SET_QUANTITY,
-    cartItemId,
+    type: CART_SET_ITEM_QUANTITY,
+    itemId,
     quantity
   };
 }
-export function increaseQuantity(cartItemId) {
+export function increaseItemQuantity(itemId) {
   return {
-    type: INCREASE_QUANTITY,
-    cartItemId
+    type: CART_INCREASE_ITEM_QUANTITY,
+    itemId
   };
 }
-export function decreaseQuantity(cartItemId) {
+export function decreaseItemQuantity(itemId) {
   return {
-    type: DECREASE_QUANTITY,
-    cartItemId
+    type: CART_DECREASE_ITEM_QUANTITY,
+    itemId
   };
 }
 
-export function removeItem(cartItemId) {
+export function removeItem(itemId) {
   return {
-    type: REMOVE_ITEM,
-    cartItemId
+    type: CART_REMOVE_ITEM,
+    itemId
   };
 }
