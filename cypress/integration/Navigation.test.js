@@ -1,12 +1,13 @@
 /* global cy*/
 
-const getBtnAndClick = (selector, content) =>
-  cy
+function getBtnAndClick(selector, content) {
+  return cy
     .get(selector)
     .contains(content)
     .click();
+}
 
-describe('Navigation.test.js', () => {
+describe('Navigation', () => {
   beforeEach(() => {
     cy.visit('/checkout/delivery');
   });

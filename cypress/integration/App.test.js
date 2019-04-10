@@ -1,6 +1,6 @@
 /* global cy*/
 
-describe('App.test.js', () => {
+describe('App', () => {
   it('navigate to home page', () => {
     cy.visit('/');
   });
