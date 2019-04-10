@@ -16,7 +16,7 @@ import Prices from './Prices';
 function Item({ itemControls: ItemControls, item }) {
   const { name, imgUrl, variants, price, quantity } = item;
   return (
-    <ListItem>
+    <ListItem data-testid="list-item">
       <Layout>
         <Thumbnail src={imgUrl} alt={name} />
         <section>

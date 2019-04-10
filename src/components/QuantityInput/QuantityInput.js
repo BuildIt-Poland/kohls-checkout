@@ -19,7 +19,7 @@ function QuantityInput({ quantity, decreaseQuantity, increaseQuantity }) {
       >
         &ndash;
       </Button>
-      <Quantity>{quantity}</Quantity>
+      <Quantity data-testid="quantity">{quantity}</Quantity>
       <Button onClick={increaseQuantity} aria-label="increase quantity" data-testid="increase-quantity-button">
         +
       </Button>
