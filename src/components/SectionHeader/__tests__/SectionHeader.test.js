@@ -5,7 +5,7 @@ import SectionHeader from '../SectionHeader';
 
 describe('COMPONENT - SectionHeader', () => {
   it('renders SectionHeader component', () => {
-    const component = create(<SectionHeader />);
+    const component = create(<SectionHeader>Test!</SectionHeader>);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

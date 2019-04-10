@@ -21,5 +21,7 @@ exports[`COMPONENT - SectionHeader renders SectionHeader component 1`] = `
 
 <h2
   className="c0"
-/>
+>
+  Test!
+</h2>
 `;
