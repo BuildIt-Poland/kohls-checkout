@@ -4,7 +4,7 @@ function firstElement(selector) {
   return cy.get(selector).first();
 }
 
-describe('Cart.test.js', () => {
+describe('Cart', () => {
   beforeEach(() => {
     cy.visit('/cart');
   })

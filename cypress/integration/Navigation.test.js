@@ -7,7 +7,7 @@ function getBtnAndClick(selector, content) {
     .click();
 }
 
-describe('Navigation.test.js', () => {
+describe('Navigation', () => {
   beforeEach(() => {
     cy.visit('/checkout/delivery');
   });

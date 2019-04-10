@@ -1,6 +1,6 @@
 /* global cy*/
 
-describe('Title.test.js', () => {
+describe('Title', () => {
   it(`set text on the tab to 'The store' for landing page`, () => {
     cy.visit('/');
 
