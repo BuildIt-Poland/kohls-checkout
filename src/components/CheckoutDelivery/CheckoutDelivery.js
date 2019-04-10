@@ -7,6 +7,7 @@ import Content from '../Content';
 import ModalTrigger from '../ModalTrigger';
 import NextStep from '../NextStep';
 import SectionHeader from '../SectionHeader';
+import ShippingAddressForm from '../ShippingAddressForm';
 
 function CheckoutDelivery() {
   const modalTrigger = (
@@ -23,6 +24,7 @@ function CheckoutDelivery() {
         <section>
           <SectionHeader actionElement={modalTrigger}>Shipping Address</SectionHeader>
         </section>
+        <ShippingAddressForm />
       </Content>
       <NextStep label="Continue to Payment" to={CHECKOUT_PAYMENT_PATH} />
     </Page>

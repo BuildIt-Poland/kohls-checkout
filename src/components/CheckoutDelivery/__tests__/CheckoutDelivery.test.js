@@ -6,6 +6,8 @@ import CheckoutDelivery from '../CheckoutDelivery';
 jest.mock('react-router-dom', () => ({
   Link: 'Link'
 }));
+jest.mock('../../ShippingAddressForm', () => 'ShippingAddressForm');
+jest.mock('../../SectionHeader', () => 'SectionHeader');
 
 describe('COMPONENT - CheckoutDelivery', () => {
   it('renders CheckoutDelivery component', () => {

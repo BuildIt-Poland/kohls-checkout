@@ -3,6 +3,8 @@ import { create } from 'react-test-renderer';
 
 import BillingAddress from '../BillingAddress';
 
+jest.mock('../../SectionHeader', () => 'SectionHeader');
+
 describe('COMPONENT - BillingAddress', () => {
   it('renders BillingAddress component', () => {
     const address = {
