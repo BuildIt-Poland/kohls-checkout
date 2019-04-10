@@ -4,7 +4,7 @@ exports[`COMPONENT - FormInput FormInput without error renders correctly FormInp
 .c0 {
   position: relative;
   display: block;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   font-size: 1.8rem;
 }
 
@@ -28,7 +28,7 @@ exports[`COMPONENT - FormInput Input with error renders correctly Input 1`] = `
 .c0 {
   position: relative;
   display: block;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   font-size: 1.8rem;
 }
 

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-import { spacingSmall, fontMedium } from '../../styles/designTokens';
+import { spacingMedium, fontMedium } from '../../styles/designTokens';
 
 const Label = styled.label`
   position: relative;
   display: block;
-  padding-bottom: ${spacingSmall};
+  padding-bottom: ${spacingMedium};
   font-size: ${fontMedium};
 `;
 
