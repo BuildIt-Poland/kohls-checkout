@@ -15,6 +15,7 @@ exports[`COMPONENT - NextStep Button render NextStep component 1`] = `
   width: 100%;
   max-width: 96rem;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 <button

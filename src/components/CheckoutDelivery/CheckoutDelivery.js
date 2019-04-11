@@ -1,4 +1,5 @@
 import React from 'react';
+import { Formik } from 'formik';
 
 import { CHECKOUT_PAYMENT_PATH } from '../../constants/routes';
 import Page from '../Page';
@@ -8,8 +9,9 @@ import ModalTrigger from '../ModalTrigger';
 import NextStep from '../NextStep';
 import SectionHeader from '../SectionHeader';
 import ShippingAddressForm from '../ShippingAddressForm';
+import shippingAddressValidation from './shippingAddressValidation';
 
-function CheckoutDelivery() {
+function CheckoutDelivery({ history }) {
   const modalTrigger = (
     <ModalTrigger
       title="Shipping &amp; Pickup"
@@ -17,16 +19,39 @@ function CheckoutDelivery() {
     />
   );
 
+  const hadleFormSubmit = values => {
+    // Redirect to payment after successful form submission
+    history.push(CHECKOUT_PAYMENT_PATH);
+  };
+
   return (
     <Page title="Delivery">
-      <Content>
-        <Headline>Delivery</Headline>
-        <section>
-          <SectionHeader actionElement={modalTrigger}>Shipping Address</SectionHeader>
-        </section>
-        <ShippingAddressForm />
-      </Content>
-      <NextStep label="Continue to Payment" to={CHECKOUT_PAYMENT_PATH} />
+      <Formik
+        initialValues={{
+          firstName: '',
+          lastName: '',
+          address: '',
+          city: '',
+          state: '',
+          zipCode: '',
+          phone: ''
+        }}
+        validationSchema={shippingAddressValidation}
+        onSubmit={hadleFormSubmit}
+      >
+        {({ submitForm }) => (
+          <>
+            <Content>
+              <Headline>Delivery</Headline>
+              <section>
+                <SectionHeader actionElement={modalTrigger}>Shipping Address</SectionHeader>
+              </section>
+              <ShippingAddressForm />
+            </Content>
+            <NextStep label="Continue to Payment" onMoveToNextStep={submitForm} />
+          </>
+        )}
+      </Formik>
     </Page>
   );
 }

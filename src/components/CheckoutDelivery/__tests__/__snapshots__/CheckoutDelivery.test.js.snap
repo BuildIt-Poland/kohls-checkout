@@ -20,31 +20,6 @@ exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
   margin: 0 auto;
 }
 
-.c4 {
-  background: #00a09f;
-  color: #ffffff;
-  display: block;
-  font-size: 2.4rem;
-  font-weight: 700;
-  padding: 1.2rem;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  max-width: 96rem;
-  margin: 0 auto;
-}
-
-.c3 {
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  background: #ffffff;
-  border-top: 1px solid #b0b0b0;
-  z-index: 6000;
-}
-
 <article
   className="c0"
 >
@@ -70,16 +45,9 @@ exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
     </section>
     <ShippingAddressForm />
   </section>
-  <div
-    className="c3"
-  >
-    <Link
-      className="c4"
-      data-testid="next-step-button"
-      to="/checkout/payment"
-    >
-      Continue to Payment
-    </Link>
-  </div>
+  <NextStep
+    label="Continue to Payment"
+    onMoveToNextStep={[Function]}
+  />
 </article>
 `;

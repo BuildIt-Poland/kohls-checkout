@@ -14,6 +14,7 @@ const Button = styled.button`
   width: 100%;
   max-width: 96rem;
   margin: 0 auto;
+  cursor: pointer;
 `;
 
 export default Button;

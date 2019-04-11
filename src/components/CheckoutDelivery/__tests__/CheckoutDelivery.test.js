@@ -8,6 +8,7 @@ jest.mock('react-router-dom', () => ({
 }));
 jest.mock('../../ShippingAddressForm', () => 'ShippingAddressForm');
 jest.mock('../../SectionHeader', () => 'SectionHeader');
+jest.mock('../../NextStep', () => 'NextStep');
 
 describe('COMPONENT - CheckoutDelivery', () => {
   it('renders CheckoutDelivery component', () => {
