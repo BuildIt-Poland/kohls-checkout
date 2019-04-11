@@ -10,6 +10,7 @@ exports[`COMPONENT - Text renders Text component 1`] = `
   margin: 0;
   margin-bottom: 1rem;
   color: #222222;
+  color: #222222;
 }
 
 .c0:last-child {

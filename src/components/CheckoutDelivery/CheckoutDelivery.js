@@ -9,7 +9,7 @@ import Content from '../Content';
 import ModalTrigger from '../ModalTrigger';
 import NextStep from '../NextStep';
 import SectionHeader from '../SectionHeader';
-import ShippingAddressForm from '../ShippingAddressForm';
+import Form from './Form';
 import shippingAddressValidation from './shippingAddressValidation';
 
 function CheckoutDelivery({ history, initialAddress, setAddress }) {
@@ -35,7 +35,7 @@ function CheckoutDelivery({ history, initialAddress, setAddress }) {
               <Headline>Delivery</Headline>
               <section>
                 <SectionHeader actionElement={modalTrigger}>Shipping Address</SectionHeader>
-                <ShippingAddressForm />
+                <Form />
               </section>
             </Content>
             <NextStep label="Continue to Payment" onMoveToNextStep={submitForm} />

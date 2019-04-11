@@ -42,7 +42,7 @@ exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
       >
         Shipping Address
       </SectionHeader>
-      <ShippingAddressForm />
+      <Form />
     </section>
   </section>
   <NextStep

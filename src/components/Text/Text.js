@@ -5,6 +5,7 @@ import {
   fontWeightBold,
   spacingSmall,
   colorBlack,
+  colorDarkGrey,
   colorTurquoiseDimmed
 } from '../../styles/designTokens';
 
@@ -16,6 +17,7 @@ const Text = styled.p`
   margin: 0;
   margin-bottom: ${spacingSmall};
   color: ${({ highlight }) => (highlight ? colorTurquoiseDimmed : colorBlack)};
+  color: ${({ dimmed }) => (dimmed ? colorDarkGrey : colorBlack)};
 
   &:last-child {
     margin-bottom: 0;

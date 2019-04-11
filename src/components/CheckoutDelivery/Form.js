@@ -1,14 +1,14 @@
 import React from 'react';
-import { Form } from 'formik';
+import { Form as FormikForm } from 'formik';
 
 import FormInput from '../FormInput';
-import Text from './Text';
+import Text from '../Text';
 import Row from './Row';
 
-function ShippingAddressForm() {
+function Form() {
   return (
-    <Form>
-      <Text>Please complete all fields.</Text>
+    <FormikForm>
+      <Text dimmed>Please complete all fields.</Text>
       <Row>
         <FormInput name="firstName" type="text" label="First Name" />
         <FormInput name="lastName" type="text" label="Last Name" />
@@ -20,9 +20,9 @@ function ShippingAddressForm() {
         <FormInput name="zipCode" type="text" label="Zip Code" />
       </Row>
       <FormInput name="phone" type="phone" label="Phone Number" />
-      <Text>Phone number will be used for shipping communications only.</Text>
-    </Form>
+      <Text dimmed>Phone number will be used for shipping communications only.</Text>
+    </FormikForm>
   );
 }
 
-export default ShippingAddressForm;
+export default Form;

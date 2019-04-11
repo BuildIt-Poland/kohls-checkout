@@ -10,6 +10,7 @@ exports[`COMPONENT - ItemsList NoItemsMessage renders ItemsList component 1`] = 
   margin: 0;
   margin-bottom: 1rem;
   color: #222222;
+  color: #222222;
   padding-bottom: 3rem;
 }
 

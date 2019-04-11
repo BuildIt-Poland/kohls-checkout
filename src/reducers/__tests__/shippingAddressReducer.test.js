@@ -48,7 +48,7 @@ describe('REDUCER - shipping addressReducer reducer', () => {
     expect(reducer(initialState, action)).toEqual(expectedState);
   });
 
-  it('correctly handles action CHECKOUT_SET_SHIPPING_ADDRESS', () => {
+  it('correctly updates state with CHECKOUT_SET_SHIPPING_ADDRESS action', () => {
     const updatedInitialState = {
       firstName: 'Taylor',
       lastName: 'Swift',
