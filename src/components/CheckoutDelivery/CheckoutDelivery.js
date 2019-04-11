@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Formik } from 'formik';
 
 import { CHECKOUT_PAYMENT_PATH } from '../../constants/routes';
@@ -11,7 +12,7 @@ import SectionHeader from '../SectionHeader';
 import ShippingAddressForm from '../ShippingAddressForm';
 import shippingAddressValidation from './shippingAddressValidation';
 
-function CheckoutDelivery({ history }) {
+function CheckoutDelivery({ history, initialAddress, setAddress }) {
   const modalTrigger = (
     <ModalTrigger
       title="Shipping &amp; Pickup"
@@ -19,34 +20,23 @@ function CheckoutDelivery({ history }) {
     />
   );
 
-  const hadleFormSubmit = values => {
+  const hadleFormSubmit = formValues => {
     // Redirect to payment after successful form submission
+    setAddress(formValues);
     history.push(CHECKOUT_PAYMENT_PATH);
   };
 
   return (
     <Page title="Delivery">
-      <Formik
-        initialValues={{
-          firstName: '',
-          lastName: '',
-          address: '',
-          city: '',
-          state: '',
-          zipCode: '',
-          phone: ''
-        }}
-        validationSchema={shippingAddressValidation}
-        onSubmit={hadleFormSubmit}
-      >
+      <Formik initialValues={initialAddress} validationSchema={shippingAddressValidation} onSubmit={hadleFormSubmit}>
         {({ submitForm }) => (
           <>
             <Content>
               <Headline>Delivery</Headline>
               <section>
                 <SectionHeader actionElement={modalTrigger}>Shipping Address</SectionHeader>
+                <ShippingAddressForm />
               </section>
-              <ShippingAddressForm />
             </Content>
             <NextStep label="Continue to Payment" onMoveToNextStep={submitForm} />
           </>
@@ -55,5 +45,19 @@ function CheckoutDelivery({ history }) {
     </Page>
   );
 }
+
+CheckoutDelivery.propTypes = {
+  history: PropTypes.object.isRequired,
+  initialAddress: PropTypes.shape({
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
+    city: PropTypes.string.isRequired,
+    state: PropTypes.string.isRequired,
+    zipCode: PropTypes.string.isRequired,
+    phone: PropTypes.string.isRequired
+  }).isRequired,
+  setAddress: PropTypes.func.isRequired
+};
 
 export default CheckoutDelivery;
