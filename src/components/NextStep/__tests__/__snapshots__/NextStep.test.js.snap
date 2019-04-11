@@ -15,6 +15,9 @@ exports[`COMPONENT - NextStep render button if onMoveToNextStep handler is provi
   width: 100%;
   max-width: 96rem;
   margin: 0 auto;
+}
+
+.c1:not(:disabled) {
   cursor: pointer;
 }
 
@@ -68,6 +71,9 @@ exports[`COMPONENT - NextStep renders Link if to prop is provided 1`] = `
   width: 100%;
   max-width: 96rem;
   margin: 0 auto;
+}
+
+.c1:not(:disabled) {
   cursor: pointer;
 }
 
