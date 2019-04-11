@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colorTurquoise, colorWhite, fontWeightBold, fontLarge } from '../../styles/designTokens';
+import { colorTurquoise, colorWhite, colorLightGrey, fontWeightBold, fontLarge } from '../../styles/designTokens';
 
 const Button = styled.button`
   background: ${colorTurquoise};
@@ -15,6 +15,10 @@ const Button = styled.button`
   max-width: 96rem;
   margin: 0 auto;
   cursor: pointer;
+
+  &:disabled {
+    background-color: ${colorLightGrey};
+  }
 `;
 
 export default Button;

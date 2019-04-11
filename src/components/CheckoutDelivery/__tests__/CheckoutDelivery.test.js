@@ -23,7 +23,7 @@ describe('COMPONENT - CheckoutDelivery', () => {
         firstName: 'Taylor',
         lastName: 'Swift',
         address: '228 Park Ave S',
-        city: 'New Orlean',
+        city: 'New Orleans',
         state: 'NO',
         zipCode: '10003-1502',
         phone: '444 444 444'

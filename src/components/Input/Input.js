@@ -18,6 +18,7 @@ const Input = styled.input`
   font-size: ${fontMedium};
   outline: 0;
   width: 100%;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
 
   &:disabled {
     background-color: ${colorLightGrey};
