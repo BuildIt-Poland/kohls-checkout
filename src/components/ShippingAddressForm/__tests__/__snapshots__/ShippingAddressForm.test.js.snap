@@ -43,7 +43,6 @@ exports[`COMPONENT - ShippingAddressForm renders correctly 1`] = `
     <FormInput
       label="First Name"
       name="firstName"
-      placeholder="Type in name here"
       type="text"
     />
     <FormInput

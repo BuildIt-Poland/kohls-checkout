@@ -10,7 +10,7 @@ function ShippingAddressForm() {
     <Form>
       <Text>Please complete all fields.</Text>
       <Row>
-        <FormInput name="firstName" type="text" label="First Name" placeholder="Type in name here" />
+        <FormInput name="firstName" type="text" label="First Name" />
         <FormInput name="lastName" type="text" label="Last Name" />
       </Row>
       <FormInput name="address" type="text" label="Address" />
