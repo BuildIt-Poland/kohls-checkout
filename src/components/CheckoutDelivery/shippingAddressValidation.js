@@ -9,7 +9,7 @@ const shippingAddressValidation = Yup.object().shape({
     .min(2, 'Too short!')
     .max(50, 'Too long!')
     .required('Required'),
-  address: Yup.string()
+  street: Yup.string()
     .min(2, 'Too short!')
     .max(255, 'Too long!')
     .required('Required'),

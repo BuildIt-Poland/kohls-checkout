@@ -5,7 +5,7 @@ describe('SCHEMA - shippingAddressValidation', () => {
     const isValid = await shippingAddressValidation.isValid({
       firstName: '',
       lastName: '',
-      address: '',
+      street: '',
       city: '',
       state: '',
       zipCode: '',
@@ -19,7 +19,7 @@ describe('SCHEMA - shippingAddressValidation', () => {
     const isValid = await shippingAddressValidation.isValid({
       firstName: 'Taylor',
       lastName: 'Swift',
-      address: '228 Park Ave S',
+      street: '228 Park Ave S',
       city: 'New York',
       state: 'NY',
       zipCode: '10003-1502',
@@ -33,7 +33,7 @@ describe('SCHEMA - shippingAddressValidation', () => {
     const isValid = await shippingAddressValidation.isValid({
       firstName: 'Taylor',
       lastName: 'Swift',
-      address: '',
+      street: '',
       city: 'New York',
       state: 'NYCX',
       zipCode: '10003-1502',

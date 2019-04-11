@@ -4,7 +4,7 @@ import { CHECKOUT_SET_SHIPPING_ADDRESS } from '../../constants/actionTypes';
 const initialState = {
   firstName: '',
   lastName: '',
-  address: '',
+  street: '',
   city: '',
   state: '',
   zipCode: '',
@@ -20,7 +20,7 @@ describe('REDUCER - shipping addressReducer reducer', () => {
     const shippingAddress = {
       firstName: 'Taylor',
       lastName: 'Swift',
-      address: '228 Park Ave S',
+      street: '228 Park Ave S',
       city: 'New York',
       state: 'NY',
       zipCode: '10003-1502',
@@ -35,7 +35,7 @@ describe('REDUCER - shipping addressReducer reducer', () => {
     const expectedState = {
       firstName: 'Taylor',
       lastName: 'Swift',
-      address: '228 Park Ave S',
+      street: '228 Park Ave S',
       city: 'New York',
       state: 'NY',
       zipCode: '10003-1502',
@@ -52,7 +52,7 @@ describe('REDUCER - shipping addressReducer reducer', () => {
     const updatedInitialState = {
       firstName: 'Taylor',
       lastName: 'Swift',
-      address: '228 Park Ave S',
+      street: '228 Park Ave S',
       city: 'New York',
       state: 'NY',
       zipCode: '10003-1502',
@@ -62,7 +62,7 @@ describe('REDUCER - shipping addressReducer reducer', () => {
     const shippingAddress = {
       firstName: 'Taylor',
       lastName: 'Swift',
-      address: '228 Park Ave S',
+      street: '228 Park Ave S',
       city: 'New Orlean',
       state: 'NO',
       zipCode: '10003-1502',
@@ -77,7 +77,7 @@ describe('REDUCER - shipping addressReducer reducer', () => {
     const expectedState = {
       firstName: 'Taylor',
       lastName: 'Swift',
-      address: '228 Park Ave S',
+      street: '228 Park Ave S',
       city: 'New Orlean',
       state: 'NO',
       zipCode: '10003-1502',

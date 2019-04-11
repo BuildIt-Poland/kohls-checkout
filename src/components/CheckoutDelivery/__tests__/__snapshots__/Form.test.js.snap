@@ -51,8 +51,8 @@ exports[`COMPONENT - ShippingAddressForm renders correctly 1`] = `
     />
   </div>
   <FormInput
-    label="Address"
-    name="address"
+    label="Street"
+    name="street"
     type="text"
   />
   <FormInput

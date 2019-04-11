@@ -13,7 +13,7 @@ function Form() {
         <FormInput name="firstName" type="text" label="First Name" />
         <FormInput name="lastName" type="text" label="Last Name" />
       </Row>
-      <FormInput name="address" type="text" label="Address" />
+      <FormInput name="street" type="text" label="Street" />
       <FormInput name="city" type="text" label="City" />
       <Row>
         <FormInput name="state" type="text" label="State" />

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Formik } from 'formik';
 
 import { CHECKOUT_PAYMENT_PATH } from '../../constants/routes';
+import { address } from '../../types';
 import ErrorBoundary from '../ErrorBoundary';
 import Page from '../Page';
 import Headline from '../Headline';
@@ -51,15 +52,7 @@ function CheckoutDelivery({ history, initialAddress, setAddress }) {
 
 CheckoutDelivery.propTypes = {
   history: PropTypes.object.isRequired,
-  initialAddress: PropTypes.shape({
-    firstName: PropTypes.string.isRequired,
-    lastName: PropTypes.string.isRequired,
-    address: PropTypes.string.isRequired,
-    city: PropTypes.string.isRequired,
-    state: PropTypes.string.isRequired,
-    zipCode: PropTypes.string.isRequired,
-    phone: PropTypes.string.isRequired
-  }).isRequired,
+  initialAddress: address.isRequired,
   setAddress: PropTypes.func.isRequired
 };
 

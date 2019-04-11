@@ -1,3 +1,11 @@
+import { connect } from 'react-redux';
+
 import BillingAddress from './BillingAddress';
 
-export default BillingAddress;
+function mapStateToProps(state) {
+  return {
+    address: state.shippingAddress
+  };
+}
+
+export default connect(mapStateToProps)(BillingAddress);

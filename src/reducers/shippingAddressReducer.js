@@ -3,7 +3,7 @@ import { CHECKOUT_SET_SHIPPING_ADDRESS } from '../constants/actionTypes';
 const initialState = {
   firstName: '',
   lastName: '',
-  address: '',
+  street: '',
   city: '',
   state: '',
   zipCode: '',

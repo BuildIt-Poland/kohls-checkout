@@ -44,7 +44,7 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
   <SectionHeader
     actionElement={
       <ModalTrigger
-        content=""
+        content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
         title="Billing Address"
       >
         <ForwardRef
@@ -63,7 +63,9 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
     <p
       className="c1"
     >
-      John Robinson
+      Taylor
+       
+      Swift
     </p>
     <p
       className="c2"
@@ -73,12 +75,12 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
     <p
       className="c2"
     >
-      New York, NY 10003
+      New Orlean
     </p>
     <p
       className="c2"
     >
-      (444) 444-4444
+      444 444 444
     </p>
   </address>
 </section>
