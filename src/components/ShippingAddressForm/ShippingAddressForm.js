@@ -8,6 +8,7 @@ import Row from './Row';
 function ShippingAddressForm() {
   return (
     <Form>
+      <Text>Please complete all fields.</Text>
       <Row>
         <FormInput name="firstName" type="text" label="First Name" placeholder="Type in name here" />
         <FormInput name="lastName" type="text" label="Last Name" />
