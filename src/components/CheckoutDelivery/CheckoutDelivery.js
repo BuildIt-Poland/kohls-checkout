@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Formik } from 'formik';
 
 import { CHECKOUT_PAYMENT_PATH } from '../../constants/routes';
+import ErrorBoundary from '../ErrorBoundary';
 import Page from '../Page';
 import Headline from '../Headline';
 import Content from '../Content';
@@ -28,20 +29,22 @@ function CheckoutDelivery({ history, initialAddress, setAddress }) {
 
   return (
     <Page title="Delivery">
-      <Formik initialValues={initialAddress} validationSchema={shippingAddressValidation} onSubmit={hadleFormSubmit}>
-        {({ submitForm }) => (
-          <>
-            <Content>
-              <Headline>Delivery</Headline>
-              <section>
-                <SectionHeader actionElement={modalTrigger}>Shipping Address</SectionHeader>
-                <Form />
-              </section>
-            </Content>
-            <NextStep label="Continue to Payment" onMoveToNextStep={submitForm} />
-          </>
-        )}
-      </Formik>
+      <ErrorBoundary>
+        <Formik initialValues={initialAddress} validationSchema={shippingAddressValidation} onSubmit={hadleFormSubmit}>
+          {({ submitForm }) => (
+            <>
+              <Content>
+                <Headline>Delivery</Headline>
+                <section>
+                  <SectionHeader actionElement={modalTrigger}>Shipping Address</SectionHeader>
+                  <Form />
+                </section>
+              </Content>
+              <NextStep label="Continue to Payment" onMoveToNextStep={submitForm} />
+            </>
+          )}
+        </Formik>
+      </ErrorBoundary>
     </Page>
   );
 }
