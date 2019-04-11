@@ -3,9 +3,7 @@ import { create } from 'react-test-renderer';
 
 import Select from '../Select';
 
-jest.mock('../../Icons', () => ({
-  Chevron: 'Chevron'
-}));
+jest.mock('../../Icons/Chevron', () => 'Chevron');
 
 describe('Select', () => {
   describe('When Select is enabled', () => {
