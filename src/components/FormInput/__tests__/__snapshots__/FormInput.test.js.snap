@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - FormInput FormInput without error renders correctly FormInput 1`] = `
+exports[`COMPONENT - FormInput renders correctly 1`] = `
 .c0 {
   position: relative;
   display: block;
@@ -9,53 +9,52 @@ exports[`COMPONENT - FormInput FormInput without error renders correctly FormInp
 }
 
 .c1 {
-  margin-top: 0.4rem;
-}
-
-<label
-  className="c0"
->
-  Dummy Label
-  <Input
-    className="c1"
-    placeholder="Dummy placeHolder"
-    type="text"
-  />
-</label>
-`;
-
-exports[`COMPONENT - FormInput Input with error renders correctly Input 1`] = `
-.c0 {
-  position: relative;
-  display: block;
-  padding-bottom: 2rem;
+  border: 1px solid #b0b0b0;
+  border-radius: 0;
+  height: 4rem;
+  padding: 0 1rem;
   font-size: 1.8rem;
-}
-
-.c2 {
-  font-size: 1.4rem;
-  color: #e0151d;
-  padding-top: 0.2rem;
-}
-
-.c1 {
+  outline: 0;
+  width: 100%;
   margin-top: 0.4rem;
+}
+
+.c1:disabled {
+  background-color: #b0b0b0;
+}
+
+.c1:focus {
+  border-color: #00a09f;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #666666;
+}
+
+.c1::-moz-placeholder {
+  color: #666666;
+}
+
+.c1:-ms-input-placeholder {
+  color: #666666;
+}
+
+.c1::placeholder {
+  color: #666666;
 }
 
 <label
   className="c0"
 >
-  Dummy Label
-  <Input
+  First Name
+  <input
     className="c1"
-    error="dummyError"
-    placeholder="Dummy placeHolder"
+    name="firstName"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Type first name here..."
     type="text"
+    value=""
   />
-  <div
-    className="c2"
-  >
-    dummyError
-  </div>
 </label>
 `;

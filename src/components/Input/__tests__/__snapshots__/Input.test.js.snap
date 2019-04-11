@@ -3,6 +3,7 @@
 exports[`COMPONENT - Input renders correctly Input 1`] = `
 .c0 {
   border: 1px solid #b0b0b0;
+  border-radius: 0;
   height: 4rem;
   padding: 0 1rem;
   font-size: 1.8rem;
@@ -18,6 +19,22 @@ exports[`COMPONENT - Input renders correctly Input 1`] = `
   border-color: #00a09f;
 }
 
+.c0::-webkit-input-placeholder {
+  color: #666666;
+}
+
+.c0::-moz-placeholder {
+  color: #666666;
+}
+
+.c0:-ms-input-placeholder {
+  color: #666666;
+}
+
+.c0::placeholder {
+  color: #666666;
+}
+
 <input
   className="c0"
   placeholder="Dummy placeHolder"
@@ -28,6 +45,7 @@ exports[`COMPONENT - Input renders correctly Input 1`] = `
 exports[`COMPONENT - Input renders correctly Input with error 1`] = `
 .c0 {
   border: 1px solid #e0151d;
+  border-radius: 0;
   height: 4rem;
   padding: 0 1rem;
   font-size: 1.8rem;
@@ -41,6 +59,22 @@ exports[`COMPONENT - Input renders correctly Input with error 1`] = `
 
 .c0:focus {
   border-color: #e0151d;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #666666;
+}
+
+.c0::-moz-placeholder {
+  color: #666666;
+}
+
+.c0:-ms-input-placeholder {
+  color: #666666;
+}
+
+.c0::placeholder {
+  color: #666666;
 }
 
 <input

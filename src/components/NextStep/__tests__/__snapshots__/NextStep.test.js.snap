@@ -26,6 +26,13 @@ exports[`COMPONENT - NextStep render NextStep component 1`] = `
   z-index: 6000;
 }
 
+@media (max-width:26.25em) {
+  .c0 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 <div
   className="c0"
 >

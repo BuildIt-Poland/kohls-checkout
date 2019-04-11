@@ -6,6 +6,7 @@ import Cart from '../Cart';
 jest.mock('../../ItemsList', () => 'ItemsList');
 jest.mock('../../OrderSummary', () => 'OrderSummary');
 jest.mock('../../InfoBanner', () => 'InfoBanner');
+jest.mock('../../NextStep', () => 'NextStep');
 jest.mock('react-router-dom', () => ({
   Link: 'Link'
 }));

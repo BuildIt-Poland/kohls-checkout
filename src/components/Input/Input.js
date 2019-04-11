@@ -5,6 +5,7 @@ import {
   fontMedium,
   borderWidthThin,
   colorLightGrey,
+  colorDarkGrey,
   colorTurquoise,
   colorRed
 } from '../../styles/designTokens';
@@ -24,6 +25,10 @@ const Input = styled.input`
 
   &:focus {
     border-color: ${props => (props.error ? colorRed : colorTurquoise)};
+  }
+
+  &::placeholder {
+    color: ${colorDarkGrey};
   }
 `;
 

@@ -6,7 +6,7 @@ import Label from './Label';
 import ErrorMessage from './ErrorMessage';
 import Input from './Input';
 
-const FormInput = ({ name, placeholder, type, label }) => {
+const FormInput = ({ name, label, placeholder, type }) => {
   return (
     <Field name={name}>
       {({ field, form }) => (
@@ -28,10 +28,10 @@ const FormInput = ({ name, placeholder, type, label }) => {
 };
 
 FormInput.propTypes = {
+  name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  error: PropTypes.string,
-  type: PropTypes.string.isRequired,
-  className: PropTypes.string
+  placeholder: PropTypes.string,
+  type: PropTypes.string
 };
 
 export default FormInput;

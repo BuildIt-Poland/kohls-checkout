@@ -2,9 +2,10 @@
 
 exports[`COMPONENT - FormInput ErrorMessage renders correctly 1`] = `
 .c0 {
+  position: absolute;
+  right: 0;
   font-size: 1.4rem;
   color: #e0151d;
-  padding-top: 0.2rem;
 }
 
 <div
