@@ -2,7 +2,7 @@ import React from 'react';
 import { create } from 'react-test-renderer';
 
 import FormSelect from '../';
-jest.mock('../../DropDown', () => 'DropDown');
+jest.mock('../../Select', () => 'Select');
 
 describe('COMPONENT - FormSelect', () => {
   describe('FormSelect without error', () => {

@@ -13,7 +13,7 @@ import {
   colorLightGrey
 } from '../../styles/designTokens';
 
-const DropDownContainer = styled.div`
+const SelectContainer = styled.div`
   position: relative;
 `;
 
@@ -24,7 +24,7 @@ const StyledChevronDown = styled(Chevron)`
   margin-right: 1rem;
 `;
 
-const Select = styled.select`
+const StyledSelect = styled.select`
   appearance: none;
   border: ${borderWidthThin} solid ${props => (props.error ? colorRed : colorBlack)};
   border-radius: ${borderRadiusLarge};
@@ -38,20 +38,20 @@ const Select = styled.select`
   }
 `;
 
-const DropDown = function({ className, label, error, type, options, ...props }) {
+const Select = function({ className, label, error, type, options, ...props }) {
   return (
-    <DropDownContainer className={className}>
-      <StyledChevronDown disabled={props.disabled} />
-      <Select error={error} {...props}>
+    <SelectContainer className={className}>
+      <StyledChevronDown disabled={props.disabled} fill={colorBlack} />
+      <StyledSelect error={error} {...props}>
         {options.map((props, index) => (
           <option key={index} {...props} />
         ))}
-      </Select>
-    </DropDownContainer>
+      </StyledSelect>
+    </SelectContainer>
   );
 };
 
-DropDown.propTypes = {
+Select.propTypes = {
   error: PropTypes.bool,
   options: PropTypes.arrayOf(
     PropTypes.shape({
@@ -62,4 +62,4 @@ DropDown.propTypes = {
   )
 };
 
-export default DropDown;
+export default Select;

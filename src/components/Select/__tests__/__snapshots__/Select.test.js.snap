@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DropDown When DropDown as an error Renders correctly the component 1`] = `
+exports[`Select When Select as an error Renders correctly the component 1`] = `
 .c0 {
   position: relative;
 }
@@ -41,7 +41,7 @@ exports[`DropDown When DropDown as an error Renders correctly the component 1`] 
     <g>
       <path
         d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
-        fill="black"
+        fill="#222222"
       />
     </g>
   </svg>
@@ -64,7 +64,7 @@ exports[`DropDown When DropDown as an error Renders correctly the component 1`] 
 </div>
 `;
 
-exports[`DropDown When DropDown is disabled Renders correctly the component 1`] = `
+exports[`Select When Select is disabled Renders correctly the component 1`] = `
 .c0 {
   position: relative;
 }
@@ -105,7 +105,7 @@ exports[`DropDown When DropDown is disabled Renders correctly the component 1`] 
     <g>
       <path
         d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
-        fill="black"
+        fill="#222222"
       />
     </g>
   </svg>
@@ -129,7 +129,7 @@ exports[`DropDown When DropDown is disabled Renders correctly the component 1`] 
 </div>
 `;
 
-exports[`DropDown When DropDown is enabled Renders correctly the component 1`] = `
+exports[`Select When Select is enabled Renders correctly the component 1`] = `
 .c0 {
   position: relative;
 }
@@ -170,7 +170,7 @@ exports[`DropDown When DropDown is enabled Renders correctly the component 1`] =
     <g>
       <path
         d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
-        fill="black"
+        fill="#222222"
       />
     </g>
   </svg>

@@ -1,13 +1,14 @@
-import DropDown from '../';
 import React from 'react';
 import { create } from 'react-test-renderer';
+
+import Select from '../Select';
 
 jest.mock('../../Icons', () => ({
   Chevron: 'Chevron'
 }));
 
-describe('DropDown', () => {
-  describe('When DropDown is enabled', () => {
+describe('Select', () => {
+  describe('When Select is enabled', () => {
     it('Renders correctly the component', () => {
       const props = {
         label: 'Select Date',
@@ -29,12 +30,12 @@ describe('DropDown', () => {
         ]
       };
 
-      const component = create(<DropDown {...props} />);
+      const component = create(<Select {...props} />);
       expect(component.toJSON()).toMatchSnapshot();
     });
   });
 
-  describe('When DropDown is disabled', () => {
+  describe('When Select is disabled', () => {
     it('Renders correctly the component', () => {
       const props = {
         label: 'Select Date',
@@ -55,12 +56,12 @@ describe('DropDown', () => {
         ]
       };
 
-      const component = create(<DropDown {...props} />);
+      const component = create(<Select {...props} />);
       expect(component.toJSON()).toMatchSnapshot();
     });
   });
 
-  describe('When DropDown as an error', () => {
+  describe('When Select as an error', () => {
     it('Renders correctly the component', () => {
       const props = {
         label: 'Select Date',
@@ -81,7 +82,7 @@ describe('DropDown', () => {
         ]
       };
 
-      const component = create(<DropDown {...props} />);
+      const component = create(<Select {...props} />);
       expect(component.toJSON()).toMatchSnapshot();
     });
   });

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { spacingSmall, colorRed } from '../../styles/designTokens';
-import DropDown from '../DropDown';
+import Select from '../Select';
 
 const Label = styled.label`
   margin-bottom: ${spacingSmall};
@@ -18,7 +18,7 @@ const SelectForm = function({ className, label, error, ...props }) {
   return (
     <Label className={className}>
       {label}
-      <DropDown error={error} {...props} />
+      <Select error={error} {...props} />
       {error && <ErrorMessage>{error}</ErrorMessage>}
     </Label>
   );

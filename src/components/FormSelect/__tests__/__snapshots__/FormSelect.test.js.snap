@@ -14,7 +14,7 @@ exports[`COMPONENT - FormSelect FormSelect with error renders correctly FormSele
   className="c0"
 >
   Dummy Label
-  <DropDown
+  <Select
     error="dummyError"
     placeholder="Dummy placeHolder"
     type="text"
@@ -36,7 +36,7 @@ exports[`COMPONENT - FormSelect FormSelect without error renders correctly FormS
   className="c0"
 >
   Dummy Label
-  <DropDown
+  <Select
     placeholder="Dummy placeHolder"
     type="text"
   />
