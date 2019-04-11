@@ -1,55 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Cart renders Cart component 1`] = `
-Array [
-  <InfoBanner>
-    You have received 
-    <strong>
-      free shipping
-    </strong>
-    !
-  </InfoBanner>,
-  .c0 {
-  padding-top: 3rem;
-  padding-bottom: 12rem;
-}
-
-.c2 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.c1 {
-  max-width: 100rem;
-  padding: 0 2rem;
-  margin: 0 auto;
-}
-
-<article
-    className="c0"
-  >
-    <section
-      className="c1"
-    >
-      <h1
-        className="c2"
-      >
-        Cart
-      </h1>
-      <ItemsList />
-    </section>
-    <OrderSummary />
-    <NextStep
-      label="Checkout"
-      to="/checkout/delivery"
-    />
-  </article>,
-]
-`;
-
 exports[`COMPONENT - Cart renders correctly if there are NO items in cart 1`] = `
 .c0 {
   padding-top: 3rem;
