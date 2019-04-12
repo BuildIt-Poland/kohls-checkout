@@ -10,7 +10,7 @@ import Headline from '../Headline';
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
 import Content from '../Content';
-import ItemsList from '../ItemsList';
+import CartItemsList from '../CartItemsList';
 
 function Cart({ items }) {
   const isCartNotEmpty = !!totalCartItemsCount(items);
@@ -25,7 +25,7 @@ function Cart({ items }) {
       <Page title="Cart">
         <Content>
           <Headline>Cart</Headline>
-          <ItemsList />
+          <CartItemsList items={items} />
         </Content>
         {isCartNotEmpty && <OrderSummary />}
         {isCartNotEmpty && <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />}
