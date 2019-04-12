@@ -7,6 +7,12 @@ exports[`COMPONENT - Wrapper renders Wrapper component 1`] = `
   grid-gap: 20px;
 }
 
+@media (max-width:26.25em) {
+  .c0 {
+    display: block;
+  }
+}
+
 <div
   className="c0"
 />

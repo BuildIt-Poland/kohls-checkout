@@ -73,6 +73,18 @@ exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
   margin-bottom: 3rem;
 }
 
+@media (max-width:26.25em) {
+  .c2 {
+    display: block;
+  }
+}
+
+@media (max-width:26.25em) {
+  .c4 {
+    margin-top: 1rem;
+  }
+}
+
 <section
   className="c0"
 >
