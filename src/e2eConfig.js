@@ -25,7 +25,10 @@ const openCypress = baseUrl =>
     }
   });
 
-const runCypress = () => run().then(process.exit);
+const runCypress = () =>
+  run()
+    .then(process.exit)
+    .catch(process.exit(1));
 
 const e2eRunDev = baseUrl => runApp().then(openCypress(baseUrl));
 
