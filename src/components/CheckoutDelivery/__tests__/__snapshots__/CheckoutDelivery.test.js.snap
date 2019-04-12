@@ -31,20 +31,20 @@ exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
     >
       Delivery
     </h1>
-    <section>
-      <SectionHeader
-        actionElement={
-          <ModalTrigger
-            content="Items being shipped may need to be divided into two or more shipments. This will not affect shipping charges."
-            title="Shipping & Pickup"
-          />
-        }
-      >
-        Shipping Address
-      </SectionHeader>
-      <Form />
-    </section>
+    <SectionHeader
+      actionElement={
+        <ModalTrigger
+          content="Items being shipped may need to be divided into two or more shipments. This will not affect shipping charges."
+          title="Shipping & Pickup"
+        />
+      }
+    >
+      Shipping Address
+    </SectionHeader>
+    <Form />
   </section>
+  <ItemsList />
+  <OrderSummary />
   <NextStep
     label="Continue to Payment"
     onMoveToNextStep={[Function]}

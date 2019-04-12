@@ -1,11 +1,11 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import NoItemsMessage from '../NoItemsMessage';
+import Wrapper from '../Wrapper';
 
-describe('COMPONENT - ItemsList NoItemsMessage', () => {
+describe('COMPONENT - ItemsList Wrapper', () => {
   it('renders ItemsList component', () => {
-    const component = create(<NoItemsMessage />);
+    const component = create(<Wrapper />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

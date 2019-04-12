@@ -5,7 +5,13 @@ import CartItemControls from '../CartItemControls';
 
 describe('COMPONENT - CartItemControls', () => {
   it('renders correctly', () => {
-    const { getByTestId } = render(<CartItemControls />);
+    const props = {
+      quantity: 1,
+      increaseQuantity: jest.fn(),
+      decreaseQuantity: jest.fn()
+    };
+
+    const { getByTestId } = render(<CartItemControls {...props} />);
 
     expect(getByTestId('increase-quantity-button')).toBeDefined();
     expect(getByTestId('decrease-quantity-button')).toBeDefined();
