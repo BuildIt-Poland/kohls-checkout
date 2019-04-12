@@ -3,7 +3,7 @@ import { create } from 'react-test-renderer';
 
 import Cart from '../Cart';
 
-jest.mock('../../ItemsList', () => 'ItemsList');
+jest.mock('../../CartItemsList', () => 'CartItemsList');
 jest.mock('../../OrderSummary', () => 'OrderSummary');
 jest.mock('../../InfoBanner', () => 'InfoBanner');
 jest.mock('../../NextStep', () => 'NextStep');

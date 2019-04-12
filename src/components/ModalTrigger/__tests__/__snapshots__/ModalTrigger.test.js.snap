@@ -27,6 +27,7 @@ exports[`COMPONENT - ModalTrigger renders ModalTrigger with closed Modal 1`] = `
 
 <div>
   <button
+    aria-label="Show Test Modal Title help"
     class="c0"
     data-testid="modal-trigger"
   >
