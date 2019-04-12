@@ -32,9 +32,6 @@ List of proven, backed by big communities solutions, which help to deliver **hig
   * if certain threshold is not satisfied code can't be merged
 * Performance / accessibility insights with [Lighthouse](https://github.com/GoogleChromeLabs/lighthousebot)
   * done on each pull request automatically
-* Mocked API with [json-server](https://github.com/typicode/json-server)
-  * no need to wait for full backend API implementation
-  * just after frontend-backend contract is established front-end engineers could start implementing components
 * Application styled with [styled-components](https://www.styled-components.com/)
   * each component has it's own isolated style
   * compose components not styles -- prevents huge amount of duplication in large codebases
