@@ -1,7 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
-.c0 {
+Array [
+  <SectionHeader
+    actionElement={
+      <ModalTrigger
+        content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
+        title="Billing Address"
+      >
+        <ForwardRef
+          underline={true}
+        >
+          Open Modal
+        </ForwardRef>
+      </ModalTrigger>
+    }
+  >
+    Billing Address
+  </SectionHeader>,
+  .c0 {
   padding: 0;
   font-style: normal;
 }
@@ -40,24 +57,7 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
   margin-bottom: 0;
 }
 
-<section>
-  <SectionHeader
-    actionElement={
-      <ModalTrigger
-        content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
-        title="Billing Address"
-      >
-        <ForwardRef
-          underline={true}
-        >
-          Open Modal
-        </ForwardRef>
-      </ModalTrigger>
-    }
-  >
-    Billing Address
-  </SectionHeader>
-  <address
+<address
     className="c0"
   >
     <p
@@ -82,6 +82,6 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
     >
       444 444 444
     </p>
-  </address>
-</section>
+  </address>,
+]
 `;
