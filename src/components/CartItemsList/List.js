@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import Content from '../Content';
-
-const List = styled(Content)`
+const List = styled.ul`
+  padding: 0;
+  margin: 0;
   list-style: none;
 `;
 

@@ -7,6 +7,8 @@ jest.mock('react-router-dom', () => ({
   Link: 'Link'
 }));
 jest.mock('../../SectionHeader', () => 'SectionHeader');
+jest.mock('../../OrderSummary', () => 'OrderSummary');
+jest.mock('../../ItemsList', () => 'ItemsList');
 jest.mock('../../NextStep', () => 'NextStep');
 jest.mock('../Form', () => 'Form');
 

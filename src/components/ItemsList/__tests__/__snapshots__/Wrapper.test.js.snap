@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - ItemsList Wrapper renders ItemsList component 1`] = `
+.c0 {
+  margin-top: 3rem;
+  border-top: 1px solid #b0b0b0;
+  padding-top: 3rem;
+}
+
+<section
+  className="c0"
+/>
+`;
