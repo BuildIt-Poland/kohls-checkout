@@ -16,8 +16,8 @@ exports[`COMPONENT - Hitbox renders correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-width: 2rem;
-  min-height: 2rem;
+  min-width: 4rem;
+  min-height: 4rem;
   cursor: pointer;
 }
 

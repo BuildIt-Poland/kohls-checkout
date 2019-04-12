@@ -9,8 +9,8 @@ const Hitbox = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 2rem;
-  min-height: 2rem;
+  min-width: 4rem;
+  min-height: 4rem;
   cursor: pointer;
 
   svg {

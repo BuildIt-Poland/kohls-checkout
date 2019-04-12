@@ -20,23 +20,6 @@ exports[`COMPONENT - Cart renders correctly if there are NO items in cart 1`] = 
   margin: 0 auto;
 }
 
-.c3 {
-  font-size: 1.8rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  margin-bottom: 1rem;
-  color: #222222;
-  color: #222222;
-  padding-bottom: 3rem;
-}
-
-.c3:last-child {
-  margin-bottom: 0;
-}
-
 <article
   className="c0"
 >
@@ -48,11 +31,9 @@ exports[`COMPONENT - Cart renders correctly if there are NO items in cart 1`] = 
     >
       Cart
     </h1>
-    <p
-      className="c3"
-    >
-      There are no items in your cart.
-    </p>
+    <CartItemsList
+      items={Array []}
+    />
   </section>
 </article>
 `;
@@ -85,16 +66,6 @@ Array [
   margin: 0 auto;
 }
 
-.c3 {
-  width: 100%;
-  border: 2px solid #e0151d;
-  color: #222222;
-  background-color: #fadcdd;
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding: 1rem;
-}
-
 <article
     className="c0"
   >
@@ -106,12 +77,26 @@ Array [
       >
         Cart
       </h1>
-      <p
-        className="c3"
-        role="alert"
-      >
-        Oops, something went wrong.
-      </p>
+      <CartItemsList
+        items={
+          Array [
+            Object {
+              "id": "64a673c2-59e3-11e9-8647-d663bd873d93",
+              "imgUrl": "https://mosaic03.ztat.net/vgs/media/catalog_hd/LE/42/2T/01/0K/11/LE422T010-K11@8.1.jpg",
+              "name": "RIDER JACKET - jeans jacket - dark blue",
+              "price": Object {
+                "discount": 12500,
+                "regular": 24099,
+              },
+              "quantity": 3,
+              "variants": Object {
+                "color": "Dark Blue",
+                "size": "46 Medium",
+              },
+            },
+          ]
+        }
+      />
     </section>
     <OrderSummary />
     <NextStep
