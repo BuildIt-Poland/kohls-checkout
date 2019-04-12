@@ -1,34 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import { Field } from 'formik';
 
-import { spacingSmall, colorRed } from '../../styles/designTokens';
-import Input from '../Input';
+import Label from './Label';
+import ErrorMessage from './ErrorMessage';
+import Input from './Input';
 
-const Label = styled.label`
-  margin-bottom: ${spacingSmall};
-`;
-
-const ErrorMessage = styled.div`
-  font-style: italic;
-  color: ${colorRed};
-`;
-
-const InputForm = ({ className, label, error, ...props }) => {
+const FormInput = ({ name, label, placeholder, type }) => {
   return (
-    <Label className={className}>
-      {label}
-      <Input error={error} {...props} />
-      {error && <ErrorMessage>{error}</ErrorMessage>}
-    </Label>
+    <Field name={name}>
+      {({ field, form }) => (
+        <Label>
+          {label}
+          <Input
+            type={type}
+            placeholder={placeholder}
+            error={form.touched[field.name] && form.errors[field.name]}
+            {...field}
+          />
+          {form.touched[field.name] && form.errors[field.name] && (
+            <ErrorMessage>{form.errors[field.name]}</ErrorMessage>
+          )}
+        </Label>
+      )}
+    </Field>
   );
 };
 
-InputForm.propTypes = {
+FormInput.propTypes = {
+  name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  error: PropTypes.string,
-  type: PropTypes.string.isRequired,
-  className: PropTypes.string
+  placeholder: PropTypes.string,
+  type: PropTypes.string
 };
 
-export default InputForm;
+export default FormInput;

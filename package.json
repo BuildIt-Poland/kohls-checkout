@@ -66,6 +66,7 @@
   },
   "dependencies": {
     "@sentry/browser": "4.6.5",
+    "formik": "1.5.2",
     "lodash.noop": "3.0.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
@@ -73,7 +74,8 @@
     "react-router-dom": "5.0.0",
     "react-scripts": "2.1.8",
     "redux": "4.0.1",
-    "styled-components": "4.2.0"
+    "styled-components": "4.2.0",
+    "yup": "0.27.0"
   },
   "devDependencies": {
     "cypress": "3.2.0",

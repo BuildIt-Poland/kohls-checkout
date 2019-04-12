@@ -1,6 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
+<<<<<<< HEAD
 Array [
   .c0 {
   font-size: 2.4rem;
@@ -68,6 +69,9 @@ Array [
     </button>
   </h2>,
   .c0 {
+=======
+.c0 {
+>>>>>>> master
   padding: 0;
   font-style: normal;
 }
@@ -80,6 +84,7 @@ Array [
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
+  color: #222222;
   color: #222222;
   margin: 0;
 }
@@ -97,6 +102,7 @@ Array [
   margin: 0;
   margin-bottom: 1rem;
   color: #222222;
+  color: #222222;
   margin: 0;
 }
 
@@ -104,13 +110,38 @@ Array [
   margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 <address
     className="c0"
   >
+=======
+<section>
+  <SectionHeader
+    actionElement={
+      <ModalTrigger
+        content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
+        title="Billing Address"
+      >
+        <ForwardRef
+          underline={true}
+        >
+          Open Modal
+        </ForwardRef>
+      </ModalTrigger>
+    }
+  >
+    Billing Address
+  </SectionHeader>
+  <address
+    className="c0"
+  >
+>>>>>>> master
     <p
       className="c1"
     >
-      John Robinson
+      Taylor
+       
+      Swift
     </p>
     <p
       className="c2"
@@ -120,12 +151,12 @@ Array [
     <p
       className="c2"
     >
-      New York, NY 10003
+      New Orlean
     </p>
     <p
       className="c2"
     >
-      (444) 444-4444
+      444 444 444
     </p>
   </address>,
 ]

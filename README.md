@@ -25,7 +25,7 @@ List of proven, backed by big communities solutions, which help to deliver **hig
   * easy to write and maintain ent-to-end tests
   * front-end engineers encourage to write their own tests
   * possibility to enroll visual regression tests
-* [Rollbar](https://rollbar.com/) as JavaScript error reporting tool
+* [Sentry](https://sentry.io/) as JavaScript error reporting tool
   * when some unfortunate error appears on production it's automatically reported
 * [Codecov](https://codecov.io/) test coverage reporting tool
   * make sure unit tests coverage for app pass declared threshold

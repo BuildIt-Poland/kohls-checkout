@@ -1,14 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
+import { address } from '../../types';
 import SectionHeader from '../SectionHeader';
 import ModalTrigger from '../ModalTrigger';
 import Address from './Address';
 import Text from './Text';
 
-function BillingAddress({ name, address }) {
+function BillingAddress({ address }) {
   const modalTrigger = (
-    <ModalTrigger title="Billing Address" content="">
+    <ModalTrigger
+      title="Billing Address"
+      content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
+    >
       <Text underline>Open Modal</Text>
     </ModalTrigger>
   );
@@ -16,23 +19,18 @@ function BillingAddress({ name, address }) {
     <>
       <SectionHeader actionElement={modalTrigger}>Billing Address</SectionHeader>
       <Address>
-        <Text bold>{name}</Text>
+        <Text bold>
+          {address.firstName} {address.lastName}
+        </Text>
         <Text>{address.street}</Text>
         <Text>{address.city}</Text>
-        <Text>{address.phoneNumber}</Text>
+        <Text>{address.phone}</Text>
       </Address>
     </>
   );
 }
 
-const address = PropTypes.shape({
-  street: PropTypes.string.isRequired,
-  city: PropTypes.string.isRequired,
-  phoneNumber: PropTypes.string.isRequired
-});
-
 BillingAddress.propTypes = {
-  name: PropTypes.string.isRequired,
   address: address.isRequired
 };
 

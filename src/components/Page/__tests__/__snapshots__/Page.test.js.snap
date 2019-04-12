@@ -8,5 +8,9 @@ exports[`COMPONENT - Page renders correctly 1`] = `
 
 <article
   className="c0"
-/>
+>
+  <h1>
+    Hello there!
+  </h1>
+</article>
 `;

@@ -1,6 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Cart renders Cart component 1`] = `
+exports[`COMPONENT - Cart renders correctly if there are NO items in cart 1`] = `
+.c0 {
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+
+.c2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+<article
+  className="c0"
+>
+  <section
+    className="c1"
+  >
+    <h1
+      className="c2"
+    >
+      Cart
+    </h1>
+    <ItemsList />
+  </section>
+</article>
+`;
+
+exports[`COMPONENT - Cart renders correctly if there are some items in cart 1`] = `
 Array [
   <InfoBanner>
     You have received 
@@ -20,31 +56,6 @@ Array [
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
-}
-
-.c4 {
-  background: #00a09f;
-  color: #ffffff;
-  display: block;
-  font-size: 2.4rem;
-  font-weight: 700;
-  padding: 1.2rem;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  max-width: 96rem;
-  margin: 0 auto;
-}
-
-.c3 {
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  background: #ffffff;
-  border-top: 1px solid #b0b0b0;
-  z-index: 6000;
 }
 
 .c1 {
@@ -67,17 +78,10 @@ Array [
       <ItemsList />
     </section>
     <OrderSummary />
-    <div
-      className="c3"
-    >
-      <Link
-        className="c4"
-        data-testid="next-step-button"
-        to="/checkout/delivery"
-      >
-        Checkout
-      </Link>
-    </div>
+    <NextStep
+      label="Checkout"
+      to="/checkout/delivery"
+    />
   </article>,
 ]
 `;

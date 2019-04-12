@@ -39,7 +39,7 @@ const initialState = {
   ]
 };
 
-describe('cart reducer', () => {
+describe('REDUCER - cart reducer', () => {
   it('returns the initial state', () => {
     expect(reducer(initialState, {})).toEqual(initialState);
   });
