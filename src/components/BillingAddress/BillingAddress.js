@@ -13,7 +13,7 @@ function BillingAddress({ name, address }) {
     </ModalTrigger>
   );
   return (
-    <section>
+    <>
       <SectionHeader actionElement={modalTrigger}>Billing Address</SectionHeader>
       <Address>
         <Text bold>{name}</Text>
@@ -21,7 +21,7 @@ function BillingAddress({ name, address }) {
         <Text>{address.city}</Text>
         <Text>{address.phoneNumber}</Text>
       </Address>
-    </section>
+    </>
   );
 }
 

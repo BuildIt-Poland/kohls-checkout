@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import { CREDIT_CARD_VISA, CREDIT_CARD_MASTER_CARD, CREDIT_CARD_AM_EX } from '../../constants/creditCardTypes';
 import { creditCardType } from '../../utils';
-import SectionHeader from '../SectionHeader';
+import SectionHeaderBase from '../SectionHeader';
+
+const SectionHeader = styled(SectionHeaderBase)`
+  margin: 0;
+`;
 
 export function creditCardName(cardNumber) {
   const cardType = creditCardType(cardNumber);
@@ -21,7 +26,7 @@ export function creditCardName(cardNumber) {
 }
 
 function CardName({ cardNumber }) {
-  return <SectionHeader bold>{creditCardName(cardNumber)}</SectionHeader>;
+  return <SectionHeader>{creditCardName(cardNumber)}</SectionHeader>;
 }
 
 CardName.propTypes = {

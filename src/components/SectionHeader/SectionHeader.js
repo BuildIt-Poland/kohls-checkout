@@ -13,9 +13,9 @@ const Header = styled.h2`
   align-items: center;
 `;
 
-function SectionHeader({ actionElement, children }) {
+function SectionHeader({ actionElement, children, ...props }) {
   return (
-    <Header>
+    <Header {...props}>
       {children}
       {actionElement}
     </Header>
