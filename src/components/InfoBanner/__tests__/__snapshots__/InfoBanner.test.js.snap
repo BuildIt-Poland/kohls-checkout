@@ -10,10 +10,11 @@ exports[`COMPONENT - infoBanner renders correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem 0;
   background-color: #00a09f;
   color: #ffffff;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .c1 {

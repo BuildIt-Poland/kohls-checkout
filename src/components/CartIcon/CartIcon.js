@@ -7,6 +7,7 @@ import styled from 'styled-components';
 
 import { item } from '../../types';
 import { totalCartItemsCount } from '../../utils';
+import ErrorBoundary from '../ErrorBoundary';
 import { Cart as SimpleCartIcon } from '../Icons';
 import Count from './Count';
 
@@ -21,10 +22,12 @@ const Link = styled(LinkBase)`
 
 function CartIcon({ items }) {
   return (
-    <Link data-testid="cart-icon" to="/cart">
-      <Count>{totalCartItemsCount(items)}</Count>
-      <SimpleCartIcon />
-    </Link>
+    <ErrorBoundary>
+      <Link data-testid="cart-icon" to="/cart">
+        <Count>{totalCartItemsCount(items)}</Count>
+        <SimpleCartIcon />
+      </Link>
+    </ErrorBoundary>
   );
 }
 

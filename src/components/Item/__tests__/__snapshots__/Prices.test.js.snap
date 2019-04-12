@@ -10,6 +10,7 @@ exports[`COMPONENT - Item Prices renders correctly 1`] = `
   margin: 0;
   margin-bottom: 1rem;
   color: #222222;
+  color: #222222;
 }
 
 .c4:last-child {
@@ -98,6 +99,7 @@ exports[`COMPONENT - Item Prices renders correctly withregular price only withou
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
+  color: #222222;
   color: #222222;
 }
 

@@ -5,7 +5,11 @@ import Page from '../Page';
 
 describe('COMPONENT - Page', () => {
   it('renders correctly', () => {
-    const component = create(<Page />);
+    const component = create(
+      <Page>
+        <h1>Hello there!</h1>
+      </Page>
+    );
 
     expect(component.toJSON()).toMatchSnapshot();
   });

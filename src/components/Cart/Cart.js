@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
+import { item } from '../../types';
+import { totalCartItemsCount } from '../../utils';
 import Page from '../Page';
 import InfoBanner from '../InfoBanner';
 import Headline from '../Headline';
@@ -9,22 +12,30 @@ import OrderSummary from '../OrderSummary';
 import Content from '../Content';
 import ItemsList from '../ItemsList';
 
-function Cart() {
+function Cart({ items }) {
+  const isCartNotEmpty = !!totalCartItemsCount(items);
+
   return (
     <>
-      <InfoBanner>
-        You have received <strong>free shipping</strong>!
-      </InfoBanner>
+      {isCartNotEmpty && (
+        <InfoBanner>
+          You have received <strong>free shipping</strong>!
+        </InfoBanner>
+      )}
       <Page title="Cart">
         <Content>
           <Headline>Cart</Headline>
           <ItemsList />
         </Content>
-        <OrderSummary />
-        <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />
+        {isCartNotEmpty && <OrderSummary />}
+        {isCartNotEmpty && <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />}
       </Page>
     </>
   );
 }
+
+Cart.propTypes = {
+  items: PropTypes.arrayOf(item)
+};
 
 export default Cart;

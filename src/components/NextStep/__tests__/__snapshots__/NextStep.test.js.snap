@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - NextStep render NextStep component 1`] = `
+exports[`COMPONENT - NextStep render button if onMoveToNextStep handler is provided 1`] = `
 .c1 {
   background: #00a09f;
+  border: 0;
   color: #ffffff;
   display: block;
   font-size: 2.4rem;
@@ -11,8 +12,17 @@ exports[`COMPONENT - NextStep render NextStep component 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  width: 100%;
   max-width: 96rem;
   margin: 0 auto;
+}
+
+.c1:not(:disabled) {
+  cursor: pointer;
+}
+
+.c1:disabled {
+  background-color: #b0b0b0;
 }
 
 .c0 {
@@ -26,13 +36,76 @@ exports[`COMPONENT - NextStep render NextStep component 1`] = `
   z-index: 6000;
 }
 
+@media (max-width:26.25em) {
+  .c0 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    data-testid="next-step-button"
+    onClick={[MockFunction]}
+  >
+    Next step
+  </button>
+</div>
+`;
+
+exports[`COMPONENT - NextStep renders Link if to prop is provided 1`] = `
+.c1 {
+  background: #00a09f;
+  border: 0;
+  color: #ffffff;
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 1.2rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.c1:not(:disabled) {
+  cursor: pointer;
+}
+
+.c1:disabled {
+  background-color: #b0b0b0;
+}
+
+.c0 {
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  border-top: 1px solid #b0b0b0;
+  z-index: 6000;
+}
+
+@media (max-width:26.25em) {
+  .c0 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 <div
   className="c0"
 >
   <Link
     className="c1"
     data-testid="next-step-button"
-    to="/"
+    to="/cart"
   >
     Next step
   </Link>

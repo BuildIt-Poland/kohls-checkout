@@ -5,8 +5,10 @@ import {
   colorLightGrey,
   borderWidthThin,
   spacingSmall,
+  spacingMedium,
   zIndexStickyElement
 } from '../../styles/designTokens';
+import media from '../../styles/media';
 
 const Wrapper = styled.div`
   bottom: 0;
@@ -17,6 +19,11 @@ const Wrapper = styled.div`
   background: ${colorWhite};
   border-top: ${borderWidthThin} solid ${colorLightGrey};
   z-index: ${zIndexStickyElement};
+
+  ${media.phone`
+    padding-left: ${spacingMedium};
+    padding-right: ${spacingMedium};
+  `};
 `;
 
 export default Wrapper;
