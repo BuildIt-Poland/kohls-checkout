@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardName COMPONENT - CardName renders CardName component 1`] = `
-.c0 {
+.c1 {
   font-size: 2.4rem;
   text-align: left;
   margin: 1rem 0;
@@ -19,8 +19,12 @@ exports[`CardName COMPONENT - CardName renders CardName component 1`] = `
   align-items: center;
 }
 
+.c0 {
+  margin: 0;
+}
+
 <h2
-  className="c0"
+  className="c0 c1"
 >
   Master Card
 </h2>
