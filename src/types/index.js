@@ -1,6 +1,6 @@
 // Centralised type definitions for commonly used ones
 
-import { shape, number, string } from 'prop-types';
+import { shape, number, string, arrayOf, bool } from 'prop-types';
 
 export const itemVariants = shape({
   size: string,
@@ -20,3 +20,11 @@ export const item = shape({
   price: itemPrice.isRequired,
   quantity: number.isRequired
 });
+
+export const selectOptions = arrayOf(
+  shape({
+    label: string.isRequired,
+    value: string.isRequired,
+    disabled: bool
+  })
+);

@@ -66,6 +66,7 @@
   },
   "dependencies": {
     "@sentry/browser": "4.6.5",
+    "formik": "1.5.2",
     "lodash.noop": "3.0.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",

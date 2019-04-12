@@ -1,65 +1,31 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Chevron from '../Icons/Chevron';
+import { string, bool, object } from 'prop-types';
 
-import {
-  borderRadiusLarge,
-  spacingSmall,
-  borderWidthThin,
-  colorBlack,
-  colorRed,
-  colorWhite,
-  colorLightGrey
-} from '../../styles/designTokens';
+import Wrapper from './Wrapper';
+import ChevronnDown from './ChevronDown';
+import StyledSelect from './StyledSelect';
+import { selectOptions } from '../../types';
 
-const SelectContainer = styled.div`
-  position: relative;
-`;
-
-const StyledChevronDown = styled(Chevron)`
-  position: absolute;
-  top: 1.3rem;
-  right: 0;
-  margin-right: 1rem;
-`;
-
-const StyledSelect = styled.select`
-  appearance: none;
-  border: ${borderWidthThin} solid ${props => (props.error ? colorRed : colorBlack)};
-  border-radius: ${borderRadiusLarge};
-  background-color: ${colorWhite};
-  padding: ${spacingSmall};
-  outline: 0;
-  width: 100%;
-
-  :disabled {
-    background-color: ${colorLightGrey};
-  }
-`;
-
-const Select = function({ className, label, error, type, options, ...props }) {
+function Select({ value, options, disabled, error, field }) {
   return (
-    <SelectContainer className={className}>
-      <StyledChevronDown disabled={props.disabled} fill={colorBlack} />
-      <StyledSelect error={error} {...props}>
-        {options.map((props, index) => (
-          <option key={index} {...props} />
+    <Wrapper>
+      <ChevronnDown />
+      <StyledSelect error={error} disabled={disabled} {...field}>
+        <option value="">{value}</option>
+        {options.map(({ label, value, disabled }, index) => (
+          <option key={index} label={label} value={value} disabled={disabled} />
         ))}
       </StyledSelect>
-    </SelectContainer>
+    </Wrapper>
   );
-};
+}
 
 Select.propTypes = {
-  error: PropTypes.bool,
-  options: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired,
-      disabled: PropTypes.bool
-    })
-  )
+  value: string.isRequired,
+  options: selectOptions.isRequired,
+  error: string,
+  disabled: bool,
+  field: object
 };
 
 export default Select;

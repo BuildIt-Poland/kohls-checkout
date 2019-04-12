@@ -7,7 +7,7 @@ exports[`Select When Select as an error Renders correctly the component 1`] = `
 
 .c1 {
   position: absolute;
-  top: 1.3rem;
+  bottom: 1.3rem;
   right: 0;
   margin-right: 1rem;
 }
@@ -33,15 +33,15 @@ exports[`Select When Select as an error Renders correctly the component 1`] = `
 >
   <Chevron
     className="c1"
-    fill="#222222"
   />
   <select
     className="c2"
   >
     <option
-      label="MM"
-      value={null}
-    />
+      value=""
+    >
+      MM
+    </option>
     <option
       label="1"
       value="1"
@@ -61,7 +61,7 @@ exports[`Select When Select is disabled Renders correctly the component 1`] = `
 
 .c1 {
   position: absolute;
-  top: 1.3rem;
+  bottom: 1.3rem;
   right: 0;
   margin-right: 1rem;
 }
@@ -87,17 +87,16 @@ exports[`Select When Select is disabled Renders correctly the component 1`] = `
 >
   <Chevron
     className="c1"
-    disabled={true}
-    fill="#222222"
   />
   <select
     className="c2"
-    disabled={true}
+    disabled="true"
   >
     <option
-      label="MM"
-      value={null}
-    />
+      value=""
+    >
+      MM
+    </option>
     <option
       label="1"
       value="1"
@@ -117,7 +116,7 @@ exports[`Select When Select is enabled Renders correctly the component 1`] = `
 
 .c1 {
   position: absolute;
-  top: 1.3rem;
+  bottom: 1.3rem;
   right: 0;
   margin-right: 1rem;
 }
@@ -126,7 +125,7 @@ exports[`Select When Select is enabled Renders correctly the component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: 1px solid #e0151d;
+  border: 1px solid #222222;
   border-radius: 0.75rem;
   background-color: #ffffff;
   padding: 1rem;
@@ -143,17 +142,15 @@ exports[`Select When Select is enabled Renders correctly the component 1`] = `
 >
   <Chevron
     className="c1"
-    disabled={false}
-    fill="#222222"
   />
   <select
     className="c2"
-    disabled={false}
   >
     <option
-      label="MM"
-      value={null}
-    />
+      value=""
+    >
+      MM
+    </option>
     <option
       label="1"
       value="1"

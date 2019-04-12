@@ -1,34 +1,33 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
+import { Formik } from 'formik';
 
-import FormSelect from '../';
+import FormSelect from '../FormSelect';
 jest.mock('../../Select', () => 'Select');
 
+const selectOptions = [
+  {
+    label: '01',
+    value: '1'
+  },
+  {
+    label: '02',
+    value: '2'
+  }
+];
+
 describe('COMPONENT - FormSelect', () => {
-  describe('FormSelect without error', () => {
-    it('renders correctly FormSelect', () => {
-      const props = {
-        label: 'Dummy Label',
-        placeholder: 'Dummy placeHolder',
-        type: 'text'
-      };
-      const component = create(<FormSelect {...props} />);
+  it('renders correctly FormSelect', () => {
+    const component = create(
+      <Formik
+        initialValues={{
+          select: ''
+        }}
+      >
+        <FormSelect name="select" label="MM" value="Select value" options={selectOptions} form="" />
+      </Formik>
+    );
 
-      expect(component.toJSON()).toMatchSnapshot();
-    });
-  });
-
-  describe('FormSelect with error', () => {
-    it('renders correctly FormSelect', () => {
-      const props = {
-        label: 'Dummy Label',
-        placeholder: 'Dummy placeHolder',
-        type: 'text',
-        error: 'dummyError'
-      };
-      const component = create(<FormSelect {...props} />);
-
-      expect(component.toJSON()).toMatchSnapshot();
-    });
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });
