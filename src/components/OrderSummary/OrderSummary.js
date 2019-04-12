@@ -11,7 +11,7 @@ function OrderSummary() {
   return (
     <ErrorBoundary>
       <Wrapper>
-        <Content as="section">
+        <Content>
           <SectionHeader>Order Summary</SectionHeader>
           <TextRow>
             <span>Subtotal</span>
