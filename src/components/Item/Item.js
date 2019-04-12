@@ -13,7 +13,7 @@ import Name from './Name';
 import Variants from './Variants';
 import Prices from './Prices';
 
-function Item({ itemControls: ItemControls, item }) {
+function Item({ itemControlsComponent: ItemControls, item }) {
   const { name, imgUrl, variants, price, quantity } = item;
   return (
     <ListItem data-testid="list-item">
@@ -32,7 +32,7 @@ function Item({ itemControls: ItemControls, item }) {
 
 Item.propTypes = {
   item: item,
-  itemControls: PropTypes.func
+  itemControlsComponent: PropTypes.func
 };
 
 export default Item;
