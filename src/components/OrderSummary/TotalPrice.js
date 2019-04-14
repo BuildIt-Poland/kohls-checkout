@@ -19,13 +19,13 @@ function TotalPrice({ price }) {
   return (
     <Row>
       <Total>Total</Total>
-      <Total>${price}</Total>
+      <Total>{price}</Total>
     </Row>
   );
 }
 
 TotalPrice.propTypes = {
-  price: PropTypes.number.isRequired
+  price: PropTypes.string.isRequired
 };
 
 export default TotalPrice;
