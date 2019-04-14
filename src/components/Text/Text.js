@@ -16,8 +16,7 @@ const Text = styled.p`
   line-height: 1.4;
   margin: 0;
   margin-bottom: ${spacingSmall};
-  color: ${({ highlight }) => (highlight ? colorTurquoiseDimmed : colorBlack)};
-  color: ${({ dimmed }) => (dimmed ? colorDarkGrey : colorBlack)};
+  color: ${({ highlight, dimmed }) => (highlight ? colorTurquoiseDimmed : dimmed ? colorDarkGrey : colorBlack)};
 
   &:last-child {
     margin-bottom: 0;
