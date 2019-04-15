@@ -20,7 +20,7 @@ function CartItemsList({ items }) {
     <ErrorBoundary>
       <List>
         {items.map(item => (
-          <Item key={item.id} item={item} itemControls={CartItemControls} />
+          <Item key={item.id} item={item} itemControlsComponent={CartItemControls} />
         ))}
       </List>
     </ErrorBoundary>

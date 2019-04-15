@@ -27,7 +27,7 @@ exports[`COMPONENT - CartItemsList renders correct number of items 1`] = `
         },
       }
     }
-    itemControls={[Function]}
+    itemControlsComponent={[Function]}
   />
   <Item
     item={
@@ -45,7 +45,7 @@ exports[`COMPONENT - CartItemsList renders correct number of items 1`] = `
         },
       }
     }
-    itemControls={[Function]}
+    itemControlsComponent={[Function]}
   />
 </ul>
 `;
