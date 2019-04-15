@@ -129,6 +129,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
     <Link
       className="c2"
       data-testid="navigation-link"
+      tabIndex={0}
       to="/checkout/delivery"
     >
       <span
@@ -146,6 +147,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
       className="c5"
       data-testid="navigation-link"
       disabled={true}
+      tabIndex={-1}
       to="/checkout/payment"
     >
       <span
@@ -163,6 +165,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
       className="c5"
       data-testid="navigation-link"
       disabled={true}
+      tabIndex={-1}
       to="/checkout/review"
     >
       <span
@@ -329,6 +332,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
     <Link
       className="c2"
       data-testid="navigation-link"
+      tabIndex={0}
       to="/checkout/delivery"
     >
       <span
@@ -346,6 +350,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
       className="c2"
       data-testid="navigation-link"
       disabled={false}
+      tabIndex={0}
       to="/checkout/payment"
     >
       <span
@@ -363,6 +368,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
       className="c6"
       data-testid="navigation-link"
       disabled={true}
+      tabIndex={-1}
       to="/checkout/review"
     >
       <span
@@ -483,6 +489,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
     <Link
       className="c2"
       data-testid="navigation-link"
+      tabIndex={0}
       to="/checkout/delivery"
     >
       <span
@@ -500,6 +507,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
       className="c2"
       data-testid="navigation-link"
       disabled={false}
+      tabIndex={0}
       to="/checkout/payment"
     >
       <span
@@ -517,6 +525,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
       className="c2"
       data-testid="navigation-link"
       disabled={false}
+      tabIndex={0}
       to="/checkout/review"
     >
       <span
