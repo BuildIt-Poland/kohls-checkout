@@ -7,7 +7,7 @@ import Row from './Row';
 
 function Form() {
   return (
-    <FormikForm data-testid="delivery-form">
+    <FormikForm>
       <Text dimmed>Please complete all fields.</Text>
       <Row>
         <FormInput name="firstName" type="text" label="First Name" />

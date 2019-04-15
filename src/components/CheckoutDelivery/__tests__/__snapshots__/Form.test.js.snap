@@ -30,9 +30,7 @@ exports[`COMPONENT - ShippingAddressForm renders correctly 1`] = `
   }
 }
 
-<form
-  data-testid="delivery-form"
->
+<form>
   <p
     className="c0"
   >

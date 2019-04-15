@@ -8,7 +8,7 @@ function getBtnAndClick(selector, content) {
 }
 
 function fillFormInput(name, content) {
-  return cy.get(`[data-testid="delivery-form"] input[name=${name}]`).type(content);
+  return cy.get(`input[name=${name}]`).type(content);
 }
 
 describe('Navigation', () => {
