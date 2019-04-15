@@ -10,7 +10,7 @@ describe('Title', () => {
   it(`set text on the tab to 'The store | Cart' for cart page`, () => {
     cy.visit('/cart');
 
-    cy.title().should('eq', 'The Store | Cart');
+    cy.title().should('eq', 'The Store | Cart (2)');
   });
 
   it(`set text on the tab to'The store | Delivery' for delivery page`, () => {
