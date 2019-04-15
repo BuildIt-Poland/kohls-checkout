@@ -32,6 +32,15 @@ const GlobalStyle = createGlobalStyle`
     -webkit-tap-highlight-color: rgba(0, 160, 160, 0.1);
   }
 
+  ::-moz-selection {
+    background: rgba(0, 160, 160, 0.3);
+    color: inherit;
+  }
+  ::selection {
+    background: rgba(0, 160, 160, 0.3);
+    color: inherit;
+  }
+
 `;
 
 export default GlobalStyle;
