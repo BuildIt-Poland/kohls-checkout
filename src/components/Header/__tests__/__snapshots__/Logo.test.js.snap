@@ -4,8 +4,14 @@ exports[`COMPONENT - Header Logo renders correctly 1`] = `
 .c0 {
   height: 100%;
   cursor: pointer;
-  padding-top: 2rem;
+  padding: 2rem;
+  padding-bottom: 0;
   position: relative;
+}
+
+.c0:focus {
+  background-color: #ffbf47;
+  outline: 0;
 }
 
 .c1 {

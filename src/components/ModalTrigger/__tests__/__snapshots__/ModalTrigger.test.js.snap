@@ -25,6 +25,12 @@ exports[`COMPONENT - ModalTrigger renders ModalTrigger with closed Modal 1`] = `
   display: block;
 }
 
+.c0:focus {
+  background-color: #ffbf47;
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
+}
+
 <div>
   <button
     aria-label="Show Test Modal Title help"

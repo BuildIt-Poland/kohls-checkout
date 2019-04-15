@@ -18,6 +18,8 @@ exports[`COMPONENT - Input renders correctly Input 1`] = `
 
 .c0:focus {
   border-color: #00a09f;
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
 }
 
 .c0::-webkit-input-placeholder {
@@ -61,6 +63,8 @@ exports[`COMPONENT - Input renders correctly Input with error 1`] = `
 
 .c0:focus {
   border-color: #e0151d;
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
 }
 
 .c0::-webkit-input-placeholder {
