@@ -11,6 +11,7 @@ const FlexLink = styled(Link)`
   width: 100%;
   text-decoration: none;
   border-left: ${borderWidthThin} solid ${colorLightGrey};
+  pointer-events: ${({ disabled }) => (disabled ? 'none' : 'all')};
   &:last-child {
     border-right: ${borderWidthThin} solid ${colorLightGrey};
   }
@@ -26,10 +27,12 @@ const FlexLink = styled(Link)`
   `};
 `;
 
-function NavigationButton({ to, isActive, children }) {
+function NavigationButton({ to, isActive, isBlocked, children }) {
   return (
-    <FlexLink data-testid="navigation-link" to={to}>
-      <LinkContent isActive={isActive}>{children}</LinkContent>
+    <FlexLink data-testid="navigation-link" to={to} disabled={isBlocked}>
+      <LinkContent isActive={isActive} isBlocked={isBlocked}>
+        {children}
+      </LinkContent>
     </FlexLink>
   );
 }

@@ -21,6 +21,8 @@ const StepNumber = styled.span`
 
 function Navigation({ match }) {
   const isStepActive = step => step === match.params.checkoutStep;
+  const isStepDelivery = () => match.params.checkoutStep === STEPS.DELIVERY;
+  const isStepPayment = () => match.params.checkoutStep === STEPS.PAYMENT;
 
   return (
     <ErrorBoundary>
@@ -29,10 +31,18 @@ function Navigation({ match }) {
           <NavigationButton to={CHECKOUT_DELIVERY_PATH} isActive={isStepActive(STEPS.DELIVERY)}>
             <StepNumber>1.</StepNumber>Delivery
           </NavigationButton>
-          <NavigationButton to={CHECKOUT_PAYMENT_PATH} isActive={isStepActive(STEPS.PAYMENT)}>
+          <NavigationButton
+            to={CHECKOUT_PAYMENT_PATH}
+            isActive={isStepActive(STEPS.PAYMENT)}
+            isBlocked={isStepDelivery()}
+          >
             <StepNumber>2.</StepNumber>Payment
           </NavigationButton>
-          <NavigationButton to={CHECKOUT_REVIEW_PATH} isActive={isStepActive(STEPS.REVIEW)}>
+          <NavigationButton
+            to={CHECKOUT_REVIEW_PATH}
+            isActive={isStepActive(STEPS.REVIEW)}
+            isBlocked={isStepDelivery() || isStepPayment()}
+          >
             <StepNumber>3.</StepNumber>Review
           </NavigationButton>
         </Content>
