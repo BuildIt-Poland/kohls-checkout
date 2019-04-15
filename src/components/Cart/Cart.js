@@ -14,6 +14,7 @@ import CartItemsList from '../CartItemsList';
 import TextLink from '../TextLink';
 
 function Cart({ items, refillDemoCart }) {
+  const pageTitle = `Cart (${totalCartItemsCount(items)})`;
   const isCartEmpty = !totalCartItemsCount(items);
 
   return (
@@ -23,9 +24,9 @@ function Cart({ items, refillDemoCart }) {
           You have received <strong>free shipping</strong>!
         </InfoBanner>
       )}
-      <Page title="Cart">
+      <Page title={pageTitle}>
         <Content>
-          <Headline>Cart</Headline>
+          <Headline>{pageTitle}</Headline>
           <CartItemsList items={items} />
           {isCartEmpty && (
             <TextLink onClick={refillDemoCart} as="button">

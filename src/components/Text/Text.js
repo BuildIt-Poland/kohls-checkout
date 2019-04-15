@@ -9,6 +9,15 @@ import {
   colorTurquoiseDimmed
 } from '../../styles/designTokens';
 
+export function fontColor({ highlight, dimmed }) {
+  if (highlight) {
+    return colorTurquoiseDimmed;
+  } else if (dimmed) {
+    return colorDarkGrey;
+  }
+  return colorBlack;
+}
+
 const Text = styled.p`
   font-size: ${fontMedium};
   text-decoration: ${({ underline }) => (underline ? 'underline' : 'none')};
@@ -16,8 +25,7 @@ const Text = styled.p`
   line-height: 1.4;
   margin: 0;
   margin-bottom: ${spacingSmall};
-  color: ${({ highlight }) => (highlight ? colorTurquoiseDimmed : colorBlack)};
-  color: ${({ dimmed }) => (dimmed ? colorDarkGrey : colorBlack)};
+  color: ${fontColor};
 
   &:last-child {
     margin-bottom: 0;

@@ -7,7 +7,7 @@ describe('Title', () => {
     cy.title().should('eq', 'The Store');
   });
 
-  it(`set text on the tab to 'The store | Cart' for cart page`, () => {
+  it(`set text on the tab to 'The store | Cart (2)' for cart page`, () => {
     cy.visit('/cart');
 
     cy.title().should('eq', 'The Store | Cart (2)');

@@ -34,7 +34,7 @@ const FlexLink = styled(Link)`
 
 function NavigationButton({ to, isActive, isBlocked, children }) {
   return (
-    <FlexLink data-testid="navigation-link" to={to} disabled={isBlocked}>
+    <FlexLink data-testid="navigation-link" to={to} disabled={isBlocked} tabIndex={isBlocked ? -1 : 0}>
       <LinkContent isActive={isActive} isBlocked={isBlocked}>
         {children}
       </LinkContent>

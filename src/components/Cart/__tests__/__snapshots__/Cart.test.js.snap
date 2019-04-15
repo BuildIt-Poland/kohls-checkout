@@ -48,7 +48,7 @@ exports[`COMPONENT - Cart renders correctly if there are NO items in cart 1`] = 
     <h1
       className="c2"
     >
-      Cart
+      Cart (0)
     </h1>
     <CartItemsList
       items={Array []}
@@ -100,7 +100,7 @@ Array [
       <h1
         className="c2"
       >
-        Cart
+        Cart (3)
       </h1>
       <CartItemsList
         items={
