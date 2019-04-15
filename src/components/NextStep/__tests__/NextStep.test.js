@@ -8,8 +8,14 @@ jest.mock('react-router-dom', () => ({
 }));
 
 describe('COMPONENT - NextStep', () => {
-  it('render NextStep component', () => {
-    const component = create(<NextStep to="/" />);
+  it('renders Link if to prop is provided', () => {
+    const component = create(<NextStep to="/cart" />);
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it('render button if onMoveToNextStep handler is provided', () => {
+    const component = create(<NextStep onMoveToNextStep={jest.fn()} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

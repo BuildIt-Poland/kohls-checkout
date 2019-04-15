@@ -28,3 +28,13 @@ export const selectOptions = arrayOf(
     disabled: bool
   })
 );
+
+export const address = shape({
+  firstName: string.isRequired,
+  lastName: string.isRequired,
+  street: string.isRequired,
+  city: string.isRequired,
+  state: string.isRequired,
+  zipCode: string.isRequired,
+  phone: string.isRequired
+});

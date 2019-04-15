@@ -5,7 +5,7 @@ import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
 import SectionHeader from '../SectionHeader';
 import TextLink from '../TextLink';
 
-function ShippingDetails() {
+function ShippingDetailsEdit() {
   const textLink = (
     <TextLink as={Link} to={CHECKOUT_DELIVERY_PATH}>
       Edit
@@ -19,4 +19,4 @@ function ShippingDetails() {
   );
 }
 
-export default ShippingDetails;
+export default ShippingDetailsEdit;

@@ -1,13 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - List renders ItemsList component 1`] = `
+exports[`COMPONENT - ItemsList List renders ItemsList component 1`] = `
 .c0 {
-  padding: 0;
-  margin: 0;
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
   list-style: none;
 }
 
-<ul
+<section
   className="c0"
 />
 `;

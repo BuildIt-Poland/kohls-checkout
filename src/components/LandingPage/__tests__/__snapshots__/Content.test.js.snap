@@ -11,10 +11,6 @@ exports[`COMPONENT - LandingPage Content renders correctly 1`] = `
   padding-top: 3rem;
 }
 
-.c0:last-child {
-  padding-bottom: 6rem;
-}
-
 <section
   className="c0"
 />

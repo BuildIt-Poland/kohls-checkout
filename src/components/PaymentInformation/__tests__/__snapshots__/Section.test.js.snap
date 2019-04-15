@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - PaymentInformation Section renders correctly 1`] = `
+.c0 {
+  margin-bottom: 2rem;
+}
+
+.c0:last-child {
+  margin-bottom: 3rem;
+}
+
+<section
+  className="c0"
+/>
+`;

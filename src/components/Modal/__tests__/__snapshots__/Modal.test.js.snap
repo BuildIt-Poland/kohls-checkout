@@ -50,6 +50,10 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
 .c3 {
   border: 0;
   background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -58,8 +62,8 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-width: 2rem;
-  min-height: 2rem;
+  min-width: 4rem;
+  min-height: 4rem;
   cursor: pointer;
   width: 4rem;
   height: 4rem;
@@ -171,6 +175,10 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
 .c3 {
   border: 0;
   background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -179,8 +187,8 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-width: 2rem;
-  min-height: 2rem;
+  min-width: 4rem;
+  min-height: 4rem;
   cursor: pointer;
   width: 4rem;
   height: 4rem;

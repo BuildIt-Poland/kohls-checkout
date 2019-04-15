@@ -10,6 +10,7 @@ exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component
   margin: 0;
   margin-bottom: 1rem;
   color: #222222;
+  color: #222222;
 }
 
 .c2:last-child {
@@ -80,6 +81,7 @@ exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders corr
   line-height: 1.4;
   margin: 0;
   margin-bottom: 1rem;
+  color: #222222;
   color: #222222;
 }
 

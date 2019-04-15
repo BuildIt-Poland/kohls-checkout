@@ -4,6 +4,7 @@ import { create } from 'react-test-renderer';
 import CheckoutPayment from '../CheckoutPayment';
 
 jest.mock('../../OrderSummary', () => 'OrderSummary');
+jest.mock('../../NextStep', () => 'NextStep');
 jest.mock('react-router-dom', () => ({
   Link: 'Link'
 }));

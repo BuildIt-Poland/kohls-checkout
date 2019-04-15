@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - ShippingAddressForm renders correctly 1`] = `
+.c0 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  color: #666666;
+}
+
+.c0:last-child {
+  margin-bottom: 0;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 3rem;
+  column-gap: 3rem;
+}
+
+@media (max-width:26.25em) {
+  .c1 {
+    display: block;
+  }
+}
+
+<form>
+  <p
+    className="c0"
+  >
+    Please complete all fields.
+  </p>
+  <div
+    className="c1"
+  >
+    <FormInput
+      label="First Name"
+      name="firstName"
+      type="text"
+    />
+    <FormInput
+      label="Last Name"
+      name="lastName"
+      type="text"
+    />
+  </div>
+  <FormInput
+    label="Street"
+    name="street"
+    type="text"
+  />
+  <FormInput
+    label="City"
+    name="city"
+    type="text"
+  />
+  <div
+    className="c1"
+  >
+    <FormInput
+      label="State"
+      name="state"
+      type="text"
+    />
+    <FormInput
+      label="Zip Code"
+      name="zipCode"
+      type="text"
+    />
+  </div>
+  <FormInput
+    label="Phone Number"
+    name="phone"
+    type="phone"
+  />
+  <p
+    className="c0"
+  >
+    Phone number will be used for shipping communications only.
+  </p>
+</form>
+`;

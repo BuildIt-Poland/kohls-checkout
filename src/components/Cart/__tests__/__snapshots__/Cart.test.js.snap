@@ -1,6 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Cart renders Cart component 1`] = `
+exports[`COMPONENT - Cart renders correctly if there are NO items in cart 1`] = `
+.c0 {
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+
+.c2 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+<article
+  className="c0"
+>
+  <section
+    className="c1"
+  >
+    <h1
+      className="c2"
+    >
+      Cart
+    </h1>
+    <CartItemsList
+      items={Array []}
+    />
+  </section>
+</article>
+`;
+
+exports[`COMPONENT - Cart renders correctly if there are some items in cart 1`] = `
 Array [
   <InfoBanner>
     You have received 
@@ -22,31 +60,6 @@ Array [
   line-height: 1;
 }
 
-.c4 {
-  background: #00a09f;
-  color: #ffffff;
-  display: block;
-  font-size: 2.4rem;
-  font-weight: 700;
-  padding: 1.2rem;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  max-width: 96rem;
-  margin: 0 auto;
-}
-
-.c3 {
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  background: #ffffff;
-  border-top: 1px solid #b0b0b0;
-  z-index: 6000;
-}
-
 .c1 {
   max-width: 100rem;
   padding: 0 2rem;
@@ -64,20 +77,32 @@ Array [
       >
         Cart
       </h1>
-      <ItemsList />
+      <CartItemsList
+        items={
+          Array [
+            Object {
+              "id": "64a673c2-59e3-11e9-8647-d663bd873d93",
+              "imgUrl": "https://mosaic03.ztat.net/vgs/media/catalog_hd/LE/42/2T/01/0K/11/LE422T010-K11@8.1.jpg",
+              "name": "RIDER JACKET - jeans jacket - dark blue",
+              "price": Object {
+                "discount": 12500,
+                "regular": 24099,
+              },
+              "quantity": 3,
+              "variants": Object {
+                "color": "Dark Blue",
+                "size": "46 Medium",
+              },
+            },
+          ]
+        }
+      />
     </section>
     <OrderSummary />
-    <div
-      className="c3"
-    >
-      <Link
-        className="c4"
-        data-testid="next-step-button"
-        to="/checkout/delivery"
-      >
-        Checkout
-      </Link>
-    </div>
+    <NextStep
+      label="Checkout"
+      to="/checkout/delivery"
+    />
   </article>,
 ]
 `;

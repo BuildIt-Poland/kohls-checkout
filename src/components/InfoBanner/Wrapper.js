@@ -4,10 +4,11 @@ import { colorTurquoise, colorWhite, fontMedium, spacingSmall } from '../../styl
 const Wrapper = styled.section`
   display: flex;
   justify-content: center;
-  padding: ${spacingSmall};
+  padding: ${spacingSmall} 0;
   background-color: ${colorTurquoise};
   color: ${colorWhite};
   font-size: ${fontMedium};
+  text-align: center;
 `;
 
 export default Wrapper;

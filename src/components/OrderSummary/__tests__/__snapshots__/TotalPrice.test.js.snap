@@ -14,6 +14,7 @@ exports[`COMPONENT - OrderSummary TotalPrice renders TotalPrice component 1`] = 
   margin: 0;
   margin-bottom: 1rem;
   color: #222222;
+  color: #222222;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;

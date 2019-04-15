@@ -1,11 +1,11 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import RemoveButton from '../RemoveButton';
+import Row from '../Row';
 
-describe('COMPONENT - RemoveButton', () => {
+describe('COMPONENT - ShippingAddressForm Row', () => {
   it('renders RemoveButton component', () => {
-    const component = create(<RemoveButton />);
+    const component = create(<Row />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

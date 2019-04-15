@@ -25,16 +25,13 @@ List of proven, backed by big communities solutions, which help to deliver **hig
   * easy to write and maintain ent-to-end tests
   * front-end engineers encourage to write their own tests
   * possibility to enroll visual regression tests
-* [Rollbar](https://rollbar.com/) as JavaScript error reporting tool
+* [Sentry](https://sentry.io/) as JavaScript error reporting tool
   * when some unfortunate error appears on production it's automatically reported
 * [Codecov](https://codecov.io/) test coverage reporting tool
   * make sure unit tests coverage for app pass declared threshold
   * if certain threshold is not satisfied code can't be merged
 * Performance / accessibility insights with [Lighthouse](https://github.com/GoogleChromeLabs/lighthousebot)
   * done on each pull request automatically
-* Mocked API with [json-server](https://github.com/typicode/json-server)
-  * no need to wait for full backend API implementation
-  * just after frontend-backend contract is established front-end engineers could start implementing components
 * Application styled with [styled-components](https://www.styled-components.com/)
   * each component has it's own isolated style
   * compose components not styles -- prevents huge amount of duplication in large codebases

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - CartItemsList renders correct number of items 1`] = `
+.c0 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+<ul
+  className="c0"
+>
+  <Item
+    item={
+      Object {
+        "id": "64a673c2-59e3-11e9-8647-d663bd873d93",
+        "imgUrl": "https://mosaic03.ztat.net/vgs/media/catalog_hd/LE/42/2T/01/0K/11/LE422T010-K11@8.1.jpg",
+        "name": "RIDER JACKET - jeans jacket - dark blue",
+        "price": Object {
+          "discount": 12500,
+          "regular": 24099,
+        },
+        "quantity": 3,
+        "variants": Object {
+          "color": "Dark Blue",
+          "size": "46 Medium",
+        },
+      }
+    }
+    itemControlsComponent={[Function]}
+  />
+  <Item
+    item={
+      Object {
+        "id": "71380d3a-59e3-11e9-8647-d663bd873d93",
+        "imgUrl": "https://mosaic03.ztat.net/vgs/media/catalog_hd/C7/04/1F/06/LL/11/C7041F06L-L11@9.jpg",
+        "name": "WOMAN JACKET FIX HOOD - outdoor - mint",
+        "price": Object {
+          "regular": 44000,
+        },
+        "quantity": 4,
+        "variants": Object {
+          "color": "Mint",
+          "size": "42 Short",
+        },
+      }
+    }
+    itemControlsComponent={[Function]}
+  />
+</ul>
+`;
+
+exports[`COMPONENT - CartItemsList renders info message if there are 0 items in cart 1`] = `
+.c0 {
+  padding-bottom: 3rem;
+}
+
+<Text
+  className="c0"
+>
+  There are no items in your cart.
+</Text>
+`;
+
+exports[`COMPONENT - CartItemsList renders nothing if there were no items provided 1`] = `null`;
