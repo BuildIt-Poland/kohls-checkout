@@ -11,6 +11,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from '../App';
 import GlobalStyle from '../GlobalStyle';
 import ErrorBoundary from '../ErrorBoundary';
+import ScrollToTop from '../ScrollToTop';
 
 function Root({ store }) {
   return (
@@ -18,7 +19,9 @@ function Root({ store }) {
       <GlobalStyle />
       <Router>
         <ErrorBoundary>
-          <App />
+          <ScrollToTop>
+            <App />
+          </ScrollToTop>
         </ErrorBoundary>
       </Router>
     </Provider>
