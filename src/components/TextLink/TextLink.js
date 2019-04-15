@@ -12,8 +12,12 @@ const TextLink = styled.a`
   color: ${colorTurquoiseDimmed};
   font-weight: ${fontWeightBold};
   font-size: ${fontMedium};
+  padding: 0;
   text-decoration: underline;
   text-transform: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
 
   &:focus {
     background-color: ${colorYellow};

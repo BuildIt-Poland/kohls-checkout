@@ -2,10 +2,11 @@ import {
   CART_SET_ITEM_QUANTITY,
   CART_INCREASE_ITEM_QUANTITY,
   CART_DECREASE_ITEM_QUANTITY,
-  CART_REMOVE_ITEM
+  CART_REMOVE_ITEM,
+  CART_REFILL_DEMO_CART
 } from '../constants/actionTypes';
 
-const initialState = {
+export const initialState = {
   items: [
     {
       id: '64a673c2-59e3-11e9-8647-d663bd873d93',
@@ -79,6 +80,8 @@ function cartReducer(state = initialState, action) {
         ...state,
         items: items.filter(item => item.id !== itemId)
       };
+    case CART_REFILL_DEMO_CART:
+      return initialState;
     default:
       return state;
   }

@@ -11,13 +11,14 @@ import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
 import Content from '../Content';
 import CartItemsList from '../CartItemsList';
+import TextLink from '../TextLink';
 
-function Cart({ items }) {
-  const isCartNotEmpty = !!totalCartItemsCount(items);
+function Cart({ items, refillDemoCart }) {
+  const isCartEmpty = !totalCartItemsCount(items);
 
   return (
     <>
-      {isCartNotEmpty && (
+      {!isCartEmpty && (
         <InfoBanner>
           You have received <strong>free shipping</strong>!
         </InfoBanner>
@@ -26,16 +27,22 @@ function Cart({ items }) {
         <Content>
           <Headline>Cart</Headline>
           <CartItemsList items={items} />
+          {isCartEmpty && (
+            <TextLink onClick={refillDemoCart} as="button">
+              Put some items in cart!
+            </TextLink>
+          )}
         </Content>
-        {isCartNotEmpty && <OrderSummary />}
-        {isCartNotEmpty && <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />}
+        {!isCartEmpty && <OrderSummary />}
+        {!isCartEmpty && <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />}
       </Page>
     </>
   );
 }
 
 Cart.propTypes = {
-  items: PropTypes.arrayOf(item)
+  items: PropTypes.arrayOf(item),
+  refillDemoCart: PropTypes.func.isRequired
 };
 
 export default Cart;
