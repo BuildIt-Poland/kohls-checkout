@@ -2,13 +2,20 @@ import React from 'react';
 import { Link as LinkBase } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { colorYellow } from '../../styles/designTokens';
 import { Logo as LogoIcon } from '../Icons';
 
 const Link = styled(LinkBase)`
   height: 100%;
   cursor: pointer;
-  padding-top: 2rem;
+  padding: 2rem;
+  padding-bottom: 0;
   position: relative;
+
+  &:focus {
+    background-color: ${colorYellow};
+    outline: 0;
+  }
 `;
 
 const AccessibleText = styled.span`

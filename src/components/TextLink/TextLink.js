@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
-import { colorTurquoiseDimmed, fontWeightBold, fontMedium } from '../../styles/designTokens';
+import {
+  colorTurquoiseDimmed,
+  colorYellow,
+  fontWeightBold,
+  fontMedium,
+  borderWidthXThick
+} from '../../styles/designTokens';
 
 const TextLink = styled.a`
   color: ${colorTurquoiseDimmed};
@@ -8,6 +14,12 @@ const TextLink = styled.a`
   font-size: ${fontMedium};
   text-decoration: underline;
   text-transform: none;
+
+  &:focus {
+    background-color: ${colorYellow};
+    outline: ${borderWidthXThick} solid ${colorYellow};
+    outline-offset: 0;
+  }
 `;
 
 export default TextLink;
