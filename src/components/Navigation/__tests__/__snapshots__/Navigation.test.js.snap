@@ -21,9 +21,9 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
   width: 100%;
 }
 
-.c5 {
+.c6 {
   background: #ffffff;
-  color: #222222;
+  color: #b0b0b0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -50,15 +50,33 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
   -webkit-text-decoration: none;
   text-decoration: none;
   border-left: 1px solid #b0b0b0;
+  pointer-events: all;
 }
 
 .c2:last-child {
   border-right: 1px solid #b0b0b0;
 }
 
+<<<<<<< HEAD
 .c2:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -4px;
+=======
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-left: 1px solid #b0b0b0;
+  pointer-events: none;
+}
+
+.c5:last-child {
+  border-right: 1px solid #b0b0b0;
+>>>>>>> master
 }
 
 .c0 {
@@ -93,6 +111,16 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
 }
 
 @media (max-width:48em) {
+  .c5:first-child {
+    border-left: 0;
+  }
+
+  .c5:last-child {
+    border-right: 0;
+  }
+}
+
+@media (max-width:48em) {
   .c1 {
     padding: 0;
   }
@@ -121,12 +149,13 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
       </span>
     </Link>
     <Link
-      className="c2"
+      className="c5"
       data-testid="navigation-link"
+      disabled={true}
       to="/checkout/payment"
     >
       <span
-        className="c5"
+        className="c6"
       >
         <span
           className="c4"
@@ -137,12 +166,13 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
       </span>
     </Link>
     <Link
-      className="c2"
+      className="c5"
       data-testid="navigation-link"
+      disabled={true}
       to="/checkout/review"
     >
       <span
-        className="c5"
+        className="c6"
       >
         <span
           className="c4"
@@ -160,6 +190,26 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
 .c5 {
   background: #222222;
   color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c7 {
+  background: #ffffff;
+  color: #b0b0b0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -206,15 +256,33 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
   -webkit-text-decoration: none;
   text-decoration: none;
   border-left: 1px solid #b0b0b0;
+  pointer-events: all;
 }
 
 .c2:last-child {
   border-right: 1px solid #b0b0b0;
 }
 
+<<<<<<< HEAD
 .c2:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -4px;
+=======
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-left: 1px solid #b0b0b0;
+  pointer-events: none;
+}
+
+.c6:last-child {
+  border-right: 1px solid #b0b0b0;
+>>>>>>> master
 }
 
 .c0 {
@@ -244,6 +312,16 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
   }
 
   .c2:last-child {
+    border-right: 0;
+  }
+}
+
+@media (max-width:48em) {
+  .c6:first-child {
+    border-left: 0;
+  }
+
+  .c6:last-child {
     border-right: 0;
   }
 }
@@ -279,6 +357,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
     <Link
       className="c2"
       data-testid="navigation-link"
+      disabled={false}
       to="/checkout/payment"
     >
       <span
@@ -293,12 +372,13 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
       </span>
     </Link>
     <Link
-      className="c2"
+      className="c6"
       data-testid="navigation-link"
+      disabled={true}
       to="/checkout/review"
     >
       <span
-        className="c3"
+        className="c7"
       >
         <span
           className="c4"
@@ -362,6 +442,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
   -webkit-text-decoration: none;
   text-decoration: none;
   border-left: 1px solid #b0b0b0;
+  pointer-events: all;
 }
 
 .c2:last-child {
@@ -435,6 +516,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
     <Link
       className="c2"
       data-testid="navigation-link"
+      disabled={false}
       to="/checkout/payment"
     >
       <span
@@ -451,6 +533,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
     <Link
       className="c2"
       data-testid="navigation-link"
+      disabled={false}
       to="/checkout/review"
     >
       <span
