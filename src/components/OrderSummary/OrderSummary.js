@@ -4,29 +4,22 @@ import ErrorBoundary from '../ErrorBoundary';
 import SectionHeader from '../SectionHeader';
 import Price from '../Price';
 import Content from '../Content';
+import {
+  SHIPPING_COST,
+  SUPER_DISCOUNT_PERCENTAGE,
+  TAX_PERCANTAGE,
+  subtotalPrice,
+  totalPrice,
+  superDiscountAmount,
+  taxAmount
+} from './demoOrderSummaryCalculations';
 import TextRow from './TextRow';
 import TotalPrice from './TotalPrice';
 import Wrapper from './Wrapper';
 
-// TODO just for PoC purposes, in real app this calculations should be performed on server @blurbyte
-
-const SHIPPING_COST = 0;
-const SUPER_DISCOUNT_PERCENTAGE = 15;
-const TAX_PERCANTAGE = 8;
-
-export function subtotalPrice(items) {
-  return items.reduce((allItemsPrice, item) => {
-    const itemPrice = item.price.discount || item.price.regular; // takes discount price if it exists
-    return allItemsPrice + itemPrice * item.quantity;
-  }, 0);
-}
-
-export function totalPrice(shipping, discount, tax, subtotal) {
-  return subtotal + subtotal * (tax / 100) - subtotal * (discount / 100) + shipping;
-}
-
 function OrderSummary({ items }) {
   const subtotal = subtotalPrice(items);
+
   return (
     <ErrorBoundary>
       <Wrapper>
@@ -41,7 +34,7 @@ function OrderSummary({ items }) {
           <TextRow highlight>
             <span>Cash &amp; Discounts</span>
             <span>
-              -<Price price={subtotal * (SUPER_DISCOUNT_PERCENTAGE / 100)} />
+              -<Price price={superDiscountAmount(SUPER_DISCOUNT_PERCENTAGE, subtotal)} />
             </span>
           </TextRow>
           <TextRow>
@@ -51,7 +44,7 @@ function OrderSummary({ items }) {
           <TextRow>
             <span>Tax</span>
             <span>
-              <Price price={subtotal * (TAX_PERCANTAGE / 100)} />
+              <Price price={taxAmount(TAX_PERCANTAGE, subtotal)} />
             </span>
           </TextRow>
           <TotalPrice price={totalPrice(SHIPPING_COST, SUPER_DISCOUNT_PERCENTAGE, TAX_PERCANTAGE, subtotal)} />
