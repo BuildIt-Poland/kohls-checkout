@@ -13,6 +13,7 @@ import Content from '../Content';
 import CartItemsList from '../CartItemsList';
 
 function Cart({ items }) {
+  const pageTitle = `Cart (${totalCartItemsCount(items)})`;
   const isCartNotEmpty = !!totalCartItemsCount(items);
 
   return (
@@ -22,9 +23,9 @@ function Cart({ items }) {
           You have received <strong>free shipping</strong>!
         </InfoBanner>
       )}
-      <Page title="Cart">
+      <Page title={pageTitle}>
         <Content>
-          <Headline>Cart</Headline>
+          <Headline>{pageTitle}</Headline>
           <CartItemsList items={items} />
         </Content>
         {isCartNotEmpty && <OrderSummary />}

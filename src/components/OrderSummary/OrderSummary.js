@@ -2,38 +2,52 @@ import React from 'react';
 
 import ErrorBoundary from '../ErrorBoundary';
 import SectionHeader from '../SectionHeader';
+import Price from '../Price';
 import Content from '../Content';
+import {
+  SHIPPING_COST,
+  SUPER_DISCOUNT_PERCENTAGE,
+  TAX_PERCANTAGE,
+  subtotalPrice,
+  totalPrice,
+  superDiscountAmount,
+  taxAmount
+} from './demoOrderSummaryCalculations';
 import TextRow from './TextRow';
 import TotalPrice from './TotalPrice';
 import Wrapper from './Wrapper';
 
-function OrderSummary() {
+function OrderSummary({ items }) {
+  const subtotal = subtotalPrice(items);
+
   return (
     <ErrorBoundary>
       <Wrapper>
-        <Content as="section">
+        <Content>
           <SectionHeader>Order Summary</SectionHeader>
           <TextRow>
             <span>Subtotal</span>
-            <span>$125.00</span>
+            <span>
+              <Price price={subtotal} />
+            </span>
           </TextRow>
           <TextRow highlight>
-            <span>Kohl's Cash &amp; Discounts</span>
-            <span>-$18.75</span>
+            <span>Cash &amp; Discounts</span>
+            <span>
+              -<Price price={superDiscountAmount(SUPER_DISCOUNT_PERCENTAGE, subtotal)} />
+            </span>
           </TextRow>
           <TextRow>
             <span>Shipping</span>
-            <strong>FREE</strong>
+            <strong>{SHIPPING_COST ? <Price price={SHIPPING_COST} /> : 'FREE'}</strong>
           </TextRow>
           <TextRow>
             <span>Tax</span>
-            <span>$6.38</span>
+            <span>
+              <Price price={taxAmount(TAX_PERCANTAGE, subtotal)} />
+            </span>
           </TextRow>
-          <TotalPrice price={122.7} />
-          <TextRow>
-            <span>Your Savings</span>
-            <span>$122.70</span>
-          </TextRow>
+          <TotalPrice price={totalPrice(SHIPPING_COST, SUPER_DISCOUNT_PERCENTAGE, TAX_PERCANTAGE, subtotal)} />
         </Content>
       </Wrapper>
     </ErrorBoundary>
