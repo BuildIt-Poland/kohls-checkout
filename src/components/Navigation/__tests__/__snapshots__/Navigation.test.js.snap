@@ -57,11 +57,11 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
   border-right: 1px solid #b0b0b0;
 }
 
-<<<<<<< HEAD
 .c2:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -4px;
-=======
+}
+
 .c5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -76,7 +76,11 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
 
 .c5:last-child {
   border-right: 1px solid #b0b0b0;
->>>>>>> master
+}
+
+.c5:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -4px;
 }
 
 .c0 {
@@ -263,11 +267,11 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
   border-right: 1px solid #b0b0b0;
 }
 
-<<<<<<< HEAD
 .c2:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -4px;
-=======
+}
+
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -282,7 +286,11 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
 
 .c6:last-child {
   border-right: 1px solid #b0b0b0;
->>>>>>> master
+}
+
+.c6:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -4px;
 }
 
 .c0 {
