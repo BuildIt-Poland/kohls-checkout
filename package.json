@@ -50,6 +50,7 @@
       "!src/serviceWorker.js",
       "!src/e2eConfig.js",
       "!src/components/Root/*",
+      "!src/components/GlobalStyle/*",
       "!src/constants/*"
     ]
   },

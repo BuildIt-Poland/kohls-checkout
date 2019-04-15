@@ -36,6 +36,7 @@ ignore:
   - "src/index.js"
   - "src/serviceWorker.js"
   - "src/components/Root/*"
+  - "src/components/GlobalStyle/*"
   - "src/constants/*"
 
 comment: off
