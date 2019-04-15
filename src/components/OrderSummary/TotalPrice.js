@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { fontWeightBold, borderWidthThin, colorLightGrey, spacingMedium } from '../../styles/designTokens';
+import Price from '../Price';
 import TextRow from './TextRow';
 
 const Total = styled.span`
@@ -19,13 +20,15 @@ function TotalPrice({ price }) {
   return (
     <Row>
       <Total>Total</Total>
-      <Total>{price}</Total>
+      <Total>
+        <Price price={price} />
+      </Total>
     </Row>
   );
 }
 
 TotalPrice.propTypes = {
-  price: PropTypes.string.isRequired
+  price: PropTypes.number.isRequired
 };
 
 export default TotalPrice;
