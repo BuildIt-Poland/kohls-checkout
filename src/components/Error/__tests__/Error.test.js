@@ -1,7 +1,9 @@
 import React from 'react';
-import { render } from 'react-testing-library';
+import { render, cleanup } from 'react-testing-library';
 
 import Error from '../Error';
+
+afterEach(cleanup);
 
 describe('COMPONENT - Error', () => {
   it('renders correctly with default message', () => {

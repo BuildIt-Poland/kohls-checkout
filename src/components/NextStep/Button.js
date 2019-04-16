@@ -1,5 +1,13 @@
 import styled from 'styled-components';
-import { colorTurquoise, colorWhite, colorLightGrey, fontWeightBold, fontLarge } from '../../styles/designTokens';
+import {
+  colorTurquoise,
+  colorWhite,
+  colorYellow,
+  colorLightGrey,
+  fontWeightBold,
+  fontLarge,
+  borderWidthXThick
+} from '../../styles/designTokens';
 
 const Button = styled.button`
   background: ${colorTurquoise};
@@ -21,6 +29,11 @@ const Button = styled.button`
 
   &:disabled {
     background-color: ${colorLightGrey};
+  }
+
+  &:focus {
+    outline: ${borderWidthXThick} solid ${colorYellow};
+    outline-offset: 0;
   }
 `;
 

@@ -1,49 +1,45 @@
 /* global before cy*/
 
-function getBtnAndClick(selector, content) {
-  return cy
-    .get(selector)
-    .contains(content)
-    .click();
-}
-
-function fillFormInput(name, content) {
-  return cy.get(`input[name=${name}]`).type(content);
-}
+import fillShippingForm from './utils/fillShippingForm';
+import getBtnAndClick from './utils/getBtnAndClick';
+import goTo from './utils/goTo';
 
 describe('Navigation', () => {
-  before(() => {
-    cy.visit('/checkout/delivery');
-  });
+  it('allows to get back directly to Delivery by Navigation', () => {
+    // Goes to the Checkout Delivery Step
+    goTo('/checkout/delivery');
 
-  it('go through delivery step', () => {
-    fillFormInput('firstName', 'John');
-    fillFormInput('lastName', 'Robinson');
-
-    fillFormInput('street', 'Ocean Avenue');
-    fillFormInput('city', 'New York');
-
-    fillFormInput('state', 'NS');
-    fillFormInput('zipCode', '07305');
-
-    fillFormInput('phone', '2025550163');
-
+    // Goes to the Checkout Review Step
+    fillShippingForm();
     getBtnAndClick('[data-testid="next-step-button"]', 'Continue to Payment');
-  });
-
-  it('go through payment step', () => {
     getBtnAndClick('[data-testid="next-step-button"]', 'Review Order');
+
+    // Clicks on Checkout Delivery Nav Button
+    getBtnAndClick('[data-testid="navigation-link"]', 'Delivery');
+
+    // Should get back to Checkout Delivery Step
+    cy.url().should('include', '/checkout/delivery');
   });
 
-  it('go through review step', () => {
-    getBtnAndClick('[data-testid="next-step-button"]', 'Place Order');
-  });
+  it('allows to get back step by step to Delivery by Navigation', () => {
+    // Goes to the Checkout Delivery Step
+    goTo('/checkout/delivery');
 
-  it('stay in delivery step when form is invalid', () => {
-    cy.visit('/checkout/delivery');
-
+    // Goes to the Checkout Review Step
+    fillShippingForm();
     getBtnAndClick('[data-testid="next-step-button"]', 'Continue to Payment');
+    getBtnAndClick('[data-testid="next-step-button"]', 'Review Order');
 
+    // Clicks on Checkout Payment Nav Button
+    getBtnAndClick('[data-testid="navigation-link"]', 'Payment');
+
+    // Should get back to Checkout Payment Step
+    cy.url().should('include', '/checkout/payment');
+
+    // Clicks on Checkout Payment Nav Button
+    getBtnAndClick('[data-testid="navigation-link"]', 'Delivery');
+
+    // Should get back to Checkout Delivery Step
     cy.url().should('include', '/checkout/delivery');
   });
 });

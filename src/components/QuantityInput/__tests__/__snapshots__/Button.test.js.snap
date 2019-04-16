@@ -31,6 +31,11 @@ exports[`COMPONENT - Item Page renders correctly 1`] = `
   cursor: pointer;
 }
 
+.c0:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
+}
+
 <button
   className="c0"
 />

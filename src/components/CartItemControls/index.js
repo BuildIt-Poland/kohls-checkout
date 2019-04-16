@@ -7,7 +7,7 @@ function mapDispatchToprops(dispatch) {
   return {
     increaseQuantity: itemId => dispatch(increaseItemQuantity(itemId)),
     decreaseQuantity: itemId => dispatch(decreaseItemQuantity(itemId)),
-    remove: itemId => dispatch(removeItem(itemId))
+    removeItem: itemId => dispatch(removeItem(itemId))
   };
 }
 

@@ -3,6 +3,8 @@
 
 import styled from 'styled-components';
 
+import { colorYellow, borderWidthXThick } from '../../styles/designTokens';
+
 const Hitbox = styled.button`
   border: 0;
   background: none;
@@ -15,6 +17,12 @@ const Hitbox = styled.button`
 
   svg {
     display: block;
+  }
+
+  &:focus {
+    background-color: ${colorYellow};
+    outline: ${borderWidthXThick} solid ${colorYellow};
+    outline-offset: 0;
   }
 `;
 

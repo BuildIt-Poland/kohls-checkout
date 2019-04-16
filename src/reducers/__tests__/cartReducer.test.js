@@ -1,43 +1,11 @@
-import reducer from '../cartReducer';
+import reducer, { initialState } from '../cartReducer';
 import {
   CART_SET_ITEM_QUANTITY,
   CART_INCREASE_ITEM_QUANTITY,
   CART_DECREASE_ITEM_QUANTITY,
-  CART_REMOVE_ITEM
+  CART_REMOVE_ITEM,
+  CART_REFILL_DEMO_CART
 } from '../../constants/actionTypes';
-
-const initialState = {
-  items: [
-    {
-      id: 'EOK3293KSD',
-      name: "Men's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket",
-      imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg',
-      variants: {
-        size: '42 SHORT',
-        color: 'Charcoal'
-      },
-      price: {
-        regular: 240,
-        discount: 125
-      },
-      quantity: 1
-    },
-    {
-      id: 'EOK32943983',
-      name: "WoMen's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket",
-      imgUrl: 'https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/6/_103433446.jpg',
-      variants: {
-        size: '42 SHORT',
-        color: 'Charcoal'
-      },
-      price: {
-        regular: 440,
-        discount: 140
-      },
-      quantity: 1
-    }
-  ]
-};
 
 describe('REDUCER - cart reducer', () => {
   it('returns the initial state', () => {
@@ -47,36 +15,35 @@ describe('REDUCER - cart reducer', () => {
   it('handles action INCREASE_QUANTITY', () => {
     const action = {
       type: CART_INCREASE_ITEM_QUANTITY,
-      itemId: 'EOK3293KSD'
+      itemId: '64a673c2-59e3-11e9-8647-d663bd873d93'
     };
 
     const expectedState = {
       items: [
         {
-          id: 'EOK3293KSD',
-          name: "Men's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket",
-          imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg',
+          id: '64a673c2-59e3-11e9-8647-d663bd873d93',
+          name: 'RIDER JACKET - jeans jacket - dark blue',
+          imgUrl: 'https://mosaic03.ztat.net/vgs/media/catalog_hd/LE/42/2T/01/0K/11/LE422T010-K11@8.1.jpg',
           variants: {
-            size: '42 SHORT',
-            color: 'Charcoal'
+            size: '46 Medium',
+            color: 'Dark Blue'
           },
           price: {
-            regular: 240,
-            discount: 125
+            regular: 24099,
+            discount: 12500
           },
           quantity: 2
         },
         {
-          id: 'EOK32943983',
-          name: "WoMen's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket",
-          imgUrl: 'https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/6/_103433446.jpg',
+          id: '71380d3a-59e3-11e9-8647-d663bd873d93',
+          name: 'WOMAN JACKET FIX HOOD - outdoor - mint',
+          imgUrl: 'https://mosaic03.ztat.net/vgs/media/catalog_hd/C7/04/1F/06/LL/11/C7041F06L-L11@9.jpg',
           variants: {
-            size: '42 SHORT',
-            color: 'Charcoal'
+            size: '42 Short',
+            color: 'Mint'
           },
           price: {
-            regular: 440,
-            discount: 140
+            regular: 44000
           },
           quantity: 1
         }
@@ -92,36 +59,35 @@ describe('REDUCER - cart reducer', () => {
   it('handles action DECREASE_QUANTITY', () => {
     const action = {
       type: CART_DECREASE_ITEM_QUANTITY,
-      itemId: 'EOK3293KSD'
+      itemId: '64a673c2-59e3-11e9-8647-d663bd873d93'
     };
 
     const expectedState = {
       items: [
         {
-          id: 'EOK3293KSD',
-          name: "Men's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket",
-          imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg',
+          id: '64a673c2-59e3-11e9-8647-d663bd873d93',
+          name: 'RIDER JACKET - jeans jacket - dark blue',
+          imgUrl: 'https://mosaic03.ztat.net/vgs/media/catalog_hd/LE/42/2T/01/0K/11/LE422T010-K11@8.1.jpg',
           variants: {
-            size: '42 SHORT',
-            color: 'Charcoal'
+            size: '46 Medium',
+            color: 'Dark Blue'
           },
           price: {
-            regular: 240,
-            discount: 125
+            regular: 24099,
+            discount: 12500
           },
           quantity: 0
         },
         {
-          id: 'EOK32943983',
-          name: "WoMen's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket",
-          imgUrl: 'https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/6/_103433446.jpg',
+          id: '71380d3a-59e3-11e9-8647-d663bd873d93',
+          name: 'WOMAN JACKET FIX HOOD - outdoor - mint',
+          imgUrl: 'https://mosaic03.ztat.net/vgs/media/catalog_hd/C7/04/1F/06/LL/11/C7041F06L-L11@9.jpg',
           variants: {
-            size: '42 SHORT',
-            color: 'Charcoal'
+            size: '42 Short',
+            color: 'Mint'
           },
           price: {
-            regular: 440,
-            discount: 140
+            regular: 44000
           },
           quantity: 1
         }
@@ -137,37 +103,36 @@ describe('REDUCER - cart reducer', () => {
   it('handles action SET_QUANTITY', () => {
     const action = {
       type: CART_SET_ITEM_QUANTITY,
-      itemId: 'EOK3293KSD',
+      itemId: '64a673c2-59e3-11e9-8647-d663bd873d93',
       quantity: 10
     };
 
     const expectedState = {
       items: [
         {
-          id: 'EOK3293KSD',
-          name: "Men's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket",
-          imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/71ZgPluVoTL._UX385_.jpg',
+          id: '64a673c2-59e3-11e9-8647-d663bd873d93',
+          name: 'RIDER JACKET - jeans jacket - dark blue',
+          imgUrl: 'https://mosaic03.ztat.net/vgs/media/catalog_hd/LE/42/2T/01/0K/11/LE422T010-K11@8.1.jpg',
           variants: {
-            size: '42 SHORT',
-            color: 'Charcoal'
+            size: '46 Medium',
+            color: 'Dark Blue'
           },
           price: {
-            regular: 240,
-            discount: 125
+            regular: 24099,
+            discount: 12500
           },
           quantity: 10
         },
         {
-          id: 'EOK32943983',
-          name: "WoMen's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket",
-          imgUrl: 'https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/6/_103433446.jpg',
+          id: '71380d3a-59e3-11e9-8647-d663bd873d93',
+          name: 'WOMAN JACKET FIX HOOD - outdoor - mint',
+          imgUrl: 'https://mosaic03.ztat.net/vgs/media/catalog_hd/C7/04/1F/06/LL/11/C7041F06L-L11@9.jpg',
           variants: {
-            size: '42 SHORT',
-            color: 'Charcoal'
+            size: '42 Short',
+            color: 'Mint'
           },
           price: {
-            regular: 440,
-            discount: 140
+            regular: 44000
           },
           quantity: 1
         }
@@ -183,22 +148,21 @@ describe('REDUCER - cart reducer', () => {
   it('handles action REMOVE_ITEM', () => {
     const action = {
       type: CART_REMOVE_ITEM,
-      itemId: 'EOK3293KSD'
+      itemId: '64a673c2-59e3-11e9-8647-d663bd873d93'
     };
 
     const expectedState = {
       items: [
         {
-          id: 'EOK32943983',
-          name: "WoMen's Chaps Performance Series Classic-Fit 4-Way Strech Sit Jacket",
-          imgUrl: 'https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/6/_103433446.jpg',
+          id: '71380d3a-59e3-11e9-8647-d663bd873d93',
+          name: 'WOMAN JACKET FIX HOOD - outdoor - mint',
+          imgUrl: 'https://mosaic03.ztat.net/vgs/media/catalog_hd/C7/04/1F/06/LL/11/C7041F06L-L11@9.jpg',
           variants: {
-            size: '42 SHORT',
-            color: 'Charcoal'
+            size: '42 Short',
+            color: 'Mint'
           },
           price: {
-            regular: 440,
-            discount: 140
+            regular: 44000
           },
           quantity: 1
         }
@@ -209,5 +173,34 @@ describe('REDUCER - cart reducer', () => {
     Object.freeze(action);
 
     expect(reducer(initialState, action)).toEqual(expectedState);
+  });
+
+  it('handles action CART_REFILL_DEMO_CART', () => {
+    const action = {
+      type: CART_REFILL_DEMO_CART
+    };
+
+    const currentState = {
+      items: [
+        {
+          id: '71380d3a-59e3-11e9-8647-d663bd873d93',
+          name: 'WOMAN JACKET FIX HOOD - outdoor - mint',
+          imgUrl: 'https://mosaic03.ztat.net/vgs/media/catalog_hd/C7/04/1F/06/LL/11/C7041F06L-L11@9.jpg',
+          variants: {
+            size: '42 Short',
+            color: 'Mint'
+          },
+          price: {
+            regular: 44000
+          },
+          quantity: 4
+        }
+      ]
+    };
+
+    Object.freeze(currentState);
+    Object.freeze(action);
+
+    expect(reducer(currentState, action)).toEqual(initialState);
   });
 });

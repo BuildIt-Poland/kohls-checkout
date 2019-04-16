@@ -25,6 +25,11 @@ exports[`COMPONENT - NextStep render button if onMoveToNextStep handler is provi
   background-color: #b0b0b0;
 }
 
+.c1:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
+}
+
 .c0 {
   bottom: 0;
   left: 0;
@@ -79,6 +84,11 @@ exports[`COMPONENT - NextStep renders Link if to prop is provided 1`] = `
 
 .c1:disabled {
   background-color: #b0b0b0;
+}
+
+.c1:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
 }
 
 .c0 {

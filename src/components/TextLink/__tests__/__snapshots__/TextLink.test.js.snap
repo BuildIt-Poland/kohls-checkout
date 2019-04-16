@@ -5,9 +5,19 @@ exports[`COMPONENT - TextLink renders correctly 1`] = `
   color: #008484;
   font-weight: 700;
   font-size: 1.8rem;
+  padding: 0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-transform: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.c0:focus {
+  background-color: #ffbf47;
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
 }
 
 <a

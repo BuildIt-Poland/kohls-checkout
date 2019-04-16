@@ -20,6 +20,10 @@ exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
   margin: 0 auto;
 }
 
+.c3 {
+  position: absolute;
+}
+
 <article
   className="c0"
 >
@@ -31,6 +35,9 @@ exports[`COMPONENT - CheckoutDelivery renders CheckoutDelivery component 1`] = `
     >
       Delivery
     </h1>
+    <div
+      className="c3"
+    />
     <SectionHeader
       actionElement={
         <ModalTrigger

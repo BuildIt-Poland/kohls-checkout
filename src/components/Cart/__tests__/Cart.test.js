@@ -30,13 +30,13 @@ describe('COMPONENT - Cart', () => {
       }
     ];
 
-    const component = create(<Cart items={items} />);
+    const component = create(<Cart items={items} refillDemoCart={jest.fn()} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('renders correctly if there are NO items in cart', () => {
-    const component = create(<Cart items={[]} />);
+    const component = create(<Cart items={[]} refillDemoCart={jest.fn()} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
