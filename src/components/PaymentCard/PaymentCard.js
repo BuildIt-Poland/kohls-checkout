@@ -7,18 +7,18 @@ import Visa from './Visa';
 import Mastercard from './MasterCard';
 import Amex from './Amex';
 
-function PaymentCard({ cardNumber }) {
+function PaymentCard({ cardNumber, ...props }) {
   return (
     <>
       {(() => {
         const cardType = creditCardType(cardNumber);
         switch (cardType) {
           case CREDIT_CARD_VISA:
-            return <Visa />;
+            return <Visa {...props} />;
           case CREDIT_CARD_MASTER_CARD:
-            return <Mastercard />;
+            return <Mastercard {...props} />;
           case CREDIT_CARD_AM_EX:
-            return <Amex />;
+            return <Amex {...props} />;
           default:
             return null;
         }

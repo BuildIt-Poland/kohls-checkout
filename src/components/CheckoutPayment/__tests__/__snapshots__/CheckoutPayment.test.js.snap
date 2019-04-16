@@ -2,40 +2,26 @@
 
 exports[`COMPONENT - CheckoutPayment renders CheckoutPayment component 1`] = `
 .c0 {
-  padding-top: 3rem;
-  padding-bottom: 12rem;
-}
-
-.c1 {
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
 }
 
-.c2 {
-  margin: 0;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-<article
-  className="c0"
+<Page
+  title="Payment"
 >
   <section
-    className="c1"
+    className="c0"
   >
-    <h1
-      className="c2"
-    >
+    <Headline>
       Payment
-    </h1>
+    </Headline>
+    <Form />
   </section>
   <OrderSummary />
   <NextStep
     label="Review Order"
-    to="/checkout/review"
+    onMoveToNextStep={[Function]}
   />
-</article>
+</Page>
 `;
