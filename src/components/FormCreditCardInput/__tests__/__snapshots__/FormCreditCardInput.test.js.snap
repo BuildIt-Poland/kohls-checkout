@@ -26,6 +26,8 @@ exports[`COMPONENT - FormCreditCardInput renders correctly 1`] = `
 
 .c1:focus {
   border-color: #00a09f;
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
 }
 
 .c1::-webkit-input-placeholder {
