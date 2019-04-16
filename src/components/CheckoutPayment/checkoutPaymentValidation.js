@@ -5,15 +5,15 @@ const checkoutPaymentValidation = Yup.object().shape({
     .min(3, 'Too short!')
     .required('Required'),
   cardNumber: Yup.string()
-    .matches(/^[^A-Z^a-z]*$/, 'Only numbers allowed')
+    .matches(/^[0-9]*$/, 'Only numbers allowed')
     .min(13, 'Too short!')
     .max(16, 'Too long!')
     .required('Required'),
   expMonth: Yup.string()
-    .matches(/^((?!MM).)*$/, 'Required')
+    .matches(/^(?!.*MM).*$/, 'Required')
     .required('Required'),
   expYear: Yup.string()
-    .matches(/^((?!YY).)*$/, 'Required')
+    .matches(/^(?!.*YY).*$/, 'Required')
     .required('Required'),
   securityCode: Yup.string()
     .min(3, 'Too short!')
