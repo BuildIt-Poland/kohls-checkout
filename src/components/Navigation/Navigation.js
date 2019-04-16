@@ -28,15 +28,10 @@ function Navigation({ match }) {
     <ErrorBoundary>
       <Wrapper>
         <Content as="nav">
-          <NavigationButton
-            data-testid="nav-button-delivery"
-            to={CHECKOUT_DELIVERY_PATH}
-            isActive={isStepActive(STEPS.DELIVERY)}
-          >
+          <NavigationButton to={CHECKOUT_DELIVERY_PATH} isActive={isStepActive(STEPS.DELIVERY)}>
             <StepNumber>1.</StepNumber>Delivery
           </NavigationButton>
           <NavigationButton
-            data-testid="nav-button-payment"
             to={CHECKOUT_PAYMENT_PATH}
             isActive={isStepActive(STEPS.PAYMENT)}
             isBlocked={isStepDelivery()}
@@ -44,7 +39,6 @@ function Navigation({ match }) {
             <StepNumber>2.</StepNumber>Payment
           </NavigationButton>
           <NavigationButton
-            data-testid="nav-button-review"
             to={CHECKOUT_REVIEW_PATH}
             isActive={isStepActive(STEPS.REVIEW)}
             isBlocked={isStepDelivery() || isStepPayment()}
