@@ -1,7 +1,9 @@
 import React from 'react';
-import { render, fireEvent } from 'react-testing-library';
+import { render, fireEvent, cleanup } from 'react-testing-library';
 
 import ModalTrigger from '../ModalTrigger';
+
+afterEach(cleanup);
 
 describe('COMPONENT - ModalTrigger', () => {
   it('renders ModalTrigger with closed Modal', () => {

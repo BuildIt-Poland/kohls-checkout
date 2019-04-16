@@ -1,9 +1,16 @@
-import { setItemQuantity, increaseItemQuantity, decreaseItemQuantity, removeItem } from '../cartActions';
+import {
+  setItemQuantity,
+  increaseItemQuantity,
+  decreaseItemQuantity,
+  removeItem,
+  refillDemoCart
+} from '../cartActions';
 import {
   CART_SET_ITEM_QUANTITY,
   CART_INCREASE_ITEM_QUANTITY,
   CART_DECREASE_ITEM_QUANTITY,
-  CART_REMOVE_ITEM
+  CART_REMOVE_ITEM,
+  CART_REFILL_DEMO_CART
 } from '../../constants/actionTypes';
 
 describe('ACTIONS - Cart actions', () => {
@@ -47,5 +54,13 @@ describe('ACTIONS - Cart actions', () => {
     };
 
     expect(removeItem(itemId)).toEqual(expectedAction);
+  });
+
+  it('creates an action to refill cart with demo items', () => {
+    const expectedAction = {
+      type: CART_REFILL_DEMO_CART
+    };
+
+    expect(refillDemoCart()).toEqual(expectedAction);
   });
 });

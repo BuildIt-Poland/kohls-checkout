@@ -1,5 +1,13 @@
 import styled from 'styled-components';
-import { colorBlack, colorWhite, colorLightGrey, fontMedium, fontWeightBold } from '../../styles/designTokens';
+import {
+  colorBlack,
+  colorWhite,
+  colorYellow,
+  colorLightGrey,
+  fontMedium,
+  fontWeightBold,
+  borderWidthXThick
+} from '../../styles/designTokens';
 
 const Button = styled.button`
   width: 4rem;
@@ -19,6 +27,11 @@ const Button = styled.button`
 
   &:not(:disabled) {
     cursor: pointer;
+  }
+
+  &:focus {
+    outline: ${borderWidthXThick} solid ${colorYellow};
+    outline-offset: 0;
   }
 `;
 

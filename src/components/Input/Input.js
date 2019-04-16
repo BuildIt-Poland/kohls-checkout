@@ -4,6 +4,8 @@ import {
   spacingSmall,
   fontMedium,
   borderWidthThin,
+  borderWidthXThick,
+  colorYellow,
   colorLightGrey,
   colorDarkGrey,
   colorTurquoise,
@@ -26,6 +28,8 @@ const Input = styled.input`
 
   &:focus {
     border-color: ${props => (props.error ? colorRed : colorTurquoise)};
+    outline: ${borderWidthXThick} solid ${colorYellow};
+    outline-offset: 0;
   }
 
   &::placeholder {

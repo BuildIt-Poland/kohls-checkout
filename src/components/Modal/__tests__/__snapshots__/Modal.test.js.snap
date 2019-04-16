@@ -73,6 +73,12 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
   display: block;
 }
 
+.c3:focus {
+  background-color: #ffbf47;
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
+}
+
 .c4 {
   padding: 2rem;
 }
@@ -87,41 +93,60 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
   <div
     class="c0"
   />
-  <section
-    aria-labelledby="dialog-label"
-    aria-modal="true"
-    class="c1"
-    role="dialog"
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="0"
+  />
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="1"
+  />
+  <div
+    data-focus-lock-disabled="false"
   >
-    <h3
-      class="c2"
-      data-testid="modal-header"
-      id="dialog-label"
-    >
-      Modal
-      <button
-        aria-label="close"
-        class="c3"
-      >
-        <svg
-          height="19"
-          width="19"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2.54 19.064l6.987-6.986 6.986 6.987 2.475-2.475-6.987-6.987 6.987-6.986L16.513.142 9.527 7.128 2.541.142.065 2.617l6.987 6.986-6.986 6.986z"
-            fill="#b0b0b0"
-          />
-        </svg>
-      </button>
-    </h3>
     <section
-      class="c4"
-      data-testid="modal-body"
+      aria-labelledby="dialog-label"
+      aria-modal="true"
+      class="c1"
+      role="dialog"
     >
-      Test
+      <h3
+        class="c2"
+        data-testid="modal-header"
+        id="dialog-label"
+      >
+        Modal
+        <button
+          aria-label="close"
+          class="c3"
+        >
+          <svg
+            height="19"
+            width="19"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.54 19.064l6.987-6.986 6.986 6.987 2.475-2.475-6.987-6.987 6.987-6.986L16.513.142 9.527 7.128 2.541.142.065 2.617l6.987 6.986-6.986 6.986z"
+              fill="#666666"
+            />
+          </svg>
+        </button>
+      </h3>
+      <section
+        class="c4"
+        data-testid="modal-body"
+      >
+        Test
+      </section>
     </section>
-  </section>
+  </div>
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="0"
+  />
 </div>
 `;
 
@@ -198,6 +223,12 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
   display: block;
 }
 
+.c3:focus {
+  background-color: #ffbf47;
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
+}
+
 .c4 {
   padding: 2rem;
 }
@@ -212,40 +243,59 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
   <div
     class="c0"
   />
-  <section
-    aria-labelledby="dialog-label"
-    aria-modal="true"
-    class="c1"
-    role="dialog"
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="0"
+  />
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="1"
+  />
+  <div
+    data-focus-lock-disabled="false"
   >
-    <h3
-      class="c2"
-      data-testid="modal-header"
-      id="dialog-label"
-    >
-      Defined Modal Title
-      <button
-        aria-label="close"
-        class="c3"
-      >
-        <svg
-          height="19"
-          width="19"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2.54 19.064l6.987-6.986 6.986 6.987 2.475-2.475-6.987-6.987 6.987-6.986L16.513.142 9.527 7.128 2.541.142.065 2.617l6.987 6.986-6.986 6.986z"
-            fill="#b0b0b0"
-          />
-        </svg>
-      </button>
-    </h3>
     <section
-      class="c4"
-      data-testid="modal-body"
+      aria-labelledby="dialog-label"
+      aria-modal="true"
+      class="c1"
+      role="dialog"
     >
-      Test
+      <h3
+        class="c2"
+        data-testid="modal-header"
+        id="dialog-label"
+      >
+        Defined Modal Title
+        <button
+          aria-label="close"
+          class="c3"
+        >
+          <svg
+            height="19"
+            width="19"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.54 19.064l6.987-6.986 6.986 6.987 2.475-2.475-6.987-6.987 6.987-6.986L16.513.142 9.527 7.128 2.541.142.065 2.617l6.987 6.986-6.986 6.986z"
+              fill="#666666"
+            />
+          </svg>
+        </button>
+      </h3>
+      <section
+        class="c4"
+        data-testid="modal-body"
+      >
+        Test
+      </section>
     </section>
-  </section>
+  </div>
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="0"
+  />
 </div>
 `;

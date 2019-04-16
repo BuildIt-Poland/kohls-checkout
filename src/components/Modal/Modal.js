@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FocusLock from 'react-focus-lock';
 import noop from 'lodash.noop';
 
 import { Cross } from '../Icons';
@@ -13,15 +14,17 @@ function Modal({ children, onClose = noop, title = 'Modal' }) {
   return (
     <>
       <Overlay onClick={onClose} />
-      <Wrapper role="dialog" aria-labelledby="dialog-label" aria-modal="true">
-        <Header as="h3" id="dialog-label" data-testid="modal-header">
-          {title}
-          <CloseButton aria-label="close" onClick={onClose}>
-            <Cross />
-          </CloseButton>
-        </Header>
-        <Body data-testid="modal-body">{children}</Body>
-      </Wrapper>
+      <FocusLock>
+        <Wrapper role="dialog" aria-labelledby="dialog-label" aria-modal="true">
+          <Header as="h3" id="dialog-label" data-testid="modal-header">
+            {title}
+            <CloseButton aria-label="close" onClick={onClose}>
+              <Cross />
+            </CloseButton>
+          </Header>
+          <Body data-testid="modal-body">{children}</Body>
+        </Wrapper>
+      </FocusLock>
     </>
   );
 }

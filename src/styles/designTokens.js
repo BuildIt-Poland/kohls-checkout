@@ -7,11 +7,13 @@ export const colorTurquoise = '#00a09f';
 export const colorTurquoiseDimmed = '#008484';
 export const colorRed = '#e0151d';
 export const colorLightRed = '#fadcdd';
+export const colorYellow = '#ffbf47';
 
 // Spacing (mainly for paddings and margins)
 export const spacingLarge = '3rem';
 export const spacingMedium = '2rem';
 export const spacingSmall = '1rem';
+export const borderWidthXThick = '4px';
 export const borderWidthThick = '2px';
 export const borderWidthThin = '1px';
 

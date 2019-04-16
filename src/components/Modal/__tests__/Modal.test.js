@@ -1,7 +1,9 @@
 import React from 'react';
-import { render } from 'react-testing-library';
+import { render, cleanup } from 'react-testing-library';
 
 import Modal from '../Modal';
+
+afterEach(cleanup);
 
 describe('COMPONENT - Modal', () => {
   it('renders Modal component with default title', () => {

@@ -1,4 +1,5 @@
 // Default website header
+
 import React from 'react';
 
 import CartIcon from '../CartIcon';
