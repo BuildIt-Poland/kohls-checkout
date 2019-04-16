@@ -24,12 +24,12 @@ function ModalTrigger({ title, content }) {
   };
 
   return (
-    <>
+    <span>
       <Hitbox aria-label={`Show ${title} help`} onClick={toggleModal} data-testid="modal-trigger">
         <InfoCircle />
       </Hitbox>
       {renderModal()}
-    </>
+    </span>
   );
 }
 
