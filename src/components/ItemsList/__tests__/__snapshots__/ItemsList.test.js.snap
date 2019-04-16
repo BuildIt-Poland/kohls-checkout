@@ -1,17 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - ItemsList renders correct number of items 1`] = `
-.c0 {
-  margin-top: 3rem;
-  border-top: 1px solid #b0b0b0;
-  padding-top: 3rem;
+.c6 {
+  font-weight: bold;
+  margin-left: 1rem;
 }
 
-.c1 {
-  max-width: 100rem;
-  padding: 0 2rem;
-  margin: 0 auto;
-  list-style: none;
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.c5 {
+  margin: 0;
 }
 
 .c2 {
@@ -30,21 +34,17 @@ exports[`COMPONENT - ItemsList renders correct number of items 1`] = `
   align-items: center;
 }
 
-.c4 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  padding: 0 1rem;
+.c0 {
+  margin-top: 3rem;
+  border-top: 1px solid #b0b0b0;
+  padding-top: 3rem;
 }
 
-.c5 {
-  margin: 0;
-}
-
-.c6 {
-  font-weight: bold;
-  margin-left: 1rem;
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  list-style: none;
 }
 
 <section

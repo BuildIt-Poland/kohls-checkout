@@ -1,37 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import { colorLightGrey, spacingSmall } from '../../styles/designTokens';
+import { colorLightGrey } from '../../styles/designTokens';
 import { formatDate } from '../../utils';
 import Shipping from '../Icons/Shipping';
 import Text from '../Text';
-
-const Section = styled.section`
-  margin: 0 auto;
-  width: 100rem;
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const Message = styled.div`
-  flex-grow: 1;
-  padding: 0 ${spacingSmall};
-`;
-
-const MessageTitle = styled(Text)`
-  margin: 0;
-`;
-
-const ArrivalDates = styled.span`
-  font-weight: bold;
-  margin-left: ${spacingSmall};
-`;
+import ArrivalDates from './ArrivalDates';
+import Message from './Message';
+import MessageTitle from './MessageTitle';
+import Section from './Section';
+import Wrapper from './Wrapper';
 
 function ShippingDetails() {
-  const arrivalDate = () => {
+  const arrivalDates = () => {
     const startDate = new Date();
     const endDate = new Date();
     endDate.setDate(endDate.getDate() + 3);
@@ -49,7 +29,7 @@ function ShippingDetails() {
         <Message>
           <MessageTitle>Ship to Me</MessageTitle>
           <Text as="span">Arrives</Text>
-          <ArrivalDates>{arrivalDate()}</ArrivalDates>
+          <ArrivalDates>{arrivalDates()}</ArrivalDates>
         </Message>
       </Wrapper>
     </Section>

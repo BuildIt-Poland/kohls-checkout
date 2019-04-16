@@ -31,20 +31,9 @@ exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component
   margin-bottom: 0;
 }
 
-.c0 {
-  margin: 0 auto;
-  width: 100rem;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.c6 {
+  font-weight: bold;
+  margin-left: 1rem;
 }
 
 .c3 {
@@ -71,9 +60,20 @@ exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component
   margin-bottom: 0;
 }
 
-.c6 {
-  font-weight: bold;
-  margin-left: 1rem;
+.c0 {
+  margin: 0 auto;
+  width: 100rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <section
@@ -144,20 +144,9 @@ exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders corr
   margin-bottom: 0;
 }
 
-.c0 {
-  margin: 0 auto;
-  width: 100rem;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.c6 {
+  font-weight: bold;
+  margin-left: 1rem;
 }
 
 .c3 {
@@ -184,9 +173,20 @@ exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders corr
   margin-bottom: 0;
 }
 
-.c6 {
-  font-weight: bold;
-  margin-left: 1rem;
+.c0 {
+  margin: 0 auto;
+  width: 100rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <section
