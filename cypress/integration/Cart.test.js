@@ -1,4 +1,5 @@
 /* global cy*/
+import goTo from "./utils/goTo";
 
 function firstElement(selector) {
   return cy.get(selector).first();
@@ -6,7 +7,7 @@ function firstElement(selector) {
 
 describe('Cart', () => {
   beforeEach(() => {
-    cy.visit('/cart');
+    goTo('/cart');
   })
 
   it('increase quantity item to two', () => {
