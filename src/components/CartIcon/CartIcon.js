@@ -19,7 +19,7 @@ const Link = styled(LinkBase)`
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 0 2rem;
+  padding: 0 1rem;
 
   &:focus {
     background-color: ${colorYellow};

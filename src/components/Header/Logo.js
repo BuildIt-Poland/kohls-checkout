@@ -8,8 +8,7 @@ import { Logo as LogoIcon } from '../Icons';
 const Link = styled(LinkBase)`
   height: 100%;
   cursor: pointer;
-  padding: 2rem;
-  padding-bottom: 0;
+  padding: 2rem 1rem 0 1rem;
   position: relative;
 
   &:focus {
