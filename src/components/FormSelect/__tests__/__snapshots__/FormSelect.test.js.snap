@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - FormSelect renders correctly 1`] = `
+.c1 {
+  margin-top: 0.4rem;
+}
+
 .c0 {
   position: relative;
   display: block;
@@ -13,9 +17,12 @@ exports[`COMPONENT - FormSelect renders correctly 1`] = `
 >
   Expiration Month
   <Select
+    className="c1"
+    error={false}
     name="ExpMonth"
     onBlur={[Function]}
     onChange={[Function]}
+    value="YY"
   />
 </label>
 `;

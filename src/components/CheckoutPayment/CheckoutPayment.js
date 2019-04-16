@@ -11,6 +11,7 @@ import ErrorBoundary from '../ErrorBoundary';
 import Form from './Form';
 import checkoutPaymentValidation from './checkoutPaymentValidation';
 
+//TODO connect with redux store
 const initialValues = {
   cardHolderName: '',
   cardNumber: '',
