@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import { item } from '../../types';
 import ErrorBoundary from '../ErrorBoundary';
+import ShippingDetails from '../ShippingDetails';
 import Item from '../Item';
 import Wrapper from './Wrapper';
 import List from './List';
-import ShippingDetails from '../ShippingDetails';
 
 function ItemsList({ items }) {
   return (
