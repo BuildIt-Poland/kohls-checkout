@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as Sentry from '@sentry/browser';
+import smoothscroll from 'smoothscroll-polyfill';
 
 import { PRODUCTION_ENV } from './constants/environments';
 import * as serviceWorker from './serviceWorker';
@@ -13,6 +14,9 @@ if (process.env.NODE_ENV === PRODUCTION_ENV) {
     dsn: process.env.REACT_APP_SENTRY_DSN
   });
 }
+
+// Kick off polyfill
+smoothscroll.polyfill();
 
 // Initialize Redux store
 const store = configureStore();

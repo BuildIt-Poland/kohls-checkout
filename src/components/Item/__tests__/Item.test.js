@@ -1,7 +1,9 @@
 import React from 'react';
-import { render } from 'react-testing-library';
+import { render, cleanup } from 'react-testing-library';
 
 import Item from '../Item';
+
+afterEach(cleanup);
 
 describe('COMPONENT - Item', () => {
   it('renders correctly', () => {

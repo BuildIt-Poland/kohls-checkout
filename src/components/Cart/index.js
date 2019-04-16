@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 
+import { refillDemoCart } from '../../actions/cartActions';
 import Cart from './Cart';
 
 function mapStateToProps(state) {
@@ -8,4 +9,13 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Cart);
+function mapDisaptchToProps(dispatch) {
+  return {
+    refillDemoCart: () => dispatch(refillDemoCart())
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDisaptchToProps
+)(Cart);

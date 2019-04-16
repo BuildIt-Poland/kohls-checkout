@@ -29,7 +29,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   input, textarea, button, select, label, a, li {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 160, 160, 0.1);
+  }
+
+  ::-moz-selection {
+    background: rgba(0, 160, 160, 0.3);
+    color: inherit;
+  }
+  ::selection {
+    background: rgba(0, 160, 160, 0.3);
+    color: inherit;
   }
 
 `;

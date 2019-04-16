@@ -2,7 +2,8 @@ import {
   CART_SET_ITEM_QUANTITY,
   CART_INCREASE_ITEM_QUANTITY,
   CART_DECREASE_ITEM_QUANTITY,
-  CART_REMOVE_ITEM
+  CART_REMOVE_ITEM,
+  CART_REFILL_DEMO_CART
 } from '../constants/actionTypes';
 
 export function setItemQuantity(itemId, quantity) {
@@ -29,5 +30,11 @@ export function removeItem(itemId) {
   return {
     type: CART_REMOVE_ITEM,
     itemId
+  };
+}
+
+export function refillDemoCart() {
+  return {
+    type: CART_REFILL_DEMO_CART
   };
 }

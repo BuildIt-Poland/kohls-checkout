@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { borderWidthThin, colorLightGrey } from '../../styles/designTokens';
+import { borderWidthThin, colorLightGrey, borderWidthXThick, colorYellow } from '../../styles/designTokens';
 import media from '../../styles/media';
 import LinkContent from './LinkContent';
 
@@ -25,6 +25,11 @@ const FlexLink = styled(Link)`
       border-right: 0;
     }
   `};
+
+  &:focus {
+    outline: ${borderWidthXThick} solid ${colorYellow};
+    outline-offset: -${borderWidthXThick};
+  }
 `;
 
 function NavigationButton({ to, isActive, isBlocked, children }) {

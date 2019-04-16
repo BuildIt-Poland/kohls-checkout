@@ -25,28 +25,36 @@ exports[`COMPONENT - ModalTrigger renders ModalTrigger with closed Modal 1`] = `
   display: block;
 }
 
+.c0:focus {
+  background-color: #ffbf47;
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
+}
+
 <div>
-  <button
-    aria-label="Show Test Modal Title help"
-    class="c0"
-    data-testid="modal-trigger"
-  >
-    <svg
-      height="18"
-      width="18"
-      xmlns="http://www.w3.org/2000/svg"
+  <span>
+    <button
+      aria-label="Show Test Modal Title help"
+      class="c0"
+      data-testid="modal-trigger"
     >
-      <circle
-        cx="9"
-        cy="9"
-        fill="#222"
-        r="9"
-      />
-      <path
-        d="M9.833 6.241H8.167V4.724h1.666v1.517zM8.167 7.49h1.666v5.786H8.167V7.49z"
-        fill="#fff"
-      />
-    </svg>
-  </button>
+      <svg
+        height="18"
+        width="18"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="9"
+          cy="9"
+          fill="#222"
+          r="9"
+        />
+        <path
+          d="M9.833 6.241H8.167V4.724h1.666v1.517zM8.167 7.49h1.666v5.786H8.167V7.49z"
+          fill="#fff"
+        />
+      </svg>
+    </button>
+  </span>
 </div>
 `;
