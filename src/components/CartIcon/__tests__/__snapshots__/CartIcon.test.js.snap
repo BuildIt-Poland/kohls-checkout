@@ -25,7 +25,7 @@ exports[`COMPONENT - CartIcon renders correctly 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .c0:focus {
