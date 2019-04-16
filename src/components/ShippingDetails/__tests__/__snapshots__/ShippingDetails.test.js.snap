@@ -61,7 +61,7 @@ exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component
 }
 
 .c0 {
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   width: 100rem;
 }
 
@@ -174,7 +174,7 @@ exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders corr
 }
 
 .c0 {
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   width: 100rem;
 }
 

@@ -6,7 +6,7 @@ import SectionHeader from '../SectionHeader';
 import TextLink from '../TextLink';
 import BillingAddress from '../BillingAddress';
 import ItemsList from '../ItemsList';
-import Section from './Section';
+import Content from '../Content';
 
 function ShippingDetailsEdit() {
   const textLink = (
@@ -16,11 +16,11 @@ function ShippingDetailsEdit() {
   );
 
   return (
-    <Section>
+    <Content>
       <SectionHeader actionElement={textLink}>Shipping Details</SectionHeader>
       <BillingAddress />
       <ItemsList />
-    </Section>
+    </Content>
   );
 }
 

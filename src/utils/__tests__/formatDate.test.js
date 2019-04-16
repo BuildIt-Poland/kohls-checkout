@@ -2,6 +2,7 @@ import formatDate from '../formatDate';
 
 describe('FUNC - formatDate', () => {
   it('should receive formatted date', () => {
-    expect(formatDate(new Date(2019, 4, 16))).toEqual('Thu, May 16');
+    const formattedDate = formatDate(new Date(2019, 4, 16));
+    expect(formattedDate).toEqual('Thu, May 16');
   });
 });
