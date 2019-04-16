@@ -1,44 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - FormSelect FormSelect with error renders correctly FormSelect 1`] = `
+exports[`COMPONENT - FormSelect renders correctly 1`] = `
 .c0 {
-  margin-bottom: 1rem;
-}
-
-.c1 {
-  font-style: italic;
-  color: #e0151d;
+  position: relative;
+  display: block;
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
 }
 
 <label
   className="c0"
 >
-  Dummy Label
+  Expiration Month
   <Select
-    error="dummyError"
-    placeholder="Dummy placeHolder"
-    type="text"
-  />
-  <div
-    className="c1"
-  >
-    dummyError
-  </div>
-</label>
-`;
-
-exports[`COMPONENT - FormSelect FormSelect without error renders correctly FormSelect 1`] = `
-.c0 {
-  margin-bottom: 1rem;
-}
-
-<label
-  className="c0"
->
-  Dummy Label
-  <Select
-    placeholder="Dummy placeHolder"
-    type="text"
+    name="ExpMonth"
+    onBlur={[Function]}
+    onChange={[Function]}
   />
 </label>
 `;

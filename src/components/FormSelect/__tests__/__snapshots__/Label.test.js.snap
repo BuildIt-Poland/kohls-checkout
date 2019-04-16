@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - FormSelect Label renders correctly 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+<label
+  className="c0"
+/>
+`;

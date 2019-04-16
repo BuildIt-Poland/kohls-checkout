@@ -20,6 +20,143 @@ exports[`COMPONENT - CheckoutPayment renders CheckoutPayment component 1`] = `
   line-height: 1;
 }
 
+.c3 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #666666;
+}
+
+.c3:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  position: relative;
+  display: block;
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.c5 {
+  border: 1px solid #b0b0b0;
+  border-radius: 0;
+  height: 4rem;
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  outline: 0;
+  width: 100%;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+  margin-top: 0.4rem;
+}
+
+.c5:disabled {
+  background-color: #b0b0b0;
+}
+
+.c5:focus {
+  border-color: #00a09f;
+}
+
+.c5::-webkit-input-placeholder {
+  color: #666666;
+}
+
+.c5::-moz-placeholder {
+  color: #666666;
+}
+
+.c5:-ms-input-placeholder {
+  color: #666666;
+}
+
+.c5::placeholder {
+  color: #666666;
+}
+
+.c10 {
+  position: relative;
+  display: block;
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.c11 {
+  border: 1px solid #b0b0b0;
+  border-radius: 0;
+  height: 4rem;
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  outline: 0;
+  width: 100%;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+  margin-top: 0.4rem;
+}
+
+.c11:disabled {
+  background-color: #b0b0b0;
+}
+
+.c11:focus {
+  border-color: #00a09f;
+}
+
+.c11::-webkit-input-placeholder {
+  color: #666666;
+}
+
+.c11::-moz-placeholder {
+  color: #666666;
+}
+
+.c11:-ms-input-placeholder {
+  color: #666666;
+}
+
+.c11::placeholder {
+  color: #666666;
+}
+
+.c8 {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  margin-right: 1rem;
+}
+
+.c7 {
+  position: relative;
+}
+
+.c9 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #b0b0b0;
+  border-radius: 0;
+  background-color: #ffffff;
+  padding: 0 1rem;
+  outline: 0;
+  width: 100%;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+  height: 4rem;
+}
+
+.c9:disabled {
+  background-color: #b0b0b0;
+}
+
+.c6 {
+  position: relative;
+  display: block;
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
 <article
   className="c0"
 >
@@ -31,11 +168,247 @@ exports[`COMPONENT - CheckoutPayment renders CheckoutPayment component 1`] = `
     >
       Payment
     </h1>
+    <form
+      onReset={[Function]}
+      onSubmit={[Function]}
+    >
+      <p
+        className="c3"
+      >
+        Please complete all fields.
+      </p>
+      <label
+        className="c4"
+      >
+        Card Number
+        <input
+          className="c5"
+          name="cardNumber"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        className="c6"
+      >
+        Exp. Month
+        <div
+          className="c7"
+        >
+          <svg
+            className="c8"
+            height="20"
+            viewBox="0 0 129 129"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
+                fill="#222222"
+              />
+            </g>
+          </svg>
+          <select
+            className="c9"
+            name="expMonth"
+            onBlur={[Function]}
+            onChange={[Function]}
+            value="MM"
+          >
+            <option
+              disabled={true}
+              label="MM"
+              value="MM"
+            />
+            <option
+              label="1"
+              value="1"
+            />
+            <option
+              label="2"
+              value="2"
+            />
+            <option
+              label="3"
+              value="3"
+            />
+            <option
+              label="4"
+              value="4"
+            />
+            <option
+              label="5"
+              value="5"
+            />
+            <option
+              label="6"
+              value="6"
+            />
+            <option
+              label="7"
+              value="7"
+            />
+            <option
+              label="8"
+              value="8"
+            />
+            <option
+              label="9"
+              value="9"
+            />
+            <option
+              label="10"
+              value="10"
+            />
+            <option
+              label="11"
+              value="11"
+            />
+            <option
+              label="12"
+              value="12"
+            />
+          </select>
+        </div>
+      </label>
+      <label
+        className="c6"
+      >
+        Exp. Year
+        <div
+          className="c7"
+        >
+          <svg
+            className="c8"
+            height="20"
+            viewBox="0 0 129 129"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
+                fill="#222222"
+              />
+            </g>
+          </svg>
+          <select
+            className="c9"
+            name="expYear"
+            onBlur={[Function]}
+            onChange={[Function]}
+            value="YY"
+          >
+            <option
+              disabled={true}
+              label="YY"
+              value="YY"
+            />
+            <option
+              label="19"
+              value="19"
+            />
+            <option
+              label="20"
+              value="20"
+            />
+            <option
+              label="21"
+              value="21"
+            />
+            <option
+              label="22"
+              value="22"
+            />
+            <option
+              label="23"
+              value="23"
+            />
+            <option
+              label="24"
+              value="24"
+            />
+            <option
+              label="25"
+              value="25"
+            />
+            <option
+              label="26"
+              value="26"
+            />
+            <option
+              label="27"
+              value="27"
+            />
+            <option
+              label="28"
+              value="28"
+            />
+            <option
+              label="29"
+              value="29"
+            />
+            <option
+              label="30"
+              value="30"
+            />
+            <option
+              label="31"
+              value="31"
+            />
+            <option
+              label="32"
+              value="32"
+            />
+            <option
+              label="33"
+              value="33"
+            />
+            <option
+              label="34"
+              value="34"
+            />
+            <option
+              label="35"
+              value="35"
+            />
+            <option
+              label="36"
+              value="36"
+            />
+            <option
+              label="37"
+              value="37"
+            />
+            <option
+              label="38"
+              value="38"
+            />
+          </select>
+        </div>
+      </label>
+      <label
+        className="c10"
+      >
+        Security Code
+        <input
+          className="c11"
+          name="securityCode"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="password"
+          value=""
+        />
+      </label>
+    </form>
   </section>
   <OrderSummary />
   <NextStep
     label="Review Order"
-    to="/checkout/review"
+    onMoveToNextStep={[Function]}
   />
 </article>
 `;
