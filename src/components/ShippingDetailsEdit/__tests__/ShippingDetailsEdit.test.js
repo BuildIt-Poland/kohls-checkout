@@ -6,7 +6,7 @@ import ShippingDetailsEdit from '../ShippingDetailsEdit';
 jest.mock('react-router-dom', () => ({
   Link: 'MockedLink'
 }));
-jest.mock('../../BillingAddress', () => 'BillingAddress');
+jest.mock('../../AddressDetails', () => 'AddressDetails');
 jest.mock('../../ItemsList', () => 'ItemsList');
 
 describe('COMPONENT - ShippingDetailsEdit', () => {

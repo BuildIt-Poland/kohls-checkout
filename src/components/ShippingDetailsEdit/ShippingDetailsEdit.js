@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
 import SectionHeader from '../SectionHeader';
 import TextLink from '../TextLink';
-import BillingAddress from '../BillingAddress';
+import AddressDetails from '../AddressDetails';
 import ItemsList from '../ItemsList';
 import Content from '../Content';
 
@@ -18,7 +18,7 @@ function ShippingDetailsEdit() {
   return (
     <Content>
       <SectionHeader actionElement={textLink}>Shipping Details</SectionHeader>
-      <BillingAddress />
+      <AddressDetails header="Shipping Address" />
       <ItemsList />
     </Content>
   );

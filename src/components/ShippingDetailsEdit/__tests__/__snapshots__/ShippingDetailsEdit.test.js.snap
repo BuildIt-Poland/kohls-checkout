@@ -58,7 +58,9 @@ exports[`COMPONENT - ShippingDetailsEdit renders ShippingDetailsEdit component 1
       Edit
     </MockedLink>
   </h2>
-  <BillingAddress />
+  <AddressDetails
+    header="Shipping Address"
+  />
   <ItemsList />
 </section>
 `;

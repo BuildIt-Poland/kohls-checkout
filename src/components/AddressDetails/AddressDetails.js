@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from 'prop-types';
 
 import { address } from '../../types';
 import ModalTrigger from '../ModalTrigger';
@@ -6,10 +7,10 @@ import Address from './Address';
 import Text from './Text';
 import Section from './Section';
 
-function BillingAddress({ address }) {
+function BillingAddress({ header, address }) {
   const modalTrigger = (
     <ModalTrigger
-      title="Billing Address"
+      title={header}
       content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
     >
       <Text underline>Open Modal</Text>
@@ -18,7 +19,7 @@ function BillingAddress({ address }) {
   return (
     <Section>
       <Text bold as="h3" actionElement={modalTrigger}>
-        Billing Address
+        {header}
       </Text>
       <Address>
         <Text bold>
@@ -33,6 +34,7 @@ function BillingAddress({ address }) {
 }
 
 BillingAddress.propTypes = {
+  header: string.isRequired,
   address: address.isRequired
 };
 
