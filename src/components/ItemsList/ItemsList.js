@@ -17,7 +17,7 @@ function ItemsList({ items }) {
             <Item key={item.id} item={item} />
           ))}
         </List>
-        <ShippingDetails header="Item can only be shipped Standard" />
+        <ShippingDetails />
       </Wrapper>
     </ErrorBoundary>
   );
