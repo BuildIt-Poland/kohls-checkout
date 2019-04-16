@@ -1,7 +1,9 @@
 import React from 'react';
-import { render } from 'react-testing-library';
+import { render, cleanup } from 'react-testing-library';
 
 import OrderSummary from '../OrderSummary';
+
+afterEach(cleanup);
 
 describe('COMPONENT - OrderSummary', () => {
   it('renders correctly with corrrect headline', () => {
