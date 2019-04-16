@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { address } from '../../types';
-import SectionHeader from '../SectionHeader';
 import ModalTrigger from '../ModalTrigger';
 import Address from './Address';
 import Text from './Text';
+import Section from './Section';
 
 function BillingAddress({ address }) {
   const modalTrigger = (
@@ -16,8 +16,10 @@ function BillingAddress({ address }) {
     </ModalTrigger>
   );
   return (
-    <>
-      <SectionHeader actionElement={modalTrigger}>Billing Address</SectionHeader>
+    <Section>
+      <Text bold as="h3" actionElement={modalTrigger}>
+        Billing Address
+      </Text>
       <Address>
         <Text bold>
           {address.firstName} {address.lastName}
@@ -26,7 +28,7 @@ function BillingAddress({ address }) {
         <Text>{address.city}</Text>
         <Text>{address.phone}</Text>
       </Address>
-    </>
+    </Section>
   );
 }
 

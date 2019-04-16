@@ -20,9 +20,7 @@ function PaymentInformation() {
     <section>
       <SectionHeader actionElement={textLink}>Payment Information</SectionHeader>
       <PaymentMethod cardNumber="4532888003415095" expiries="04/21" price={220.5} />
-      <Section>
-        <BillingAddress />
-      </Section>
+      <BillingAddress />
       <Section>
         <SectionHeader>Email Address</SectionHeader>
         <Text>asdasdasd@adasad.com</Text>

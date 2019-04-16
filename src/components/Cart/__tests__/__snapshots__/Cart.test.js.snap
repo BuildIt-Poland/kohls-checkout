@@ -20,6 +20,81 @@ exports[`COMPONENT - Cart renders correctly if there are NO items in cart 1`] = 
   margin: 0 auto;
 }
 
+.c4 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c4:last-child {
+  margin-bottom: 0;
+}
+
+.c8 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c8:last-child {
+  margin-bottom: 0;
+}
+
+.c3 {
+  margin: 0 auto;
+  width: 100rem;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.c7 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  margin: 0;
+}
+
+.c7:last-child {
+  margin-bottom: 0;
+}
+
+.c9 {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
 <article
   className="c0"
 >
@@ -34,6 +109,52 @@ exports[`COMPONENT - Cart renders correctly if there are NO items in cart 1`] = 
     <CartItemsList
       items={Array []}
     />
+    <section
+      className="c3"
+    >
+      <h3
+        className="c4"
+      >
+        Item can only be shipped Standard
+      </h3>
+      <div
+        className="c5"
+      >
+        <svg
+          height="27"
+          width="44"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M35.631 22.095a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0zm-21.08 0a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0z"
+            fill="#b0b0b0"
+          />
+          <path
+            d="M4.554 22.039H.18V.491h28.384v3.377h7.978l7.255 18.171h-7.169c-.03-3.007-2.484-5.444-5.497-5.444s-5.467 2.437-5.497 5.444H15.548c-.03-3.007-2.484-5.444-5.497-5.444s-5.467 2.437-5.497 5.444zm26.577-4.444a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm-21.08 0a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9z"
+            fill="#b0b0b0"
+          />
+        </svg>
+        <div
+          className="c6"
+        >
+          <p
+            className="c7"
+          >
+            Ship to Me
+          </p>
+          <span
+            className="c8"
+          >
+            Arrives
+          </span>
+          <span
+            className="c9"
+          >
+            Tue, Apr 16 - Fri, Apr 19
+          </span>
+        </div>
+      </div>
+    </section>
   </section>
 </article>
 `;
@@ -64,6 +185,81 @@ Array [
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
+}
+
+.c4 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c4:last-child {
+  margin-bottom: 0;
+}
+
+.c8 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c8:last-child {
+  margin-bottom: 0;
+}
+
+.c3 {
+  margin: 0 auto;
+  width: 100rem;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.c7 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  margin: 0;
+}
+
+.c7:last-child {
+  margin-bottom: 0;
+}
+
+.c9 {
+  font-weight: bold;
+  margin-left: 1rem;
 }
 
 <article
@@ -97,6 +293,52 @@ Array [
           ]
         }
       />
+      <section
+        className="c3"
+      >
+        <h3
+          className="c4"
+        >
+          Item can only be shipped Standard
+        </h3>
+        <div
+          className="c5"
+        >
+          <svg
+            height="27"
+            width="44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35.631 22.095a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0zm-21.08 0a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0z"
+              fill="#b0b0b0"
+            />
+            <path
+              d="M4.554 22.039H.18V.491h28.384v3.377h7.978l7.255 18.171h-7.169c-.03-3.007-2.484-5.444-5.497-5.444s-5.467 2.437-5.497 5.444H15.548c-.03-3.007-2.484-5.444-5.497-5.444s-5.467 2.437-5.497 5.444zm26.577-4.444a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm-21.08 0a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9z"
+              fill="#b0b0b0"
+            />
+          </svg>
+          <div
+            className="c6"
+          >
+            <p
+              className="c7"
+            >
+              Ship to Me
+            </p>
+            <span
+              className="c8"
+            >
+              Arrives
+            </span>
+            <span
+              className="c9"
+            >
+              Tue, Apr 16 - Fri, Apr 19
+            </span>
+          </div>
+        </div>
+      </section>
     </section>
     <OrderSummary />
     <NextStep

@@ -1,24 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
-Array [
-  <SectionHeader
-    actionElement={
-      <ModalTrigger
-        content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
-        title="Billing Address"
-      >
-        <ForwardRef
-          underline={true}
-        >
-          Open Modal
-        </ForwardRef>
-      </ModalTrigger>
-    }
-  >
-    Billing Address
-  </SectionHeader>,
-  .c0 {
+.c2 {
   padding: 0;
   font-style: normal;
 }
@@ -39,7 +22,7 @@ Array [
   margin-bottom: 0;
 }
 
-.c2 {
+.c3 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -51,12 +34,28 @@ Array [
   margin: 0;
 }
 
-.c2:last-child {
+.c3:last-child {
   margin-bottom: 0;
 }
 
-<address
-    className="c0"
+.c0 {
+  margin-bottom: 2rem;
+}
+
+.c0:last-child {
+  margin-bottom: 3rem;
+}
+
+<section
+  className="c0"
+>
+  <h3
+    className="c1"
+  >
+    Billing Address
+  </h3>
+  <address
+    className="c2"
   >
     <p
       className="c1"
@@ -66,20 +65,20 @@ Array [
       Swift
     </p>
     <p
-      className="c2"
+      className="c3"
     >
       228 Park Ave S
     </p>
     <p
-      className="c2"
+      className="c3"
     >
       New Orlean
     </p>
     <p
-      className="c2"
+      className="c3"
     >
       444 444 444
     </p>
-  </address>,
-]
+  </address>
+</section>
 `;

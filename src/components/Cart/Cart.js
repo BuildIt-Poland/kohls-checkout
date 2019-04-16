@@ -11,6 +11,7 @@ import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
 import Content from '../Content';
 import CartItemsList from '../CartItemsList';
+import ShipingDetails from '../ShippingDetails';
 
 function Cart({ items }) {
   const pageTitle = `Cart (${totalCartItemsCount(items)})`;
@@ -27,6 +28,7 @@ function Cart({ items }) {
         <Content>
           <Headline>{pageTitle}</Headline>
           <CartItemsList items={items} />
+          <ShipingDetails />
         </Content>
         {isCartNotEmpty && <OrderSummary />}
         {isCartNotEmpty && <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />}

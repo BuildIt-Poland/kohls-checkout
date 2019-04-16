@@ -14,6 +14,39 @@ exports[`COMPONENT - ItemsList renders correct number of items 1`] = `
   list-style: none;
 }
 
+.c2 {
+  margin: 0 auto;
+  width: 100rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.c5 {
+  margin: 0;
+}
+
+.c6 {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
 <section
   className="c0"
 >
@@ -56,5 +89,52 @@ exports[`COMPONENT - ItemsList renders correct number of items 1`] = `
       }
     />
   </ul>
+  <section
+    className="c2"
+  >
+    <Text
+      as="h3"
+      bold={true}
+    >
+      Item can only be shipped Standard
+    </Text>
+    <div
+      className="c3"
+    >
+      <svg
+        height="27"
+        width="44"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M35.631 22.095a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0zm-21.08 0a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0z"
+          fill="#b0b0b0"
+        />
+        <path
+          d="M4.554 22.039H.18V.491h28.384v3.377h7.978l7.255 18.171h-7.169c-.03-3.007-2.484-5.444-5.497-5.444s-5.467 2.437-5.497 5.444H15.548c-.03-3.007-2.484-5.444-5.497-5.444s-5.467 2.437-5.497 5.444zm26.577-4.444a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm-21.08 0a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9z"
+          fill="#b0b0b0"
+        />
+      </svg>
+      <div
+        className="c4"
+      >
+        <Text
+          className="c5"
+        >
+          Ship to Me
+        </Text>
+        <Text
+          as="span"
+        >
+          Arrives
+        </Text>
+        <span
+          className="c6"
+        >
+          Tue, Apr 16 - Fri, Apr 19
+        </span>
+      </div>
+    </div>
+  </section>
 </section>
 `;

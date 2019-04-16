@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
 import SectionHeader from '../SectionHeader';
 import TextLink from '../TextLink';
+import BillingAddress from '../BillingAddress';
+import ItemsList from '../ItemsList';
+import Section from './Section';
 
 function ShippingDetailsEdit() {
   const textLink = (
@@ -13,9 +16,11 @@ function ShippingDetailsEdit() {
   );
 
   return (
-    <section>
+    <Section>
       <SectionHeader actionElement={textLink}>Shipping Details</SectionHeader>
-    </section>
+      <BillingAddress />
+      <ItemsList />
+    </Section>
   );
 }
 

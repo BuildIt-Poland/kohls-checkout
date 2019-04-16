@@ -6,6 +6,7 @@ import ErrorBoundary from '../ErrorBoundary';
 import Item from '../Item';
 import Wrapper from './Wrapper';
 import List from './List';
+import ShippingDetails from '../ShippingDetails';
 
 function ItemsList({ items }) {
   return (
@@ -16,6 +17,7 @@ function ItemsList({ items }) {
             <Item key={item.id} item={item} />
           ))}
         </List>
+        <ShippingDetails header="Item can only be shipped Standard" />
       </Wrapper>
     </ErrorBoundary>
   );

@@ -1,7 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component 1`] = `
-.c2 {
+.c1 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c1:last-child {
+  margin-bottom: 0;
+}
+
+.c5 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -12,11 +27,16 @@ exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component
   color: #222222;
 }
 
-.c2:last-child {
+.c5:last-child {
   margin-bottom: 0;
 }
 
 .c0 {
+  margin: 0 auto;
+  width: 100rem;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -27,7 +47,7 @@ exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component
   align-items: center;
 }
 
-.c1 {
+.c3 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -35,44 +55,81 @@ exports[`COMPONENT - ShippingDetails Renders correctly ShippingDetails component
   padding: 0 1rem;
 }
 
-.c3 {
-  font-weight: bold;
+.c4 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  margin: 0;
 }
 
-<div
+.c4:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+<section
   className="c0"
 >
-  <Shipping
-    fill="#b0b0b0"
-  />
-  <div
+  <h3
     className="c1"
   >
-    <p
-      className="c2"
+    Item can only be shipped Standard
+  </h3>
+  <div
+    className="c2"
+  >
+    <Shipping
+      fill="#b0b0b0"
+    />
+    <div
+      className="c3"
     >
-      Ship to Me 
-      <br />
-      <span>
-        Arrives 
+      <p
+        className="c4"
+      >
+        Ship to Me
+      </p>
+      <span
+        className="c5"
+      >
+        Arrives
       </span>
       <span
-        className="c3"
+        className="c6"
       >
-        Tue. Apr. 19 - Wed. May. 19
+        Tue, Apr 16 - Fri, Apr 19
       </span>
-    </p>
-    <p
-      className="c2"
-    >
-      Free after $85
-    </p>
+    </div>
   </div>
-</div>
+</section>
 `;
 
 exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders correctly ShippingDetails component without shipping promo 1`] = `
-.c2 {
+.c1 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+.c1:last-child {
+  margin-bottom: 0;
+}
+
+.c5 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -83,11 +140,16 @@ exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders corr
   color: #222222;
 }
 
-.c2:last-child {
+.c5:last-child {
   margin-bottom: 0;
 }
 
 .c0 {
+  margin: 0 auto;
+  width: 100rem;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -98,7 +160,7 @@ exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders corr
   align-items: center;
 }
 
-.c1 {
+.c3 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -106,33 +168,60 @@ exports[`COMPONENT - ShippingDetails When there is no shippingPromo Renders corr
   padding: 0 1rem;
 }
 
-.c3 {
-  font-weight: bold;
+.c4 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  margin: 0;
 }
 
-<div
+.c4:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+<section
   className="c0"
 >
-  <Shipping
-    fill="#b0b0b0"
-  />
-  <div
+  <h3
     className="c1"
   >
-    <p
-      className="c2"
+    Item can only be shipped Standard
+  </h3>
+  <div
+    className="c2"
+  >
+    <Shipping
+      fill="#b0b0b0"
+    />
+    <div
+      className="c3"
     >
-      Ship to Me 
-      <br />
-      <span>
-        Arrives 
+      <p
+        className="c4"
+      >
+        Ship to Me
+      </p>
+      <span
+        className="c5"
+      >
+        Arrives
       </span>
       <span
-        className="c3"
+        className="c6"
       >
-        Tue. Apr. 19 - Wed. May. 19
+        Tue, Apr 16 - Fri, Apr 19
       </span>
-    </p>
+    </div>
   </div>
-</div>
+</section>
 `;
