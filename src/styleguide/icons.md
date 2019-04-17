@@ -1,28 +1,30 @@
-```js
+`import { IconName } from '../Icons';`
+
+```jsx noeditor
 import styled from 'styled-components';
 
-import Chevron from './Chevron';
-import Cross from './Cross';
-import Cart from './Cart';
-import InfoCircle from './InfoCircle';
-import Shipping from './Shipping';
-import Tick from './Tick';
-import MasterCard from './MasterCard';
-import AmexCard from './AmexCard';
-import VisaCard from './VisaCard';
+import {colorLightGrey} from '../styles/designTokens'
+import { Chevron, Cross, Cart, InfoCircle, Shipping, Tick } from '../components/Icons';
 
 const IconsWrapper = styled.div`
+  border: 1px solid ${colorLightGrey};
+  padding: 20px;
+  border-radius: 8px;
   display: flex;
 `;
 
 const IconWrapper = styled.div`
+  height: 40px;
+`;
+
+const Container = styled.div`
   width: 20%;
   margin: 0;
   text-align: center;
 `;
 
 const IconLabel = styled.p`
-  margin: 5px;
+  margin: 0;
 `;
 
 const icons = [
@@ -54,10 +56,10 @@ const icons = [
 
 const iconElements = icons.map(Icon => {
   return (
-    <IconWrapper key={Icon.name}>
-      {Icon.component}
+    <Container key={Icon.name}>
+      <IconWrapper>{Icon.component}</IconWrapper>
       <IconLabel>{Icon.name}</IconLabel>
-    </IconWrapper>
+    </Container>
   );
 });
 

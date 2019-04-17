@@ -9,6 +9,7 @@ exports[`COMPONENT - CheckMark renders CheckMark component 1`] = `
   width: 2.8rem;
   border: 2px solid #b0b0b0;
   border-radius: 0.25rem;
+  background-color: #ffffff;
 }
 
 <span

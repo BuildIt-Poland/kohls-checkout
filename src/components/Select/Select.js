@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Chevron from '../Icons/Chevron';
 
+import ChevronDown from './ChevronDown';
 import {
-  borderRadiusLarge,
   spacingSmall,
   borderWidthThin,
   colorBlack,
@@ -17,48 +16,43 @@ const SelectContainer = styled.div`
   position: relative;
 `;
 
-const StyledChevronDown = styled(Chevron)`
-  position: absolute;
-  top: 1.3rem;
-  right: 0;
-  margin-right: 1rem;
-`;
-
 const StyledSelect = styled.select`
   appearance: none;
-  border: ${borderWidthThin} solid ${props => (props.error ? colorRed : colorBlack)};
-  border-radius: ${borderRadiusLarge};
+  border: ${borderWidthThin} solid ${props => (props.error ? colorRed : colorLightGrey)};
+  border-radius: 0;
   background-color: ${colorWhite};
-  padding: ${spacingSmall};
+  padding: 0 ${spacingSmall};
   outline: 0;
   width: 100%;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+  height: 4rem;
 
   :disabled {
     background-color: ${colorLightGrey};
   }
 `;
 
-const Select = function({ className, label, error, type, options, ...props }) {
+function Select({ className, label, field, error, options, ...props }) {
   return (
     <SelectContainer className={className}>
-      <StyledChevronDown disabled={props.disabled} fill={colorBlack} />
+      <ChevronDown disabled={props.disabled} fill={colorBlack} />
       <StyledSelect error={error} {...props}>
-        {options.map((props, index) => (
-          <option key={index} {...props} />
+        {options.map((option, index) => (
+          <option key={index} {...option} />
         ))}
       </StyledSelect>
     </SelectContainer>
   );
-};
+}
 
 Select.propTypes = {
   error: PropTypes.bool,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired,
+      value: PropTypes.string.isRequired,
       disabled: PropTypes.bool
-    })
+    }).isRequired
   )
 };
 

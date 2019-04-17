@@ -4,16 +4,17 @@ import PropTypes from 'prop-types';
 import { AmexCard } from '../Icons';
 import Wrapper from './Wrapper';
 
-function Amex({ small }) {
+function Amex({ small, className }) {
   return (
-    <Wrapper small={small}>
+    <Wrapper className={className} small={small}>
       <AmexCard />
     </Wrapper>
   );
 }
 
 Amex.propTypes = {
-  cardNumber: PropTypes.bool
+  cardNumber: PropTypes.bool,
+  className: PropTypes.string
 };
 
 export default Amex;

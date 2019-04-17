@@ -1,28 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import { Field } from 'formik';
 
-import { spacingSmall, colorRed } from '../../styles/designTokens';
-import Select from '../Select';
+import Select from './Select';
+import Label from './Label';
+import ErrorMessage from './ErrorMessage';
 
-const Label = styled.label`
-  margin-bottom: ${spacingSmall};
-`;
-
-const ErrorMessage = styled.div`
-  font-style: italic;
-  color: ${colorRed};
-`;
-
-const SelectForm = function({ className, label, error, ...props }) {
+function SelectForm({ name, className, label, error, ...props }) {
   return (
-    <Label className={className}>
-      {label}
-      <Select error={error} {...props} />
-      {error && <ErrorMessage>{error}</ErrorMessage>}
-    </Label>
+    <Field name={name}>
+      {({ field, form }) => (
+        <Label className={className}>
+          {label}
+          <Select error={!!(form.touched[field.name] && form.errors[field.name])} {...field} {...props} />
+          {form.touched[field.name] && form.errors[field.name] && (
+            <ErrorMessage>{form.errors[field.name]}</ErrorMessage>
+          )}
+        </Label>
+      )}
+    </Field>
   );
-};
+}
 
 SelectForm.propTypes = {
   label: PropTypes.string.isRequired,

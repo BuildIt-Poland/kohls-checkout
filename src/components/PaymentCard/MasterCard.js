@@ -4,16 +4,17 @@ import PropTypes from 'prop-types';
 import { MasterCard as MasterCardIcon } from '../Icons';
 import Wrapper from './Wrapper';
 
-function MasterCard({ small }) {
+function MasterCard({ small, className }) {
   return (
-    <Wrapper small={small}>
+    <Wrapper className={className} small={small}>
       <MasterCardIcon />
     </Wrapper>
   );
 }
 
 MasterCard.propTypes = {
-  cardNumber: PropTypes.bool
+  cardNumber: PropTypes.bool,
+  className: PropTypes.string
 };
 
 export default MasterCard;
