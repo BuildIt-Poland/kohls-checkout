@@ -1,9 +1,6 @@
 import * as Yup from 'yup';
 
 const checkoutPaymentValidation = Yup.object().shape({
-  cardHolderName: Yup.string()
-    .min(3, 'Too short!')
-    .required('Required'),
   cardNumber: Yup.string()
     .matches(/^[0-9]*$/, 'Only numbers allowed')
     .min(13, 'Too short!')
