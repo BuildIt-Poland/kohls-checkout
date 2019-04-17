@@ -10,7 +10,6 @@ exports[`COMPONENT - CheckoutPayment form renders correctly 1`] = `
   <FormInput
     label="Cardholder Name"
     name="cardHolderName"
-    type="text"
   />
   <FormCreditCardInput
     label="Card Number"

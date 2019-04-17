@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - FormSelect Chevron renders correctly 1`] = `
+.c0 {
+  position: absolute;
+  top: 3.2rem;
+  right: 1rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+<span
+  className="c0"
+>
+  <ChevronIcon />
+</span>
+`;

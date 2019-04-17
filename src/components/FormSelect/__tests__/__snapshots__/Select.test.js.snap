@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - FormInput Input renders correctly 1`] = `
+exports[`COMPONENT - FormSelect Select renders correctly 1`] = `
 .c0 {
   border: 1px solid #b0b0b0;
   background: #ffffff;
@@ -11,7 +11,9 @@ exports[`COMPONENT - FormInput Input renders correctly 1`] = `
   outline: 0;
   width: 100%;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
-  margin-top: 0.4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .c0:disabled {
@@ -40,7 +42,7 @@ exports[`COMPONENT - FormInput Input renders correctly 1`] = `
   color: #666666;
 }
 
-<input
+<select
   className="c0"
 />
 `;

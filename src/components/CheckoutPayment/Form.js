@@ -14,7 +14,7 @@ function Form() {
   return (
     <FormikForm>
       <Text dimmed>Please complete all fields.</Text>
-      <FormInput name="cardHolderName" type="text" label="Cardholder Name" />
+      <FormInput name="cardHolderName" label="Cardholder Name" />
       <FormCreditCardInput name="cardNumber" label="Card Number" maxLength="19" />
       <FormSelect name="expMonth" label="Exp. Month" options={expMonthOptions} />
       <FormSelect name="expYear" label="Exp. Year" options={expYearsOptions} />
