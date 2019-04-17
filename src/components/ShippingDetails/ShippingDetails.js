@@ -4,6 +4,7 @@ import { colorLightGrey } from '../../styles/designTokens';
 import { formatDate } from '../../utils';
 import Shipping from '../Icons/Shipping';
 import Text from '../Text';
+import ArrivalDates from './ArrivalDates';
 import ShippingMessage from './ShippingMessage';
 import Wrapper from './Wrapper';
 
@@ -24,10 +25,8 @@ function ShippingDetails() {
         <ShippingMessage>
           <p>Ship to Me</p>
           <p>
-            Arrives{' '}
-            <Text as="span" bold>
-              {getArrivalDates()}
-            </Text>{' '}
+            Arrives
+            <ArrivalDates>{getArrivalDates()}</ArrivalDates>
           </p>
         </ShippingMessage>
       </Wrapper>

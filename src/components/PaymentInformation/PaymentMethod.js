@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 import Text from '../Text';
 import SectionHeader from '../SectionHeader';
+import Section from '../Section';
 import Wrapper from './Wrapper';
 import PaymentCard from './PaymentCard';
 import CardName from './CardName';
 import Price from './Price';
-import Section from '../Section';
 
 function hiddenCardNumber(cardNumber) {
   return `XXXX-XXXX-XXXX-${cardNumber.slice(12)}`;
