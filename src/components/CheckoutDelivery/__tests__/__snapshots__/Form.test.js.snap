@@ -41,23 +41,19 @@ exports[`COMPONENT - ShippingAddressForm renders correctly 1`] = `
     <FormInput
       label="First Name"
       name="firstName"
-      type="text"
     />
     <FormInput
       label="Last Name"
       name="lastName"
-      type="text"
     />
   </div>
   <FormInput
     label="Street"
     name="street"
-    type="text"
   />
   <FormInput
     label="City"
     name="city"
-    type="text"
   />
   <div
     className="c1"
@@ -65,12 +61,10 @@ exports[`COMPONENT - ShippingAddressForm renders correctly 1`] = `
     <FormInput
       label="State"
       name="state"
-      type="text"
     />
     <FormInput
       label="Zip Code"
       name="zipCode"
-      type="text"
     />
   </div>
   <FormInput
