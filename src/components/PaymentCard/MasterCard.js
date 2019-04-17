@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { MasterCard as MasterCardIcon } from '../Icons';
 import Wrapper from './Wrapper';
 
-function MasterCard({ small, className }) {
+function MasterCard({ small }) {
   return (
-    <Wrapper className={className} small={small}>
+    <Wrapper small={small}>
       <MasterCardIcon />
     </Wrapper>
   );
