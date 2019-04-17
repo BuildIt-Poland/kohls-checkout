@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 import { spacingSmall } from '../../styles/designTokens';
+import Text from '../Text';
 
-const ShippingMessage = styled.div`
-  flex-grow: 1;
+const ShippingText = styled(Text)`
   padding: 0 ${spacingSmall};
-  > p {
-    margin: 0;
-  }
+  margin: 0;
 `;
 
-export default ShippingMessage;
+export default ShippingText;

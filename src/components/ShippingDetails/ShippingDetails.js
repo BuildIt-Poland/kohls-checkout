@@ -4,8 +4,7 @@ import { colorLightGrey } from '../../styles/designTokens';
 import { formatDate } from '../../utils';
 import Shipping from '../Icons/Shipping';
 import Text from '../Text';
-import ArrivalDates from './ArrivalDates';
-import ShippingMessage from './ShippingMessage';
+import ShippingText from './ShippingText';
 import Wrapper from './Wrapper';
 
 function ShippingDetails() {
@@ -22,13 +21,13 @@ function ShippingDetails() {
       <Text bold>Item can only be shipped Standard</Text>
       <Wrapper>
         <Shipping fill={colorLightGrey} />
-        <ShippingMessage>
-          <p>Ship to Me</p>
-          <p>
-            Arrives
-            <ArrivalDates>{getArrivalDates()}</ArrivalDates>
-          </p>
-        </ShippingMessage>
+        <ShippingText>Arrives</ShippingText>
+        <ShippingText>
+          Ship to Me
+          <ShippingText bold as="span">
+            {getArrivalDates()}
+          </ShippingText>
+        </ShippingText>
       </Wrapper>
     </>
   );

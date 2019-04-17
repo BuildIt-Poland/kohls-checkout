@@ -22,21 +22,38 @@ Array [
   >
     Item can only be shipped Standard
   </p>,
-  .c2 {
-  font-weight: bold;
-  margin-left: 1rem;
-}
-
-.c1 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  padding: 0 1rem;
-}
-
-.c1 > p {
+  .c1 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
   margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.c1:last-child {
+  margin-bottom: 0;
+}
+
+.c2 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.c2:last-child {
+  margin-bottom: 0;
 }
 
 .c0 {
@@ -57,21 +74,21 @@ Array [
     <Shipping
       fill="#b0b0b0"
     />
-    <div
+    <p
       className="c1"
     >
-      <p>
-        Ship to Me
-      </p>
-      <p>
-        Arrives
-        <span
-          className="c2"
-        >
-          Wed, Apr 17 - Sat, Apr 20
-        </span>
-      </p>
-    </div>
+      Arrives
+    </p>
+    <p
+      className="c1"
+    >
+      Ship to Me
+      <span
+        className="c2"
+      >
+        Wed, Apr 17 - Sat, Apr 20
+      </span>
+    </p>
   </div>,
 ]
 `;
@@ -98,21 +115,38 @@ Array [
   >
     Item can only be shipped Standard
   </p>,
-  .c2 {
-  font-weight: bold;
-  margin-left: 1rem;
-}
-
-.c1 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  padding: 0 1rem;
-}
-
-.c1 > p {
+  .c1 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
   margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.c1:last-child {
+  margin-bottom: 0;
+}
+
+.c2 {
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #222222;
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.c2:last-child {
+  margin-bottom: 0;
 }
 
 .c0 {
@@ -133,21 +167,21 @@ Array [
     <Shipping
       fill="#b0b0b0"
     />
-    <div
+    <p
       className="c1"
     >
-      <p>
-        Ship to Me
-      </p>
-      <p>
-        Arrives
-        <span
-          className="c2"
-        >
-          Wed, Apr 17 - Sat, Apr 20
-        </span>
-      </p>
-    </div>
+      Arrives
+    </p>
+    <p
+      className="c1"
+    >
+      Ship to Me
+      <span
+        className="c2"
+      >
+        Wed, Apr 17 - Sat, Apr 20
+      </span>
+    </p>
   </div>,
 ]
 `;
