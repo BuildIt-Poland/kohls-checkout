@@ -3,12 +3,16 @@
 exports[`COMPONENT - FormCreditCardInput Icon renders correctly 1`] = `
 .c0 {
   position: absolute;
-  top: 50%;
-  right: 1rem;
-  margin-top: -10px;
+  top: 3.5rem;
+  right: 0.7rem;
+  z-index: 1;
 }
 
-<PaymentCard
+<span
   className="c0"
-/>
+>
+  <PaymentCard
+    small={true}
+  />
+</span>
 `;

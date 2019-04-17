@@ -5,7 +5,7 @@ exports[`COMPONENT - CheckoutPayment form renders correctly 1`] = `
   <Text
     dimmed={true}
   >
-    Please complete all fields.
+    Please enter your card info. All fields are required.
   </Text>
   <FormCreditCardInput
     label="Card Number"

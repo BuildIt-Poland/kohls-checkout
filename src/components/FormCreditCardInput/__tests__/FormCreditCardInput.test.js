@@ -10,10 +10,9 @@ describe('COMPONENT - FormCreditCardInput', () => {
   it('renders correctly', () => {
     const props = {
       name: 'cardNumber',
-      label: 'First Name',
-      placeholder: 'Type first name here...',
-      type: 'text'
+      label: 'Credit Card Number'
     };
+
     const component = create(
       <Formik
         initialValues={{
