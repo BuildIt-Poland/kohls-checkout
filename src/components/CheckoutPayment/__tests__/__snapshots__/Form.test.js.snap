@@ -7,10 +7,6 @@ exports[`COMPONENT - CheckoutPayment form renders correctly 1`] = `
   >
     Please complete all fields.
   </Text>
-  <FormInput
-    label="Cardholder Name"
-    name="cardHolderName"
-  />
   <FormCreditCardInput
     label="Card Number"
     maxLength="19"

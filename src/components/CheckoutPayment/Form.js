@@ -13,8 +13,7 @@ const expYearsOptions = generateYears();
 function Form() {
   return (
     <FormikForm>
-      <Text dimmed>Please complete all fields.</Text>
-      <FormInput name="cardHolderName" label="Cardholder Name" />
+      <Text dimmed>Please enter your card info. All fields are required.</Text>
       <FormCreditCardInput name="cardNumber" label="Card Number" maxLength="19" />
       <FormSelect name="expMonth" label="Exp. Month" options={expMonthOptions} />
       <FormSelect name="expYear" label="Exp. Year" options={expYearsOptions} />

@@ -13,7 +13,6 @@ import checkoutPaymentValidation from './checkoutPaymentValidation';
 
 //TODO connect with redux store
 const initialValues = {
-  cardHolderName: '',
   cardNumber: '',
   expMonth: 'MM',
   expYear: 'YY',
