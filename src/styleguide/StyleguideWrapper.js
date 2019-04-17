@@ -11,7 +11,7 @@ import configureStore from '../store';
 
 const ComponentsWrapper = styled.div`
   display: grid;
-  gap: 30px;
+  gap: 15px;
 `;
 
 const initialState = {
