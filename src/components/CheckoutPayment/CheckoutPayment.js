@@ -1,7 +1,9 @@
 import React from 'react';
 import { Formik } from 'formik';
+import PropTypes from 'prop-types';
 
 import { CHECKOUT_REVIEW_PATH } from '../../constants/routes';
+import { paymentInfo } from '../../types';
 import Page from '../Page';
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
@@ -11,23 +13,20 @@ import Content from './Content';
 import Form from './Form';
 import checkoutPaymentValidation from './checkoutPaymentValidation';
 
-//TODO connect with redux store
-const initialValues = {
-  cardNumber: '',
-  expMonth: 'MM',
-  expYear: 'YY',
-  securityCode: ''
-};
-
-function CheckoutPayment({ history }) {
+function CheckoutPayment({ history, initialPaymentInfo, setPaymentInfo }) {
   const hadleFormSubmit = formValues => {
+    setPaymentInfo(formValues);
     history.push(CHECKOUT_REVIEW_PATH);
   };
 
   return (
     <Page title="Payment">
       <ErrorBoundary>
-        <Formik initialValues={initialValues} validationSchema={checkoutPaymentValidation} onSubmit={hadleFormSubmit}>
+        <Formik
+          initialValues={initialPaymentInfo}
+          validationSchema={checkoutPaymentValidation}
+          onSubmit={hadleFormSubmit}
+        >
           {({ submitForm }) => (
             <>
               <Content>
@@ -43,5 +42,11 @@ function CheckoutPayment({ history }) {
     </Page>
   );
 }
+
+CheckoutPayment.propTypes = {
+  history: PropTypes.object.isRequired,
+  initialPaymentInfo: paymentInfo.isRequired,
+  setPaymentInfo: PropTypes.func.isRequired
+};
 
 export default CheckoutPayment;

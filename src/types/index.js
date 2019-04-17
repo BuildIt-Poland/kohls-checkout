@@ -1,6 +1,6 @@
 // Centralised type definitions for commonly used ones
 
-import { shape, number, string } from 'prop-types';
+import { shape, number, string, oneOfType } from 'prop-types';
 
 export const itemVariants = shape({
   size: string,
@@ -29,4 +29,11 @@ export const address = shape({
   state: string.isRequired,
   zipCode: string.isRequired,
   phone: string.isRequired
+});
+
+export const paymentInfo = shape({
+  cardNumber: oneOfType([string, number]).isRequired,
+  expMonth: oneOfType([string, number]).isRequired,
+  expYear: oneOfType([string, number]).isRequired,
+  securityCode: oneOfType([string, number]).isRequired
 });
