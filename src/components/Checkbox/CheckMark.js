@@ -10,7 +10,7 @@ const CheckMark = styled.span`
   width: 2.8rem;
   border: ${borderWidthThick} solid ${colorLightGrey};
   border-radius: ${borderRadiusMedium};
-  background-color: ${props => (props.disabled ? colorLightGrey : colorWhite)};
+  background-color: ${({ disabled }) => (disabled ? colorLightGrey : colorWhite)};
 `;
 
 export default CheckMark;
