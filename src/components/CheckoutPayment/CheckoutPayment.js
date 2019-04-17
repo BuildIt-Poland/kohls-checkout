@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Formik } from 'formik';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import { CHECKOUT_REVIEW_PATH } from '../../constants/routes';
 import { paymentInfo } from '../../types';
+import { scrollToRef } from '../../utils';
+
 import Page from '../Page';
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
@@ -13,7 +16,19 @@ import Content from './Content';
 import Form from './Form';
 import checkoutPaymentValidation from './checkoutPaymentValidation';
 
+const ScrollAnchor = styled.div`
+  position: absolute;
+`;
+
 function CheckoutPayment({ history, initialPaymentInfo, setPaymentInfo }) {
+  // Scrolls to beginning of the form if there are errors
+  const scrollAnchorRef = useRef(null);
+
+  const attemptFormSubmit = submitForm => {
+    scrollToRef(scrollAnchorRef, 4);
+    submitForm();
+  };
+
   const hadleFormSubmit = formValues => {
     setPaymentInfo(formValues);
     history.push(CHECKOUT_REVIEW_PATH);
@@ -31,10 +46,11 @@ function CheckoutPayment({ history, initialPaymentInfo, setPaymentInfo }) {
             <>
               <Content>
                 <Headline>Payment</Headline>
+                <ScrollAnchor ref={scrollAnchorRef} />
                 <Form />
               </Content>
               <OrderSummary />
-              <NextStep label="Review Order" onMoveToNextStep={submitForm} />
+              <NextStep label="Review Order" onMoveToNextStep={() => attemptFormSubmit(submitForm)} />
             </>
           )}
         </Formik>
