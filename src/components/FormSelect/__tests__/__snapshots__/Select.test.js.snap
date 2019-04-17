@@ -14,6 +14,7 @@ exports[`COMPONENT - FormSelect Select renders correctly 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  margin-top: 0.4rem;
 }
 
 .c0:disabled {

@@ -3,11 +3,11 @@ import { Formik } from 'formik';
 
 import { CHECKOUT_REVIEW_PATH } from '../../constants/routes';
 import Page from '../Page';
-import Content from '../Content';
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
 import Headline from '../Headline';
 import ErrorBoundary from '../ErrorBoundary';
+import Content from './Content';
 import Form from './Form';
 import checkoutPaymentValidation from './checkoutPaymentValidation';
 

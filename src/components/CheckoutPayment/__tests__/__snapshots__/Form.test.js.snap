@@ -1,6 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - CheckoutPayment form renders correctly 1`] = `
+.c0 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 3rem;
+  column-gap: 3rem;
+}
+
+@media (max-width:26.25em) {
+  .c0 {
+    display: block;
+  }
+}
+
 <form>
   <Text
     dimmed={true}
@@ -12,21 +25,25 @@ exports[`COMPONENT - CheckoutPayment form renders correctly 1`] = `
     maxLength="19"
     name="cardNumber"
   />
-  <FormSelect
-    label="Exp. Month"
-    name="expMonth"
-    options={Array []}
-  />
-  <FormSelect
-    label="Exp. Year"
-    name="expYear"
-    options={Array []}
-  />
-  <FormInput
-    label="Security Code"
-    maxLength="4"
-    name="securityCode"
-    type="password"
-  />
+  <div
+    className="c0"
+  >
+    <FormSelect
+      label="Exp. Month"
+      name="expMonth"
+      options={Array []}
+    />
+    <FormSelect
+      label="Exp. Year"
+      name="expYear"
+      options={Array []}
+    />
+    <FormInput
+      label="CCV"
+      maxLength="4"
+      name="securityCode"
+      type="password"
+    />
+  </div>
 </form>
 `;

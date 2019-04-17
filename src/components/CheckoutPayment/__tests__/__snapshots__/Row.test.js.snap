@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - CheckoutPayment Row renders correctly 1`] = `
+.c0 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 3rem;
+  column-gap: 3rem;
+}
+
+@media (max-width:26.25em) {
+  .c0 {
+    display: block;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
