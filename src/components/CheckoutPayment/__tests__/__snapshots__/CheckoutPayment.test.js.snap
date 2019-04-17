@@ -8,6 +8,10 @@ exports[`COMPONENT - CheckoutPayment renders CheckoutPayment component 1`] = `
   padding-bottom: 3rem;
 }
 
+.c1 {
+  position: absolute;
+}
+
 <Page
   title="Payment"
 >
@@ -17,6 +21,9 @@ exports[`COMPONENT - CheckoutPayment renders CheckoutPayment component 1`] = `
     <Headline>
       Payment
     </Headline>
+    <div
+      className="c1"
+    />
     <Form />
   </section>
   <OrderSummary />
