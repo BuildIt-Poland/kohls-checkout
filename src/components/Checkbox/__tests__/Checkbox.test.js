@@ -9,8 +9,15 @@ describe('COMPONENT - Checkbox', () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+
   it('renders unchecked Checkbox component', () => {
     const component = create(<Checkbox checked={false} />);
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it('renders disabled Checkbox component', () => {
+    const component = create(<Checkbox disabled={true} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
