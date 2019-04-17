@@ -1,7 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
-.c1 {
+Array [
+  <Overlay
+    onClick={[Function]}
+  />,
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={0}
+  />,
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={1}
+  />,
+  .c0 {
   background: white;
   height: auto;
   left: 50%;
@@ -14,144 +48,104 @@ exports[`COMPONENT - Modal renders Modal component with default title 1`] = `
   z-index: 9000;
 }
 
-.c0 {
-  background: rgba(0,0,0,0.6);
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 8000;
-}
-
-.c2 {
-  height: 6rem;
-  font-size: 2.4rem;
-  border-bottom: 1px solid #b0b0b0;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0 1rem 0 2rem;
-  text-align: left;
-  line-height: 1;
-}
-
-.c3 {
-  border: 0;
-  background: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-width: 4rem;
-  min-height: 4rem;
-  cursor: pointer;
-  width: 4rem;
-  height: 4rem;
-}
-
-.c3 svg {
-  display: block;
-}
-
-.c3:focus {
-  background-color: #ffbf47;
-  outline: 4px solid #ffbf47;
-  outline-offset: 0;
-}
-
-.c4 {
+.c1 {
   padding: 2rem;
 }
 
 @media (max-width:26.25em) {
-  .c1 {
+  .c0 {
     width: calc(100% - 2rem - 2rem);
   }
 }
 
-<div>
-  <div
-    class="c0"
-  />
-  <div
-    data-focus-guard="true"
-    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-    tabindex="0"
-  />
-  <div
-    data-focus-guard="true"
-    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-    tabindex="1"
-  />
-  <div
-    data-focus-lock-disabled="false"
+<div
+    data-focus-lock-disabled={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
   >
     <section
       aria-labelledby="dialog-label"
       aria-modal="true"
-      class="c1"
+      className="c0"
       role="dialog"
     >
-      <h3
-        class="c2"
+      <Header
+        as="h3"
         data-testid="modal-header"
         id="dialog-label"
       >
         Modal
-        <button
+        <CloseButton
           aria-label="close"
-          class="c3"
+          onClick={[Function]}
         >
-          <svg
-            height="19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.54 19.064l6.987-6.986 6.986 6.987 2.475-2.475-6.987-6.987 6.987-6.986L16.513.142 9.527 7.128 2.541.142.065 2.617l6.987 6.986-6.986 6.986z"
-              fill="#666666"
-            />
-          </svg>
-        </button>
-      </h3>
+          <span>
+            <Cross />
+          </span>
+        </CloseButton>
+      </Header>
       <section
-        class="c4"
+        className="c1"
         data-testid="modal-body"
       >
         Test
       </section>
     </section>
-  </div>
+  </div>,
   <div
-    data-focus-guard="true"
-    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-    tabindex="0"
-  />
-</div>
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={0}
+  />,
+]
 `;
 
 exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
-.c1 {
+Array [
+  <Overlay
+    onClick={[Function]}
+  />,
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={0}
+  />,
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={1}
+  />,
+  .c0 {
   background: white;
   height: auto;
   left: 50%;
@@ -164,138 +158,64 @@ exports[`COMPONENT - Modal renders Modal component with defined title 1`] = `
   z-index: 9000;
 }
 
-.c0 {
-  background: rgba(0,0,0,0.6);
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 8000;
-}
-
-.c2 {
-  height: 6rem;
-  font-size: 2.4rem;
-  border-bottom: 1px solid #b0b0b0;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0 1rem 0 2rem;
-  text-align: left;
-  line-height: 1;
-}
-
-.c3 {
-  border: 0;
-  background: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-width: 4rem;
-  min-height: 4rem;
-  cursor: pointer;
-  width: 4rem;
-  height: 4rem;
-}
-
-.c3 svg {
-  display: block;
-}
-
-.c3:focus {
-  background-color: #ffbf47;
-  outline: 4px solid #ffbf47;
-  outline-offset: 0;
-}
-
-.c4 {
+.c1 {
   padding: 2rem;
 }
 
 @media (max-width:26.25em) {
-  .c1 {
+  .c0 {
     width: calc(100% - 2rem - 2rem);
   }
 }
 
-<div>
-  <div
-    class="c0"
-  />
-  <div
-    data-focus-guard="true"
-    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-    tabindex="0"
-  />
-  <div
-    data-focus-guard="true"
-    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-    tabindex="1"
-  />
-  <div
-    data-focus-lock-disabled="false"
+<div
+    data-focus-lock-disabled={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
   >
     <section
       aria-labelledby="dialog-label"
       aria-modal="true"
-      class="c1"
+      className="c0"
       role="dialog"
     >
-      <h3
-        class="c2"
+      <Header
+        as="h3"
         data-testid="modal-header"
         id="dialog-label"
       >
         Defined Modal Title
-        <button
+        <CloseButton
           aria-label="close"
-          class="c3"
+          onClick={[Function]}
         >
-          <svg
-            height="19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.54 19.064l6.987-6.986 6.986 6.987 2.475-2.475-6.987-6.987 6.987-6.986L16.513.142 9.527 7.128 2.541.142.065 2.617l6.987 6.986-6.986 6.986z"
-              fill="#666666"
-            />
-          </svg>
-        </button>
-      </h3>
+          <span>
+            <Cross />
+          </span>
+        </CloseButton>
+      </Header>
       <section
-        class="c4"
+        className="c1"
         data-testid="modal-body"
       >
         Test
       </section>
     </section>
-  </div>
+  </div>,
   <div
-    data-focus-guard="true"
-    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-    tabindex="0"
-  />
-</div>
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={0}
+  />,
+]
 `;

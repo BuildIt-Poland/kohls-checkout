@@ -14,12 +14,14 @@ function Modal({ children, onClose = noop, title = 'Modal' }) {
   return (
     <>
       <Overlay onClick={onClose} />
-      <FocusLock>
+      <FocusLock autoFocus={false}>
         <Wrapper role="dialog" aria-labelledby="dialog-label" aria-modal="true">
           <Header as="h3" id="dialog-label" data-testid="modal-header">
             {title}
             <CloseButton aria-label="close" onClick={onClose}>
-              <Cross />
+              <span>
+                <Cross />
+              </span>
             </CloseButton>
           </Header>
           <Body data-testid="modal-body">{children}</Body>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { borderRadiusMedium, borderWidthThick, colorLightGrey } from '../../styles/designTokens';
+import { borderRadiusMedium, borderWidthThick, colorLightGrey, colorWhite } from '../../styles/designTokens';
 
 const CheckMark = styled.span`
   position: absolute;
@@ -10,6 +10,7 @@ const CheckMark = styled.span`
   width: 2.8rem;
   border: ${borderWidthThick} solid ${colorLightGrey};
   border-radius: ${borderRadiusMedium};
+  background-color: ${({ disabled }) => (disabled ? colorLightGrey : colorWhite)};
 `;
 
 export default CheckMark;

@@ -23,5 +23,5 @@ const store = configureStore();
 
 ReactDOM.render(<Root store={store} />, document.getElementById('root'));
 
-// Register to enable service worker
-serviceWorker.unregister();
+// Unregister to disable service worker
+serviceWorker.register();
