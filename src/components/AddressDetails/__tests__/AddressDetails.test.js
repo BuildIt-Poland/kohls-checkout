@@ -5,8 +5,8 @@ import AddressDetails from '../AddressDetails';
 
 jest.mock('../../SectionHeader', () => 'SectionHeader');
 
-describe('COMPONENT - BillingAddress', () => {
-  it('renders BillingAddress component', () => {
+describe('COMPONENT - AddressDetails', () => {
+  it('renders AddressDetails component', () => {
     const address = {
       firstName: 'Taylor',
       lastName: 'Swift',

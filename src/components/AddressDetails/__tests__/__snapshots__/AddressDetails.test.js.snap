@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
-.c2 {
+exports[`COMPONENT - AddressDetails renders AddressDetails component 1`] = `
+.c1 {
   padding: 0;
   font-style: normal;
 }
 
-.c1 {
+.c2 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -18,7 +18,7 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
   margin: 0;
 }
 
-.c1:last-child {
+.c2:last-child {
   margin-bottom: 0;
 }
 
@@ -49,16 +49,27 @@ exports[`COMPONENT - BillingAddress renders BillingAddress component 1`] = `
 <section
   className="c0"
 >
-  <h3
-    className="c1"
+  <SectionHeader
+    actionElement={
+      <ModalTrigger
+        content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
+        title="Address"
+      >
+        <ForwardRef
+          underline={true}
+        >
+          Open Modal
+        </ForwardRef>
+      </ModalTrigger>
+    }
   >
     Address
-  </h3>
+  </SectionHeader>
   <address
-    className="c2"
+    className="c1"
   >
     <p
-      className="c1"
+      className="c2"
     >
       Taylor
        

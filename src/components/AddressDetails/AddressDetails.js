@@ -5,9 +5,10 @@ import { address } from '../../types';
 import ModalTrigger from '../ModalTrigger';
 import Address from './Address';
 import Text from './Text';
-import Section from './Section';
+import SectionHeader from '../SectionHeader';
+import Section from '../Section';
 
-function BillingAddress({ header, address }) {
+function AddressDetails({ header, address }) {
   const modalTrigger = (
     <ModalTrigger
       title={header}
@@ -18,9 +19,7 @@ function BillingAddress({ header, address }) {
   );
   return (
     <Section>
-      <Text bold as="h3" actionElement={modalTrigger}>
-        {header}
-      </Text>
+      <SectionHeader actionElement={modalTrigger}>{header}</SectionHeader>
       <Address>
         <Text bold>
           {address.firstName} {address.lastName}
@@ -33,9 +32,9 @@ function BillingAddress({ header, address }) {
   );
 }
 
-BillingAddress.propTypes = {
+AddressDetails.propTypes = {
   header: string.isRequired,
   address: address.isRequired
 };
 
-export default BillingAddress;
+export default AddressDetails;

@@ -16,11 +16,13 @@ function ShippingDetailsEdit() {
   );
 
   return (
-    <Content>
-      <SectionHeader actionElement={textLink}>Shipping Details</SectionHeader>
-      <AddressDetails header="Shipping Address" />
+    <>
+      <Content>
+        <SectionHeader actionElement={textLink}>Shipping Details</SectionHeader>
+        <AddressDetails header="Shipping Address" />
+      </Content>
       <ItemsList />
-    </Content>
+    </>
   );
 }
 

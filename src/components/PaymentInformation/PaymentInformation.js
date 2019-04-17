@@ -8,7 +8,7 @@ import Text from '../Text';
 import SectionHeader from '../SectionHeader';
 import Content from '../Content';
 import PaymentMethod from './PaymentMethod';
-import Section from './Section';
+import Section from '../Section';
 
 function PaymentInformation() {
   const textLink = (
