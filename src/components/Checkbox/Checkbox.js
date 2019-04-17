@@ -6,10 +6,10 @@ import Input from './Input';
 import CheckMark from './CheckMark';
 import Tick from './Tick';
 
-function Checkbox({ children, checked, onChange, disabled }) {
+function Checkbox({ children, checked, disabled, onChange }) {
   return (
     <Wrapper>
-      <Input type="checkbox" checked={checked} onChange={onChange} disabled={disabled} />
+      <Input type="checkbox" checked={checked} disabled={disabled} onChange={onChange} />
       <CheckMark disabled={disabled} />
       {children}
       {checked && <Tick />}
@@ -20,8 +20,8 @@ function Checkbox({ children, checked, onChange, disabled }) {
 Checkbox.propTypes = {
   children: node,
   checked: bool,
-  onChange: func,
-  disabled: bool
+  disabled: bool,
+  onChange: func
 };
 
 export default Checkbox;
