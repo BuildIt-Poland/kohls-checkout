@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import noop from 'lodash.noop';
 
 import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
 import { item } from '../../types';
@@ -13,7 +14,7 @@ import Content from '../Content';
 import CartItemsList from '../CartItemsList';
 import TextLink from '../TextLink';
 
-function Cart({ items, refillDemoCart }) {
+function Cart({ items, refillDemoCart = noop }) {
   const pageTitle = `Cart (${totalCartItemsCount(items)})`;
   const isCartEmpty = !totalCartItemsCount(items);
 
@@ -43,7 +44,7 @@ function Cart({ items, refillDemoCart }) {
 
 Cart.propTypes = {
   items: PropTypes.arrayOf(item),
-  refillDemoCart: PropTypes.func.isRequired
+  refillDemoCart: PropTypes.func
 };
 
 export default Cart;

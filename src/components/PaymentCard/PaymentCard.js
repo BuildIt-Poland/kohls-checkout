@@ -7,6 +7,33 @@ import Visa from './Visa';
 import Mastercard from './MasterCard';
 import Amex from './Amex';
 
+const icons = [
+  {
+    component: <Chevron />,
+    name: 'Chevron'
+  },
+  {
+    component: <Cross />,
+    name: 'Chevron'
+  },
+  {
+    component: <Cart />,
+    name: 'Chevron'
+  },
+  {
+    component: <InfoCircle />,
+    name: 'Chevron'
+  },
+  {
+    component: <Shipping />,
+    name: 'Chevron'
+  },
+  {
+    component: <Tick />,
+    name: 'Chevron'
+  }
+];
+
 function PaymentCard({ cardNumber }) {
   return (
     <>
