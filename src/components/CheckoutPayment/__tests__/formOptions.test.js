@@ -8,7 +8,7 @@ describe('FUNC - months', () => {
 
 describe('FUNC - nextYearsFromDate', () => {
   it('generates list of years from provided start date', () => {
-    expect(nextYearsFromDate('2006-04-23T10:26:00', 4)).toEqual([6, 7, 8, 9, 10]);
+    expect(nextYearsFromDate('1998-04-23T10:26:00', 4)).toEqual([1998, 1999, 2000, 2001, 2002]);
   });
 });
 
@@ -20,6 +20,6 @@ describe('FUNC - monthsOptions', () => {
 
 describe('FUNC - yearsOptions', () => {
   it('generates list of next 10 years from given date', () => {
-    expect(yearsOptions('2006-04-23T10:26:00', 10)).toMatchSnapshot();
+    expect(yearsOptions('1998-04-23T10:26:00', 10)).toMatchSnapshot();
   });
 });

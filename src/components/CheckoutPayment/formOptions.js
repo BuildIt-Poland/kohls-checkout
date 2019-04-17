@@ -10,15 +10,11 @@ export function months() {
 }
 
 export function nextYearsFromDate(startDate, yearsAmount = 20) {
-  const startYear = Number(
-    new Date(startDate)
-      .getFullYear()
-      .toString()
-      .slice(2)
-  );
+  const startYear = Number(new Date(startDate).getFullYear());
+  const endYear = startYear + yearsAmount;
 
   let years = [];
-  for (let i = startYear; i <= startYear + yearsAmount; i++) {
+  for (let i = startYear; i <= endYear; i++) {
     years.push(i);
   }
 
