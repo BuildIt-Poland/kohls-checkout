@@ -9,6 +9,7 @@ cache:
   directories:
     - ~/.cache
 script:
+  - bash deploy.sh styleguide
   - npm run test:ci
   - npm run e2e
   - npm run lint
