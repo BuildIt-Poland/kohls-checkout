@@ -11,6 +11,7 @@ import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
 import Content from '../Content';
 import CartItemsList from '../CartItemsList';
+import ShippingDetails from '../ShippingDetails';
 import TextLink from '../TextLink';
 
 function Cart({ items, refillDemoCart }) {
@@ -28,6 +29,7 @@ function Cart({ items, refillDemoCart }) {
         <Content>
           <Headline>{pageTitle}</Headline>
           <CartItemsList items={items} />
+          <ShippingDetails />
           {isCartEmpty && (
             <TextLink onClick={refillDemoCart} as="button">
               Put some items in cart!

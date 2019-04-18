@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - ShippingDetailsEdit renders ShippingDetailsEdit component 1`] = `
-.c0 {
+Array [
+  .c1 {
   font-size: 2.4rem;
   text-align: left;
   margin: 1rem 0;
@@ -19,7 +20,7 @@ exports[`COMPONENT - ShippingDetailsEdit renders ShippingDetailsEdit component 1
   align-items: center;
 }
 
-.c1 {
+.c2 {
   color: #008484;
   font-weight: 700;
   font-size: 1.8rem;
@@ -32,23 +33,36 @@ exports[`COMPONENT - ShippingDetailsEdit renders ShippingDetailsEdit component 1
   cursor: pointer;
 }
 
-.c1:focus {
+.c2:focus {
   background-color: #ffbf47;
   outline: 4px solid #ffbf47;
   outline-offset: 0;
 }
 
-<section>
-  <h2
+.c0 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+<section
     className="c0"
   >
-    Shipping Details
-    <MockedLink
+    <h2
       className="c1"
-      to="/checkout/delivery"
     >
-      Edit
-    </MockedLink>
-  </h2>
-</section>
+      Shipping Details
+      <MockedLink
+        className="c2"
+        to="/checkout/delivery"
+      >
+        Edit
+      </MockedLink>
+    </h2>
+    <AddressDetails
+      header="Shipping Address"
+    />
+  </section>,
+  <ItemsList />,
+]
 `;

@@ -3,7 +3,7 @@ import { create } from 'react-test-renderer';
 
 import Section from '../Section';
 
-describe('COMPONENT - PaymentInformation Section', () => {
+describe('COMPONENT - Section', () => {
   it('renders correctly', () => {
     const component = create(<Section />);
 

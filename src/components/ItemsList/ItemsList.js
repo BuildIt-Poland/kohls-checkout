@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 import { item } from '../../types';
 import ErrorBoundary from '../ErrorBoundary';
+import ShippingDetails from '../ShippingDetails';
 import Item from '../Item';
+import Content from '../Content';
 import Wrapper from './Wrapper';
 import List from './List';
 
@@ -16,6 +18,9 @@ function ItemsList({ items }) {
             <Item key={item.id} item={item} />
           ))}
         </List>
+        <Content>
+          <ShippingDetails />
+        </Content>
       </Wrapper>
     </ErrorBoundary>
   );
