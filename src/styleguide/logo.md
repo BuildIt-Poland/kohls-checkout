@@ -1,4 +1,4 @@
-This section contains the sugUI logo but it can also have additional logos.
+This section contains the The Store by BuildIt logo but it can also have additional logos.
 
 ### Logo guidelines
 
@@ -8,7 +8,7 @@ This section contains the sugUI logo but it can also have additional logos.
 - When positioning the logo beside elements, ensure there is enough clear space
 - Don't add additional shadows or effects, modify colors or change orientation
 
-They can be imported into the codebase like this:
+It can be imported into the codebase like this:
 
 `import Logo from '../Icons';`
 
