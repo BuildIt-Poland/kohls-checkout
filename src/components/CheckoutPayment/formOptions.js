@@ -1,50 +1,36 @@
 // Generates options for mont and year expiry selects
 
 export function months() {
-  let months = [];
-  for (let i = 1; i <= 12; i++) {
-    months.push(i);
-  }
-
-  return months;
+  return [...Array(12)].map((_, x) => ++x);
 }
 
 export function nextYearsFromDate(startDate, yearsAmount = 20) {
   const startYear = Number(new Date(startDate).getFullYear());
-  const endYear = startYear + yearsAmount;
 
-  let years = [];
-  for (let i = startYear; i <= endYear; i++) {
-    years.push(i);
-  }
+  return [...Array(yearsAmount + 1)].map((_, x) => x + startYear);
+}
 
-  return years;
+export function selectOptions(values, defaultOption = []) {
+  return defaultOption.concat(
+    values.map(value => {
+      return {
+        label: value,
+        value
+      };
+    })
+  );
 }
 
 export function monthsOptions() {
   const defaultOption = [{ label: 'MM', value: 'MM', disabled: true }];
   const rawMonths = months();
 
-  return defaultOption.concat(
-    rawMonths.map(month => {
-      return {
-        label: month,
-        value: month
-      };
-    })
-  );
+  return selectOptions(rawMonths, defaultOption);
 }
 
 export function yearsOptions(startDate, yearsAmount) {
   const defaultOption = [{ label: 'YY', value: 'YY', disabled: true }];
   const rawYears = nextYearsFromDate(startDate, yearsAmount);
 
-  return defaultOption.concat(
-    rawYears.map(year => {
-      return {
-        label: year,
-        value: year
-      };
-    })
-  );
+  return selectOptions(rawYears, defaultOption);
 }
