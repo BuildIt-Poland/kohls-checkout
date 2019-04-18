@@ -14,9 +14,9 @@ then
   # Sync our build folder with our S3 bucket
   # --acl public-read says deploy the files with public read access
   # --delete says to delete files in the bucket that aren't present in the build folder
-  aws s3 sync build/ "s3://buildit-store-styleguide" --acl public-read --delete
+  aws s3 sync styleguide/ "s3://buildit-store-styleguide" --acl public-read --delete
 else
   npm run build
 
-  aws s3 sync styleguide/ "s3://buildit-store" --acl public-read --delete
+  aws s3 sync build/ "s3://buildit-store" --acl public-read --delete
 fi
