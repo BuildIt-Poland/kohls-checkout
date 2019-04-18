@@ -1,12 +1,12 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import BillingAddress from '../BillingAddress';
+import AddressDetails from '../AddressDetails';
 
 jest.mock('../../SectionHeader', () => 'SectionHeader');
 
-describe('COMPONENT - BillingAddress', () => {
-  it('renders BillingAddress component', () => {
+describe('COMPONENT - AddressDetails', () => {
+  it('renders AddressDetails component', () => {
     const address = {
       firstName: 'Taylor',
       lastName: 'Swift',
@@ -17,7 +17,7 @@ describe('COMPONENT - BillingAddress', () => {
       phone: '444 444 444'
     };
 
-    const component = create(<BillingAddress address={address} />);
+    const component = create(<AddressDetails header="Address" address={address} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

@@ -1,43 +1,38 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
+import { colorLightGrey } from '../../styles/designTokens';
+import { formatDate } from '../../utils';
 import Shipping from '../Icons/Shipping';
 import Text from '../Text';
-import { colorLightGrey } from '../../styles/designTokens';
+import ShippingText from './ShippingText';
+import Wrapper from './Wrapper';
 
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-`;
+function ShippingDetails() {
+  const getArrivalDates = () => {
+    const startDate = new Date();
+    const endDate = new Date();
+    endDate.setDate(endDate.getDate() + 3);
 
-const Message = styled.div`
-  flex-grow: 1;
-  padding: 0 1rem;
-`;
+    return `${formatDate(startDate)} - ${formatDate(endDate)}`;
+  };
 
-const ArrivalDates = styled.span`
-  font-weight: bold;
-`;
-
-const ShippingDetails = ({ minDate, maxDate, shippingPromo }) => (
-  <Wrapper>
-    <Shipping fill={colorLightGrey} />
-    <Message>
-      <Text>
-        Ship to Me <br />
-        <span>Arrives </span>
-        <ArrivalDates>{`${minDate} - ${maxDate}`}</ArrivalDates>
-      </Text>
-      {shippingPromo && <Text>{shippingPromo}</Text>}
-    </Message>
-  </Wrapper>
-);
-
-ShippingDetails.propTypes = {
-  minDate: PropTypes.string.isRequired,
-  maxDate: PropTypes.string.isRequired,
-  shippingPromo: PropTypes.string
-};
+  return (
+    <>
+      <Text bold>Item can only be shipped Standard</Text>
+      <Wrapper>
+        <Shipping fill={colorLightGrey} />
+        <div>
+          <ShippingText>Arrives</ShippingText>
+          <ShippingText>
+            Ship to Me
+            <ShippingText bold as="span">
+              {getArrivalDates()}
+            </ShippingText>
+          </ShippingText>
+        </div>
+      </Wrapper>
+    </>
+  );
+}
 
 export default ShippingDetails;

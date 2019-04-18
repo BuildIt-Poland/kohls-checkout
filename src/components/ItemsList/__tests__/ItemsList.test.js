@@ -5,6 +5,7 @@ import ItemsList from '../ItemsList';
 
 jest.mock('../../Item', () => 'Item');
 jest.mock('../../Text', () => 'Text');
+jest.mock('../../ShippingDetails', () => 'ShippingDetails');
 
 describe('COMPONENT - ItemsList', () => {
   it('renders correct number of items', () => {

@@ -13,9 +13,9 @@ function CheckoutReview() {
     <Page title="Review">
       <Content>
         <Headline>Review</Headline>
-        <ShippingDetailsEdit />
-        <PaymentInformation />
       </Content>
+      <ShippingDetailsEdit />
+      <PaymentInformation />
       <OrderSummary />
       <NextStep label="Place Order" to="/cart" />
     </Page>

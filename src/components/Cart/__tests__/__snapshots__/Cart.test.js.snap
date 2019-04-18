@@ -53,6 +53,7 @@ exports[`COMPONENT - Cart renders correctly if there are NO items in cart 1`] = 
     <CartItemsList
       items={Array []}
     />
+    <ShippingDetails />
     <button
       className="c3"
       onClick={[MockFunction]}
@@ -122,6 +123,7 @@ Array [
           ]
         }
       />
+      <ShippingDetails />
     </section>
     <OrderSummary />
     <NextStep
