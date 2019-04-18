@@ -7,6 +7,7 @@ jest.mock('../../CartItemsList', () => 'CartItemsList');
 jest.mock('../../OrderSummary', () => 'OrderSummary');
 jest.mock('../../InfoBanner', () => 'InfoBanner');
 jest.mock('../../NextStep', () => 'NextStep');
+jest.mock('../../ShippingDetails', () => 'ShippingDetails');
 jest.mock('react-router-dom', () => ({
   Link: 'Link'
 }));

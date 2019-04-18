@@ -34,6 +34,14 @@ exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
   align-items: center;
 }
 
+.c0 {
+  margin-bottom: 2rem;
+}
+
+.c0:last-child {
+  margin-bottom: 3rem;
+}
+
 .c2 {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -63,14 +71,6 @@ exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
 
 .c6:last-child {
   margin-bottom: 0;
-}
-
-.c0 {
-  margin-bottom: 2rem;
-}
-
-.c0:last-child {
-  margin-bottom: 3rem;
 }
 
 @media (max-width:26.25em) {

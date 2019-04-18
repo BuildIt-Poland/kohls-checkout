@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import BillingAddress from './BillingAddress';
+import AddressDetails from './AddressDetails';
 
 function mapStateToProps(state) {
   return {
@@ -8,4 +8,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(BillingAddress);
+export default connect(mapStateToProps)(AddressDetails);

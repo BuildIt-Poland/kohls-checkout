@@ -1,20 +1,25 @@
 import React from 'react';
-import { render, cleanup } from 'react-testing-library';
+import { create } from 'react-test-renderer';
 
 import Modal from '../Modal';
 
-afterEach(cleanup);
+jest.mock('../../Icons', () => ({
+  Cross: 'Cross'
+}));
+jest.mock('../CloseButton', () => 'CloseButton');
+jest.mock('../Overlay', () => 'Overlay');
+jest.mock('../Header', () => 'Header');
 
 describe('COMPONENT - Modal', () => {
   it('renders Modal component with default title', () => {
-    const { container } = render(<Modal>Test</Modal>);
+    const component = create(<Modal>Test</Modal>);
 
-    expect(container).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('renders Modal component with defined title', () => {
-    const { container } = render(<Modal title="Defined Modal Title">Test</Modal>);
+    const component = create(<Modal title="Defined Modal Title">Test</Modal>);
 
-    expect(container).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });
