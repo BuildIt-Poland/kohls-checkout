@@ -10,6 +10,7 @@ exports[`COMPONENT - FormCreditCardInput renders correctly 1`] = `
 
 .c1 {
   border: 1px solid #b0b0b0;
+  background: #ffffff;
   border-radius: 0;
   height: 4rem;
   padding: 0 1rem;
@@ -49,19 +50,20 @@ exports[`COMPONENT - FormCreditCardInput renders correctly 1`] = `
 <label
   className="c0"
 >
-  First Name
+  Credit Card Number
   <input
     className="c1"
     name="cardNumber"
     onBlur={[Function]}
     onChange={[Function]}
-    placeholder="Type first name here..."
     type="text"
     value="340102315322282"
   />
   <Icon
-    cardNumber="340102315322282"
-    small={true}
+    name="cardNumber"
+    onBlur={[Function]}
+    onChange={[Function]}
+    value="340102315322282"
   />
 </label>
 `;

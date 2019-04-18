@@ -2,21 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { zIndexDefault } from '../../styles/designTokens';
-import PaymentCard from '../PaymentCard';
+import { Chevron as ChevronIcon } from '../Icons';
 
 const Wrapper = styled.span`
   position: absolute;
-  top: 3.5rem;
-  right: 0.7rem;
+  top: 3.6rem;
+  right: 1rem;
   z-index: ${zIndexDefault};
+  pointer-events: none;
 `;
 
-function Icon({ value }) {
+function Chevron() {
   return (
     <Wrapper>
-      <PaymentCard cardNumber={value} small />
+      <ChevronIcon />
     </Wrapper>
   );
 }
 
-export default Icon;
+export default Chevron;

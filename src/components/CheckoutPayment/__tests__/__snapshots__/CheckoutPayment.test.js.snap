@@ -5,6 +5,11 @@ exports[`COMPONENT - CheckoutPayment renders CheckoutPayment component 1`] = `
   max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.c1 {
+  position: absolute;
 }
 
 <Page
@@ -16,6 +21,9 @@ exports[`COMPONENT - CheckoutPayment renders CheckoutPayment component 1`] = `
     <Headline>
       Payment
     </Headline>
+    <div
+      className="c1"
+    />
     <Form />
   </section>
   <OrderSummary />

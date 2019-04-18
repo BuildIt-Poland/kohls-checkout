@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { AmexCard } from '../Icons';
 import Wrapper from './Wrapper';
 
-function Amex({ small, className }) {
+function Amex({ small }) {
   return (
-    <Wrapper className={className} small={small}>
+    <Wrapper small={small}>
       <AmexCard />
     </Wrapper>
   );

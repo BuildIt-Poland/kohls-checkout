@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FUNC - months generates list of 12 months 1`] = `
+Array [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+]
+`;
+
+exports[`FUNC - monthsOptions generates list of months options 1`] = `
+Array [
+  Object {
+    "disabled": true,
+    "label": "MM",
+    "value": "MM",
+  },
+  Object {
+    "label": 1,
+    "value": 1,
+  },
+  Object {
+    "label": 2,
+    "value": 2,
+  },
+  Object {
+    "label": 3,
+    "value": 3,
+  },
+  Object {
+    "label": 4,
+    "value": 4,
+  },
+  Object {
+    "label": 5,
+    "value": 5,
+  },
+  Object {
+    "label": 6,
+    "value": 6,
+  },
+  Object {
+    "label": 7,
+    "value": 7,
+  },
+  Object {
+    "label": 8,
+    "value": 8,
+  },
+  Object {
+    "label": 9,
+    "value": 9,
+  },
+  Object {
+    "label": 10,
+    "value": 10,
+  },
+  Object {
+    "label": 11,
+    "value": 11,
+  },
+  Object {
+    "label": 12,
+    "value": 12,
+  },
+]
+`;
+
+exports[`FUNC - yearsOptions generates list of next 10 years from given date 1`] = `
+Array [
+  Object {
+    "disabled": true,
+    "label": "YY",
+    "value": "YY",
+  },
+  Object {
+    "label": 1998,
+    "value": 1998,
+  },
+  Object {
+    "label": 1999,
+    "value": 1999,
+  },
+  Object {
+    "label": 2000,
+    "value": 2000,
+  },
+  Object {
+    "label": 2001,
+    "value": 2001,
+  },
+  Object {
+    "label": 2002,
+    "value": 2002,
+  },
+  Object {
+    "label": 2003,
+    "value": 2003,
+  },
+  Object {
+    "label": 2004,
+    "value": 2004,
+  },
+  Object {
+    "label": 2005,
+    "value": 2005,
+  },
+  Object {
+    "label": 2006,
+    "value": 2006,
+  },
+  Object {
+    "label": 2007,
+    "value": 2007,
+  },
+  Object {
+    "label": 2008,
+    "value": 2008,
+  },
+]
+`;

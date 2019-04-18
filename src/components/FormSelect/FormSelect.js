@@ -1,31 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Field } from 'formik';
 
+import FormInput from '../FormInput';
 import Select from './Select';
-import Label from './Label';
-import ErrorMessage from './ErrorMessage';
+import Chevron from './Chevron';
 
-function SelectForm({ name, className, label, error, ...props }) {
+function FormSelect({ options, ...props }) {
   return (
-    <Field name={name}>
-      {({ field, form }) => (
-        <Label className={className}>
+    <FormInput {...props} component={Select} icon={Chevron}>
+      {options.map(({ value, disabled, label }) => (
+        <option key={value} value={value} disabled={disabled}>
           {label}
-          <Select error={!!(form.touched[field.name] && form.errors[field.name])} {...field} {...props} />
-          {form.touched[field.name] && form.errors[field.name] && (
-            <ErrorMessage>{form.errors[field.name]}</ErrorMessage>
-          )}
-        </Label>
-      )}
-    </Field>
+        </option>
+      ))}
+    </FormInput>
   );
 }
 
-SelectForm.propTypes = {
-  label: PropTypes.string.isRequired,
-  error: PropTypes.string,
-  className: PropTypes.string
+FormSelect.propTypes = {
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      disabled: PropTypes.bool
+    }).isRequired
+  )
 };
 
-export default SelectForm;
+export default FormSelect;

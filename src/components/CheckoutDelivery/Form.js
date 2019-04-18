@@ -10,14 +10,14 @@ function Form() {
     <FormikForm>
       <Text dimmed>Please complete all fields.</Text>
       <Row>
-        <FormInput name="firstName" type="text" label="First Name" />
-        <FormInput name="lastName" type="text" label="Last Name" />
+        <FormInput name="firstName" label="First Name" />
+        <FormInput name="lastName" label="Last Name" />
       </Row>
-      <FormInput name="street" type="text" label="Street" />
-      <FormInput name="city" type="text" label="City" />
+      <FormInput name="street" label="Street" />
+      <FormInput name="city" label="City" />
       <Row>
-        <FormInput name="state" type="text" label="State" />
-        <FormInput name="zipCode" type="text" label="Zip Code" />
+        <FormInput name="state" label="State" />
+        <FormInput name="zipCode" label="Zip Code" />
       </Row>
       <FormInput name="phone" type="phone" label="Phone Number" />
       <Text dimmed>Phone number will be used for shipping communications only.</Text>

@@ -1,11 +1,11 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import Label from '../Label';
+import Row from '../Row';
 
-describe('COMPONENT - FormCreditCardInput Label', () => {
+describe('COMPONENT - CheckoutPayment Row', () => {
   it('renders correctly', () => {
-    const component = create(<Label />);
+    const component = create(<Row />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

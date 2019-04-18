@@ -3,21 +3,32 @@ import { create } from 'react-test-renderer';
 import { Formik } from 'formik';
 
 import FormSelect from '../FormSelect';
-jest.mock('../../Select', () => 'Select');
 
 describe('COMPONENT - FormSelect', () => {
   it('renders correctly', () => {
-    const props = {
-      name: 'ExpMonth',
-      label: 'Expiration Month'
-    };
+    const options = [
+      {
+        value: 'NY',
+        label: 'New York',
+        disabled: true
+      },
+      {
+        value: 'NOLA',
+        label: 'New Orleans'
+      },
+      {
+        value: 'LON',
+        label: 'London'
+      }
+    ];
+
     const component = create(
       <Formik
         initialValues={{
-          ExpMonth: 'YY'
+          city: 'NOLA'
         }}
       >
-        <FormSelect {...props} />
+        <FormSelect name="city" label="City" options={options} />
       </Formik>
     );
 
