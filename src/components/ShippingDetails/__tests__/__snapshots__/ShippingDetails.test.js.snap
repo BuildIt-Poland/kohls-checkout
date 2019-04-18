@@ -74,21 +74,23 @@ Array [
     <Shipping
       fill="#b0b0b0"
     />
-    <p
-      className="c1"
-    >
-      Arrives
-    </p>
-    <p
-      className="c1"
-    >
-      Ship to Me
-      <span
-        className="c2"
+    <div>
+      <p
+        className="c1"
       >
-        Wed, Apr 17 - Sat, Apr 20
-      </span>
-    </p>
+        Arrives
+      </p>
+      <p
+        className="c1"
+      >
+        Ship to Me
+        <span
+          className="c2"
+        >
+          Thu, Apr 18 - Sun, Apr 21
+        </span>
+      </p>
+    </div>
   </div>,
 ]
 `;
@@ -167,21 +169,23 @@ Array [
     <Shipping
       fill="#b0b0b0"
     />
-    <p
-      className="c1"
-    >
-      Arrives
-    </p>
-    <p
-      className="c1"
-    >
-      Ship to Me
-      <span
-        className="c2"
+    <div>
+      <p
+        className="c1"
       >
-        Wed, Apr 17 - Sat, Apr 20
-      </span>
-    </p>
+        Arrives
+      </p>
+      <p
+        className="c1"
+      >
+        Ship to Me
+        <span
+          className="c2"
+        >
+          Thu, Apr 18 - Sun, Apr 21
+        </span>
+      </p>
+    </div>
   </div>,
 ]
 `;

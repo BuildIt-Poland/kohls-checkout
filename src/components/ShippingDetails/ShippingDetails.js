@@ -21,13 +21,15 @@ function ShippingDetails() {
       <Text bold>Item can only be shipped Standard</Text>
       <Wrapper>
         <Shipping fill={colorLightGrey} />
-        <ShippingText>Arrives</ShippingText>
-        <ShippingText>
-          Ship to Me
-          <ShippingText bold as="span">
-            {getArrivalDates()}
+        <div>
+          <ShippingText>Arrives</ShippingText>
+          <ShippingText>
+            Ship to Me
+            <ShippingText bold as="span">
+              {getArrivalDates()}
+            </ShippingText>
           </ShippingText>
-        </ShippingText>
+        </div>
       </Wrapper>
     </>
   );
