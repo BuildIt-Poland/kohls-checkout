@@ -23,7 +23,6 @@ const ScrollAnchor = styled.div`
 `;
 
 function CheckoutDelivery({ history, initialAddress, setAddress }) {
-  // Scrolls to beginning of the form if there are errors
   const scrollAnchorRef = useRef(null);
 
   const modalTrigger = (

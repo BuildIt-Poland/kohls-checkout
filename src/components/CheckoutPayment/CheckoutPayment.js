@@ -21,7 +21,6 @@ const ScrollAnchor = styled.div`
 `;
 
 function CheckoutPayment({ history, initialPaymentInfo, setPaymentInfo }) {
-  // Scrolls to beginning of the form if there are errors
   const scrollAnchorRef = useRef(null);
 
   const attemptFormSubmit = submitForm => {
