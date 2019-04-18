@@ -39,7 +39,6 @@ exports[`Select When Select as an error Renders correctly the component 1`] = `
   />
   <select
     className="c2"
-    label="Select Date"
   >
     <option
       label="MM"
@@ -98,7 +97,6 @@ exports[`Select When Select is disabled Renders correctly the component 1`] = `
   <select
     className="c2"
     disabled={true}
-    label="Select Date"
   >
     <option
       label="MM"
@@ -132,7 +130,7 @@ exports[`Select When Select is enabled Renders correctly the component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: 1px solid #b0b0b0;
+  border: 1px solid #e0151d;
   border-radius: 0;
   background-color: #ffffff;
   padding: 0 1rem;
@@ -157,7 +155,6 @@ exports[`Select When Select is enabled Renders correctly the component 1`] = `
   <select
     className="c2"
     disabled={false}
-    label="Select Date"
   >
     <option
       label="MM"

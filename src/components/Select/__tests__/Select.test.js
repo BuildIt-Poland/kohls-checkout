@@ -11,7 +11,7 @@ describe('Select', () => {
       const props = {
         label: 'Select Date',
         disabled: false,
-        error: false,
+        error: 'Error Message',
         options: [
           {
             label: 'MM',
@@ -63,7 +63,7 @@ describe('Select', () => {
     it('Renders correctly the component', () => {
       const props = {
         label: 'Select Date',
-        error: true,
+        error: 'DummyError',
         options: [
           {
             label: 'MM',
