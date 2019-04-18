@@ -32,7 +32,7 @@ const StyledSelect = styled.select`
   }
 `;
 
-function Select({ className, label, field, error, options, ...props }) {
+function Select({ className, field, error, options, ...props }) {
   return (
     <SelectContainer className={className}>
       <ChevronDown disabled={props.disabled} fill={colorBlack} />
@@ -49,7 +49,6 @@ Select.propTypes = {
   error: PropTypes.bool,
   options: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.string.isRequired,
       value: PropTypes.string.isRequired,
       disabled: PropTypes.bool
     }).isRequired
