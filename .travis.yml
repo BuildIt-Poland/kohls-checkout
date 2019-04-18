@@ -9,7 +9,6 @@ cache:
   directories:
     - ~/.cache
 script:
-  - bash deploy.sh styleguide
   - npm run test:ci
   - npm run e2e
   - npm run lint
@@ -21,7 +20,7 @@ deploy:
   script: bash deploy.sh styleguide
   skip_cleanup: true
   on:
-    all_branches: true
+    branch: master
 deploy:
   provider: script
   script: bash deploy.sh
