@@ -8,9 +8,9 @@ import Chevron from './Chevron';
 function FormSelect({ options, ...props }) {
   return (
     <FormInput {...props} component={Select} icon={Chevron}>
-      {options.map(option => (
-        <option key={option.value} value={option.value} disabled={option.disabled}>
-          {option.label}
+      {options.map(({ value, disabled, label }) => (
+        <option key={value} value={value} disabled={disabled}>
+          {label}
         </option>
       ))}
     </FormInput>
