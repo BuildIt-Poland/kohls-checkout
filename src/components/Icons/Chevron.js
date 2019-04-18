@@ -1,14 +1,9 @@
 import React from 'react';
 
-function Chevron({ className, fill }) {
+function Chevron({ className }) {
   return (
-    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" height="20" width="20">
-      <g>
-        <path
-          fill={fill}
-          d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
-        />
-      </g>
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" width="19" height="12">
+      <path fill="#666666" d="M19 2.6L16.5.1l-7 7-7-7L.1 2.6l9.4 9.5z" />
     </svg>
   );
 }

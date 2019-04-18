@@ -1,11 +1,11 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import Input from '../Input';
+import Content from '../Content';
 
-describe('COMPONENT - FormCreditCardInput Input', () => {
+describe('COMPONENT - CheckoutPayment Content', () => {
   it('renders correctly', () => {
-    const component = create(<Input />);
+    const component = create(<Content />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

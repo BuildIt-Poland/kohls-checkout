@@ -24,4 +24,29 @@ describe('COMPONENT - FormInput', () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+
+  it('renders correctly when Icon is passed', () => {
+    function TestIcon() {
+      return 'TestIcon';
+    }
+
+    const props = {
+      name: 'firstName',
+      label: 'First Name',
+      placeholder: 'Type first name here...',
+      type: 'text'
+    };
+
+    const component = create(
+      <Formik
+        initialValues={{
+          firstName: ''
+        }}
+      >
+        <FormInput {...props} icon={TestIcon} />
+      </Formik>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });

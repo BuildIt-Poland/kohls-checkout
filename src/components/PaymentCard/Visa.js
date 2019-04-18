@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { VisaCard } from '../Icons';
 import Wrapper from './Wrapper';
 
-function Visa({ small, className }) {
+function Visa({ small }) {
   return (
-    <Wrapper className={className} small={small}>
+    <Wrapper small={small}>
       <VisaCard />
     </Wrapper>
   );
