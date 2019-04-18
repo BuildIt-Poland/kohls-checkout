@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Form as FormikForm } from 'formik';
 
 import Text from '../Text';
@@ -22,4 +22,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default memo(Form);
