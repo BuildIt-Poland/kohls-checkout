@@ -75,7 +75,7 @@ module.exports = {
         'src/components/ShippingDetails/index.js',
         'src/components/CartItemsList/index.js',
         'src/components/ItemsList/index.js',
-        'src/components/OrderSummary/index.js',
+        'src/components/OrderSummary/OrderSummary.js',
         'src/components/AddressDetails/AddressDetails.js'
       ],
     },
