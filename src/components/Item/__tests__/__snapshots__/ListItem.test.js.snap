@@ -5,6 +5,7 @@ exports[`COMPONENT - Item ListItem renders correctly 1`] = `
   border-bottom: 1px solid #b0b0b0;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
+  list-style: none;
 }
 
 .c0:last-child {

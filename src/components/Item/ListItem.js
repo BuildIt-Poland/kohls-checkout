@@ -6,6 +6,7 @@ const ListItem = styled.li`
   border-bottom: ${borderWidthThin} solid ${colorLightGrey};
   margin-bottom: ${spacingMedium};
   padding-bottom: ${spacingMedium};
+  list-style: none;
 
   &:last-child {
     border-bottom: none;
