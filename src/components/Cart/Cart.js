@@ -15,7 +15,7 @@ import CartItemsList from '../CartItemsList';
 import ShippingDetails from '../ShippingDetails';
 import TextLink from '../TextLink';
 
-function Cart({ items, refillDemoCart = noop }) {
+function Cart({ items, refillDemoCart }) {
   const pageTitle = `Cart (${totalCartItemsCount(items)})`;
   const isCartEmpty = !totalCartItemsCount(items);
 
@@ -46,7 +46,7 @@ function Cart({ items, refillDemoCart = noop }) {
 
 Cart.propTypes = {
   items: PropTypes.arrayOf(item),
-  refillDemoCart: PropTypes.func
+  refillDemoCart: PropTypes.func.isRequired
 };
 
 export default Cart;

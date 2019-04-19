@@ -23,8 +23,15 @@ const initialState = {
     phone: '(541) 754-3010',
     state: 'CA',
     zipCode: '90210'
+  },
+  paymentInfo: {
+    cardNumber: '5270708324803741',
+    expMonth: 12,
+    expYear: 24,
+    securityCode: 111
   }
 };
+
 const store = configureStore(initialState);
 
 export default class Wrapper extends Component {

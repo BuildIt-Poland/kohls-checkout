@@ -13,7 +13,7 @@
 
 <div className="quote">"A Design System contains the knowledge that designers and developers need to create products faster and with consistency"</div>
 
-The The Store Style Guide consists in a collection of foundational elements (colors, text styles, icons), UI components and UX guidelines for their usage.
+<strong>The The Store Style Guide</strong> consists in a collection of foundational elements (colors, text styles, icons), UI components and UX guidelines for their usage.
 
 ### Goals of The Store Style Guide 
 
