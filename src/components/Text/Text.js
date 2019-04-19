@@ -35,14 +35,15 @@ const Text = styled.p`
 `;
 
 Text.propTypes = {
-  /** Highlight text */
+  /** Makes text Highlight */
   highlight: PropTypes.bool,
-  /** Dimmed text */
+  /** Makes text Dimmed */
   dimmed: PropTypes.bool,
-  /** Underline text */
+  /** Makes text Underline */
   underline: PropTypes.bool,
-  /** Bold text */
+  /** Makes text bold  */
   bold: PropTypes.bool
 };
 
+/** @component */
 export default Text;
