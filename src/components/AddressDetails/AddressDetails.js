@@ -33,7 +33,9 @@ function AddressDetails({ header, address }) {
 }
 
 AddressDetails.propTypes = {
+  /** Header displayed in SectionHeader and Modal title */
   header: string.isRequired,
+  /** The object containing detailed address data to display */
   address: address.isRequired
 };
 
