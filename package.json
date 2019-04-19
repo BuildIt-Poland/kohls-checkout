@@ -91,6 +91,7 @@
     "lint-staged": "8.1.5",
     "prettier": "1.16.4",
     "prop-types": "15.7.2",
+    "react-styleguidist": "9.0.8",
     "react-test-renderer": "16.8.6",
     "react-testing-library": "6.0.3",
     "redux-devtools-extension": "2.13.8",
