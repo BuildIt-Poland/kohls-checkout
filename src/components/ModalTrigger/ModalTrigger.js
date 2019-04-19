@@ -34,7 +34,9 @@ function ModalTrigger({ title, content }) {
 }
 
 ModalTrigger.propTypes = {
+  /** Title displayed in Modal header */
   title: PropTypes.string.isRequired,
+  /** Content displayed in Modal body */
   content: PropTypes.string.isRequired
 };
 

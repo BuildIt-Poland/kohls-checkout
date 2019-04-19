@@ -79,7 +79,7 @@ module.exports = {
       components: [
         'src/components/Text/index.js',
         'src/components/Error/Error.js',
-        'src/components/ModalTrigger/index.js'
+        'src/components/ModalTrigger/ModalTrigger.js'
       ],
     }
   ]
