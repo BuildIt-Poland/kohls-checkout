@@ -5,7 +5,6 @@ import Text from '../Text';
 import SectionHeader from '../SectionHeader';
 import Section from '../Section';
 import PaymentCard from '../PaymentCard';
-import Price from '../Price';
 import Wrapper from './Wrapper';
 import CardName from './CardName';
 
@@ -21,18 +20,13 @@ function PaymentMethod({ paymentInfo }) {
       <SectionHeader>Payment Method</SectionHeader>
       <Wrapper>
         <PaymentCard cardNumber={cardNumber} />
-        <div>
+        <section>
           <CardName cardNumber={cardNumber} />
-          <Text>
-            {hiddenCardNumber(cardNumber)}{' '}
-            <strong>
-              <Price price={25500} />
-            </strong>
-          </Text>
+          <Text>{hiddenCardNumber(cardNumber)}</Text>
           <Text>
             Expires {expMonth}/{expYear}
           </Text>
-        </div>
+        </section>
       </Wrapper>
     </Section>
   );

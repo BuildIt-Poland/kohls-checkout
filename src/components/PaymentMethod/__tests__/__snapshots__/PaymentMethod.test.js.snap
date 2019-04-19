@@ -48,7 +48,7 @@ exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
     <PaymentCard
       cardNumber="5376636801372430"
     />
-    <div>
+    <section>
       <CardName
         cardNumber="5376636801372430"
       />
@@ -56,10 +56,6 @@ exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
         className="c2"
       >
         XXXX-XXXX-XXXX-2430
-         
-        <strong>
-          $255.00
-        </strong>
       </p>
       <p
         className="c2"
@@ -69,7 +65,7 @@ exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
         /
         23
       </p>
-    </div>
+    </section>
   </div>
 </section>
 `;
