@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardName COMPONENT - CardName renders CardName component 1`] = `
+.c0 {
+  margin: 0;
+}
+
+@media (max-width:26.25em) {
+  .c0 {
+    margin-top: 1rem;
+  }
+}
+
+<p
+  className="c0"
+>
+  Master Card
+</p>
+`;

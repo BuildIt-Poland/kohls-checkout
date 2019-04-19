@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - Amex renders Amex component 1`] = `
 .c0 {
-  width: 132px;
+  width: 140px;
 }
 
 <div

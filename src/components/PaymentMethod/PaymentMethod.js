@@ -1,19 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
+import { paymentInfo } from '../../types';
 import Text from '../Text';
 import SectionHeader from '../SectionHeader';
 import Section from '../Section';
+import PaymentCard from '../PaymentCard';
+import Price from '../Price';
 import Wrapper from './Wrapper';
-import PaymentCard from './PaymentCard';
 import CardName from './CardName';
-import Price from './Price';
 
 function hiddenCardNumber(cardNumber) {
   return `XXXX-XXXX-XXXX-${cardNumber.slice(12)}`;
 }
 
-function PaymentMethod({ cardNumber, expiries, price }) {
+function PaymentMethod({ paymentInfo }) {
+  const { cardNumber, expMonth, expYear } = paymentInfo;
+
   return (
     <Section>
       <SectionHeader>Payment Method</SectionHeader>
@@ -21,11 +23,15 @@ function PaymentMethod({ cardNumber, expiries, price }) {
         <PaymentCard cardNumber={cardNumber} />
         <div>
           <CardName cardNumber={cardNumber} />
-          <Text as="span">{hiddenCardNumber(cardNumber)}</Text>
-          <Price as="span" bold>
-            ${price}
-          </Price>
-          <Text>Expires {expiries}</Text>
+          <Text>
+            {hiddenCardNumber(cardNumber)}{' '}
+            <strong>
+              <Price price={25500} />
+            </strong>
+          </Text>
+          <Text>
+            Expires {expMonth}/{expYear}
+          </Text>
         </div>
       </Wrapper>
     </Section>
@@ -33,9 +39,7 @@ function PaymentMethod({ cardNumber, expiries, price }) {
 }
 
 PaymentMethod.propTypes = {
-  cardNumber: PropTypes.string.isRequired,
-  expiries: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired
+  paymentInfo: paymentInfo.isRequired
 };
 
 export default PaymentMethod;
