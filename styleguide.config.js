@@ -5,7 +5,12 @@ module.exports = {
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'src/styleguide/StyleguideWrapper')
   },
+  ribbon: {
+    url: 'https://github.com/BuildIt-Poland/store-checkout',
+    text: 'The Store by BuildIt'
+  },
   title: 'The Store by BuildIt Style-Guide',
+  usageMode: 'expand',
   theme: {
     color: {
       link: '#9C2AA0',
@@ -70,16 +75,16 @@ module.exports = {
         'src/components/ShippingDetails/index.js',
         'src/components/CartItemsList/index.js',
         'src/components/ItemsList/index.js',
-        'src/components/OrderSummary/index.js',
-        'src/components/AddressDetails/index.js'
+        'src/components/OrderSummary/OrderSummary.js',
+        'src/components/AddressDetails/AddressDetails.js'
       ],
     },
     {
       name: 'Feedback',
       components: [
         'src/components/Text/index.js',
-        'src/components/Error/index.js',
-        'src/components/ModalTrigger/index.js'
+        'src/components/Error/Error.js',
+        'src/components/ModalTrigger/ModalTrigger.js'
       ],
     }
   ]
