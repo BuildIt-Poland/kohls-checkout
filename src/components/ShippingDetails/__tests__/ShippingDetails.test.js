@@ -5,29 +5,19 @@ import ShippingDetails from '../ShippingDetails';
 
 jest.mock('../../Icons/Shipping', () => 'Shipping');
 
+function mockDate() {
+  const mockedDate = new Date(2011, 11, 10);
+  const originalDate = Date;
+  global.Date = jest.fn(() => mockedDate);
+  global.Date.getDate = originalDate.getDate;
+}
+
 describe('COMPONENT - ShippingDetails', () => {
   it('Renders correctly ShippingDetails component', () => {
-    const props = {
-      minDate: 'Tue. Apr. 19',
-      maxDate: 'Wed. May. 19',
-      shippingPromo: 'Free after $85'
-    };
+    mockDate();
 
-    const component = create(<ShippingDetails {...props} />);
+    const component = create(<ShippingDetails />);
 
     expect(component.toJSON()).toMatchSnapshot();
-  });
-
-  describe('When there is no shippingPromo', () => {
-    it('Renders correctly ShippingDetails component without shipping promo', () => {
-      const props = {
-        minDate: 'Tue. Apr. 19',
-        maxDate: 'Wed. May. 19'
-      };
-
-      const component = create(<ShippingDetails {...props} />);
-
-      expect(component.toJSON()).toMatchSnapshot();
-    });
   });
 });
