@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import noop from 'lodash.noop';
 
 import { CHECKOUT_DELIVERY_PATH } from '../../constants/routes';
 import { item } from '../../types';
