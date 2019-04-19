@@ -17,12 +17,6 @@ script:
   - if [ "$TRAVIS_PULL_REQUEST" != "false" ] && [ "$TRAVIS_BRANCH" == "release" ]; then npm run lh; fi
 deploy:
   provider: script
-  script: bash deploy.sh styleguide
-  skip_cleanup: true
-  on:
-    branch: master
-deploy:
-  provider: script
   script: bash deploy.sh
   skip_cleanup: true
   on:
