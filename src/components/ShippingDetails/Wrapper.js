@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
-import { spacingMedium } from '../../styles/designTokens';
+import { spacingLarge, spacingMedium } from '../../styles/designTokens';
 
 const Wrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  grid-gap: ${spacingMedium};
+  margin-bottom: ${spacingLarge};
   align-items: center;
-  margin-bottom: ${spacingMedium};
 `;
 
 export default Wrapper;
