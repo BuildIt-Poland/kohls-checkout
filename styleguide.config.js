@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   skipComponentsWithoutExample: true,
@@ -42,10 +42,45 @@ module.exports = {
       ]
     },
     {
-      name: 'UI Components',
-      components: 'src/components/**/index.js'
+      name: 'Basic Inputs',
+      components: [
+        'src/components/FormInput/index.js',
+        'src/components/FormSelect/index.js',
+        'src/components/FormCreditCardInput/index.js',
+        'src/components/Checkbox/index.js',
+        'src/components/QuantityInput/index.js',
+        'src/components/TextLink/index.js'
+      ],
+    },
+    {
+      name: 'Layout',
+      components: [
+        'src/components/Header/index.js',
+        'src/components/Navigation/index.js',
+        'src/components/InfoBanner/index.js',
+        'src/components/Headline/index.js',
+        'src/components/SectionHeader/index.js',
+        'src/components/NextStep/index.js'
+      ],
+    },
+    {
+      name: 'Content',
+      components: [
+        'src/components/Item/index.js',
+        'src/components/ShippingDetails/index.js',
+        'src/components/CartItemsList/index.js',
+        'src/components/ItemsList/index.js',
+        'src/components/OrderSummary/index.js',
+        'src/components/AddressDetails/index.js'
+      ],
+    },
+    {
+      name: 'Feedback',
+      components: [
+        'src/components/Text/index.js',
+        'src/components/Error/index.js',
+        'src/components/ModalTrigger/index.js'
+      ],
     }
   ]
-}
-
-// content: 'docs/ui.md',
+};
