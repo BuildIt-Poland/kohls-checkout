@@ -1,13 +1,17 @@
 // Generates options for mont and year expiry selects
 
 export function months() {
-  return [...Array(12)].map((_, x) => ++x);
+  return [...Array(12)].map((_, x) => {
+    // Adds leading zero to months < 10
+    return String(++x).padStart(2, 0);
+  });
 }
 
 export function nextYearsFromDate(startDate, yearsAmount = 20) {
   const startYear = Number(new Date(startDate).getFullYear());
 
-  return [...Array(yearsAmount + 1)].map((_, x) => x + startYear);
+  // Leaves only 2 last year numbers
+  return [...Array(yearsAmount + 1)].map((_, x) => String(x + startYear).slice(-2));
 }
 
 export function selectOptions(values, defaultOption = []) {

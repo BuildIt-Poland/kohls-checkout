@@ -3,6 +3,7 @@
 exports[`CardName COMPONENT - CardName renders CardName component 1`] = `
 .c0 {
   margin: 0;
+  font-size: 2.4rem;
 }
 
 @media (max-width:26.25em) {
@@ -11,9 +12,9 @@ exports[`CardName COMPONENT - CardName renders CardName component 1`] = `
   }
 }
 
-<p
+<h3
   className="c0"
 >
   Master Card
-</p>
+</h3>
 `;
