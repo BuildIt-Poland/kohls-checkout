@@ -78,7 +78,7 @@ module.exports = {
       name: 'Feedback',
       components: [
         'src/components/Text/index.js',
-        'src/components/Error/index.js',
+        'src/components/Error/Error.js',
         'src/components/ModalTrigger/index.js'
       ],
     }
