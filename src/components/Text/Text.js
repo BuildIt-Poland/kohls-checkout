@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 import {
   fontMedium,
   fontWeightNormal,
@@ -31,5 +33,16 @@ const Text = styled.p`
     margin-bottom: 0;
   }
 `;
+
+Text.propTypes = {
+  /** Highlight text */
+  highlight: PropTypes.bool,
+  /** Dimmed text */
+  dimmed: PropTypes.bool,
+  /** Underline text */
+  underline: PropTypes.bool,
+  /** Bold text */
+  bold: PropTypes.bool
+};
 
 export default Text;
