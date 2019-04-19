@@ -7,7 +7,7 @@ import { spacingSmall, fontLarge } from '../../styles/designTokens';
 import media from '../../styles/media';
 import { creditCardType } from '../../utils';
 
-const Name = styled.h3`
+const Name = styled.h4`
   margin: 0;
   font-size: ${fontLarge};
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { paymentInfo } from '../../types';
 import Text from '../Text';
-import SectionHeader from '../SectionHeader';
+import SubsectionHeader from '../SubsectionHeader';
 import Section from '../Section';
 import PaymentCard from '../PaymentCard';
 import Wrapper from './Wrapper';
@@ -17,7 +17,7 @@ function PaymentMethod({ paymentInfo }) {
 
   return (
     <Section>
-      <SectionHeader>Payment Method</SectionHeader>
+      <SubsectionHeader>Payment Method</SubsectionHeader>
       <Wrapper>
         <PaymentCard cardNumber={cardNumber} />
         <section>

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
-.c2 {
+.c3 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -12,8 +12,14 @@ exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
   color: #222222;
 }
 
-.c2:last-child {
+.c3:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 1rem 0;
 }
 
 .c0 {
@@ -24,14 +30,14 @@ exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
   margin-bottom: 3rem;
 }
 
-.c1 {
+.c2 {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 20px;
 }
 
 @media (max-width:26.25em) {
-  .c1 {
+  .c2 {
     display: block;
   }
 }
@@ -39,11 +45,13 @@ exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
 <section
   className="c0"
 >
-  <SectionHeader>
+  <SectionHeader
+    className="c1"
+  >
     Payment Method
   </SectionHeader>
   <div
-    className="c1"
+    className="c2"
   >
     <PaymentCard
       cardNumber="5376636801372430"
@@ -53,12 +61,12 @@ exports[`COMPONENT - PaymentMethod renders PaymentMethod component 1`] = `
         cardNumber="5376636801372430"
       />
       <p
-        className="c2"
+        className="c3"
       >
         XXXX-XXXX-XXXX-2430
       </p>
       <p
-        className="c2"
+        className="c3"
       >
         Expires 
         09

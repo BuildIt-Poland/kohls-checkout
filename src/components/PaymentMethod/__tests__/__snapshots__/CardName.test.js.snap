@@ -12,9 +12,9 @@ exports[`CardName COMPONENT - CardName renders CardName component 1`] = `
   }
 }
 
-<h3
+<h4
   className="c0"
 >
   Master Card
-</h3>
+</h4>
 `;
