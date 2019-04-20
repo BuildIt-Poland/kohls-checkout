@@ -1,3 +1,1 @@
-import CheckoutReview from './CheckoutReview';
-
-export default CheckoutReview;
+export { default } from './CheckoutReview';

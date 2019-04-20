@@ -1,3 +1,1 @@
-import ShippingDetailsEdit from './ShippingDetailsEdit';
-
-export default ShippingDetailsEdit;
+export { default } from './ShippingDetailsEdit';

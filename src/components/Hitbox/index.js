@@ -1,3 +1,1 @@
-import Hitbox from './Hitbox';
-
-export default Hitbox;
+export { default } from './Hitbox';
