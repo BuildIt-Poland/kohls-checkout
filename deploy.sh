@@ -15,6 +15,6 @@ npm run build
 # --delete says to delete files in the bucket that aren't present in the build folder
 aws s3 sync build/ "s3://buildit-store" --acl public-read --delete
 
-npx styleguidist build
+npm run styleguide:build
 
 aws s3 sync styleguide/ "s3://buildit-store-styleguide" --acl public-read --delete
