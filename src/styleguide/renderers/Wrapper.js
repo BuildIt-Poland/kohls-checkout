@@ -1,13 +1,13 @@
-import '../styles/sanitize.css';
+import '../../styles/sanitize.css';
 
-import styled from 'styled-components';
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router';
+import styled from 'styled-components';
 
-import GlobalStyle from '../components/GlobalStyle';
-import { CHECKOUT_PAYMENT_PATH } from '../constants/routes';
-import configureStore from '../store';
+import GlobalStyle from '../../components/GlobalStyle';
+import { CHECKOUT_PAYMENT_PATH } from '../../constants/routes';
+import configureStore from '../../store';
 
 const ComponentsWrapper = styled.div`
   display: grid;
@@ -34,7 +34,7 @@ const initialState = {
 
 const store = configureStore(initialState);
 
-export default class Wrapper extends Component {
+class Wrapper extends Component {
   render() {
     return (
       <Provider store={store}>
@@ -46,3 +46,5 @@ export default class Wrapper extends Component {
     );
   }
 }
+
+export default Wrapper;
