@@ -11,7 +11,7 @@ import Label from './Label';
 import ErrorMessage from './ErrorMessage';
 import Input from './Input';
 
-const FormInput = ({ name, label, children, icon: Icon, type = 'text', component: Component = Input, ...props }) => {
+const FormInput = ({ name, label, children, icon: Icon, type, component: Component, ...props }) => {
   return (
     <Field name={name}>
       {({ field, form }) => (
@@ -30,12 +30,23 @@ const FormInput = ({ name, label, children, icon: Icon, type = 'text', component
   );
 };
 
+FormInput.defaultProps = {
+  component: Input,
+  type: 'text'
+};
+
 FormInput.propTypes = {
+  /** Specifies the name of an input element */
   name: PropTypes.string.isRequired,
+  /** Specifies the text of a label element */
   label: PropTypes.string.isRequired,
+  /** Specifies a node. */
   children: PropTypes.node,
+  /** Receives a react componenet that exposes an input */
   component: PropTypes.func,
+  /** Receives an icon to display inside input element */
   icon: PropTypes.func,
+  /** Specifies the type of component element */
   type: PropTypes.string
 };
 

@@ -44,12 +44,12 @@ module.exports = {
     {
       name: 'Basic Inputs',
       components: [
-        'src/components/FormInput/index.js',
-        'src/components/FormSelect/index.js',
-        'src/components/FormCreditCardInput/index.js',
-        'src/components/Checkbox/index.js',
-        'src/components/QuantityInput/index.js',
-        'src/components/TextLink/index.js'
+        'src/components/FormInput/FormInput.js',
+        'src/components/FormSelect/FormSelect.js',
+        'src/components/FormCreditCardInput/FormCreditCardInput.js',
+        'src/components/Checkbox/Checkbox.js',
+        'src/components/QuantityInput/QuantityInput.js',
+        'src/components/TextLink/TextLink.js'
       ],
     },
     {
