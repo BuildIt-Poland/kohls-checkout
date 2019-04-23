@@ -28,8 +28,11 @@ function QuantityInput({ quantity, decreaseQuantity, increaseQuantity }) {
 }
 
 QuantityInput.propTypes = {
+  /** Specifies the quantity value */
   quantity: PropTypes.number.isRequired,
+  /** Event will trigger when decrease quantity button is clicked */
   decreaseQuantity: PropTypes.func.isRequired,
+  /** Event will trigger when increase quantity button is clicked */
   increaseQuantity: PropTypes.func.isRequired
 };
 

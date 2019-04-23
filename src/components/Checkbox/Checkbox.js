@@ -18,9 +18,13 @@ function Checkbox({ children, checked, disabled, onChange }) {
 }
 
 Checkbox.propTypes = {
+  /** Receives a node that is rendered next to the checkbox */
   children: node,
+  /** Specifies the if the checkbox should be pre-selected (checked) */
   checked: bool,
+  /** The specific option is disabled when present */
   disabled: bool,
+  /** Exposes the onChange event, it will occurs when the value of an element has been changed. */
   onChange: func
 };
 
