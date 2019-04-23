@@ -9,5 +9,5 @@ const address = {
   phone: '444 444 444'  
 };
 
-<AddressDetails header="Address" address={address} />
+<AddressDetails title="Address" address={address} />
 ```

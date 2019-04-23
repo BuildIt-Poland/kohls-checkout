@@ -1,3 +1,1 @@
-import ModalTrigger from './ModalTrigger';
-
-export default ModalTrigger;
+export { default } from './ModalTrigger';

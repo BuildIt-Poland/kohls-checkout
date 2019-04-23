@@ -3,46 +3,72 @@ const path = require('path');
 module.exports = {
   skipComponentsWithoutExample: true,
   styleguideComponents: {
-    Wrapper: path.join(__dirname, 'src/styleguide/StyleguideWrapper')
+    Wrapper: path.join(__dirname, 'src/styleguide/renderers/Wrapper'),
+    LogoRenderer: path.join(__dirname, 'src/styleguide/renderers/Logo'),
+    TableOfContentsRenderer: path.join(__dirname, 'src/styleguide/renderers/TableOfContents'),
+    ComponentsListRenderer: path.join(__dirname, 'src/styleguide/renderers/ComponentsList')
+  },
+  title: 'The Store Styleguide',
+  assetsDir: path.join(__dirname, 'src/styleguide/assets'),
+  template: {
+    favicon: '/favicon.ico',
   },
   ribbon: {
     url: 'https://github.com/BuildIt-Poland/store-checkout',
     text: 'The Store by BuildIt'
   },
-  title: 'The Store by BuildIt Style-Guide',
   usageMode: 'expand',
   theme: {
     color: {
-      link: '#9C2AA0',
-      linkHover: '#E89700'
+      link: '#008484',
+      linkHover: '#00a09f',
+      sidebarBackground: '#222222',
+      codeBase: '#ffffff',
+      codeBackground: '#222222',
+      codeComment: '#74975c',
+      codeKeyword: '#bc8abd',
+      codeProperty: '#a9dbfb',
+      codeString: '#ce9d86',
+      codeFunction: '#46d9d8'
     },
     fontFamily: {
-      base: '"Open Sans", sans-serif'
+      base: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+      monospace: '"Menlo", "Consolas", monospace'
+    }
+  },
+  styles: {
+    Code: {
+      code: {
+        fontSize: '16px',
+        borderRadius: '4px',
+        background: '#e8e8e8',
+        padding: '2px'
+      }
     }
   },
   sections: [
     {
       name: 'Introduction',
-      content: 'src/styleguide/introduction.md'
+      content: 'src/styleguide/content/Introduction.md'
     },
     {
       name: 'Style',
       sections: [
         {
           name: 'Logo',
-          content: 'src/styleguide/logo.md'
+          content: 'src/styleguide/content/Logo.md'
         },
         {
           name: 'Colors',
-          content: 'src/styleguide/colors.md'
+          content: 'src/styleguide/content/Colors.md'
         },
         {
           name: 'Icons',
-          content: 'src/styleguide/icons.md'
+          content: 'src/styleguide/content/Icons.md'
         },
         {
           name: 'Typography',
-          content: 'src/styleguide/typography.md'
+          content: 'src/styleguide/content/Typography.md'
         }
       ]
     },

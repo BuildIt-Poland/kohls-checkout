@@ -1,3 +1,1 @@
-import FormSelect from './FormSelect';
-
-export default FormSelect;
+export { default } from './FormSelect';

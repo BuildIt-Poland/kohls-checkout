@@ -43,7 +43,7 @@ exports[`COMPONENT - OrderSummary TotalPrice renders TotalPrice component 1`] = 
   <span
     className="c1"
   >
-    $NaN
+    $12800.00
   </span>
 </p>
 `;

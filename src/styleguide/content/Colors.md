@@ -1,8 +1,8 @@
-The Store by BuildIt colour palette aims at providing an organised approach to apply colour to the UI of your apps.
+**The Store** color palette aims at providing an organised approach to apply colour to the UI of your apps.
 
 ### Accesibility
 
-Follow the AA standards. Make sure the background and text used have a minimal contrast ratio. [More info](https://webaim.org/resources/contrastchecker/)
+Follow the AA standards. Make sure the background and text used have a minimal contrast ratio ([according to color contrast checker](https://webaim.org/resources/contrastchecker/)).
 
 <style>
 .grid {
@@ -30,6 +30,7 @@ Follow the AA standards. Make sure the background and text used have a minimal c
 .main-heading {
   font-size: 20px;
   margin-bottom: 25px;
+  font-weight: 600;
 }
 .light {
   border-radius: 5px;
@@ -64,14 +65,14 @@ Follow the AA standards. Make sure the background and text used have a minimal c
       <span>Red #E0151D</span>
     </div>
     <div className="light" style={{ backgroundColor: '#FADCDD' }}>
-      Light Red #FADCDD
+      <span style={{ color: '#222222' }}>Light Red #FADCDD</span>
     </div>
     <div className="light lighter" style={{ backgroundColor: '#FADCDD' }} />
   </div>
   <div className="box">
     <div className="main" style={{ backgroundColor: '#FFBF47' }}>
-      <div className="main-heading">Lemon yellow</div>
-      <span>Lemon yellow #FFBF47</span>
+      <div className="main-heading" style={{ color: '#222222' }}>Yellow</div>
+      <span style={{ color: '#222222' }}>Yellow #FFBF47</span>
     </div>
   </div>
   <div className="box">
@@ -83,7 +84,7 @@ Follow the AA standards. Make sure the background and text used have a minimal c
       Dark Grey #666666
     </div>
     <div className="light lighter" style={{ backgroundColor: '#b0b0b0' }}>
-      Light Grey #B0B0B0
+      <span style={{ color: '#222222' }}>Light Grey #B0B0B0</span>
     </div>
   </div>
 </div>

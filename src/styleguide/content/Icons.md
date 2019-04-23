@@ -3,8 +3,8 @@
 ```jsx noeditor
 import styled from 'styled-components';
 
-import {colorLightGrey} from '../styles/designTokens'
-import { Chevron, Cross, Cart, InfoCircle, Shipping, Tick } from '../components/Icons';
+import { colorLightGrey } from '../../styles/designTokens'
+import { Chevron, Cross, Cart, InfoCircle, Shipping, Tick } from '../../components/Icons';
 
 const IconsWrapper = styled.div`
   border: 1px solid ${colorLightGrey};
@@ -15,6 +15,9 @@ const IconsWrapper = styled.div`
 
 const IconWrapper = styled.div`
   height: 40px;
+  svg {
+    height: 100%;
+  }
 `;
 
 const Container = styled.div`
