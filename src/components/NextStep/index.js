@@ -1,3 +1,1 @@
-import NextStep from './NextStep';
-
-export default NextStep;
+export { default } from './NextStep';

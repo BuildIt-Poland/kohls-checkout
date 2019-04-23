@@ -17,7 +17,7 @@ describe('COMPONENT - AddressDetails', () => {
       phone: '444 444 444'
     };
 
-    const component = create(<AddressDetails header="Address" address={address} />);
+    const component = create(<AddressDetails title="Address" address={address} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

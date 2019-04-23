@@ -1,3 +1,1 @@
-import QuantityInput from './QuantityInput';
-
-export default QuantityInput;
+export { default } from './QuantityInput';

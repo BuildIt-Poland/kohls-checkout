@@ -18,9 +18,9 @@
 
 ```jsx noeditor
 import styled from 'styled-components';
-import { fontSmall, fontMedium, fontLarge, fontXLarge, fontWeightBold, fontWeightNormal } from '../styles/designTokens';
+import { fontSmall, fontMedium, fontLarge, fontXLarge, fontWeightBold, fontWeightNormal } from '../../styles/designTokens';
 
-import Text from '../components/Text';
+import Text from '../../components/Text';
 
 const H1 = styled.h1`
   font-size: ${fontXLarge};

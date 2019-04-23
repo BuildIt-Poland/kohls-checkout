@@ -1,3 +1,1 @@
-import FormCreditCardInput from './FormCreditCardInput';
-
-export default FormCreditCardInput;
+export { default } from './FormCreditCardInput';

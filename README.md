@@ -3,7 +3,8 @@
 [![Build Status](https://travis-ci.org/BuildIt-Poland/store-checkout.svg?branch=master)](https://travis-ci.org/BuildIt-Poland/store-checkout)
 [![codecov](https://codecov.io/gh/BuildIt-Poland/store-checkout/branch/master/graph/badge.svg)](https://codecov.io/gh/BuildIt-Poland/store-checkout)
 
-Check the [live version of the app](https://store.buildit.digital/)!
+Check the [live version of The Store](https://store.buildit.digital/)!
+Visit [The Store styleguide](https://styleguide-store.buildit.digital/)!
 
 ## Project goals
 Build base for **scalable front-end architecture** -- easy to work with for developers and QA, fully transparent for stakeholders. **Automate** as many processes as possible and make their results easily available.
@@ -57,6 +58,8 @@ Most useful scripts for development:
 * `npm test` - fires up Jest test runner
 
 Other scripts which may be helpful:
+* `styleguide:dev` - fires up development version of styleguide
+* `e2e:dev` - runs all e2e tests locally
 * `npm run start:build` -  starts a production version of app locally
 * `npm run test:update` -  updates all snapshots from scratch
 * `npm run format` - formats whole codebase with prettier
@@ -72,7 +75,7 @@ Please follow a few simple rules (prettier and linter takes care of the rest):
 * use regular **function()** instead of **arrow functions** at the top level (applies for functional components as well)
 * use **arrow functions** for anonymous functions
 * for targeting components directly in tests (e2e and unit) use **data-testid** property, for example: `<button data-testid="next-step-button">Next step</button>`
-* follow TODO comments with @ symbol and your GitHub handle, for instance: `//TODO Implement something important @myhandle`
+* follow TODO comments with @ symbol and your GitHub handle, for instance: `// TODO Implement something important @myhandle`
 * separate external and internal imports with new line
 * keep your imports order correct -- the higher a file is in directory structure, the higher on the list it should be:
 ```

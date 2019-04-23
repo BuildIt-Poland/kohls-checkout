@@ -1,3 +1,1 @@
-import PaymentInformation from './PaymentInformation';
-
-export default PaymentInformation;
+export { default } from './PaymentInformation';

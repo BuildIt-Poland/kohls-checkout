@@ -1,10 +1,9 @@
-This section contains the The Store by BuildIt logo but it can also have additional logos.
+This section contains the **The Store** logo but it can also have additional logos.
 
 ### Logo guidelines
 
 - Place the logo on white background
 - Never place the logo on images
-- Minimum size of the icon should be 32x32px
 - When positioning the logo beside elements, ensure there is enough clear space
 - Don't add additional shadows or effects, modify colors or change orientation
 
@@ -15,8 +14,8 @@ It can be imported into the codebase like this:
 ```jsx noeditor
 import styled from 'styled-components'
 
-import { Logo } from '../components/Icons';
-import { colorLightGrey } from '../styles/designTokens.js';
+import { Logo } from '../../components/Icons';
+import { colorLightGrey } from '../../styles/designTokens.js';
 
 const LogoWrapper = styled.div`
   border: 1px solid ${colorLightGrey};
