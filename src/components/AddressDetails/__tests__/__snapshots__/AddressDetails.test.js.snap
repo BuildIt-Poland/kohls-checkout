@@ -59,6 +59,7 @@ exports[`COMPONENT - AddressDetails renders AddressDetails component 1`] = `
     actionElement={
       <ModalTrigger
         content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
+        title="Address"
       >
         <ForwardRef
           underline={true}
@@ -68,7 +69,9 @@ exports[`COMPONENT - AddressDetails renders AddressDetails component 1`] = `
       </ModalTrigger>
     }
     className="c1"
-  />
+  >
+    Address
+  </SectionHeader>
   <address
     className="c2"
   >
