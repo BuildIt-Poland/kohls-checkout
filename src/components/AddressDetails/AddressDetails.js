@@ -5,13 +5,13 @@ import { address } from '../../types';
 import ModalTrigger from '../ModalTrigger';
 import Address from './Address';
 import Text from './Text';
-import SectionHeader from '../SectionHeader';
+import SubsectionHeader from '../SubsectionHeader';
 import Section from '../Section';
 
-function AddressDetails({ header, address }) {
+function AddressDetails({ title, address }) {
   const modalTrigger = (
     <ModalTrigger
-      title={header}
+      title={title}
       content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
     >
       <Text underline>Open Modal</Text>
@@ -19,7 +19,7 @@ function AddressDetails({ header, address }) {
   );
   return (
     <Section>
-      <SectionHeader actionElement={modalTrigger}>{header}</SectionHeader>
+      <SubsectionHeader actionElement={modalTrigger}>{title}</SubsectionHeader>
       <Address>
         <Text bold>
           {address.firstName} {address.lastName}
@@ -33,7 +33,7 @@ function AddressDetails({ header, address }) {
 }
 
 AddressDetails.propTypes = {
-  header: string.isRequired,
+  title: string.isRequired,
   address: address.isRequired
 };
 

@@ -6,15 +6,15 @@ import Content from '../Content';
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
 import PaymentInformation from '../PaymentInformation';
-import ShippingDetailsEdit from '../ShippingDetailsEdit';
+import ShippingSummary from '../ShippingSummary';
 
 function CheckoutReview() {
   return (
     <Page title="Review">
-      <Content>
+      <Content as="div">
         <Headline>Review</Headline>
       </Content>
-      <ShippingDetailsEdit />
+      <ShippingSummary />
       <PaymentInformation />
       <OrderSummary />
       <NextStep label="Place Order" to="/cart" />

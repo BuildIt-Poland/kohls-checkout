@@ -8,7 +8,7 @@ describe('FUNC - months', () => {
 
 describe('FUNC - nextYearsFromDate', () => {
   it('generates list of years from provided start date', () => {
-    expect(nextYearsFromDate('1998-04-23T10:26:00', 4)).toEqual([1998, 1999, 2000, 2001, 2002]);
+    expect(nextYearsFromDate('1998-04-23T10:26:00', 4)).toEqual(['98', '99', '00', '01', '02']);
   });
 });
 

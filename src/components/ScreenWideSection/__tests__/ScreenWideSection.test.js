@@ -1,11 +1,11 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import Wrapper from '../Wrapper';
+import ScreenWideSection from '../ScreenWideSection';
 
-describe('COMPONENT - OrderSummary Wrapper', () => {
+describe('COMPONENT - ScreenWideSection', () => {
   it('render NextStep component', () => {
-    const component = create(<Wrapper />);
+    const component = create(<ScreenWideSection />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

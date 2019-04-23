@@ -18,28 +18,35 @@ function Cart({ items, refillDemoCart }) {
   const pageTitle = `Cart (${totalCartItemsCount(items)})`;
   const isCartEmpty = !totalCartItemsCount(items);
 
-  return (
-    <>
-      {!isCartEmpty && (
+  if (!isCartEmpty) {
+    return (
+      <>
         <InfoBanner>
           You have received <strong>free shipping</strong>!
         </InfoBanner>
-      )}
-      <Page title={pageTitle}>
-        <Content>
-          <Headline>{pageTitle}</Headline>
-          <CartItemsList items={items} />
-          <ShippingDetails />
-          {isCartEmpty && (
-            <TextLink onClick={refillDemoCart} as="button">
-              Put some items in cart!
-            </TextLink>
-          )}
-        </Content>
-        {!isCartEmpty && <OrderSummary />}
-        {!isCartEmpty && <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />}
-      </Page>
-    </>
+        <Page title={pageTitle}>
+          <Content>
+            <Headline>{pageTitle}</Headline>
+            <CartItemsList items={items} />
+            <ShippingDetails />
+          </Content>
+          <OrderSummary />
+          <NextStep label="Checkout" to={CHECKOUT_DELIVERY_PATH} />
+        </Page>
+      </>
+    );
+  }
+
+  return (
+    <Page title={pageTitle}>
+      <Content>
+        <Headline>{pageTitle}</Headline>
+        <CartItemsList items={items} />
+        <TextLink onClick={refillDemoCart} as="button">
+          Put some items in cart!
+        </TextLink>
+      </Content>
+    </Page>
   );
 }
 
