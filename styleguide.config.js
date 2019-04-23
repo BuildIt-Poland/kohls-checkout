@@ -89,7 +89,7 @@ module.exports = {
         'src/components/Header/index.js',
         'src/components/Navigation/index.js',
         'src/components/InfoBanner/index.js',
-        'src/components/Headline/index.js',
+        'src/components/Headline/Headline.js',
         'src/components/SectionHeader/SectionHeader.js',
         'src/components/NextStep/NextStep.js'
       ],

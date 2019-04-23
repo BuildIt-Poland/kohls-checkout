@@ -27,7 +27,7 @@ function NextStep({ label = 'Next step', to, onMoveToNextStep, disabled }) {
 NextStep.propTypes = {
   /** Text to display as the Button content */
   label: PropTypes.string,
-  /** Router URL. If passed renders `<Link>` component inside. `<Button>` otherwise */
+  /** Router URL string. If passed renders inside `<Link>` component, `<Button>` otherwise */
   to: PropTypes.string,
   /** onClick handler for instanced with unset `to` property */
   moveToNextStep: PropTypes.func,
