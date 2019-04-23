@@ -54,7 +54,7 @@ function Navigation({ match }) {
 
 Navigation.propTypes = {
   /** Object contains information about how a <Route path> matched the URL */
-  match: PropTypes.node.isRequired
+  match: PropTypes.object.isRequired
 };
 
 export default Navigation;
