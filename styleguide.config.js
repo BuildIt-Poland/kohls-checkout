@@ -39,7 +39,7 @@ module.exports = {
   styles: {
     Code: {
       code: {
-        fontSize: '16px',
+        fontSize: '12px',
         borderRadius: '4px',
         background: '#e8e8e8',
         padding: '2px'
@@ -90,8 +90,8 @@ module.exports = {
         'src/components/Navigation/index.js',
         'src/components/InfoBanner/index.js',
         'src/components/Headline/index.js',
-        'src/components/SectionHeader/index.js',
-        'src/components/NextStep/index.js'
+        'src/components/SectionHeader/SectionHeader.js',
+        'src/components/NextStep/NextStep.js'
       ],
     },
     {
