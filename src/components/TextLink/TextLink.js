@@ -26,4 +26,5 @@ const TextLink = styled.a`
   }
 `;
 
+/** @component */
 export default TextLink;
