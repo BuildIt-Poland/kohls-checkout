@@ -1,6 +1,6 @@
 // Centralised type definitions for commonly used ones
 
-import { shape, number, string, oneOfType } from 'prop-types';
+import { shape, number, string } from 'prop-types';
 
 export const itemVariants = shape({
   size: string,
