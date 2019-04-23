@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { fontWeightNormal } from '../../styles/designTokens';
@@ -50,5 +51,10 @@ function Navigation({ match }) {
     </ErrorBoundary>
   );
 }
+
+Navigation.propTypes = {
+  /** Object contains information about how a <Route path> matched the URL */
+  match: PropTypes.node.isRequired
+};
 
 export default Navigation;

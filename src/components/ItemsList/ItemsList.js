@@ -27,6 +27,7 @@ function ItemsList({ items }) {
 }
 
 ItemsList.propTypes = {
+  /** Array of cart items */
   items: PropTypes.arrayOf(item)
 };
 

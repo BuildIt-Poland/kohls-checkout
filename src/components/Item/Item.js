@@ -31,7 +31,9 @@ function Item({ itemControlsComponent: ItemControls, item }) {
 }
 
 Item.propTypes = {
+  /** Object containing single Cart Item data */
   item: item,
+  /** Component class that handle Item state manipulation */
   itemControlsComponent: PropTypes.func
 };
 

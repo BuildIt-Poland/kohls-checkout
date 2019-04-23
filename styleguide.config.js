@@ -39,7 +39,7 @@ module.exports = {
   styles: {
     Code: {
       code: {
-        fontSize: '16px',
+        fontSize: '12px',
         borderRadius: '4px',
         background: '#e8e8e8',
         padding: '2px'
@@ -86,21 +86,21 @@ module.exports = {
     {
       name: 'Layout',
       components: [
-        'src/components/Header/index.js',
-        'src/components/Navigation/index.js',
-        'src/components/InfoBanner/index.js',
-        'src/components/Headline/index.js',
-        'src/components/SectionHeader/index.js',
-        'src/components/NextStep/index.js'
+        'src/components/Header/Header.js',
+        'src/components/Navigation/Navigation.js',
+        'src/components/InfoBanner/InfoBanner.js',
+        'src/components/Headline/Headline.js',
+        'src/components/SectionHeader/SectionHeader.js',
+        'src/components/NextStep/NextStep.js'
       ],
     },
     {
       name: 'Content',
       components: [
-        'src/components/Item/index.js',
-        'src/components/ShippingDetails/index.js',
-        'src/components/CartItemsList/index.js',
-        'src/components/ItemsList/index.js',
+        'src/components/Item/Item.js',
+        'src/components/ShippingDetails/ShippingDetails.js',
+        'src/components/CartItemsList/CartItemsList.js',
+        'src/components/ItemsList/ItemsList.js',
         'src/components/OrderSummary/OrderSummary.js',
         'src/components/AddressDetails/AddressDetails.js'
       ],
