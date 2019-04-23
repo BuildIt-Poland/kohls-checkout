@@ -4,9 +4,7 @@ import { object, shape, number, string, oneOfType, func } from 'prop-types';
 import styled from 'styled-components';
 
 import { CHECKOUT_REVIEW_PATH } from '../../constants/routes';
-import { paymentInfo } from '../../types';
 import { scrollToRef } from '../../utils';
-
 import Page from '../Page';
 import NextStep from '../NextStep';
 import OrderSummary from '../OrderSummary';
@@ -61,7 +59,9 @@ function CheckoutPayment({ history, initialPaymentInfo, setPaymentInfo }) {
 CheckoutPayment.propTypes = {
   history: object.isRequired,
   initialPaymentInfo: shape({
-    ...paymentInfo,
+    cardNumber: oneOfType([string, number]).isRequired,
+    expMonth: oneOfType([string, number]).isRequired,
+    expYear: oneOfType([string, number]).isRequired,
     securityCode: oneOfType([string, number]).isRequired
   }).isRequired,
   setPaymentInfo: func.isRequired

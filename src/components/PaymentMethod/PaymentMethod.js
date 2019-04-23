@@ -1,6 +1,6 @@
 import React from 'react';
+import { shape, number, string, oneOfType } from 'prop-types';
 
-import { paymentInfo } from '../../types';
 import Text from '../Text';
 import SubsectionHeader from '../SubsectionHeader';
 import Section from '../Section';
@@ -33,7 +33,11 @@ function PaymentMethod({ paymentInfo }) {
 }
 
 PaymentMethod.propTypes = {
-  paymentInfo: paymentInfo.isRequired
+  paymentInfo: shape({
+    cardNumber: oneOfType([string, number]).isRequired,
+    expMonth: oneOfType([string, number]).isRequired,
+    expYear: oneOfType([string, number]).isRequired
+  })
 };
 
 export default PaymentMethod;

@@ -30,9 +30,3 @@ export const address = shape({
   zipCode: string.isRequired,
   phone: string.isRequired
 });
-
-export const paymentInfo = shape({
-  cardNumber: oneOfType([string, number]).isRequired,
-  expMonth: oneOfType([string, number]).isRequired,
-  expYear: oneOfType([string, number]).isRequired
-});
