@@ -51,9 +51,10 @@
       "!src/index.js",
       "!src/serviceWorker.js",
       "!src/e2eConfig.js",
-      "!src/components/Root/*",
-      "!src/components/GlobalStyle/*",
-      "!src/constants/*"
+      "!src/components/Root/**/*",
+      "!src/components/GlobalStyle/**/*",
+      "!src/constants/**/*",
+      "!src/styleguide/**/*"
     ]
   },
   "prettier": {
