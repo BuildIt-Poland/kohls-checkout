@@ -11,7 +11,7 @@ import Label from './Label';
 import ErrorMessage from './ErrorMessage';
 import Input from './Input';
 
-const FormInput = ({ name, label, children, icon: Icon, type, component: Component, ...props }) => {
+const FormInput = ({ name, label, children, icon: Icon, type = 'text', component: Component = Input, ...props }) => {
   return (
     <Field name={name}>
       {({ field, form }) => (
@@ -28,11 +28,6 @@ const FormInput = ({ name, label, children, icon: Icon, type, component: Compone
       )}
     </Field>
   );
-};
-
-FormInput.defaultProps = {
-  component: Input,
-  type: 'text'
 };
 
 FormInput.propTypes = {
