@@ -16,7 +16,7 @@ const IconsWrapper = styled.div`
 const IconWrapper = styled.div`
   height: 40px;
   svg {
-    heigth: 100%;
+    height: 100%;
   }
 `;
 
