@@ -25,7 +25,7 @@ function SectionHeader({ actionElement, children, ...props }) {
 SectionHeader.propTypes = {
   /** The content to render within the SectionHeader */
   children: PropTypes.node.isRequired,
-  /** Instantiated react node to render as sub action element */
+  /** Instantiated react node to render as a sub action element */
   actionElement: PropTypes.node
 };
 
