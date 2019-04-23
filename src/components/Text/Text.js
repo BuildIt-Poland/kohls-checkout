@@ -20,10 +20,6 @@ export function fontColor({ highlight, dimmed }) {
   return colorBlack;
 }
 
-/*
-
-*/
-
 const Text = styled.p`
   font-size: ${fontMedium};
   text-decoration: ${({ underline }) => (underline ? 'underline' : 'none')};

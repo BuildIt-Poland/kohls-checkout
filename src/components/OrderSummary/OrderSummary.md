@@ -9,6 +9,5 @@ function mapStateToProps(state) {
 
 const OrderSummaryContainer = connect(mapStateToProps)(OrderSummary);
 
-
 <OrderSummaryContainer />
 ```
