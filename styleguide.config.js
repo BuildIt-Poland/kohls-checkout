@@ -87,7 +87,7 @@ module.exports = {
       name: 'Layout',
       components: [
         'src/components/Header/Header.js',
-        'src/components/Navigation/index.js',
+        'src/components/Navigation/Navigation.js',
         'src/components/InfoBanner/InfoBanner.js',
         'src/components/Headline/Headline.js',
         'src/components/SectionHeader/SectionHeader.js',
