@@ -1,33 +1,14 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import { render } from 'react-testing-library';
 
 import ShippingDetails from '../ShippingDetails';
 
-jest.mock('../../Icons/Shipping', () => 'Shipping');
-
 describe('COMPONENT - ShippingDetails', () => {
-  it('Renders correctly ShippingDetails component', () => {
-    const props = {
-      minDate: 'Tue. Apr. 19',
-      maxDate: 'Wed. May. 19',
-      shippingPromo: 'Free after $85'
-    };
+  it('paragraphs contain correct text', () => {
+    const { container } = render(<ShippingDetails />);
 
-    const component = create(<ShippingDetails {...props} />);
-
-    expect(component.toJSON()).toMatchSnapshot();
-  });
-
-  describe('When there is no shippingPromo', () => {
-    it('Renders correctly ShippingDetails component without shipping promo', () => {
-      const props = {
-        minDate: 'Tue. Apr. 19',
-        maxDate: 'Wed. May. 19'
-      };
-
-      const component = create(<ShippingDetails {...props} />);
-
-      expect(component.toJSON()).toMatchSnapshot();
-    });
+    expect(container.querySelectorAll('p')[0]).toHaveTextContent('Items could only be shipped Standard');
+    expect(container.querySelectorAll('p')[1]).toHaveTextContent('Ship to Me');
+    expect(container.querySelectorAll('p')[2]).toHaveTextContent('Arrives between');
   });
 });

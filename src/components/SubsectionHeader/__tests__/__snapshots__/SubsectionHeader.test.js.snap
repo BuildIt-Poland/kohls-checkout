@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardName COMPONENT - CardName renders CardName component 1`] = `
+exports[`COMPONENT - SubsectionHeader renders correctly 1`] = `
 .c1 {
   font-size: 2.4rem;
   text-align: left;
@@ -20,18 +20,14 @@ exports[`CardName COMPONENT - CardName renders CardName component 1`] = `
 }
 
 .c0 {
-  margin: 0;
-}
-
-@media (max-width:26.25em) {
-  .c0 {
-    margin-top: 1rem;
-  }
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 1rem 0;
 }
 
 <h2
   className="c0 c1"
 >
-  Master Card
+  Subsection!
 </h2>
 `;

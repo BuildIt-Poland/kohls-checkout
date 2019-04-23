@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Price renders Price component 1`] = `
+exports[`COMPONENT - ShippingDetails Row renders correctly 1`] = `
 .c0 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
@@ -10,7 +10,7 @@ exports[`COMPONENT - Price renders Price component 1`] = `
   margin: 0;
   margin-bottom: 1rem;
   color: #222222;
-  margin-left: 1rem;
+  margin: 0;
 }
 
 .c0:last-child {

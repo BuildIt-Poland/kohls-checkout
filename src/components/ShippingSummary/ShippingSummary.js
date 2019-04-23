@@ -8,7 +8,7 @@ import AddressDetails from '../AddressDetails';
 import ItemsList from '../ItemsList';
 import Content from '../Content';
 
-function ShippingDetailsEdit() {
+function ShippingSummary() {
   const textLink = (
     <TextLink as={Link} to={CHECKOUT_DELIVERY_PATH}>
       Edit
@@ -19,11 +19,11 @@ function ShippingDetailsEdit() {
     <>
       <Content>
         <SectionHeader actionElement={textLink}>Shipping Details</SectionHeader>
-        <AddressDetails header="Shipping Address" />
+        <AddressDetails title="Shipping Address" />
       </Content>
       <ItemsList />
     </>
   );
 }
 
-export default ShippingDetailsEdit;
+export default ShippingSummary;

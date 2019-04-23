@@ -1,38 +1,32 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-import { colorLightGrey } from '../../styles/designTokens';
-import { formatDate } from '../../utils';
-import Shipping from '../Icons/Shipping';
+import { formatDate, addDays } from '../../utils';
+import { Shipping as ShippingIcon } from '../Icons';
+import ErrorBoundary from '../ErrorBoundary';
 import Text from '../Text';
-import ShippingText from './ShippingText';
+import Row from './Row';
 import Wrapper from './Wrapper';
 
 function ShippingDetails() {
-  const getArrivalDates = () => {
-    const startDate = new Date();
-    const endDate = new Date();
-    endDate.setDate(endDate.getDate() + 3);
-
-    return `${formatDate(startDate)} - ${formatDate(endDate)}`;
-  };
+  const startDate = new Date();
+  const endDate = addDays(startDate, 3);
 
   return (
-    <>
-      <Text bold>Item can only be shipped Standard</Text>
-      <Wrapper>
-        <Shipping fill={colorLightGrey} />
-        <div>
-          <ShippingText>Arrives</ShippingText>
-          <ShippingText>
-            Ship to Me
-            <ShippingText bold as="span">
-              {getArrivalDates()}
-            </ShippingText>
-          </ShippingText>
-        </div>
-      </Wrapper>
-    </>
+    <ErrorBoundary>
+      <section>
+        <Text bold>Items could only be shipped Standard</Text>
+        <Wrapper>
+          <ShippingIcon />
+          <div>
+            <Row>Ship to Me</Row>
+            <Row>
+              Arrives between <strong>{formatDate(startDate)}</strong> and <strong>{formatDate(endDate)}</strong>
+            </Row>
+          </div>
+        </Wrapper>
+      </section>
+    </ErrorBoundary>
   );
 }
 
-export default ShippingDetails;
+export default memo(ShippingDetails);
