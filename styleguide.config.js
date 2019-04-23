@@ -44,7 +44,7 @@ module.exports = {
     {
       name: 'Basic Inputs',
       components: [
-        'src/components/FormInput/index.js',
+        'src/components/FormInput/FormInput.js',
         'src/components/FormSelect/index.js',
         'src/components/FormCreditCardInput/index.js',
         'src/components/Checkbox/index.js',
