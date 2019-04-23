@@ -10,6 +10,7 @@ function Error({ message = 'Oops, something went wrong.' }) {
 }
 
 Error.propTypes = {
+  /** Content of error message */
   message: PropTypes.string
 };
 

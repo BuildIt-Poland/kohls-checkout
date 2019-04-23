@@ -13,6 +13,11 @@ module.exports = {
   template: {
     favicon: '/favicon.ico',
   },
+  ribbon: {
+    url: 'https://github.com/BuildIt-Poland/store-checkout',
+    text: 'The Store by BuildIt'
+  },
+  usageMode: 'expand',
   theme: {
     color: {
       link: '#008484',
@@ -34,7 +39,7 @@ module.exports = {
   styles: {
     Code: {
       code: {
-        fontSize: '16px',
+        fontSize: '12px',
         borderRadius: '4px',
         background: '#e8e8e8',
         padding: '2px'
@@ -70,42 +75,42 @@ module.exports = {
     {
       name: 'Basic Inputs',
       components: [
-        'src/components/FormInput/index.js',
-        'src/components/FormSelect/index.js',
-        'src/components/FormCreditCardInput/index.js',
-        'src/components/Checkbox/index.js',
-        'src/components/QuantityInput/index.js',
-        'src/components/TextLink/index.js'
+        'src/components/FormInput/FormInput.js',
+        'src/components/FormSelect/FormSelect.js',
+        'src/components/FormCreditCardInput/FormCreditCardInput.js',
+        'src/components/Checkbox/Checkbox.js',
+        'src/components/QuantityInput/QuantityInput.js',
+        'src/components/TextLink/TextLink.js'
       ],
     },
     {
       name: 'Layout',
       components: [
-        'src/components/Header/index.js',
-        'src/components/Navigation/index.js',
-        'src/components/InfoBanner/index.js',
-        'src/components/Headline/index.js',
-        'src/components/SectionHeader/index.js',
-        'src/components/NextStep/index.js'
+        'src/components/Header/Header.js',
+        'src/components/Navigation/Navigation.js',
+        'src/components/InfoBanner/InfoBanner.js',
+        'src/components/Headline/Headline.js',
+        'src/components/SectionHeader/SectionHeader.js',
+        'src/components/NextStep/NextStep.js'
       ],
     },
     {
       name: 'Content',
       components: [
-        'src/components/Item/index.js',
-        'src/components/ShippingDetails/index.js',
-        'src/components/CartItemsList/index.js',
-        'src/components/ItemsList/index.js',
-        'src/components/OrderSummary/index.js',
-        'src/components/AddressDetails/index.js'
+        'src/components/Item/Item.js',
+        'src/components/ShippingDetails/ShippingDetails.js',
+        'src/components/CartItemsList/CartItemsList.js',
+        'src/components/ItemsList/ItemsList.js',
+        'src/components/OrderSummary/OrderSummary.js',
+        'src/components/AddressDetails/AddressDetails.js'
       ],
     },
     {
       name: 'Feedback',
       components: [
         'src/components/Text/Text.js',
-        'src/components/Error/index.js',
-        'src/components/ModalTrigger/index.js'
+        'src/components/Error/Error.js',
+        'src/components/ModalTrigger/ModalTrigger.js'
       ],
     }
   ]

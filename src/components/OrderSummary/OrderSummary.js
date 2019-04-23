@@ -1,5 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+import { item } from '../../types';
 import ErrorBoundary from '../ErrorBoundary';
 import SectionHeader from '../SectionHeader';
 import ScreenWideSection from '../ScreenWideSection';
@@ -53,5 +55,10 @@ function OrderSummary({ items }) {
     </ErrorBoundary>
   );
 }
+
+OrderSummary.propTypes = {
+  /** Array of cart items */
+  items: PropTypes.arrayOf(item).isRequired
+};
 
 export default OrderSummary;

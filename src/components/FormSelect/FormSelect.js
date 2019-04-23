@@ -18,10 +18,14 @@ function FormSelect({ options, ...props }) {
 }
 
 FormSelect.propTypes = {
+  /** Array with options that are shown in FormSelect. */
   options: PropTypes.arrayOf(
     PropTypes.shape({
+      /** Specifies the label of a option */
       label: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      /** Specifies the value of a option */
       value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      /** The specific option is disabled when present. */
       disabled: PropTypes.bool
     }).isRequired
   )

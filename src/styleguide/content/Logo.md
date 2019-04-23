@@ -9,7 +9,7 @@ This section contains the **The Store** logo but it can also have additional log
 
 It can be imported into the codebase like this:
 
-`import Logo from '../Icons';`
+`import { Logo } from '../Icons';`
 
 ```jsx noeditor
 import styled from 'styled-components'

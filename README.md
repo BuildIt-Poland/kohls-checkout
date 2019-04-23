@@ -4,6 +4,7 @@
 [![codecov](https://codecov.io/gh/BuildIt-Poland/store-checkout/branch/master/graph/badge.svg)](https://codecov.io/gh/BuildIt-Poland/store-checkout)
 
 Check the [live version of The Store](https://store.buildit.digital/)!
+
 Visit [The Store styleguide](https://styleguide-store.buildit.digital/)!
 
 ## Project goals
