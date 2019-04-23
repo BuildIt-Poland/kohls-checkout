@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - ShippingDetailsEdit renders ShippingDetailsEdit component 1`] = `
+exports[`COMPONENT - ShippingSummary renders ShippingSummary component 1`] = `
 Array [
   .c1 {
   font-size: 2.4rem;
@@ -60,7 +60,7 @@ Array [
       </MockedLink>
     </h2>
     <AddressDetails
-      header="Shipping Address"
+      title="Shipping Address"
     />
   </section>,
   <ItemsList />,

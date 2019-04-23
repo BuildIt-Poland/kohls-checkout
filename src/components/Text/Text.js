@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 import {
   fontMedium,
   fontWeightNormal,
@@ -36,4 +38,16 @@ const Text = styled.p`
   }
 `;
 
+Text.propTypes = {
+  /** Makes text Highlight */
+  highlight: PropTypes.bool,
+  /** Makes text Dimmed */
+  dimmed: PropTypes.bool,
+  /** Makes text Underline */
+  underline: PropTypes.bool,
+  /** Makes text bold  */
+  bold: PropTypes.bool
+};
+
+/** @component */
 export default Text;

@@ -3,7 +3,7 @@
 // Optinally you can pass any fitting component as Input (useful for select or other non-standard ones)
 // Also accepts Icon component (which could be positioned absolutely)
 
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { Field } from 'formik';
 
@@ -39,4 +39,4 @@ FormInput.propTypes = {
   type: PropTypes.string
 };
 
-export default FormInput;
+export default memo(FormInput);

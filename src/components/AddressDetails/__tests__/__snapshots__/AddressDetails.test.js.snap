@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - AddressDetails renders AddressDetails component 1`] = `
-.c1 {
+.c2 {
   padding: 0;
   font-style: normal;
 }
 
-.c2 {
+.c3 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -18,11 +18,11 @@ exports[`COMPONENT - AddressDetails renders AddressDetails component 1`] = `
   margin: 0;
 }
 
-.c2:last-child {
+.c3:last-child {
   margin-bottom: 0;
 }
 
-.c3 {
+.c4 {
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -34,8 +34,14 @@ exports[`COMPONENT - AddressDetails renders AddressDetails component 1`] = `
   margin: 0;
 }
 
-.c3:last-child {
+.c4:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 1rem 0;
 }
 
 .c0 {
@@ -53,7 +59,6 @@ exports[`COMPONENT - AddressDetails renders AddressDetails component 1`] = `
     actionElement={
       <ModalTrigger
         content="Information should exactly match your credit card statement. Incomplete or incorrect information may slow order processing."
-        title="Address"
       >
         <ForwardRef
           underline={true}
@@ -62,31 +67,30 @@ exports[`COMPONENT - AddressDetails renders AddressDetails component 1`] = `
         </ForwardRef>
       </ModalTrigger>
     }
-  >
-    Address
-  </SectionHeader>
-  <address
     className="c1"
+  />
+  <address
+    className="c2"
   >
     <p
-      className="c2"
+      className="c3"
     >
       Taylor
        
       Swift
     </p>
     <p
-      className="c3"
+      className="c4"
     >
       228 Park Ave S
     </p>
     <p
-      className="c3"
+      className="c4"
     >
       New Orlean
     </p>
     <p
-      className="c3"
+      className="c4"
     >
       444 444 444
     </p>

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { item } from '../../types';
 import ErrorBoundary from '../ErrorBoundary';
 import SectionHeader from '../SectionHeader';
+import ScreenWideSection from '../ScreenWideSection';
 import Price from '../Price';
 import Content from '../Content';
 import {
@@ -17,14 +18,13 @@ import {
 } from './demoOrderSummaryCalculations';
 import TextRow from './TextRow';
 import TotalPrice from './TotalPrice';
-import Wrapper from './Wrapper';
 
 function OrderSummary({ items }) {
   const subtotal = subtotalPrice(items);
 
   return (
     <ErrorBoundary>
-      <Wrapper>
+      <ScreenWideSection>
         <Content>
           <SectionHeader>Order Summary</SectionHeader>
           <TextRow>
@@ -51,7 +51,7 @@ function OrderSummary({ items }) {
           </TextRow>
           <TotalPrice price={totalPrice(SHIPPING_COST, SUPER_DISCOUNT_PERCENTAGE, TAX_PERCANTAGE, subtotal)} />
         </Content>
-      </Wrapper>
+      </ScreenWideSection>
     </ErrorBoundary>
   );
 }
