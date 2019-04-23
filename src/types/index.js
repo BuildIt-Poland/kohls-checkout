@@ -34,6 +34,5 @@ export const address = shape({
 export const paymentInfo = shape({
   cardNumber: oneOfType([string, number]).isRequired,
   expMonth: oneOfType([string, number]).isRequired,
-  expYear: oneOfType([string, number]).isRequired,
-  securityCode: oneOfType([string, number]).isRequired
+  expYear: oneOfType([string, number]).isRequired
 });

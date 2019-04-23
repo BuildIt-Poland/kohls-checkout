@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Formik } from 'formik';
-import PropTypes from 'prop-types';
+import { object, shape, number, string, oneOfType, func } from 'prop-types';
 import styled from 'styled-components';
 
 import { CHECKOUT_REVIEW_PATH } from '../../constants/routes';
@@ -59,9 +59,12 @@ function CheckoutPayment({ history, initialPaymentInfo, setPaymentInfo }) {
 }
 
 CheckoutPayment.propTypes = {
-  history: PropTypes.object.isRequired,
-  initialPaymentInfo: paymentInfo.isRequired,
-  setPaymentInfo: PropTypes.func.isRequired
+  history: object.isRequired,
+  initialPaymentInfo: shape({
+    ...paymentInfo,
+    securityCode: oneOfType([string, number]).isRequired
+  }).isRequired,
+  setPaymentInfo: func.isRequired
 };
 
 export default CheckoutPayment;

@@ -11,5 +11,7 @@ exports[`COMPONENT - Headline renders correctly 1`] = `
 
 <h1
   className="c0"
-/>
+>
+  Test children
+</h1>
 `;

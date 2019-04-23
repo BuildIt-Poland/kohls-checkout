@@ -59,11 +59,6 @@ exports[`COMPONENT - FormCreditCardInput renders correctly 1`] = `
     type="text"
     value="340102315322282"
   />
-  <Icon
-    name="cardNumber"
-    onBlur={[Function]}
-    onChange={[Function]}
-    value="340102315322282"
-  />
+  Icon
 </label>
 `;

@@ -4,7 +4,7 @@ import { Formik } from 'formik';
 
 import FormCreditCardInput from '../FormCreditCardInput';
 
-jest.mock('../Icon', () => 'Icon');
+jest.mock('../Icon', () => () => 'Icon');
 
 describe('COMPONENT - FormCreditCardInput', () => {
   it('renders correctly', () => {
