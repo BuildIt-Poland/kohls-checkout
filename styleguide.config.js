@@ -97,10 +97,10 @@ module.exports = {
     {
       name: 'Content',
       components: [
-        'src/components/Item/index.js',
-        'src/components/ShippingDetails/index.js',
-        'src/components/CartItemsList/index.js',
-        'src/components/ItemsList/index.js',
+        'src/components/Item/Item.js',
+        'src/components/ShippingDetails/ShippingDetails.js',
+        'src/components/CartItemsList/CartItemsList.js',
+        'src/components/ItemsList/ItemsList.js',
         'src/components/OrderSummary/OrderSummary.js',
         'src/components/AddressDetails/AddressDetails.js'
       ],
