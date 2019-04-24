@@ -16,7 +16,9 @@ function ShippingDetails() {
       <section>
         <Text bold>Items could only be shipped Standard</Text>
         <Wrapper>
-          <ShippingIcon />
+          <span>
+            <ShippingIcon />
+          </span>
           <div>
             <Row>Ship to Me</Row>
             <Row>
