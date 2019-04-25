@@ -8,7 +8,7 @@ exports[`COMPONENT - Tick renders Tick component 1`] = `
 }
 
 .c0 svg {
-  fill: #00a09f;
+  fill: #7cf99a;
 }
 
 <span

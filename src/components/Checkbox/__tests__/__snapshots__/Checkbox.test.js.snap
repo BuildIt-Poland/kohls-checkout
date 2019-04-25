@@ -33,7 +33,7 @@ exports[`COMPONENT - Checkbox renders checked Checkbox component 1`] = `
 }
 
 .c3 svg {
-  fill: #00a09f;
+  fill: #7cf99a;
 }
 
 <label

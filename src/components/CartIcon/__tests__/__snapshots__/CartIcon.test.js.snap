@@ -29,7 +29,7 @@ exports[`COMPONENT - CartIcon renders correctly 1`] = `
 }
 
 .c0:focus {
-  background-color: #ffbf47;
+  background-color: #7cf99a;
   outline: 0;
 }
 

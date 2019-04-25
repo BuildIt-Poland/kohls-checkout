@@ -2,6 +2,7 @@
 
 exports[`COMPONENT - ShippingDetails Wrapper renders correctly 1`] = `
 .c0 {
+  background-color: #cfe3f2;
   display: grid;
   grid-template-columns: 6rem 1fr;
   grid-gap: 2rem;

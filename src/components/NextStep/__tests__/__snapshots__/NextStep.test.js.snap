@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - NextStep render button if onMoveToNextStep handler is provided 1`] = `
 .c1 {
-  background: #00a09f;
+  background: #7cf99a;
   border: 0;
   color: #ffffff;
   display: block;
@@ -26,7 +26,7 @@ exports[`COMPONENT - NextStep render button if onMoveToNextStep handler is provi
 }
 
 .c1:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #7cf99a;
   outline-offset: 0;
 }
 
@@ -63,7 +63,7 @@ exports[`COMPONENT - NextStep render button if onMoveToNextStep handler is provi
 
 exports[`COMPONENT - NextStep renders Link if to prop is provided 1`] = `
 .c1 {
-  background: #00a09f;
+  background: #7cf99a;
   border: 0;
   color: #ffffff;
   display: block;
@@ -87,7 +87,7 @@ exports[`COMPONENT - NextStep renders Link if to prop is provided 1`] = `
 }
 
 .c1:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #7cf99a;
   outline-offset: 0;
 }
 

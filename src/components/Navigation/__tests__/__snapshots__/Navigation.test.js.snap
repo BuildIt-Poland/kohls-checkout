@@ -58,7 +58,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #7cf99a;
   outline-offset: -4px;
 }
 
@@ -79,7 +79,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Delivery" tab
 }
 
 .c5:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #7cf99a;
   outline-offset: -4px;
 }
 
@@ -271,7 +271,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #7cf99a;
   outline-offset: -4px;
 }
 
@@ -292,7 +292,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Payment" tab 
 }
 
 .c6:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #7cf99a;
   outline-offset: -4px;
 }
 
@@ -464,7 +464,7 @@ exports[`COMPONENT - Navigation renders Navigation component with "Review" tab s
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #7cf99a;
   outline-offset: -4px;
 }
 

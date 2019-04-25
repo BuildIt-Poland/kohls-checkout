@@ -26,8 +26,8 @@ exports[`COMPONENT - ModalTrigger renders ModalTrigger with closed Modal 1`] = `
 }
 
 .c0:focus {
-  background-color: #ffbf47;
-  outline: 4px solid #ffbf47;
+  background-color: #7cf99a;
+  outline: 4px solid #7cf99a;
   outline-offset: 0;
 }
 

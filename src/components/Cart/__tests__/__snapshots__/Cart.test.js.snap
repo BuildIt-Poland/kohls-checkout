@@ -34,8 +34,8 @@ exports[`COMPONENT - Cart renders correctly if there are NO items in cart 1`] = 
 }
 
 .c3:focus {
-  background-color: #ffbf47;
-  outline: 4px solid #ffbf47;
+  background-color: #7cf99a;
+  outline: 4px solid #7cf99a;
   outline-offset: 0;
 }
 

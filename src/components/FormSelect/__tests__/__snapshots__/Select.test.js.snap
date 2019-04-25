@@ -22,8 +22,8 @@ exports[`COMPONENT - FormSelect Select renders correctly 1`] = `
 }
 
 .c0:focus {
-  border-color: #00a09f;
-  outline: 4px solid #ffbf47;
+  border-color: #7cf99a;
+  outline: 4px solid #7cf99a;
   outline-offset: 0;
 }
 
