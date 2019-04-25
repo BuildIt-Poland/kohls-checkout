@@ -6,7 +6,6 @@ import ErrorBoundary from '../ErrorBoundary';
 import SectionHeader from '../SectionHeader';
 import ScreenWideSection from '../ScreenWideSection';
 import Price from '../Price';
-import Content from '../Content';
 import {
   SHIPPING_COST,
   SUPER_DISCOUNT_PERCENTAGE,
@@ -18,6 +17,7 @@ import {
 } from './demoOrderSummaryCalculations';
 import TextRow from './TextRow';
 import TotalPrice from './TotalPrice';
+import Content from './Content';
 
 function OrderSummary({ items }) {
   const subtotal = subtotalPrice(items);

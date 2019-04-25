@@ -6,6 +6,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { item } from '../../types';
+// import CartIcon from '../CartIcon';
 import ListItem from './ListItem';
 import Layout from './Layout';
 import Thumbnail from './Thumbnail';

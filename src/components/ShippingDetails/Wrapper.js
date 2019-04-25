@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-import { spacingLarge, spacingMedium } from '../../styles/designTokens';
+import { spacingLarge, spacingMedium, demoBlue } from '../../styles/designTokens';
 
 const Wrapper = styled.div`
+  background-color: ${demoBlue};
   display: grid;
   grid-template-columns: 6rem 1fr;
   grid-gap: ${spacingMedium};

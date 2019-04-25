@@ -1,13 +1,20 @@
+// Demo colors
+export const demoPink = '#f8e1d9';
+export const demoBlue = '#cfe3f2';
+export const demoGreen = '#e3f3cf';
+export const demoYellow = '#fffcb2';
+// acidGreen #7cf99a
+
 // Colors
 export const colorBlack = '#222222';
 export const colorDarkGrey = '#666666';
 export const colorLightGrey = '#b0b0b0';
 export const colorWhite = '#ffffff';
-export const colorTurquoise = '#00a09f';
+export const colorTurquoise = '#7cf99a';
 export const colorTurquoiseDimmed = '#008484';
 export const colorRed = '#e0151d';
 export const colorLightRed = '#fadcdd';
-export const colorYellow = '#ffbf47';
+export const colorYellow = '#7cf99a';
 
 // Spacing (mainly for paddings and margins)
 export const spacingLarge = '3rem';

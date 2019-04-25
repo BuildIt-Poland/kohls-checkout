@@ -12,6 +12,9 @@ export function nextYearsFromDate(startDate, yearsAmount = 20) {
 
   // Leaves only 2 last year numbers
   return [...Array(yearsAmount + 1)].map((_, x) => String(x + startYear).slice(-2));
+
+  // Shows full year
+  // return [...Array(yearsAmount + 1)].map((_, x) => x + startYear);
 }
 
 export function selectOptions(values, defaultOption = []) {

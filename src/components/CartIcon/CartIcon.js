@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Link as LinkBase } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { colorYellow } from '../../styles/designTokens';
+import { colorYellow, demoYellow } from '../../styles/designTokens';
 import { item } from '../../types';
 import { totalCartItemsCount } from '../../utils';
 import ErrorBoundary from '../ErrorBoundary';
@@ -20,6 +20,7 @@ const Link = styled(LinkBase)`
   justify-content: center;
   position: relative;
   padding: 0 1rem;
+  /* background: ${demoYellow}; */
 
   &:focus {
     background-color: ${colorYellow};

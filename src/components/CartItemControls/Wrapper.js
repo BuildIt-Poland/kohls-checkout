@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-import { spacingMedium } from '../../styles/designTokens';
+import { spacingMedium, demoYellow } from '../../styles/designTokens';
 
 const Wrapper = styled.div`
+  background: ${demoYellow};
   display: flex;
   justify-content: space-between;
   margin-top: ${spacingMedium};
